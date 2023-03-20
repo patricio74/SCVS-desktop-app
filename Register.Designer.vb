@@ -51,7 +51,7 @@ Partial Class Register
         Me.Button1.Location = New System.Drawing.Point(97, 531)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(227, 72)
-        Me.Button1.TabIndex = 16
+        Me.Button1.TabIndex = 36
         Me.Button1.Text = "REGISTER"
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -79,7 +79,7 @@ Partial Class Register
         Me.course.MaxLength = 50
         Me.course.Name = "course"
         Me.course.Size = New System.Drawing.Size(246, 27)
-        Me.course.TabIndex = 33
+        Me.course.TabIndex = 34
         Me.course.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'yrsec
@@ -92,7 +92,7 @@ Partial Class Register
         Me.yrsec.MaxLength = 10
         Me.yrsec.Name = "yrsec"
         Me.yrsec.Size = New System.Drawing.Size(244, 27)
-        Me.yrsec.TabIndex = 34
+        Me.yrsec.TabIndex = 33
         Me.yrsec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
@@ -254,7 +254,7 @@ Partial Class Register
         Me.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "Register"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
