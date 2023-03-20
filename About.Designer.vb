@@ -37,6 +37,7 @@ Partial Class About
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -55,7 +56,7 @@ Partial Class About
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Maroon
-        Me.Label3.Location = New System.Drawing.Point(176, 470)
+        Me.Label3.Location = New System.Drawing.Point(176, 493)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 16)
         Me.Label3.TabIndex = 10
@@ -66,7 +67,7 @@ Partial Class About
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Indigo
-        Me.Label4.Location = New System.Drawing.Point(156, 447)
+        Me.Label4.Location = New System.Drawing.Point(156, 470)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(96, 23)
         Me.Label4.TabIndex = 9
@@ -77,7 +78,7 @@ Partial Class About
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Indigo
-        Me.Label6.Location = New System.Drawing.Point(105, 342)
+        Me.Label6.Location = New System.Drawing.Point(105, 365)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(210, 23)
         Me.Label6.TabIndex = 11
@@ -88,7 +89,7 @@ Partial Class About
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Maroon
-        Me.Label7.Location = New System.Drawing.Point(180, 415)
+        Me.Label7.Location = New System.Drawing.Point(180, 438)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 16)
         Me.Label7.TabIndex = 14
@@ -99,7 +100,7 @@ Partial Class About
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Indigo
-        Me.Label8.Location = New System.Drawing.Point(156, 393)
+        Me.Label8.Location = New System.Drawing.Point(156, 416)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(96, 23)
         Me.Label8.TabIndex = 13
@@ -122,7 +123,7 @@ Partial Class About
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Indigo
-        Me.Label10.Location = New System.Drawing.Point(119, 249)
+        Me.Label10.Location = New System.Drawing.Point(119, 247)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(180, 23)
         Me.Label10.TabIndex = 16
@@ -155,7 +156,7 @@ Partial Class About
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Maroon
-        Me.Label5.Location = New System.Drawing.Point(172, 364)
+        Me.Label5.Location = New System.Drawing.Point(172, 387)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(71, 16)
         Me.Label5.TabIndex = 12
@@ -177,7 +178,7 @@ Partial Class About
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.Indigo
-        Me.Label13.Location = New System.Drawing.Point(99, 290)
+        Me.Label13.Location = New System.Drawing.Point(99, 281)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(219, 23)
         Me.Label13.TabIndex = 21
@@ -194,12 +195,24 @@ Partial Class About
         Me.Label14.TabIndex = 22
         Me.Label14.Text = "leader"
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Verdana", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Indigo
+        Me.Label15.Location = New System.Drawing.Point(122, 314)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(183, 23)
+        Me.Label15.TabIndex = 23
+        Me.Label15.Text = "Samonte, Liezel"
+        '
         'About
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(408, 506)
+        Me.ClientSize = New System.Drawing.Size(408, 535)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label2)
@@ -242,4 +255,5 @@ Partial Class About
     Friend WithEvents Label2 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
 End Class
