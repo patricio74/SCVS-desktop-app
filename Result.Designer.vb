@@ -28,6 +28,8 @@ Partial Class Result
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button2
@@ -53,9 +55,9 @@ Partial Class Result
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(30, 79)
+        Me.ListView1.Location = New System.Drawing.Point(36, 79)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(605, 531)
+        Me.ListView1.Size = New System.Drawing.Size(644, 576)
         Me.ListView1.TabIndex = 30
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -63,26 +65,53 @@ Partial Class Result
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "# of votes"
-        Me.ColumnHeader1.Width = 116
+        Me.ColumnHeader1.Width = 78
         '
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Candidate name"
         Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader2.Width = 264
+        Me.ColumnHeader2.Width = 301
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Position"
         Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader3.Width = 221
+        Me.ColumnHeader3.Width = 259
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Gold
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.Indigo
+        Me.Button1.Location = New System.Drawing.Point(266, 679)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(156, 53)
+        Me.Button1.TabIndex = 31
+        Me.Button1.Text = "REFRESH"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(301, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(90, 16)
+        Me.Label1.TabIndex = 44
+        Me.Label1.Text = "Vote Result"
         '
         'Result
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(657, 668)
+        Me.ClientSize = New System.Drawing.Size(713, 756)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Button2)
         Me.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -94,6 +123,7 @@ Partial Class Result
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Result"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -102,4 +132,6 @@ Partial Class Result
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label1 As Label
 End Class

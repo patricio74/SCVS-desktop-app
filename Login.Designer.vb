@@ -40,7 +40,7 @@ Partial Class Login
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Indigo
-        Me.Button1.Location = New System.Drawing.Point(167, 443)
+        Me.Button1.Location = New System.Drawing.Point(200, 496)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(134, 53)
         Me.Button1.TabIndex = 4
@@ -52,9 +52,9 @@ Partial Class Login
         Me.user.BackColor = System.Drawing.Color.Indigo
         Me.user.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.user.ForeColor = System.Drawing.Color.Gold
-        Me.user.Location = New System.Drawing.Point(97, 308)
+        Me.user.Location = New System.Drawing.Point(103, 337)
         Me.user.Name = "user"
-        Me.user.Size = New System.Drawing.Size(269, 33)
+        Me.user.Size = New System.Drawing.Size(336, 33)
         Me.user.TabIndex = 1
         '
         'pass
@@ -62,9 +62,9 @@ Partial Class Login
         Me.pass.BackColor = System.Drawing.Color.Indigo
         Me.pass.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.Gold
-        Me.pass.Location = New System.Drawing.Point(97, 381)
+        Me.pass.Location = New System.Drawing.Point(103, 419)
         Me.pass.Name = "pass"
-        Me.pass.Size = New System.Drawing.Size(269, 33)
+        Me.pass.Size = New System.Drawing.Size(336, 33)
         Me.pass.TabIndex = 2
         Me.pass.UseSystemPasswordChar = True
         '
@@ -72,7 +72,7 @@ Partial Class Login
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(93, 282)
+        Me.Label1.Location = New System.Drawing.Point(99, 311)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(114, 23)
         Me.Label1.TabIndex = 5
@@ -82,7 +82,7 @@ Partial Class Login
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(93, 355)
+        Me.Label2.Location = New System.Drawing.Point(99, 393)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(109, 23)
         Me.Label2.TabIndex = 6
@@ -93,7 +93,7 @@ Partial Class Login
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(99, 414)
+        Me.CheckBox1.Location = New System.Drawing.Point(105, 452)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 20)
         Me.CheckBox1.TabIndex = 3
@@ -108,7 +108,7 @@ Partial Class Login
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(12, 603)
+        Me.Button2.Location = New System.Drawing.Point(14, 685)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(35, 35)
         Me.Button2.TabIndex = 1
@@ -118,7 +118,7 @@ Partial Class Login
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(59, 616)
+        Me.Label3.Location = New System.Drawing.Point(61, 698)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(216, 16)
         Me.Label3.TabIndex = 18
@@ -131,7 +131,7 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(455, 644)
+        Me.ClientSize = New System.Drawing.Size(529, 730)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.CheckBox1)

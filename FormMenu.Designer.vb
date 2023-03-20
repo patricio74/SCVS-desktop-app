@@ -37,9 +37,9 @@ Partial Class FormMenu
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Indigo
-        Me.Button1.Location = New System.Drawing.Point(106, 247)
+        Me.Button1.Location = New System.Drawing.Point(140, 288)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(257, 48)
+        Me.Button1.Size = New System.Drawing.Size(257, 58)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Add Vote"
         Me.Button1.UseVisualStyleBackColor = False
@@ -51,9 +51,9 @@ Partial Class FormMenu
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Gold
-        Me.Button2.Location = New System.Drawing.Point(106, 301)
+        Me.Button2.Location = New System.Drawing.Point(140, 349)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(257, 48)
+        Me.Button2.Size = New System.Drawing.Size(257, 58)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "Update Info"
         Me.Button2.UseVisualStyleBackColor = False
@@ -65,9 +65,9 @@ Partial Class FormMenu
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Indigo
-        Me.Button3.Location = New System.Drawing.Point(106, 463)
+        Me.Button3.Location = New System.Drawing.Point(140, 532)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(257, 48)
+        Me.Button3.Size = New System.Drawing.Size(257, 58)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Logout"
         Me.Button3.UseVisualStyleBackColor = False
@@ -79,9 +79,9 @@ Partial Class FormMenu
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Gold
-        Me.Button4.Location = New System.Drawing.Point(106, 409)
+        Me.Button4.Location = New System.Drawing.Point(140, 471)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(257, 48)
+        Me.Button4.Size = New System.Drawing.Size(257, 58)
         Me.Button4.TabIndex = 8
         Me.Button4.Text = "About"
         Me.Button4.UseVisualStyleBackColor = False
@@ -93,9 +93,9 @@ Partial Class FormMenu
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.Indigo
-        Me.Button5.Location = New System.Drawing.Point(106, 355)
+        Me.Button5.Location = New System.Drawing.Point(140, 410)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(257, 48)
+        Me.Button5.Size = New System.Drawing.Size(257, 58)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "View Result"
         Me.Button5.UseVisualStyleBackColor = False
@@ -107,7 +107,7 @@ Partial Class FormMenu
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(455, 644)
+        Me.ClientSize = New System.Drawing.Size(529, 730)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)

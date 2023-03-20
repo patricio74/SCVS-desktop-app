@@ -75,6 +75,7 @@ Partial Class Ballot
         Me.RadioButton19 = New System.Windows.Forms.RadioButton()
         Me.firstrep = New System.Windows.Forms.TextBox()
         Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -146,9 +147,9 @@ Partial Class Ballot
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox1.Location = New System.Drawing.Point(33, 89)
+        Me.GroupBox1.Location = New System.Drawing.Point(68, 112)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(239, 144)
+        Me.GroupBox1.Size = New System.Drawing.Size(239, 156)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "President"
@@ -160,7 +161,7 @@ Partial Class Ballot
         Me.President.Enabled = False
         Me.President.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.President.ForeColor = System.Drawing.Color.Indigo
-        Me.President.Location = New System.Drawing.Point(21, 108)
+        Me.President.Location = New System.Drawing.Point(21, 114)
         Me.President.Name = "President"
         Me.President.ReadOnly = True
         Me.President.Size = New System.Drawing.Size(199, 27)
@@ -212,9 +213,9 @@ Partial Class Ballot
         Me.GroupBox2.Controls.Add(Me.RadioButton6)
         Me.GroupBox2.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox2.Location = New System.Drawing.Point(291, 89)
+        Me.GroupBox2.Location = New System.Drawing.Point(336, 112)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(239, 143)
+        Me.GroupBox2.Size = New System.Drawing.Size(239, 155)
         Me.GroupBox2.TabIndex = 4
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Vice President"
@@ -226,7 +227,7 @@ Partial Class Ballot
         Me.VicePres.Enabled = False
         Me.VicePres.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VicePres.ForeColor = System.Drawing.Color.Indigo
-        Me.VicePres.Location = New System.Drawing.Point(21, 107)
+        Me.VicePres.Location = New System.Drawing.Point(21, 113)
         Me.VicePres.Name = "VicePres"
         Me.VicePres.ReadOnly = True
         Me.VicePres.Size = New System.Drawing.Size(199, 27)
@@ -278,9 +279,9 @@ Partial Class Ballot
         Me.GroupBox3.Controls.Add(Me.RadioButton9)
         Me.GroupBox3.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox3.Location = New System.Drawing.Point(547, 87)
+        Me.GroupBox3.Location = New System.Drawing.Point(604, 110)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(239, 145)
+        Me.GroupBox3.Size = New System.Drawing.Size(239, 157)
         Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Secretary"
@@ -292,7 +293,7 @@ Partial Class Ballot
         Me.Secretary.Enabled = False
         Me.Secretary.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Secretary.ForeColor = System.Drawing.Color.Indigo
-        Me.Secretary.Location = New System.Drawing.Point(21, 107)
+        Me.Secretary.Location = New System.Drawing.Point(21, 113)
         Me.Secretary.Name = "Secretary"
         Me.Secretary.ReadOnly = True
         Me.Secretary.Size = New System.Drawing.Size(199, 27)
@@ -344,9 +345,9 @@ Partial Class Ballot
         Me.GroupBox4.Controls.Add(Me.RadioButton12)
         Me.GroupBox4.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox4.Location = New System.Drawing.Point(802, 89)
+        Me.GroupBox4.Location = New System.Drawing.Point(874, 112)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(239, 144)
+        Me.GroupBox4.Size = New System.Drawing.Size(249, 156)
         Me.GroupBox4.TabIndex = 6
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Treasurer"
@@ -358,7 +359,7 @@ Partial Class Ballot
         Me.Treasurer.Enabled = False
         Me.Treasurer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Treasurer.ForeColor = System.Drawing.Color.Indigo
-        Me.Treasurer.Location = New System.Drawing.Point(21, 108)
+        Me.Treasurer.Location = New System.Drawing.Point(21, 114)
         Me.Treasurer.Name = "Treasurer"
         Me.Treasurer.ReadOnly = True
         Me.Treasurer.Size = New System.Drawing.Size(199, 27)
@@ -410,9 +411,9 @@ Partial Class Ballot
         Me.GroupBox5.Controls.Add(Me.RadioButton15)
         Me.GroupBox5.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox5.Location = New System.Drawing.Point(33, 472)
+        Me.GroupBox5.Location = New System.Drawing.Point(68, 523)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(239, 143)
+        Me.GroupBox5.Size = New System.Drawing.Size(239, 155)
         Me.GroupBox5.TabIndex = 7
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Auditor"
@@ -424,7 +425,7 @@ Partial Class Ballot
         Me.Auditor.Enabled = False
         Me.Auditor.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Auditor.ForeColor = System.Drawing.Color.Indigo
-        Me.Auditor.Location = New System.Drawing.Point(21, 107)
+        Me.Auditor.Location = New System.Drawing.Point(21, 113)
         Me.Auditor.Name = "Auditor"
         Me.Auditor.ReadOnly = True
         Me.Auditor.Size = New System.Drawing.Size(199, 27)
@@ -476,9 +477,9 @@ Partial Class Ballot
         Me.GroupBox6.Controls.Add(Me.RadioButton18)
         Me.GroupBox6.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox6.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox6.Location = New System.Drawing.Point(291, 472)
+        Me.GroupBox6.Location = New System.Drawing.Point(336, 523)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(239, 145)
+        Me.GroupBox6.Size = New System.Drawing.Size(239, 157)
         Me.GroupBox6.TabIndex = 8
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Public Relations Officer"
@@ -490,7 +491,7 @@ Partial Class Ballot
         Me.PROfficer.Enabled = False
         Me.PROfficer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PROfficer.ForeColor = System.Drawing.Color.Indigo
-        Me.PROfficer.Location = New System.Drawing.Point(21, 107)
+        Me.PROfficer.Location = New System.Drawing.Point(21, 113)
         Me.PROfficer.Name = "PROfficer"
         Me.PROfficer.ReadOnly = True
         Me.PROfficer.Size = New System.Drawing.Size(199, 27)
@@ -542,9 +543,9 @@ Partial Class Ballot
         Me.GroupBox8.Controls.Add(Me.RadioButton24)
         Me.GroupBox8.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox8.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox8.Location = New System.Drawing.Point(291, 282)
+        Me.GroupBox8.Location = New System.Drawing.Point(336, 318)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(239, 143)
+        Me.GroupBox8.Size = New System.Drawing.Size(239, 155)
         Me.GroupBox8.TabIndex = 10
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "2nd Year Representative"
@@ -556,7 +557,7 @@ Partial Class Ballot
         Me.secondrep.Enabled = False
         Me.secondrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.secondrep.ForeColor = System.Drawing.Color.Indigo
-        Me.secondrep.Location = New System.Drawing.Point(21, 107)
+        Me.secondrep.Location = New System.Drawing.Point(21, 113)
         Me.secondrep.Name = "secondrep"
         Me.secondrep.ReadOnly = True
         Me.secondrep.Size = New System.Drawing.Size(199, 27)
@@ -608,9 +609,9 @@ Partial Class Ballot
         Me.GroupBox11.Controls.Add(Me.RadioButton27)
         Me.GroupBox11.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox11.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox11.Location = New System.Drawing.Point(547, 282)
+        Me.GroupBox11.Location = New System.Drawing.Point(604, 318)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(239, 145)
+        Me.GroupBox11.Size = New System.Drawing.Size(239, 157)
         Me.GroupBox11.TabIndex = 11
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "3rd Year Representative"
@@ -622,7 +623,7 @@ Partial Class Ballot
         Me.thirdrep.Enabled = False
         Me.thirdrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.thirdrep.ForeColor = System.Drawing.Color.Indigo
-        Me.thirdrep.Location = New System.Drawing.Point(21, 107)
+        Me.thirdrep.Location = New System.Drawing.Point(21, 113)
         Me.thirdrep.Name = "thirdrep"
         Me.thirdrep.ReadOnly = True
         Me.thirdrep.Size = New System.Drawing.Size(199, 27)
@@ -636,7 +637,7 @@ Partial Class Ballot
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Indigo
-        Me.Button1.Location = New System.Drawing.Point(674, 499)
+        Me.Button1.Location = New System.Drawing.Point(758, 550)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(258, 87)
         Me.Button1.TabIndex = 14
@@ -652,9 +653,9 @@ Partial Class Ballot
         Me.GroupBox10.Controls.Add(Me.RadioButton29)
         Me.GroupBox10.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox10.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox10.Location = New System.Drawing.Point(802, 282)
+        Me.GroupBox10.Location = New System.Drawing.Point(874, 318)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(249, 143)
+        Me.GroupBox10.Size = New System.Drawing.Size(249, 155)
         Me.GroupBox10.TabIndex = 12
         Me.GroupBox10.TabStop = False
         Me.GroupBox10.Text = "4th Year Representative"
@@ -666,7 +667,7 @@ Partial Class Ballot
         Me.fourrep.Enabled = False
         Me.fourrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fourrep.ForeColor = System.Drawing.Color.Indigo
-        Me.fourrep.Location = New System.Drawing.Point(23, 107)
+        Me.fourrep.Location = New System.Drawing.Point(23, 113)
         Me.fourrep.Name = "fourrep"
         Me.fourrep.ReadOnly = True
         Me.fourrep.Size = New System.Drawing.Size(199, 27)
@@ -752,7 +753,7 @@ Partial Class Ballot
         Me.firstrep.Enabled = False
         Me.firstrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstrep.ForeColor = System.Drawing.Color.Indigo
-        Me.firstrep.Location = New System.Drawing.Point(21, 108)
+        Me.firstrep.Location = New System.Drawing.Point(21, 114)
         Me.firstrep.Name = "firstrep"
         Me.firstrep.ReadOnly = True
         Me.firstrep.Size = New System.Drawing.Size(199, 27)
@@ -768,19 +769,31 @@ Partial Class Ballot
         Me.GroupBox7.Controls.Add(Me.RadioButton21)
         Me.GroupBox7.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox7.ForeColor = System.Drawing.Color.Gold
-        Me.GroupBox7.Location = New System.Drawing.Point(33, 282)
+        Me.GroupBox7.Location = New System.Drawing.Point(68, 318)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(239, 144)
+        Me.GroupBox7.Size = New System.Drawing.Size(239, 156)
         Me.GroupBox7.TabIndex = 9
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "1st Year Representative"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(450, 34)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(301, 16)
+        Me.Label1.TabIndex = 44
+        Me.Label1.Text = "Automated Student Voting System Form"
         '
         'Ballot
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1077, 666)
+        Me.ClientSize = New System.Drawing.Size(1188, 739)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox11)
@@ -822,6 +835,7 @@ Partial Class Ballot
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -877,4 +891,5 @@ Partial Class Ballot
     Friend WithEvents RadioButton19 As RadioButton
     Friend WithEvents firstrep As TextBox
     Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents Label1 As Label
 End Class

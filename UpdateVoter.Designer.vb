@@ -48,6 +48,7 @@ Partial Class UpdateVoter
         Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button2
@@ -68,7 +69,7 @@ Partial Class UpdateVoter
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(456, 397)
+        Me.Label15.Location = New System.Drawing.Point(637, 417)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(76, 18)
         Me.Label15.TabIndex = 44
@@ -78,7 +79,7 @@ Partial Class UpdateVoter
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(456, 532)
+        Me.Label13.Location = New System.Drawing.Point(637, 570)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(60, 18)
         Me.Label13.TabIndex = 40
@@ -90,10 +91,10 @@ Partial Class UpdateVoter
         Me.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.email.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.ForeColor = System.Drawing.Color.Indigo
-        Me.email.Location = New System.Drawing.Point(459, 553)
+        Me.email.Location = New System.Drawing.Point(640, 591)
         Me.email.MaxLength = 50
         Me.email.Name = "email"
-        Me.email.Size = New System.Drawing.Size(306, 27)
+        Me.email.Size = New System.Drawing.Size(349, 27)
         Me.email.TabIndex = 36
         Me.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -101,7 +102,7 @@ Partial Class UpdateVoter
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(458, 461)
+        Me.Label12.Location = New System.Drawing.Point(639, 491)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(131, 18)
         Me.Label12.TabIndex = 38
@@ -111,7 +112,7 @@ Partial Class UpdateVoter
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(87, 594)
+        Me.Label11.Location = New System.Drawing.Point(205, 643)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(105, 18)
         Me.Label11.TabIndex = 37
@@ -123,10 +124,10 @@ Partial Class UpdateVoter
         Me.lastname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.lastname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastname.ForeColor = System.Drawing.Color.Indigo
-        Me.lastname.Location = New System.Drawing.Point(90, 615)
+        Me.lastname.Location = New System.Drawing.Point(208, 664)
         Me.lastname.MaxLength = 50
         Me.lastname.Name = "lastname"
-        Me.lastname.Size = New System.Drawing.Size(306, 27)
+        Me.lastname.Size = New System.Drawing.Size(349, 27)
         Me.lastname.TabIndex = 33
         Me.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -134,7 +135,7 @@ Partial Class UpdateVoter
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(87, 532)
+        Me.Label10.Location = New System.Drawing.Point(205, 570)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(124, 18)
         Me.Label10.TabIndex = 35
@@ -146,10 +147,10 @@ Partial Class UpdateVoter
         Me.middlename.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.middlename.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlename.ForeColor = System.Drawing.Color.Indigo
-        Me.middlename.Location = New System.Drawing.Point(90, 553)
+        Me.middlename.Location = New System.Drawing.Point(208, 591)
         Me.middlename.MaxLength = 50
         Me.middlename.Name = "middlename"
-        Me.middlename.Size = New System.Drawing.Size(306, 27)
+        Me.middlename.Size = New System.Drawing.Size(349, 27)
         Me.middlename.TabIndex = 32
         Me.middlename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -157,7 +158,7 @@ Partial Class UpdateVoter
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(87, 461)
+        Me.Label3.Location = New System.Drawing.Point(205, 491)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 18)
         Me.Label3.TabIndex = 33
@@ -169,10 +170,10 @@ Partial Class UpdateVoter
         Me.firstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.firstname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstname.ForeColor = System.Drawing.Color.Indigo
-        Me.firstname.Location = New System.Drawing.Point(90, 482)
+        Me.firstname.Location = New System.Drawing.Point(208, 512)
         Me.firstname.MaxLength = 50
         Me.firstname.Name = "firstname"
-        Me.firstname.Size = New System.Drawing.Size(306, 27)
+        Me.firstname.Size = New System.Drawing.Size(349, 27)
         Me.firstname.TabIndex = 31
         Me.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -180,7 +181,7 @@ Partial Class UpdateVoter
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(87, 397)
+        Me.Label2.Location = New System.Drawing.Point(205, 417)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(158, 18)
         Me.Label2.TabIndex = 31
@@ -192,11 +193,11 @@ Partial Class UpdateVoter
         Me.stdNum.Enabled = False
         Me.stdNum.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stdNum.ForeColor = System.Drawing.Color.Indigo
-        Me.stdNum.Location = New System.Drawing.Point(90, 418)
+        Me.stdNum.Location = New System.Drawing.Point(208, 438)
         Me.stdNum.MaxLength = 20
         Me.stdNum.Name = "stdNum"
         Me.stdNum.ReadOnly = True
-        Me.stdNum.Size = New System.Drawing.Size(306, 27)
+        Me.stdNum.Size = New System.Drawing.Size(349, 27)
         Me.stdNum.TabIndex = 30
         Me.stdNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -207,9 +208,9 @@ Partial Class UpdateVoter
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Indigo
-        Me.Button1.Location = New System.Drawing.Point(470, 602)
+        Me.Button1.Location = New System.Drawing.Point(616, 634)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(130, 42)
+        Me.Button1.Size = New System.Drawing.Size(185, 69)
         Me.Button1.TabIndex = 37
         Me.Button1.Text = "Update"
         Me.Button1.UseVisualStyleBackColor = False
@@ -220,10 +221,10 @@ Partial Class UpdateVoter
         Me.yrsec.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.yrsec.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.yrsec.ForeColor = System.Drawing.Color.Indigo
-        Me.yrsec.Location = New System.Drawing.Point(457, 482)
+        Me.yrsec.Location = New System.Drawing.Point(638, 512)
         Me.yrsec.MaxLength = 10
         Me.yrsec.Name = "yrsec"
-        Me.yrsec.Size = New System.Drawing.Size(308, 27)
+        Me.yrsec.Size = New System.Drawing.Size(351, 27)
         Me.yrsec.TabIndex = 35
         Me.yrsec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -233,10 +234,10 @@ Partial Class UpdateVoter
         Me.course.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.course.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.course.ForeColor = System.Drawing.Color.Indigo
-        Me.course.Location = New System.Drawing.Point(459, 418)
+        Me.course.Location = New System.Drawing.Point(640, 438)
         Me.course.MaxLength = 50
         Me.course.Name = "course"
-        Me.course.Size = New System.Drawing.Size(308, 27)
+        Me.course.Size = New System.Drawing.Size(351, 27)
         Me.course.TabIndex = 34
         Me.course.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -247,9 +248,9 @@ Partial Class UpdateVoter
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Gold
-        Me.Button3.Location = New System.Drawing.Point(621, 602)
+        Me.Button3.Location = New System.Drawing.Point(826, 634)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 42)
+        Me.Button3.Size = New System.Drawing.Size(185, 69)
         Me.Button3.TabIndex = 38
         Me.Button3.Text = "Delete"
         Me.Button3.UseVisualStyleBackColor = False
@@ -257,39 +258,39 @@ Partial Class UpdateVoter
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "S#"
-        Me.ColumnHeader1.Width = 54
+        Me.ColumnHeader1.Width = 81
         '
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "First name"
-        Me.ColumnHeader2.Width = 149
+        Me.ColumnHeader2.Width = 164
         '
         'ColumnHeader4
         '
         Me.ColumnHeader4.DisplayIndex = 3
         Me.ColumnHeader4.Text = "Last name"
-        Me.ColumnHeader4.Width = 160
+        Me.ColumnHeader4.Width = 176
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.DisplayIndex = 2
         Me.ColumnHeader3.Text = "Middle name"
-        Me.ColumnHeader3.Width = 144
+        Me.ColumnHeader3.Width = 171
         '
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Course"
-        Me.ColumnHeader5.Width = 86
+        Me.ColumnHeader5.Width = 113
         '
         'ColumnHeader6
         '
         Me.ColumnHeader6.Text = "Yr/Sec"
-        Me.ColumnHeader6.Width = 64
+        Me.ColumnHeader6.Width = 67
         '
         'ColumnHeader7
         '
         Me.ColumnHeader7.Text = "Email"
-        Me.ColumnHeader7.Width = 175
+        Me.ColumnHeader7.Width = 220
         '
         'ListView1
         '
@@ -299,19 +300,31 @@ Partial Class UpdateVoter
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(12, 44)
+        Me.ListView1.Location = New System.Drawing.Point(99, 78)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(839, 335)
+        Me.ListView1.Size = New System.Drawing.Size(999, 313)
         Me.ListView1.TabIndex = 29
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(510, 30)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(193, 16)
+        Me.Label1.TabIndex = 45
+        Me.Label1.Text = "Update Voter Information"
         '
         'UpdateVoter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(863, 668)
+        Me.ClientSize = New System.Drawing.Size(1188, 739)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.course)
         Me.Controls.Add(Me.yrsec)
@@ -368,4 +381,5 @@ Partial Class UpdateVoter
     Friend WithEvents ColumnHeader6 As ColumnHeader
     Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents ListView1 As ListView
+    Friend WithEvents Label1 As Label
 End Class
