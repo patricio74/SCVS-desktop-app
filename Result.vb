@@ -45,8 +45,4 @@ Public Class Result
         Call voteresult()
     End Sub
 
-
-    'listview ulit tapos select * candidates
-    'group by para walang duplicate sabay count para mabilang result
-
 End Class
