@@ -24,7 +24,6 @@ Partial Class About
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(About))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -45,25 +44,11 @@ Partial Class About
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Verdana", 20.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Maroon
-        Me.Label1.Location = New System.Drawing.Point(122, 9)
+        Me.Label1.Location = New System.Drawing.Point(122, 5)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(173, 32)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "GROUP #5"
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Indigo
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Gold
-        Me.Button2.Location = New System.Drawing.Point(12, 12)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(70, 26)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Return"
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -229,7 +214,6 @@ Partial Class About
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -245,7 +229,6 @@ Partial Class About
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label

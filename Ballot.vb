@@ -190,7 +190,7 @@ Public Class Ballot
 
     Private Sub RadioButton9_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton9.CheckedChanged
         If RadioButton9.Checked = True Then
-            secname = "Reyna b. Belinda"
+            secname = "Reyna B. Belinda"
             secpos = "Secretary"
             Secretary.Text = secname
         Else
