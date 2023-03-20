@@ -89,6 +89,9 @@ Public Class Ballot
 
             If i <> 0 Then
                 MsgBox("Vote successful!", vbInformation, "Admin")
+                FormMenu.Show()
+                Me.Hide()
+                Call Clearballot()
             Else
                 MsgBox("Vote failed!", vbCritical, "Admin")
             End If

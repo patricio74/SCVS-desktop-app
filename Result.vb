@@ -15,6 +15,7 @@ Public Class Result
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         FormMenu.Show()
         Me.Hide()
+        Call voteresult()
     End Sub
     Public Sub voteresult()
         Try
