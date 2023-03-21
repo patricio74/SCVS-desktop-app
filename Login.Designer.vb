@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Login
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Button1 = New System.Windows.Forms.Button()
@@ -31,6 +31,8 @@ Partial Class Login
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.eye = New System.Windows.Forms.PictureBox()
+        CType(Me.eye, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -99,6 +101,7 @@ Partial Class Login
         Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "Show"
         Me.CheckBox1.UseVisualStyleBackColor = False
+        Me.CheckBox1.Visible = False
         '
         'Button2
         '
@@ -124,6 +127,19 @@ Partial Class Login
         Me.Label3.TabIndex = 18
         Me.Label3.Text = "BSIT-3F Group 5 Voting System"
         '
+        'eye
+        '
+        Me.eye.BackColor = System.Drawing.Color.Transparent
+        Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
+        Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
+        Me.eye.Location = New System.Drawing.Point(398, 422)
+        Me.eye.Name = "eye"
+        Me.eye.Size = New System.Drawing.Size(38, 27)
+        Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.eye.TabIndex = 19
+        Me.eye.TabStop = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -132,6 +148,7 @@ Partial Class Login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(529, 730)
+        Me.Controls.Add(Me.eye)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.CheckBox1)
@@ -149,6 +166,7 @@ Partial Class Login
         Me.Name = "Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "G5 Voting System"
+        CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -161,4 +179,5 @@ Partial Class Login
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents eye As PictureBox
 End Class

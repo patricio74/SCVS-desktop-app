@@ -32,70 +32,70 @@ Partial Class FormMenu
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gold
+        Me.Button1.BackColor = System.Drawing.Color.Indigo
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Indigo
-        Me.Button1.Location = New System.Drawing.Point(140, 288)
+        Me.Button1.ForeColor = System.Drawing.Color.Gold
+        Me.Button1.Location = New System.Drawing.Point(91, 279)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(257, 58)
+        Me.Button1.Size = New System.Drawing.Size(355, 58)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Add Vote"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Indigo
+        Me.Button2.BackColor = System.Drawing.Color.Gold
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Gold
-        Me.Button2.Location = New System.Drawing.Point(140, 349)
+        Me.Button2.ForeColor = System.Drawing.Color.Indigo
+        Me.Button2.Location = New System.Drawing.Point(91, 342)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(257, 58)
+        Me.Button2.Size = New System.Drawing.Size(355, 58)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "Update Info"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Gold
+        Me.Button3.BackColor = System.Drawing.Color.Indigo
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Indigo
-        Me.Button3.Location = New System.Drawing.Point(140, 532)
+        Me.Button3.ForeColor = System.Drawing.Color.Gold
+        Me.Button3.Location = New System.Drawing.Point(91, 531)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(257, 58)
+        Me.Button3.Size = New System.Drawing.Size(355, 58)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Logout"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.Indigo
+        Me.Button4.BackColor = System.Drawing.Color.Gold
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.ForeColor = System.Drawing.Color.Gold
-        Me.Button4.Location = New System.Drawing.Point(140, 471)
+        Me.Button4.ForeColor = System.Drawing.Color.Indigo
+        Me.Button4.Location = New System.Drawing.Point(91, 468)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(257, 58)
+        Me.Button4.Size = New System.Drawing.Size(355, 58)
         Me.Button4.TabIndex = 8
         Me.Button4.Text = "About"
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.Gold
+        Me.Button5.BackColor = System.Drawing.Color.Indigo
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ForeColor = System.Drawing.Color.Indigo
-        Me.Button5.Location = New System.Drawing.Point(140, 410)
+        Me.Button5.ForeColor = System.Drawing.Color.Gold
+        Me.Button5.Location = New System.Drawing.Point(91, 405)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(257, 58)
+        Me.Button5.Size = New System.Drawing.Size(355, 58)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "View Result"
         Me.Button5.UseVisualStyleBackColor = False

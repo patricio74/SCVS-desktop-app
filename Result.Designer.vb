@@ -86,7 +86,7 @@ Partial Class Result
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Indigo
-        Me.Button1.Location = New System.Drawing.Point(266, 679)
+        Me.Button1.Location = New System.Drawing.Point(268, 679)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 53)
         Me.Button1.TabIndex = 31

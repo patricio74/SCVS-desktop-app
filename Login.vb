@@ -5,15 +5,6 @@ Public Class Login
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 
-    'show/hide passworf
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.CheckState = CheckState.Checked Then
-            pass.UseSystemPasswordChar = False
-        Else
-            pass.UseSystemPasswordChar = True
-        End If
-    End Sub
-
     'username: admin
     'password: admin
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -31,5 +22,21 @@ Public Class Login
     'about
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         About.Show()
+    End Sub
+
+
+    'show/hide passworf
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.CheckState = CheckState.Checked Then
+            pass.UseSystemPasswordChar = False
+            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\eye2.png")
+        Else
+            pass.UseSystemPasswordChar = True
+            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\eye1.png")
+        End If
+    End Sub
+
+    Private Sub eye_Click(sender As Object, e As EventArgs) Handles eye.Click
+        CheckBox1.Checked = Not CheckBox1.Checked
     End Sub
 End Class

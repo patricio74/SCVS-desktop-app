@@ -15,7 +15,6 @@ Public Class Result
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         FormMenu.Show()
         Me.Hide()
-        Call voteresult()
     End Sub
     Public Sub voteresult()
         Try
@@ -41,8 +40,8 @@ Public Class Result
         End Try
         connect.Close()
     End Sub
-    Private Sub Result_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Call voteresult()
     End Sub
-
 End Class
