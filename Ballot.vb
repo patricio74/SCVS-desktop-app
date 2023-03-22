@@ -323,10 +323,6 @@ Public Class Ballot
         End If
     End Sub
 
-    Private Sub GroupBox10_Enter(sender As Object, e As EventArgs) Handles GroupBox10.Enter
-
-    End Sub
-
     Private Sub RadioButton22_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton22.CheckedChanged
         If RadioButton22.Checked = True Then
             seconame = "Ian Bonaparte"

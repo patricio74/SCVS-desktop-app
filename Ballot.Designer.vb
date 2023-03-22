@@ -90,11 +90,11 @@ Partial Class Ballot
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Indigo
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Gold
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(12, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(70, 26)
@@ -140,13 +140,13 @@ Partial Class Ballot
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox1.Controls.Add(Me.President)
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(68, 112)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(239, 156)
@@ -156,11 +156,12 @@ Partial Class Ballot
         '
         'President
         '
-        Me.President.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.President.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.President.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.President.Cursor = System.Windows.Forms.Cursors.No
         Me.President.Enabled = False
         Me.President.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.President.ForeColor = System.Drawing.Color.Indigo
+        Me.President.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.President.Location = New System.Drawing.Point(21, 114)
         Me.President.Name = "President"
         Me.President.ReadOnly = True
@@ -206,13 +207,13 @@ Partial Class Ballot
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox2.Controls.Add(Me.VicePres)
         Me.GroupBox2.Controls.Add(Me.RadioButton4)
         Me.GroupBox2.Controls.Add(Me.RadioButton5)
         Me.GroupBox2.Controls.Add(Me.RadioButton6)
         Me.GroupBox2.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.GroupBox2.Location = New System.Drawing.Point(336, 112)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(239, 155)
@@ -222,11 +223,12 @@ Partial Class Ballot
         '
         'VicePres
         '
-        Me.VicePres.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.VicePres.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.VicePres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.VicePres.Cursor = System.Windows.Forms.Cursors.No
         Me.VicePres.Enabled = False
         Me.VicePres.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VicePres.ForeColor = System.Drawing.Color.Indigo
+        Me.VicePres.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.VicePres.Location = New System.Drawing.Point(21, 113)
         Me.VicePres.Name = "VicePres"
         Me.VicePres.ReadOnly = True
@@ -272,13 +274,13 @@ Partial Class Ballot
         '
         'GroupBox3
         '
-        Me.GroupBox3.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox3.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox3.Controls.Add(Me.Secretary)
         Me.GroupBox3.Controls.Add(Me.RadioButton7)
         Me.GroupBox3.Controls.Add(Me.RadioButton8)
         Me.GroupBox3.Controls.Add(Me.RadioButton9)
         Me.GroupBox3.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox3.ForeColor = System.Drawing.Color.Black
         Me.GroupBox3.Location = New System.Drawing.Point(604, 110)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(239, 157)
@@ -288,11 +290,12 @@ Partial Class Ballot
         '
         'Secretary
         '
-        Me.Secretary.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Secretary.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Secretary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Secretary.Cursor = System.Windows.Forms.Cursors.No
         Me.Secretary.Enabled = False
         Me.Secretary.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Secretary.ForeColor = System.Drawing.Color.Indigo
+        Me.Secretary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Secretary.Location = New System.Drawing.Point(21, 113)
         Me.Secretary.Name = "Secretary"
         Me.Secretary.ReadOnly = True
@@ -338,13 +341,13 @@ Partial Class Ballot
         '
         'GroupBox4
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox4.Controls.Add(Me.Treasurer)
         Me.GroupBox4.Controls.Add(Me.RadioButton10)
         Me.GroupBox4.Controls.Add(Me.RadioButton11)
         Me.GroupBox4.Controls.Add(Me.RadioButton12)
         Me.GroupBox4.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox4.ForeColor = System.Drawing.Color.Black
         Me.GroupBox4.Location = New System.Drawing.Point(874, 112)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(249, 156)
@@ -354,11 +357,12 @@ Partial Class Ballot
         '
         'Treasurer
         '
-        Me.Treasurer.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Treasurer.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Treasurer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Treasurer.Cursor = System.Windows.Forms.Cursors.No
         Me.Treasurer.Enabled = False
         Me.Treasurer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Treasurer.ForeColor = System.Drawing.Color.Indigo
+        Me.Treasurer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Treasurer.Location = New System.Drawing.Point(21, 114)
         Me.Treasurer.Name = "Treasurer"
         Me.Treasurer.ReadOnly = True
@@ -404,13 +408,13 @@ Partial Class Ballot
         '
         'GroupBox5
         '
-        Me.GroupBox5.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox5.Controls.Add(Me.Auditor)
         Me.GroupBox5.Controls.Add(Me.RadioButton13)
         Me.GroupBox5.Controls.Add(Me.RadioButton14)
         Me.GroupBox5.Controls.Add(Me.RadioButton15)
         Me.GroupBox5.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox5.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox5.ForeColor = System.Drawing.Color.Black
         Me.GroupBox5.Location = New System.Drawing.Point(68, 523)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(239, 155)
@@ -420,11 +424,12 @@ Partial Class Ballot
         '
         'Auditor
         '
-        Me.Auditor.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.Auditor.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Auditor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Auditor.Cursor = System.Windows.Forms.Cursors.No
         Me.Auditor.Enabled = False
         Me.Auditor.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Auditor.ForeColor = System.Drawing.Color.Indigo
+        Me.Auditor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Auditor.Location = New System.Drawing.Point(21, 113)
         Me.Auditor.Name = "Auditor"
         Me.Auditor.ReadOnly = True
@@ -470,13 +475,13 @@ Partial Class Ballot
         '
         'GroupBox6
         '
-        Me.GroupBox6.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox6.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox6.Controls.Add(Me.RadioButton16)
         Me.GroupBox6.Controls.Add(Me.PROfficer)
         Me.GroupBox6.Controls.Add(Me.RadioButton17)
         Me.GroupBox6.Controls.Add(Me.RadioButton18)
         Me.GroupBox6.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox6.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox6.ForeColor = System.Drawing.Color.Black
         Me.GroupBox6.Location = New System.Drawing.Point(336, 523)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(239, 157)
@@ -486,11 +491,12 @@ Partial Class Ballot
         '
         'PROfficer
         '
-        Me.PROfficer.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.PROfficer.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PROfficer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PROfficer.Cursor = System.Windows.Forms.Cursors.No
         Me.PROfficer.Enabled = False
         Me.PROfficer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PROfficer.ForeColor = System.Drawing.Color.Indigo
+        Me.PROfficer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.PROfficer.Location = New System.Drawing.Point(21, 113)
         Me.PROfficer.Name = "PROfficer"
         Me.PROfficer.ReadOnly = True
@@ -536,13 +542,13 @@ Partial Class Ballot
         '
         'GroupBox8
         '
-        Me.GroupBox8.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox8.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox8.Controls.Add(Me.secondrep)
         Me.GroupBox8.Controls.Add(Me.RadioButton22)
         Me.GroupBox8.Controls.Add(Me.RadioButton23)
         Me.GroupBox8.Controls.Add(Me.RadioButton24)
         Me.GroupBox8.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox8.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox8.ForeColor = System.Drawing.Color.Black
         Me.GroupBox8.Location = New System.Drawing.Point(336, 318)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(239, 155)
@@ -552,11 +558,12 @@ Partial Class Ballot
         '
         'secondrep
         '
-        Me.secondrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.secondrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.secondrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.secondrep.Cursor = System.Windows.Forms.Cursors.No
         Me.secondrep.Enabled = False
         Me.secondrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.secondrep.ForeColor = System.Drawing.Color.Indigo
+        Me.secondrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.secondrep.Location = New System.Drawing.Point(21, 113)
         Me.secondrep.Name = "secondrep"
         Me.secondrep.ReadOnly = True
@@ -602,13 +609,13 @@ Partial Class Ballot
         '
         'GroupBox11
         '
-        Me.GroupBox11.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox11.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox11.Controls.Add(Me.thirdrep)
         Me.GroupBox11.Controls.Add(Me.RadioButton25)
         Me.GroupBox11.Controls.Add(Me.RadioButton26)
         Me.GroupBox11.Controls.Add(Me.RadioButton27)
         Me.GroupBox11.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox11.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox11.ForeColor = System.Drawing.Color.Black
         Me.GroupBox11.Location = New System.Drawing.Point(604, 318)
         Me.GroupBox11.Name = "GroupBox11"
         Me.GroupBox11.Size = New System.Drawing.Size(239, 157)
@@ -618,11 +625,12 @@ Partial Class Ballot
         '
         'thirdrep
         '
-        Me.thirdrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.thirdrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.thirdrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.thirdrep.Cursor = System.Windows.Forms.Cursors.No
         Me.thirdrep.Enabled = False
         Me.thirdrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.thirdrep.ForeColor = System.Drawing.Color.Indigo
+        Me.thirdrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.thirdrep.Location = New System.Drawing.Point(21, 113)
         Me.thirdrep.Name = "thirdrep"
         Me.thirdrep.ReadOnly = True
@@ -632,11 +640,11 @@ Partial Class Ballot
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gold
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Indigo
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(758, 550)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(258, 87)
@@ -646,13 +654,13 @@ Partial Class Ballot
         '
         'GroupBox10
         '
-        Me.GroupBox10.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox10.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox10.Controls.Add(Me.fourrep)
         Me.GroupBox10.Controls.Add(Me.RadioButton28)
         Me.GroupBox10.Controls.Add(Me.RadioButton30)
         Me.GroupBox10.Controls.Add(Me.RadioButton29)
         Me.GroupBox10.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox10.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox10.ForeColor = System.Drawing.Color.Black
         Me.GroupBox10.Location = New System.Drawing.Point(874, 318)
         Me.GroupBox10.Name = "GroupBox10"
         Me.GroupBox10.Size = New System.Drawing.Size(249, 155)
@@ -662,11 +670,12 @@ Partial Class Ballot
         '
         'fourrep
         '
-        Me.fourrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.fourrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.fourrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.fourrep.Cursor = System.Windows.Forms.Cursors.No
         Me.fourrep.Enabled = False
         Me.fourrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fourrep.ForeColor = System.Drawing.Color.Indigo
+        Me.fourrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.fourrep.Location = New System.Drawing.Point(23, 113)
         Me.fourrep.Name = "fourrep"
         Me.fourrep.ReadOnly = True
@@ -748,11 +757,12 @@ Partial Class Ballot
         '
         'firstrep
         '
-        Me.firstrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.firstrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.firstrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstrep.Cursor = System.Windows.Forms.Cursors.No
         Me.firstrep.Enabled = False
         Me.firstrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.firstrep.ForeColor = System.Drawing.Color.Indigo
+        Me.firstrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.firstrep.Location = New System.Drawing.Point(21, 114)
         Me.firstrep.Name = "firstrep"
         Me.firstrep.ReadOnly = True
@@ -762,13 +772,13 @@ Partial Class Ballot
         '
         'GroupBox7
         '
-        Me.GroupBox7.BackColor = System.Drawing.Color.Indigo
+        Me.GroupBox7.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox7.Controls.Add(Me.firstrep)
         Me.GroupBox7.Controls.Add(Me.RadioButton19)
         Me.GroupBox7.Controls.Add(Me.RadioButton20)
         Me.GroupBox7.Controls.Add(Me.RadioButton21)
         Me.GroupBox7.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox7.ForeColor = System.Drawing.Color.Gold
+        Me.GroupBox7.ForeColor = System.Drawing.Color.Black
         Me.GroupBox7.Location = New System.Drawing.Point(68, 318)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(239, 156)
@@ -780,18 +790,19 @@ Partial Class Ballot
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(450, 34)
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(139, 36)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(301, 16)
+        Me.Label1.Size = New System.Drawing.Size(887, 38)
         Me.Label1.TabIndex = 44
-        Me.Label1.Text = "Automated Student Voting System Form"
+        Me.Label1.Text = "Automated Student Council Voting System Form"
         '
         'Ballot
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1188, 739)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox6)

@@ -1,6 +1,7 @@
 ﻿'created by: Perez, J.P.
 'BSIT-3F
 'Group 5
+
 Imports MySql.Data.MySqlClient
 
 Public Class UpdateVoter

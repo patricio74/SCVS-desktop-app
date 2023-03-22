@@ -1,6 +1,7 @@
 ﻿'created by: Perez, J.P.
 'BSIT-3F
 'Group 5
+
 Imports MySql.Data.MySqlClient
 
 Public Class Result
@@ -43,5 +44,9 @@ Public Class Result
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Call voteresult()
+    End Sub
+
+    Private Sub Result_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

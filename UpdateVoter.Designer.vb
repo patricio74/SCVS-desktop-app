@@ -53,11 +53,11 @@ Partial Class UpdateVoter
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Indigo
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Gold
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(12, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(70, 26)
@@ -69,6 +69,7 @@ Partial Class UpdateVoter
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label15.Location = New System.Drawing.Point(637, 410)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(76, 18)
@@ -79,6 +80,7 @@ Partial Class UpdateVoter
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label13.Location = New System.Drawing.Point(637, 563)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(60, 18)
@@ -87,10 +89,10 @@ Partial Class UpdateVoter
         '
         'email
         '
-        Me.email.BackColor = System.Drawing.Color.White
+        Me.email.BackColor = System.Drawing.Color.WhiteSmoke
         Me.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.email.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.email.ForeColor = System.Drawing.Color.Indigo
+        Me.email.ForeColor = System.Drawing.Color.Black
         Me.email.Location = New System.Drawing.Point(640, 584)
         Me.email.MaxLength = 50
         Me.email.Name = "email"
@@ -102,6 +104,7 @@ Partial Class UpdateVoter
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label12.Location = New System.Drawing.Point(639, 484)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(131, 18)
@@ -112,6 +115,7 @@ Partial Class UpdateVoter
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label11.Location = New System.Drawing.Point(205, 633)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(105, 18)
@@ -120,10 +124,10 @@ Partial Class UpdateVoter
         '
         'lastname
         '
-        Me.lastname.BackColor = System.Drawing.Color.White
+        Me.lastname.BackColor = System.Drawing.Color.WhiteSmoke
         Me.lastname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.lastname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lastname.ForeColor = System.Drawing.Color.Indigo
+        Me.lastname.ForeColor = System.Drawing.Color.Black
         Me.lastname.Location = New System.Drawing.Point(208, 654)
         Me.lastname.MaxLength = 50
         Me.lastname.Name = "lastname"
@@ -135,6 +139,7 @@ Partial Class UpdateVoter
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label10.Location = New System.Drawing.Point(205, 563)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(124, 18)
@@ -143,10 +148,10 @@ Partial Class UpdateVoter
         '
         'middlename
         '
-        Me.middlename.BackColor = System.Drawing.Color.White
+        Me.middlename.BackColor = System.Drawing.Color.WhiteSmoke
         Me.middlename.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.middlename.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.middlename.ForeColor = System.Drawing.Color.Indigo
+        Me.middlename.ForeColor = System.Drawing.Color.Black
         Me.middlename.Location = New System.Drawing.Point(208, 584)
         Me.middlename.MaxLength = 50
         Me.middlename.Name = "middlename"
@@ -158,6 +163,7 @@ Partial Class UpdateVoter
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label3.Location = New System.Drawing.Point(205, 484)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 18)
@@ -166,10 +172,10 @@ Partial Class UpdateVoter
         '
         'firstname
         '
-        Me.firstname.BackColor = System.Drawing.Color.White
+        Me.firstname.BackColor = System.Drawing.Color.WhiteSmoke
         Me.firstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.firstname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.firstname.ForeColor = System.Drawing.Color.Indigo
+        Me.firstname.ForeColor = System.Drawing.Color.Black
         Me.firstname.Location = New System.Drawing.Point(208, 505)
         Me.firstname.MaxLength = 50
         Me.firstname.Name = "firstname"
@@ -181,6 +187,7 @@ Partial Class UpdateVoter
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label2.Location = New System.Drawing.Point(205, 410)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(158, 18)
@@ -189,10 +196,10 @@ Partial Class UpdateVoter
         '
         'stdNum
         '
-        Me.stdNum.BackColor = System.Drawing.Color.White
+        Me.stdNum.BackColor = System.Drawing.Color.WhiteSmoke
         Me.stdNum.Enabled = False
         Me.stdNum.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stdNum.ForeColor = System.Drawing.Color.Indigo
+        Me.stdNum.ForeColor = System.Drawing.Color.Black
         Me.stdNum.Location = New System.Drawing.Point(208, 431)
         Me.stdNum.MaxLength = 20
         Me.stdNum.Name = "stdNum"
@@ -203,11 +210,11 @@ Partial Class UpdateVoter
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gold
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Indigo
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(616, 636)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(185, 69)
@@ -217,10 +224,10 @@ Partial Class UpdateVoter
         '
         'yrsec
         '
-        Me.yrsec.BackColor = System.Drawing.Color.White
+        Me.yrsec.BackColor = System.Drawing.Color.WhiteSmoke
         Me.yrsec.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.yrsec.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.yrsec.ForeColor = System.Drawing.Color.Indigo
+        Me.yrsec.ForeColor = System.Drawing.Color.Black
         Me.yrsec.Location = New System.Drawing.Point(638, 505)
         Me.yrsec.MaxLength = 10
         Me.yrsec.Name = "yrsec"
@@ -230,10 +237,10 @@ Partial Class UpdateVoter
         '
         'course
         '
-        Me.course.BackColor = System.Drawing.Color.White
+        Me.course.BackColor = System.Drawing.Color.WhiteSmoke
         Me.course.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.course.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.course.ForeColor = System.Drawing.Color.Indigo
+        Me.course.ForeColor = System.Drawing.Color.Black
         Me.course.Location = New System.Drawing.Point(640, 431)
         Me.course.MaxLength = 50
         Me.course.Name = "course"
@@ -243,11 +250,11 @@ Partial Class UpdateVoter
         '
         'Button3
         '
-        Me.Button3.BackColor = System.Drawing.Color.Indigo
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Gold
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Button3.Location = New System.Drawing.Point(826, 636)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(185, 69)
@@ -294,7 +301,7 @@ Partial Class UpdateVoter
         '
         'ListView1
         '
-        Me.ListView1.BackColor = System.Drawing.Color.White
+        Me.ListView1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader4, Me.ColumnHeader3, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7})
         Me.ListView1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView1.FullRowSelect = True
@@ -311,10 +318,11 @@ Partial Class UpdateVoter
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(510, 30)
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(361, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(193, 16)
+        Me.Label1.Size = New System.Drawing.Size(482, 38)
         Me.Label1.TabIndex = 45
         Me.Label1.Text = "Update Voter Information"
         '
@@ -322,7 +330,7 @@ Partial Class UpdateVoter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(249, Byte), Integer), CType(CType(222, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1188, 739)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
@@ -344,6 +352,7 @@ Partial Class UpdateVoter
         Me.Controls.Add(Me.stdNum)
         Me.Controls.Add(Me.Button2)
         Me.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
