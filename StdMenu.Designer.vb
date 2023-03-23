@@ -159,7 +159,7 @@ Partial Class StdMenu
         Me.MaximizeBox = False
         Me.Name = "StdMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Voting System = Student"
+        Me.Text = "Voting System - Student"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

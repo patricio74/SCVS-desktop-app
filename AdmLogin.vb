@@ -9,8 +9,8 @@ Public Class AdmLogin
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         'admin username: admin
-        'password: admin
-        If user.Text = "admin" And pass.Text = "admin" Then
+        'password: 1234
+        If user.Text = "admin" And pass.Text = "1234" Then
             AdmMenu.Show()
             Me.Hide()
             user.Clear()

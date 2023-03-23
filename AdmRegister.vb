@@ -17,7 +17,7 @@ Public Class AdmRegister
 
     'pang clear sa form
     Public Sub Clearballot()
-        stdnum.Clear()
+        stdnum.ResetText()
         firstname.Clear()
         middlename.Clear()
         lastname.Clear()
@@ -70,9 +70,10 @@ Public Class AdmRegister
             'do nothing 
         Else
             'display error message
-            MsgBox("Numbers only allowed", vbCritical, "Error!")
+            MsgBox("Only numbers are allowed", vbCritical, "Error!")
             'clear textbox 
             stdnum.ResetText()
         End If
     End Sub
+
 End Class

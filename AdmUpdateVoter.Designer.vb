@@ -38,7 +38,6 @@ Partial Class AdmUpdateVoter
         Me.stdNum = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.yrsec = New System.Windows.Forms.TextBox()
-        Me.course = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -49,6 +48,7 @@ Partial Class AdmUpdateVoter
         Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.course = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button2
@@ -235,19 +235,6 @@ Partial Class AdmUpdateVoter
         Me.yrsec.TabIndex = 35
         Me.yrsec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'course
-        '
-        Me.course.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.course.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.course.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.course.ForeColor = System.Drawing.Color.Black
-        Me.course.Location = New System.Drawing.Point(640, 431)
-        Me.course.MaxLength = 50
-        Me.course.Name = "course"
-        Me.course.Size = New System.Drawing.Size(351, 27)
-        Me.course.TabIndex = 34
-        Me.course.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
@@ -326,15 +313,28 @@ Partial Class AdmUpdateVoter
         Me.Label1.TabIndex = 45
         Me.Label1.Text = "Update Student Information"
         '
-        'UpdateVoter
+        'course
+        '
+        Me.course.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.course.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.course.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.course.ForeColor = System.Drawing.Color.Black
+        Me.course.Location = New System.Drawing.Point(642, 431)
+        Me.course.MaxLength = 10
+        Me.course.Name = "course"
+        Me.course.Size = New System.Drawing.Size(351, 27)
+        Me.course.TabIndex = 34
+        Me.course.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'AdmUpdateVoter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1188, 739)
+        Me.Controls.Add(Me.course)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.course)
         Me.Controls.Add(Me.yrsec)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Button1)
@@ -357,7 +357,7 @@ Partial Class AdmUpdateVoter
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
-        Me.Name = "UpdateVoter"
+        Me.Name = "AdmUpdateVoter"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Update Voter Information"
         Me.ResumeLayout(False)
@@ -380,7 +380,6 @@ Partial Class AdmUpdateVoter
     Friend WithEvents stdNum As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents yrsec As TextBox
-    Friend WithEvents course As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
@@ -391,4 +390,5 @@ Partial Class AdmUpdateVoter
     Friend WithEvents ColumnHeader7 As ColumnHeader
     Friend WithEvents ListView1 As ListView
     Friend WithEvents Label1 As Label
+    Friend WithEvents course As TextBox
 End Class

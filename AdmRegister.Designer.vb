@@ -256,7 +256,7 @@ Partial Class AdmRegister
         Me.stdnum.TabIndex = 29
         Me.stdnum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Register
+        'AdmRegister
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -284,7 +284,7 @@ Partial Class AdmRegister
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
-        Me.Name = "Register"
+        Me.Name = "AdmRegister"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register"
         Me.ResumeLayout(False)

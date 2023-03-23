@@ -177,7 +177,7 @@ Partial Class AdmMenu
         Me.MaximizeBox = False
         Me.Name = "AdmMenu"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Voting System = Admin"
+        Me.Text = "Voting System - Admin"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
