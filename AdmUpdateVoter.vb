@@ -4,7 +4,7 @@
 
 Imports MySql.Data.MySqlClient
 
-Public Class UpdateVoter
+Public Class AdmUpdateVoter
     Dim connect As MySqlConnection
     Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
     Dim cmd As MySqlCommand
@@ -49,7 +49,7 @@ Public Class UpdateVoter
 
     'return button
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        FormMenu.Show()
+        AdmMenu.Show()
         Me.Hide()
         Call Voterinfo()
         Call Clearinfo()

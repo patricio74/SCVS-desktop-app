@@ -4,7 +4,7 @@
 
 Imports MySql.Data.MySqlClient
 
-Public Class Result
+Public Class AdmResult
     Dim connect As MySqlConnection
     Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
     Dim cmd As MySqlCommand
@@ -14,9 +14,11 @@ Public Class Result
 
     'return
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        FormMenu.Show()
+        AdmMenu.Show()
         Me.Hide()
     End Sub
+
+    'listview
     Public Sub voteresult()
         Try
             ListView1.Items.Clear()
@@ -42,6 +44,7 @@ Public Class Result
         connect.Close()
     End Sub
 
+    'refresh
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Call voteresult()
     End Sub

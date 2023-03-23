@@ -2,16 +2,16 @@
 'BSIT-3F
 'Group 5
 
-Public Class FormMenu
+Public Class AdmMenu
     'add vote
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Register.Show()
+        AdmRegister.Show()
         Me.Hide()
     End Sub
 
     'update vote
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        UpdateVoter.Show()
+        AdmUpdateVoter.Show()
         Me.Hide()
     End Sub
 
@@ -28,11 +28,11 @@ Public Class FormMenu
 
     'view result
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Result.Show()
+        admResult.Show()
         Me.Hide()
     End Sub
 
-    Private Sub FormMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub AdmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

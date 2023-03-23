@@ -29,7 +29,7 @@ Public Class StdLogin
                 adapter.Fill(table)
 
                 If table.Rows.Count > 0 Then
-                    FormMenu.Show()
+                    StdMenu.Show()
                     Me.Hide()
                     user.Clear()
                     pass.Clear()

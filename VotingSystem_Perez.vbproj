@@ -14,6 +14,7 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +27,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -106,16 +106,16 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Ballot.Designer.vb">
-      <DependentUpon>Ballot.vb</DependentUpon>
+    <Compile Include="StdVote.Designer.vb">
+      <DependentUpon>StdVote.vb</DependentUpon>
     </Compile>
-    <Compile Include="Ballot.vb">
+    <Compile Include="StdVote.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenu.Designer.vb">
-      <DependentUpon>FormMenu.vb</DependentUpon>
+    <Compile Include="AdmMenu.Designer.vb">
+      <DependentUpon>AdmMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormMenu.vb">
+    <Compile Include="AdmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StdLogin.vb">
@@ -142,22 +142,34 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="MY_CONNECTION.vb" />
-    <Compile Include="Register.Designer.vb">
-      <DependentUpon>Register.vb</DependentUpon>
+    <Compile Include="AdmRegister.Designer.vb">
+      <DependentUpon>AdmRegister.vb</DependentUpon>
     </Compile>
-    <Compile Include="Register.vb">
+    <Compile Include="AdmRegister.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Result.Designer.vb">
-      <DependentUpon>Result.vb</DependentUpon>
+    <Compile Include="AdmResult.Designer.vb">
+      <DependentUpon>AdmResult.vb</DependentUpon>
     </Compile>
-    <Compile Include="Result.vb">
+    <Compile Include="AdmResult.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateVoter.Designer.vb">
-      <DependentUpon>UpdateVoter.vb</DependentUpon>
+    <Compile Include="StdMenu.Designer.vb">
+      <DependentUpon>StdMenu.vb</DependentUpon>
     </Compile>
-    <Compile Include="UpdateVoter.vb">
+    <Compile Include="StdMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StdResult.Designer.vb">
+      <DependentUpon>StdResult.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StdResult.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmUpdateVoter.Designer.vb">
+      <DependentUpon>AdmUpdateVoter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmUpdateVoter.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -168,11 +180,11 @@
     <EmbeddedResource Include="AdmLogin.resx">
       <DependentUpon>AdmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ballot.resx">
-      <DependentUpon>Ballot.vb</DependentUpon>
+    <EmbeddedResource Include="StdVote.resx">
+      <DependentUpon>StdVote.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenu.resx">
-      <DependentUpon>FormMenu.vb</DependentUpon>
+    <EmbeddedResource Include="AdmMenu.resx">
+      <DependentUpon>AdmMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StdLogin.resx">
       <DependentUpon>StdLogin.vb</DependentUpon>
@@ -183,14 +195,20 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
-      <DependentUpon>Register.vb</DependentUpon>
+    <EmbeddedResource Include="AdmRegister.resx">
+      <DependentUpon>AdmRegister.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Result.resx">
-      <DependentUpon>Result.vb</DependentUpon>
+    <EmbeddedResource Include="AdmResult.resx">
+      <DependentUpon>AdmResult.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateVoter.resx">
-      <DependentUpon>UpdateVoter.vb</DependentUpon>
+    <EmbeddedResource Include="StdMenu.resx">
+      <DependentUpon>StdMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StdResult.resx">
+      <DependentUpon>StdResult.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmUpdateVoter.resx">
+      <DependentUpon>AdmUpdateVoter.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

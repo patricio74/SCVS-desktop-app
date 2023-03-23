@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Register
+Partial Class AdmRegister
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Register
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Register))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AdmRegister))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.course = New System.Windows.Forms.TextBox()
@@ -38,6 +38,8 @@ Partial Class Register
         Me.Label3 = New System.Windows.Forms.Label()
         Me.firstname = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.stdnum = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -47,11 +49,11 @@ Partial Class Register
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(168, 588)
+        Me.Button1.Location = New System.Drawing.Point(207, 661)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(190, 72)
         Me.Button1.TabIndex = 36
-        Me.Button1.Text = "PROCEED"
+        Me.Button1.Text = "REGISTER"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -71,27 +73,29 @@ Partial Class Register
         'course
         '
         Me.course.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.course.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.course.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.course.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.course.ForeColor = System.Drawing.Color.Black
-        Me.course.Location = New System.Drawing.Point(87, 370)
+        Me.course.Location = New System.Drawing.Point(107, 451)
         Me.course.MaxLength = 50
         Me.course.Name = "course"
-        Me.course.Size = New System.Drawing.Size(246, 27)
-        Me.course.TabIndex = 34
+        Me.course.Size = New System.Drawing.Size(290, 27)
+        Me.course.TabIndex = 33
         Me.course.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'yrsec
         '
         Me.yrsec.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.yrsec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.yrsec.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.yrsec.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.yrsec.ForeColor = System.Drawing.Color.Black
-        Me.yrsec.Location = New System.Drawing.Point(89, 433)
-        Me.yrsec.MaxLength = 10
+        Me.yrsec.Location = New System.Drawing.Point(109, 514)
+        Me.yrsec.MaxLength = 50
         Me.yrsec.Name = "yrsec"
-        Me.yrsec.Size = New System.Drawing.Size(244, 27)
-        Me.yrsec.TabIndex = 33
+        Me.yrsec.Size = New System.Drawing.Size(288, 27)
+        Me.yrsec.TabIndex = 34
         Me.yrsec.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
@@ -99,7 +103,7 @@ Partial Class Register
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label15.Location = New System.Drawing.Point(86, 349)
+        Me.Label15.Location = New System.Drawing.Point(106, 430)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(76, 18)
         Me.Label15.TabIndex = 42
@@ -110,7 +114,7 @@ Partial Class Register
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label13.Location = New System.Drawing.Point(86, 481)
+        Me.Label13.Location = New System.Drawing.Point(106, 562)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(60, 18)
         Me.Label13.TabIndex = 41
@@ -119,13 +123,14 @@ Partial Class Register
         'email
         '
         Me.email.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.email.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.ForeColor = System.Drawing.Color.Black
-        Me.email.Location = New System.Drawing.Point(89, 502)
+        Me.email.Location = New System.Drawing.Point(109, 583)
         Me.email.MaxLength = 50
         Me.email.Name = "email"
-        Me.email.Size = New System.Drawing.Size(344, 27)
+        Me.email.Size = New System.Drawing.Size(388, 27)
         Me.email.TabIndex = 35
         Me.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -134,7 +139,7 @@ Partial Class Register
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label12.Location = New System.Drawing.Point(86, 412)
+        Me.Label12.Location = New System.Drawing.Point(106, 493)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(131, 18)
         Me.Label12.TabIndex = 40
@@ -145,7 +150,7 @@ Partial Class Register
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label11.Location = New System.Drawing.Point(86, 283)
+        Me.Label11.Location = New System.Drawing.Point(106, 364)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(105, 18)
         Me.Label11.TabIndex = 39
@@ -154,13 +159,14 @@ Partial Class Register
         'lastname
         '
         Me.lastname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lastname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.lastname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastname.ForeColor = System.Drawing.Color.Black
-        Me.lastname.Location = New System.Drawing.Point(89, 304)
+        Me.lastname.Location = New System.Drawing.Point(109, 385)
         Me.lastname.MaxLength = 50
         Me.lastname.Name = "lastname"
-        Me.lastname.Size = New System.Drawing.Size(344, 27)
+        Me.lastname.Size = New System.Drawing.Size(388, 27)
         Me.lastname.TabIndex = 32
         Me.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -169,7 +175,7 @@ Partial Class Register
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label10.Location = New System.Drawing.Point(86, 213)
+        Me.Label10.Location = New System.Drawing.Point(106, 294)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(124, 18)
         Me.Label10.TabIndex = 38
@@ -178,13 +184,14 @@ Partial Class Register
         'middlename
         '
         Me.middlename.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.middlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.middlename.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.middlename.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlename.ForeColor = System.Drawing.Color.Black
-        Me.middlename.Location = New System.Drawing.Point(89, 234)
+        Me.middlename.Location = New System.Drawing.Point(109, 315)
         Me.middlename.MaxLength = 50
         Me.middlename.Name = "middlename"
-        Me.middlename.Size = New System.Drawing.Size(344, 27)
+        Me.middlename.Size = New System.Drawing.Size(388, 27)
         Me.middlename.TabIndex = 31
         Me.middlename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -193,7 +200,7 @@ Partial Class Register
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label3.Location = New System.Drawing.Point(86, 142)
+        Me.Label3.Location = New System.Drawing.Point(106, 223)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(106, 18)
         Me.Label3.TabIndex = 37
@@ -202,13 +209,14 @@ Partial Class Register
         'firstname
         '
         Me.firstname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.firstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.firstname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstname.ForeColor = System.Drawing.Color.Black
-        Me.firstname.Location = New System.Drawing.Point(89, 163)
+        Me.firstname.Location = New System.Drawing.Point(109, 244)
         Me.firstname.MaxLength = 50
         Me.firstname.Name = "firstname"
-        Me.firstname.Size = New System.Drawing.Size(344, 27)
+        Me.firstname.Size = New System.Drawing.Size(388, 27)
         Me.firstname.TabIndex = 30
         Me.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -218,18 +226,44 @@ Partial Class Register
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(45, 63)
+        Me.Label1.Location = New System.Drawing.Point(57, 67)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(448, 38)
+        Me.Label1.Size = New System.Drawing.Size(492, 38)
         Me.Label1.TabIndex = 43
-        Me.Label1.Text = "Voter Information Form"
+        Me.Label1.Text = "Student Information Form"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label2.Location = New System.Drawing.Point(106, 158)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(156, 18)
+        Me.Label2.TabIndex = 45
+        Me.Label2.Text = "Student number:"
+        '
+        'stdnum
+        '
+        Me.stdnum.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.stdnum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.stdnum.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stdnum.ForeColor = System.Drawing.Color.Black
+        Me.stdnum.Location = New System.Drawing.Point(109, 179)
+        Me.stdnum.MaxLength = 11
+        Me.stdnum.Name = "stdnum"
+        Me.stdnum.Size = New System.Drawing.Size(288, 27)
+        Me.stdnum.TabIndex = 29
+        Me.stdnum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(529, 730)
+        Me.ClientSize = New System.Drawing.Size(593, 780)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.stdnum)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.course)
         Me.Controls.Add(Me.yrsec)
@@ -273,4 +307,6 @@ Partial Class Register
     Friend WithEvents Label3 As Label
     Friend WithEvents firstname As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents stdnum As TextBox
 End Class

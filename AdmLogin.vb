@@ -11,7 +11,7 @@ Public Class AdmLogin
         'admin username: admin
         'password: admin
         If user.Text = "admin" And pass.Text = "admin" Then
-            FormMenu.Show()
+            AdmMenu.Show()
             Me.Hide()
             user.Clear()
             pass.Clear()

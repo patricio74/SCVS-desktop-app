@@ -3,7 +3,7 @@
 'Group 5
 
 Imports MySql.Data.MySqlClient
-Public Class Ballot
+Public Class StdVote
     Dim connect As MySqlConnection
     Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
     Dim cmd As MySqlCommand
@@ -89,7 +89,7 @@ Public Class Ballot
 
             If i <> 0 Then
                 MsgBox("Vote successful!", vbInformation, "Admin")
-                FormMenu.Show()
+                AdmMenu.Show()
                 Me.Hide()
                 Call Clearballot()
             Else
@@ -106,7 +106,7 @@ Public Class Ballot
 
     'return button
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        FormMenu.Show()
+        StdMenu.Show()
         Me.Hide()
         Call Clearballot()
     End Sub
