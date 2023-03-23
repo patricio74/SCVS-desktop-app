@@ -4,15 +4,13 @@
 
 Imports MySql.Data.MySqlClient
 
-Public Class Login
+Public Class StdLogin
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
-    'admin username: admin
-    'admin pass: 123456
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Try
             Dim conn As New MY_CONNECTION()
             Dim adapter As New MySqlDataAdapter()
@@ -22,10 +20,10 @@ Public Class Login
             command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = user.Text
             command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = pass.Text
             If user.Text.Trim() = "" Or user.Text.Trim().ToLower() = "username" Then
-                MessageBox.Show("Enter your email to login", "Missing email", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Username cannot be empty", "Blank username!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf pass.Text.Trim() = "" Or pass.Text.Trim().ToLower() = "password" Then
 
-                MessageBox.Show("Enter your student number to login", "Missing student number", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
                 adapter.SelectCommand = command
                 adapter.Fill(table)
@@ -37,7 +35,7 @@ Public Class Login
                     pass.Clear()
                     CheckBox1.CheckState = False
                 Else
-                    MessageBox.Show("This Username Or/And Password Doesn't Exists", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             End If
 
@@ -47,7 +45,7 @@ Public Class Login
     End Sub
 
     'about
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
         About.Show()
     End Sub
 
@@ -57,11 +55,11 @@ Public Class Login
         If CheckBox1.CheckState = CheckState.Checked Then
             pass.UseSystemPasswordChar = False
             'naiyakXD
-            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\eye2.png")
+            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\show.jpg")
         Else
             pass.UseSystemPasswordChar = True
-            'normal na mata
-            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\eye1.png")
+            'nakapikit
+            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\hide.png")
         End If
     End Sub
 
@@ -69,4 +67,11 @@ Public Class Login
         CheckBox1.Checked = Not CheckBox1.Checked
     End Sub
 
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles lblSwitchLogin.Click
+        user.Clear()
+        pass.Clear()
+        CheckBox1.Checked = False
+        Me.Hide()
+        AdmLogin.Show()
+    End Sub
 End Class

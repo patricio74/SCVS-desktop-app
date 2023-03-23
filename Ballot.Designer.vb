@@ -159,7 +159,6 @@ Partial Class Ballot
         Me.President.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.President.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.President.Cursor = System.Windows.Forms.Cursors.No
-        Me.President.Enabled = False
         Me.President.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.President.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.President.Location = New System.Drawing.Point(21, 114)
@@ -226,7 +225,6 @@ Partial Class Ballot
         Me.VicePres.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.VicePres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.VicePres.Cursor = System.Windows.Forms.Cursors.No
-        Me.VicePres.Enabled = False
         Me.VicePres.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.VicePres.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.VicePres.Location = New System.Drawing.Point(21, 113)
@@ -293,7 +291,6 @@ Partial Class Ballot
         Me.Secretary.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Secretary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Secretary.Cursor = System.Windows.Forms.Cursors.No
-        Me.Secretary.Enabled = False
         Me.Secretary.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Secretary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Secretary.Location = New System.Drawing.Point(21, 113)
@@ -360,7 +357,6 @@ Partial Class Ballot
         Me.Treasurer.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Treasurer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Treasurer.Cursor = System.Windows.Forms.Cursors.No
-        Me.Treasurer.Enabled = False
         Me.Treasurer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Treasurer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Treasurer.Location = New System.Drawing.Point(21, 114)
@@ -427,7 +423,6 @@ Partial Class Ballot
         Me.Auditor.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.Auditor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Auditor.Cursor = System.Windows.Forms.Cursors.No
-        Me.Auditor.Enabled = False
         Me.Auditor.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Auditor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.Auditor.Location = New System.Drawing.Point(21, 113)
@@ -494,7 +489,6 @@ Partial Class Ballot
         Me.PROfficer.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.PROfficer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PROfficer.Cursor = System.Windows.Forms.Cursors.No
-        Me.PROfficer.Enabled = False
         Me.PROfficer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PROfficer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.PROfficer.Location = New System.Drawing.Point(21, 113)
@@ -561,7 +555,6 @@ Partial Class Ballot
         Me.secondrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.secondrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.secondrep.Cursor = System.Windows.Forms.Cursors.No
-        Me.secondrep.Enabled = False
         Me.secondrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.secondrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.secondrep.Location = New System.Drawing.Point(21, 113)
@@ -628,7 +621,6 @@ Partial Class Ballot
         Me.thirdrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.thirdrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.thirdrep.Cursor = System.Windows.Forms.Cursors.No
-        Me.thirdrep.Enabled = False
         Me.thirdrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.thirdrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.thirdrep.Location = New System.Drawing.Point(21, 113)
@@ -673,7 +665,6 @@ Partial Class Ballot
         Me.fourrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.fourrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.fourrep.Cursor = System.Windows.Forms.Cursors.No
-        Me.fourrep.Enabled = False
         Me.fourrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fourrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.fourrep.Location = New System.Drawing.Point(23, 113)
@@ -760,7 +751,6 @@ Partial Class Ballot
         Me.firstrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.firstrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstrep.Cursor = System.Windows.Forms.Cursors.No
-        Me.firstrep.Enabled = False
         Me.firstrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
         Me.firstrep.Location = New System.Drawing.Point(21, 114)

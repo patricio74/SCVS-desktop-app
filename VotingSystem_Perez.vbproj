@@ -99,6 +99,12 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AdmLogin.Designer.vb">
+      <DependentUpon>AdmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Ballot.Designer.vb">
       <DependentUpon>Ballot.vb</DependentUpon>
@@ -112,11 +118,11 @@
     <Compile Include="FormMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.vb">
+    <Compile Include="StdLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
+    <Compile Include="StdLogin.Designer.vb">
+      <DependentUpon>StdLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -159,14 +165,17 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdmLogin.resx">
+      <DependentUpon>AdmLogin.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ballot.resx">
       <DependentUpon>Ballot.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
+    <EmbeddedResource Include="StdLogin.resx">
+      <DependentUpon>StdLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

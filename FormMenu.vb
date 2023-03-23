@@ -1,6 +1,7 @@
 ﻿'created by: Perez, J.P.
 'BSIT-3F
 'Group 5
+
 Public Class FormMenu
     'add vote
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -16,7 +17,7 @@ Public Class FormMenu
 
     'logout button
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Login.Show()
+        StdLogin.Show()
         Me.Hide()
     End Sub
 
