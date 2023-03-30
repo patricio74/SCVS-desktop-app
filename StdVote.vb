@@ -89,7 +89,7 @@ Public Class StdVote
 
             If i <> 0 Then
                 MsgBox("Vote successful!", vbInformation, "Admin")
-                AdmMenu.Show()
+                StdMenu.Show()
                 Me.Hide()
                 Call Clearballot()
             Else
@@ -113,7 +113,7 @@ Public Class StdVote
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         If RadioButton1.Checked = True Then
-            presname = "Abegail Manayaga"
+            presname = "Juanito Santos"
             prespos = "President"
             President.Text = presname
         Else
@@ -123,7 +123,7 @@ Public Class StdVote
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         If RadioButton2.Checked = True Then
-            presname = "Bagtak sa Lamoksi"
+            presname = "Maria Cruz"
             prespos = "President"
             President.Text = presname
         Else
@@ -133,7 +133,7 @@ Public Class StdVote
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         If RadioButton3.Checked = True Then
-            presname = "Tumbleweeds"
+            presname = "Eduardo Reyes"
             prespos = "President"
             President.Text = presname
         Else
@@ -143,7 +143,7 @@ Public Class StdVote
 
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
         If RadioButton4.Checked = True Then
-            vicename = "Jay Roa"
+            vicename = "Rosario Garcia"
             vicepos = "Vice President"
             VicePres.Text = vicename
         Else
@@ -153,7 +153,7 @@ Public Class StdVote
 
     Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
         If RadioButton5.Checked = True Then
-            vicename = "Harold Neri"
+            vicename = "Ferdinand Lim"
             vicepos = "Vice President"
             VicePres.Text = vicename
         Else
@@ -163,7 +163,7 @@ Public Class StdVote
 
     Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
         If RadioButton6.Checked = True Then
-            vicename = "Roldan Kugmo"
+            vicename = "Ysabel Rivera"
             vicepos = "Vice President"
             VicePres.Text = vicename
         Else
@@ -173,7 +173,7 @@ Public Class StdVote
 
     Private Sub RadioButton7_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton7.CheckedChanged
         If RadioButton7.Checked = True Then
-            secname = "Viper Oblak"
+            secname = "Benigno Tan"
             secpos = "Secretary"
             Secretary.Text = secname
         Else
@@ -183,7 +183,7 @@ Public Class StdVote
 
     Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
         If RadioButton8.Checked = True Then
-            secname = "Sage Xingchong"
+            secname = "Victoria Reyes"
             secpos = "Secretary"
             Secretary.Text = secname
         Else
@@ -193,7 +193,7 @@ Public Class StdVote
 
     Private Sub RadioButton9_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton9.CheckedChanged
         If RadioButton9.Checked = True Then
-            secname = "Reyna B. Belinda"
+            secname = "Rafaela Villanueva"
             secpos = "Secretary"
             Secretary.Text = secname
         Else
@@ -203,7 +203,7 @@ Public Class StdVote
 
     Private Sub RadioButton10_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton10.CheckedChanged
         If RadioButton10.Checked = True Then
-            treaname = "Estel Snt"
+            treaname = "Josefa Alcantara"
             treapos = "Treasurer"
             Treasurer.Text = treaname
         Else
@@ -213,7 +213,7 @@ Public Class StdVote
 
     Private Sub RadioButton11_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton11.CheckedChanged
         If RadioButton11.Checked = True Then
-            treaname = "John Perlt"
+            treaname = "Emilio Ramos"
             treapos = "Treasurer"
             Treasurer.Text = treaname
         Else
@@ -223,7 +223,7 @@ Public Class StdVote
 
     Private Sub RadioButton12_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton12.CheckedChanged
         If RadioButton12.Checked = True Then
-            treaname = "Paps Estel"
+            treaname = "Consuelo Cruz"
             treapos = "Treasurer"
             Treasurer.Text = treaname
         Else
@@ -233,7 +233,7 @@ Public Class StdVote
 
     Private Sub RadioButton13_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton13.CheckedChanged
         If RadioButton13.Checked = True Then
-            audname = "Capn Tiags"
+            audname = "Marcelo Mercado"
             audpos = "Auditor"
             Auditor.Text = audname
         Else
@@ -243,7 +243,7 @@ Public Class StdVote
 
     Private Sub RadioButton14_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton14.CheckedChanged
         If RadioButton14.Checked = True Then
-            Auditor.Text = "Eggroll Tiagan"
+            Auditor.Text = "Paz Herrera"
             audname = "Eggroll Tiagan"
             audpos = "Auditor"
             Auditor.Text = audname
@@ -254,7 +254,7 @@ Public Class StdVote
 
     Private Sub RadioButton15_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton15.CheckedChanged
         If RadioButton15.Checked = True Then
-            audname = "Joshua Ackerman"
+            audname = "Ramonito Cruz"
             audpos = "Auditor"
             Auditor.Text = audname
         Else
@@ -264,7 +264,7 @@ Public Class StdVote
 
     Private Sub RadioButton16_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton16.CheckedChanged
         If RadioButton16.Checked = True Then
-            proname = "Blossom"
+            proname = "Trinidad Lopez"
             propos = "Public Relations Officer"
             PROfficer.Text = proname
         Else
@@ -274,7 +274,7 @@ Public Class StdVote
 
     Private Sub RadioButton17_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton17.CheckedChanged
         If RadioButton17.Checked = True Then
-            proname = "Bubbles"
+            proname = "Marcelina Reyes"
             propos = "Public Relations Officer"
             PROfficer.Text = proname
         Else
@@ -284,7 +284,7 @@ Public Class StdVote
 
     Private Sub RadioButton18_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton18.CheckedChanged
         If RadioButton18.Checked = True Then
-            proname = "Buttercup"
+            proname = "Ricardo de la Cruz"
             propos = "Public Relations Officer"
             PROfficer.Text = proname
         Else
@@ -294,7 +294,7 @@ Public Class StdVote
 
     Private Sub RadioButton19_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton19.CheckedChanged
         If RadioButton19.Checked = True Then
-            firsname = "Vien lCeste"
+            firsname = "Romulo Rodriguez"
             firspos = "First Year Representative"
             firstrep.Text = firsname
         Else
@@ -304,7 +304,7 @@ Public Class StdVote
 
     Private Sub RadioButton20_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton20.CheckedChanged
         If RadioButton20.Checked = True Then
-            firsname = "Marvien Lodz"
+            firsname = "Esperanza Gonzales"
             firspos = "First Year Representative"
             firstrep.Text = firsname
         Else
@@ -314,8 +314,7 @@ Public Class StdVote
 
     Private Sub RadioButton21_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton21.CheckedChanged
         If RadioButton21.Checked = True Then
-            firstrep.Text = "Laceste Mabangiz"
-            firsname = "Laceste Mabangiz"
+            firsname = "Felipe Cruz"
             firspos = "First Year Representative"
             firstrep.Text = firsname
         Else
@@ -325,7 +324,7 @@ Public Class StdVote
 
     Private Sub RadioButton22_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton22.CheckedChanged
         If RadioButton22.Checked = True Then
-            seconame = "Ian Bonaparte"
+            seconame = "Ana Luna"
             secopos = "Second Year Representative"
             secondrep.Text = seconame
         Else
@@ -335,7 +334,7 @@ Public Class StdVote
 
     Private Sub RadioButton23_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton23.CheckedChanged
         If RadioButton23.Checked = True Then
-            seconame = "Adrn Buenaflr"
+            seconame = "Gregorio Santos"
             secopos = "Second Year Representative"
             secondrep.Text = seconame
         Else
@@ -345,7 +344,7 @@ Public Class StdVote
 
     Private Sub RadioButton24_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton24.CheckedChanged
         If RadioButton24.Checked = True Then
-            seconame = "Slim Shady"
+            seconame = "Aurora Reyes"
             secopos = "Second Year Representative"
             secondrep.Text = seconame
         Else
@@ -355,7 +354,7 @@ Public Class StdVote
 
     Private Sub RadioButton25_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton25.CheckedChanged
         If RadioButton25.Checked = True Then
-            thirname = "Gomes Mabangis"
+            thirname = "Manuelito Cruz"
             thirpos = "Third Year Representative"
             thirdrep.Text = thirname
         Else
@@ -365,7 +364,7 @@ Public Class StdVote
 
     Private Sub RadioButton26_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton26.CheckedChanged
         If RadioButton26.Checked = True Then
-            thirname = "Malangis P. Mabangis"
+            thirname = "Lourdes de la Cruz"
             thirpos = "Third Year Representative"
             thirdrep.Text = thirname
         Else
@@ -375,7 +374,7 @@ Public Class StdVote
 
     Private Sub RadioButton27_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton27.CheckedChanged
         If RadioButton27.Checked = True Then
-            thirname = "Jaecho Loco"
+            thirname = "Rodrigo Flores"
             thirpos = "Third Year Representative"
             thirdrep.Text = thirname
         Else
@@ -385,7 +384,7 @@ Public Class StdVote
 
     Private Sub RadioButton28_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton28.CheckedChanged
         If RadioButton28.Checked = True Then
-            fourname = "Ja Ve"
+            fourname = "Gloria Sanchez"
             fourpos = "Fourth Year Representative"
             fourrep.Text = fourname
         Else
@@ -395,7 +394,7 @@ Public Class StdVote
 
     Private Sub RadioButton29_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton29.CheckedChanged
         If RadioButton29.Checked = True Then
-            fourname = "Mar T. Sano"
+            fourname = "Domingo Abad"
             fourpos = "Fourth Year Representative"
             fourrep.Text = fourname
         Else
@@ -405,7 +404,7 @@ Public Class StdVote
 
     Private Sub RadioButton30_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton30.CheckedChanged
         If RadioButton30.Checked = True Then
-            fourname = "Jave Martisano"
+            fourname = "Angelita Sarmiento"
             fourpos = "Fourth Year Representative"
             fourrep.Text = fourname
         Else

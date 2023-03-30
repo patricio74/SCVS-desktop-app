@@ -90,7 +90,7 @@ Partial Class StdVote
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -108,10 +108,10 @@ Partial Class StdVote
         Me.RadioButton1.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(189, 22)
+        Me.RadioButton1.Size = New System.Drawing.Size(166, 22)
         Me.RadioButton1.TabIndex = 3
         Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "01. Abegail Manayaga"
+        Me.RadioButton1.Text = "01. Juanito Santos"
         Me.RadioButton1.UseVisualStyleBackColor = True
         '
         'RadioButton2
@@ -120,10 +120,10 @@ Partial Class StdVote
         Me.RadioButton2.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton2.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(206, 22)
+        Me.RadioButton2.Size = New System.Drawing.Size(136, 22)
         Me.RadioButton2.TabIndex = 4
         Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "02. Bagtak sa Lamokski"
+        Me.RadioButton2.Text = "02. Maria Cruz"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
         'RadioButton3
@@ -132,10 +132,10 @@ Partial Class StdVote
         Me.RadioButton3.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton3.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(157, 22)
+        Me.RadioButton3.Size = New System.Drawing.Size(167, 22)
         Me.RadioButton3.TabIndex = 5
         Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "03. Tumbleweeds"
+        Me.RadioButton3.Text = "03. Eduardo Reyes"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -156,7 +156,7 @@ Partial Class StdVote
         '
         'President
         '
-        Me.President.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.President.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.President.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.President.Cursor = System.Windows.Forms.Cursors.No
         Me.President.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -174,10 +174,10 @@ Partial Class StdVote
         Me.RadioButton6.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton6.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(154, 22)
+        Me.RadioButton6.Size = New System.Drawing.Size(143, 22)
         Me.RadioButton6.TabIndex = 5
         Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "6. Roldan Kugmo"
+        Me.RadioButton6.Text = "6. Ysabel Rivera"
         Me.RadioButton6.UseVisualStyleBackColor = True
         '
         'RadioButton5
@@ -186,10 +186,10 @@ Partial Class StdVote
         Me.RadioButton5.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton5.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(128, 22)
+        Me.RadioButton5.Size = New System.Drawing.Size(149, 22)
         Me.RadioButton5.TabIndex = 4
         Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "5. Harold Neri"
+        Me.RadioButton5.Text = "5. Ferdinand Lim"
         Me.RadioButton5.UseVisualStyleBackColor = True
         '
         'RadioButton4
@@ -198,10 +198,10 @@ Partial Class StdVote
         Me.RadioButton4.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton4.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(105, 22)
+        Me.RadioButton4.Size = New System.Drawing.Size(154, 22)
         Me.RadioButton4.TabIndex = 3
         Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "4. Jay Roa"
+        Me.RadioButton4.Text = "4. Rosario Garcia"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -222,7 +222,7 @@ Partial Class StdVote
         '
         'VicePres
         '
-        Me.VicePres.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.VicePres.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.VicePres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.VicePres.Cursor = System.Windows.Forms.Cursors.No
         Me.VicePres.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -240,10 +240,10 @@ Partial Class StdVote
         Me.RadioButton9.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton9.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(169, 22)
+        Me.RadioButton9.Size = New System.Drawing.Size(178, 22)
         Me.RadioButton9.TabIndex = 5
         Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "9. Reyna B. Belinda"
+        Me.RadioButton9.Text = "9. Rafaela Villanueva"
         Me.RadioButton9.UseVisualStyleBackColor = True
         '
         'RadioButton8
@@ -252,10 +252,10 @@ Partial Class StdVote
         Me.RadioButton8.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton8.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(164, 22)
+        Me.RadioButton8.Size = New System.Drawing.Size(151, 22)
         Me.RadioButton8.TabIndex = 4
         Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "8. Sage Xingchong"
+        Me.RadioButton8.Text = "8. Victoria Reyes"
         Me.RadioButton8.UseVisualStyleBackColor = True
         '
         'RadioButton7
@@ -264,10 +264,10 @@ Partial Class StdVote
         Me.RadioButton7.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton7.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(134, 22)
+        Me.RadioButton7.Size = New System.Drawing.Size(135, 22)
         Me.RadioButton7.TabIndex = 3
         Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "7. Viper O'blak"
+        Me.RadioButton7.Text = "7. Benigno Tan"
         Me.RadioButton7.UseVisualStyleBackColor = True
         '
         'GroupBox3
@@ -288,7 +288,7 @@ Partial Class StdVote
         '
         'Secretary
         '
-        Me.Secretary.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Secretary.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Secretary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Secretary.Cursor = System.Windows.Forms.Cursors.No
         Me.Secretary.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -306,10 +306,10 @@ Partial Class StdVote
         Me.RadioButton12.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton12.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton12.Name = "RadioButton12"
-        Me.RadioButton12.Size = New System.Drawing.Size(131, 22)
+        Me.RadioButton12.Size = New System.Drawing.Size(165, 22)
         Me.RadioButton12.TabIndex = 5
         Me.RadioButton12.TabStop = True
-        Me.RadioButton12.Text = "12. Paps Estel"
+        Me.RadioButton12.Text = "12. Consuelo Cruz"
         Me.RadioButton12.UseVisualStyleBackColor = True
         '
         'RadioButton11
@@ -318,10 +318,10 @@ Partial Class StdVote
         Me.RadioButton11.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton11.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton11.Name = "RadioButton11"
-        Me.RadioButton11.Size = New System.Drawing.Size(129, 22)
+        Me.RadioButton11.Size = New System.Drawing.Size(156, 22)
         Me.RadioButton11.TabIndex = 4
         Me.RadioButton11.TabStop = True
-        Me.RadioButton11.Text = "11. John Perlt"
+        Me.RadioButton11.Text = "11. Emilio Ramos"
         Me.RadioButton11.UseVisualStyleBackColor = True
         '
         'RadioButton10
@@ -330,10 +330,10 @@ Partial Class StdVote
         Me.RadioButton10.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton10.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton10.Name = "RadioButton10"
-        Me.RadioButton10.Size = New System.Drawing.Size(121, 22)
+        Me.RadioButton10.Size = New System.Drawing.Size(178, 22)
         Me.RadioButton10.TabIndex = 3
         Me.RadioButton10.TabStop = True
-        Me.RadioButton10.Text = "10. Estel Snt"
+        Me.RadioButton10.Text = "10. Josefa Alcantara"
         Me.RadioButton10.UseVisualStyleBackColor = True
         '
         'GroupBox4
@@ -354,7 +354,7 @@ Partial Class StdVote
         '
         'Treasurer
         '
-        Me.Treasurer.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Treasurer.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Treasurer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Treasurer.Cursor = System.Windows.Forms.Cursors.No
         Me.Treasurer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -372,10 +372,10 @@ Partial Class StdVote
         Me.RadioButton15.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton15.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton15.Name = "RadioButton15"
-        Me.RadioButton15.Size = New System.Drawing.Size(188, 22)
+        Me.RadioButton15.Size = New System.Drawing.Size(168, 22)
         Me.RadioButton15.TabIndex = 5
         Me.RadioButton15.TabStop = True
-        Me.RadioButton15.Text = "15. Joshua Ackerman"
+        Me.RadioButton15.Text = "27. Ramonito Cruz"
         Me.RadioButton15.UseVisualStyleBackColor = True
         '
         'RadioButton14
@@ -384,10 +384,10 @@ Partial Class StdVote
         Me.RadioButton14.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton14.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton14.Name = "RadioButton14"
-        Me.RadioButton14.Size = New System.Drawing.Size(158, 22)
+        Me.RadioButton14.Size = New System.Drawing.Size(144, 22)
         Me.RadioButton14.TabIndex = 4
         Me.RadioButton14.TabStop = True
-        Me.RadioButton14.Text = "14. Eggroll Tiagan"
+        Me.RadioButton14.Text = "26. Paz Herrera"
         Me.RadioButton14.UseVisualStyleBackColor = True
         '
         'RadioButton13
@@ -396,10 +396,10 @@ Partial Class StdVote
         Me.RadioButton13.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton13.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton13.Name = "RadioButton13"
-        Me.RadioButton13.Size = New System.Drawing.Size(137, 22)
+        Me.RadioButton13.Size = New System.Drawing.Size(183, 22)
         Me.RadioButton13.TabIndex = 3
         Me.RadioButton13.TabStop = True
-        Me.RadioButton13.Text = "13. Capn Tiags"
+        Me.RadioButton13.Text = "25. Marcelo Mercado"
         Me.RadioButton13.UseVisualStyleBackColor = True
         '
         'GroupBox5
@@ -420,7 +420,7 @@ Partial Class StdVote
         '
         'Auditor
         '
-        Me.Auditor.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Auditor.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Auditor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Auditor.Cursor = System.Windows.Forms.Cursors.No
         Me.Auditor.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -438,10 +438,10 @@ Partial Class StdVote
         Me.RadioButton18.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton18.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton18.Name = "RadioButton18"
-        Me.RadioButton18.Size = New System.Drawing.Size(128, 22)
+        Me.RadioButton18.Size = New System.Drawing.Size(191, 22)
         Me.RadioButton18.TabIndex = 5
         Me.RadioButton18.TabStop = True
-        Me.RadioButton18.Text = "18. Buttercup"
+        Me.RadioButton18.Text = "30. Ricardo de la Cruz"
         Me.RadioButton18.UseVisualStyleBackColor = True
         '
         'RadioButton17
@@ -450,10 +450,10 @@ Partial Class StdVote
         Me.RadioButton17.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton17.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton17.Name = "RadioButton17"
-        Me.RadioButton17.Size = New System.Drawing.Size(113, 22)
+        Me.RadioButton17.Size = New System.Drawing.Size(175, 22)
         Me.RadioButton17.TabIndex = 4
         Me.RadioButton17.TabStop = True
-        Me.RadioButton17.Text = "17. Bubbles"
+        Me.RadioButton17.Text = "29. Marcelina Reyes"
         Me.RadioButton17.UseVisualStyleBackColor = True
         '
         'RadioButton16
@@ -462,10 +462,10 @@ Partial Class StdVote
         Me.RadioButton16.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton16.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton16.Name = "RadioButton16"
-        Me.RadioButton16.Size = New System.Drawing.Size(120, 22)
+        Me.RadioButton16.Size = New System.Drawing.Size(162, 22)
         Me.RadioButton16.TabIndex = 3
         Me.RadioButton16.TabStop = True
-        Me.RadioButton16.Text = "16. Blossom"
+        Me.RadioButton16.Text = "28. Trinidad Lopez"
         Me.RadioButton16.UseVisualStyleBackColor = True
         '
         'GroupBox6
@@ -486,7 +486,7 @@ Partial Class StdVote
         '
         'PROfficer
         '
-        Me.PROfficer.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.PROfficer.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.PROfficer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PROfficer.Cursor = System.Windows.Forms.Cursors.No
         Me.PROfficer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -504,10 +504,10 @@ Partial Class StdVote
         Me.RadioButton24.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton24.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton24.Name = "RadioButton24"
-        Me.RadioButton24.Size = New System.Drawing.Size(138, 22)
+        Me.RadioButton24.Size = New System.Drawing.Size(156, 22)
         Me.RadioButton24.TabIndex = 5
         Me.RadioButton24.TabStop = True
-        Me.RadioButton24.Text = "24. Slim Shady"
+        Me.RadioButton24.Text = "18. Aurora Reyes"
         Me.RadioButton24.UseVisualStyleBackColor = True
         '
         'RadioButton23
@@ -516,10 +516,10 @@ Partial Class StdVote
         Me.RadioButton23.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton23.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton23.Name = "RadioButton23"
-        Me.RadioButton23.Size = New System.Drawing.Size(155, 22)
+        Me.RadioButton23.Size = New System.Drawing.Size(178, 22)
         Me.RadioButton23.TabIndex = 4
         Me.RadioButton23.TabStop = True
-        Me.RadioButton23.Text = "23. Adrn Buenaflr"
+        Me.RadioButton23.Text = "17. Gregorio Santos"
         Me.RadioButton23.UseVisualStyleBackColor = True
         '
         'RadioButton22
@@ -528,10 +528,10 @@ Partial Class StdVote
         Me.RadioButton22.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton22.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton22.Name = "RadioButton22"
-        Me.RadioButton22.Size = New System.Drawing.Size(161, 22)
+        Me.RadioButton22.Size = New System.Drawing.Size(124, 22)
         Me.RadioButton22.TabIndex = 3
         Me.RadioButton22.TabStop = True
-        Me.RadioButton22.Text = "22. Ian Bonaparte"
+        Me.RadioButton22.Text = "16. Ana Luna"
         Me.RadioButton22.UseVisualStyleBackColor = True
         '
         'GroupBox8
@@ -552,7 +552,7 @@ Partial Class StdVote
         '
         'secondrep
         '
-        Me.secondrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.secondrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.secondrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.secondrep.Cursor = System.Windows.Forms.Cursors.No
         Me.secondrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -570,10 +570,10 @@ Partial Class StdVote
         Me.RadioButton27.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton27.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton27.Name = "RadioButton27"
-        Me.RadioButton27.Size = New System.Drawing.Size(149, 22)
+        Me.RadioButton27.Size = New System.Drawing.Size(163, 22)
         Me.RadioButton27.TabIndex = 6
         Me.RadioButton27.TabStop = True
-        Me.RadioButton27.Text = "27. Jaecho Loco"
+        Me.RadioButton27.Text = "21. Rodrigo Flores"
         Me.RadioButton27.UseVisualStyleBackColor = True
         '
         'RadioButton26
@@ -582,10 +582,10 @@ Partial Class StdVote
         Me.RadioButton26.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton26.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton26.Name = "RadioButton26"
-        Me.RadioButton26.Size = New System.Drawing.Size(210, 22)
+        Me.RadioButton26.Size = New System.Drawing.Size(195, 22)
         Me.RadioButton26.TabIndex = 8
         Me.RadioButton26.TabStop = True
-        Me.RadioButton26.Text = "26. Malangis P. Mabangis"
+        Me.RadioButton26.Text = "20. Lourdes de la Cruz"
         Me.RadioButton26.UseVisualStyleBackColor = True
         '
         'RadioButton25
@@ -594,10 +594,10 @@ Partial Class StdVote
         Me.RadioButton25.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton25.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton25.Name = "RadioButton25"
-        Me.RadioButton25.Size = New System.Drawing.Size(184, 22)
+        Me.RadioButton25.Size = New System.Drawing.Size(167, 22)
         Me.RadioButton25.TabIndex = 7
         Me.RadioButton25.TabStop = True
-        Me.RadioButton25.Text = "25. Gomes Mabangis"
+        Me.RadioButton25.Text = "19. Manuelito Cruz"
         Me.RadioButton25.UseVisualStyleBackColor = True
         '
         'GroupBox11
@@ -618,7 +618,7 @@ Partial Class StdVote
         '
         'thirdrep
         '
-        Me.thirdrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.thirdrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.thirdrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.thirdrep.Cursor = System.Windows.Forms.Cursors.No
         Me.thirdrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -636,7 +636,7 @@ Partial Class StdVote
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(758, 550)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(258, 87)
@@ -662,7 +662,7 @@ Partial Class StdVote
         '
         'fourrep
         '
-        Me.fourrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.fourrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.fourrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.fourrep.Cursor = System.Windows.Forms.Cursors.No
         Me.fourrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -680,10 +680,10 @@ Partial Class StdVote
         Me.RadioButton28.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton28.Location = New System.Drawing.Point(16, 27)
         Me.RadioButton28.Name = "RadioButton28"
-        Me.RadioButton28.Size = New System.Drawing.Size(105, 22)
+        Me.RadioButton28.Size = New System.Drawing.Size(167, 22)
         Me.RadioButton28.TabIndex = 15
         Me.RadioButton28.TabStop = True
-        Me.RadioButton28.Text = "101. Ja Ve"
+        Me.RadioButton28.Text = "22. Gloria Sanchez"
         Me.RadioButton28.UseVisualStyleBackColor = True
         '
         'RadioButton30
@@ -692,10 +692,10 @@ Partial Class StdVote
         Me.RadioButton30.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton30.Location = New System.Drawing.Point(16, 79)
         Me.RadioButton30.Name = "RadioButton30"
-        Me.RadioButton30.Size = New System.Drawing.Size(178, 22)
+        Me.RadioButton30.Size = New System.Drawing.Size(196, 22)
         Me.RadioButton30.TabIndex = 14
         Me.RadioButton30.TabStop = True
-        Me.RadioButton30.Text = "103. Jave Martisano"
+        Me.RadioButton30.Text = "24. Angelita Sarmiento"
         Me.RadioButton30.UseVisualStyleBackColor = True
         '
         'RadioButton29
@@ -704,10 +704,10 @@ Partial Class StdVote
         Me.RadioButton29.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton29.Location = New System.Drawing.Point(16, 53)
         Me.RadioButton29.Name = "RadioButton29"
-        Me.RadioButton29.Size = New System.Drawing.Size(154, 22)
+        Me.RadioButton29.Size = New System.Drawing.Size(165, 22)
         Me.RadioButton29.TabIndex = 16
         Me.RadioButton29.TabStop = True
-        Me.RadioButton29.Text = "102. Mar T. Sano"
+        Me.RadioButton29.Text = "23. Domingo Abad"
         Me.RadioButton29.UseVisualStyleBackColor = True
         '
         'RadioButton21
@@ -716,10 +716,10 @@ Partial Class StdVote
         Me.RadioButton21.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton21.Location = New System.Drawing.Point(21, 79)
         Me.RadioButton21.Name = "RadioButton21"
-        Me.RadioButton21.Size = New System.Drawing.Size(188, 22)
+        Me.RadioButton21.Size = New System.Drawing.Size(138, 22)
         Me.RadioButton21.TabIndex = 5
         Me.RadioButton21.TabStop = True
-        Me.RadioButton21.Text = "21. Laceste Mabangiz"
+        Me.RadioButton21.Text = "15. Felipe Cruz"
         Me.RadioButton21.UseVisualStyleBackColor = True
         '
         'RadioButton20
@@ -728,10 +728,10 @@ Partial Class StdVote
         Me.RadioButton20.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton20.Location = New System.Drawing.Point(21, 53)
         Me.RadioButton20.Name = "RadioButton20"
-        Me.RadioButton20.Size = New System.Drawing.Size(155, 22)
+        Me.RadioButton20.Size = New System.Drawing.Size(207, 22)
         Me.RadioButton20.TabIndex = 4
         Me.RadioButton20.TabStop = True
-        Me.RadioButton20.Text = "20. Marvien Lodz"
+        Me.RadioButton20.Text = "14. Esperanza Gonzales"
         Me.RadioButton20.UseVisualStyleBackColor = True
         '
         'RadioButton19
@@ -740,15 +740,15 @@ Partial Class StdVote
         Me.RadioButton19.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton19.Location = New System.Drawing.Point(21, 27)
         Me.RadioButton19.Name = "RadioButton19"
-        Me.RadioButton19.Size = New System.Drawing.Size(142, 22)
+        Me.RadioButton19.Size = New System.Drawing.Size(192, 22)
         Me.RadioButton19.TabIndex = 3
         Me.RadioButton19.TabStop = True
-        Me.RadioButton19.Text = "19. Vien l'Ceste"
+        Me.RadioButton19.Text = "13. Romulo Rodriguez"
         Me.RadioButton19.UseVisualStyleBackColor = True
         '
         'firstrep
         '
-        Me.firstrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.firstrep.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.firstrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstrep.Cursor = System.Windows.Forms.Cursors.No
         Me.firstrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -788,11 +788,11 @@ Partial Class StdVote
         Me.Label1.TabIndex = 44
         Me.Label1.Text = "Automated Student Council Voting System Form"
         '
-        'Ballot
+        'StdVote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1188, 739)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox6)
@@ -812,9 +812,9 @@ Partial Class StdVote
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
-        Me.Name = "Ballot"
+        Me.Name = "StdVote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Ballot"
+        Me.Text = "ASCVS Vote Form"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

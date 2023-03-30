@@ -34,7 +34,7 @@ Partial Class AdmResult
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -65,12 +65,11 @@ Partial Class AdmResult
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "# of votes"
-        Me.ColumnHeader1.Width = 78
+        Me.ColumnHeader1.Width = 79
         '
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Candidate name"
-        Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader2.Width = 301
         '
         'ColumnHeader3
@@ -85,7 +84,7 @@ Partial Class AdmResult
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Button1.Location = New System.Drawing.Point(268, 679)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 53)
@@ -109,7 +108,7 @@ Partial Class AdmResult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(713, 756)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -122,7 +121,7 @@ Partial Class AdmResult
         Me.MaximizeBox = False
         Me.Name = "AdmResult"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Result"
+        Me.Text = "Vote Result"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

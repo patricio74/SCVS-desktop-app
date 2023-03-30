@@ -21,13 +21,13 @@ Public Class AdmRegister
         firstname.Clear()
         middlename.Clear()
         lastname.Clear()
-        course.Clear()
-        yrsec.Clear()
+        cboxCourse.SelectedIndex = -1
+        cboxYear.SelectedIndex = -1
         email.Clear()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If firstname.Text = "" Or lastname.Text = "" Or stdnum.Text = "" Or middlename.Text = "" Or course.Text = "" Or yrsec.Text = "" Or email.Text = "" Then
+        If firstname.Text = "" Or lastname.Text = "" Or stdnum.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Then
             MessageBox.Show("fill up all fields to continue.", "Error!")
         Else
             Try
@@ -35,7 +35,7 @@ Public Class AdmRegister
                 connect.Open()
                 Dim SQL As String =
                     "INSERT INTO voters (Student_number, First_name, Last_name, Middle_name, Course, Year, Email) 
-                values('" & stdnum.Text & "','" & firstname.Text & "','" & lastname.Text & "','" & middlename.Text & "','" & course.Text & "','" & yrsec.Text & "','" & email.Text & "');"
+                values('" & stdnum.Text & "','" & firstname.Text & "','" & lastname.Text & "','" & middlename.Text & "','" & cboxCourse.Text & "','" & cboxYear.Text & "','" & email.Text & "');"
                 cmd = New MySqlCommand(SQL, connect)
                 Dim i As Integer = cmd.ExecuteNonQuery
 

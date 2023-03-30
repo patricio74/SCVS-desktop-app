@@ -38,8 +38,8 @@ Public Class AdmUpdateVoter
         firstname.Clear()
         middlename.Clear()
         lastname.Clear()
-        course.Dispose()
-        yrsec.Clear()
+        cboxCourse.SelectedIndex = -1
+        cboxYear.SelectedIndex = -1
         email.Clear()
     End Sub
 
@@ -61,7 +61,7 @@ Public Class AdmUpdateVoter
             connect = New MySqlConnection(constring)
             connect.Open()
             Dim SQL As String =
-                "UPDATE voters SET First_name ='" & firstname.Text & "', Last_name ='" & lastname.Text & "', Middle_name ='" & middlename.Text & "', Course ='" & course.Text & "',Year ='" & yrsec.Text & "', Email ='" & email.Text & "'   
+                "UPDATE voters SET First_name ='" & firstname.Text & "', Last_name ='" & lastname.Text & "', Middle_name ='" & middlename.Text & "', Course ='" & cboxCourse.Text & "',Year ='" & cboxYear.Text & "', Email ='" & email.Text & "'   
                 WHERE Student_number ='" & stdNum.Text & "' "
             cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery
@@ -85,8 +85,8 @@ Public Class AdmUpdateVoter
             firstname.Text = ListView1.SelectedItems(0).SubItems(1).Text
             lastname.Text = ListView1.SelectedItems(0).SubItems(2).Text
             middlename.Text = ListView1.SelectedItems(0).SubItems(3).Text
-            course.Text = ListView1.SelectedItems(0).SubItems(4).Text
-            yrsec.Text = ListView1.SelectedItems(0).SubItems(5).Text
+            cboxCourse.Text = ListView1.SelectedItems(0).SubItems(4).Text
+            cboxYear.Text = ListView1.SelectedItems(0).SubItems(5).Text
             email.Text = ListView1.SelectedItems(0).SubItems(6).Text
         End If
     End Sub
@@ -111,5 +111,9 @@ Public Class AdmUpdateVoter
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub course_TextChanged(sender As Object, e As EventArgs)
+
     End Sub
 End Class
