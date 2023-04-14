@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-03-2023 a las 21:10:32
+-- Tiempo de generación: 30-03-2023 a las 19:48:59
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -38,46 +38,26 @@ CREATE TABLE `candidates` (
 --
 
 INSERT INTO `candidates` (`Candidate_number`, `full_name`, `Position`) VALUES
-(1, 'Abegail Manayaga', 'President'),
-(2, 'Jay Roa', 'Vice President'),
-(3, 'Viper Oblak', 'Secretary'),
-(4, 'Estel Snt', 'Treasurer'),
-(5, 'Capn Tiags', 'Auditor'),
-(6, 'Blossom', 'Public Relations Officer'),
-(7, 'Vien lCeste', 'First Year Representative'),
-(8, 'Ian Bonaparte', 'Second Year Representative'),
-(9, 'Gomes Mabangis', 'Third Year Representative'),
-(10, 'Ja Ve', 'Fourth Year Representative'),
-(11, 'Abegail Manayaga', 'President'),
-(12, 'Harold Neri', 'Vice President'),
-(13, 'Viper Oblak', 'Secretary'),
-(14, 'Paps Estel', 'Treasurer'),
-(15, 'Capn Tiags', 'Auditor'),
-(16, 'Bubbles', 'Public Relations Officer'),
-(17, 'Laceste Mabangiz', 'First Year Representative'),
-(18, 'Ian Bonaparte', 'Second Year Representative'),
-(19, 'Malangis P. Mabangis', 'Third Year Representative'),
-(20, 'Jave Martisano', 'Fourth Year Representative'),
-(21, 'Abegail Manayaga', 'President'),
-(22, 'Roldan Kugmo', 'Vice President'),
-(23, 'Sage Xingchong', 'Secretary'),
-(24, 'Estel Snt', 'Treasurer'),
-(25, 'Capn Tiags', 'Auditor'),
-(26, 'Blossom', 'Public Relations Officer'),
-(27, 'Laceste Mabangiz', 'First Year Representative'),
-(28, 'Slim Shady', 'Second Year Representative'),
-(29, 'Malangis P. Mabangis', 'Third Year Representative'),
-(30, 'Ja Ve', 'Fourth Year Representative'),
-(31, '', ''),
-(32, '', ''),
-(33, '', ''),
-(34, '', ''),
-(35, '', ''),
-(36, '', ''),
-(37, '', ''),
-(38, '', ''),
-(39, '', ''),
-(40, '', '');
+(1, 'Eduardo Reyes', 'President'),
+(2, 'Ysabel Rivera', 'Vice President'),
+(3, 'Benigno Tan', 'Secretary'),
+(4, 'Emilio Ramos', 'Treasurer'),
+(5, 'Ramonito Cruz', 'Auditor'),
+(6, 'Trinidad Lopez', 'Public Relations Officer'),
+(7, 'Romulo Rodriguez', 'First Year Representative'),
+(8, 'Aurora Reyes', 'Second Year Representative'),
+(9, 'Manuelito Cruz', 'Third Year Representative'),
+(10, 'Domingo Abad', 'Fourth Year Representative'),
+(11, 'Eduardo Reyes', 'President'),
+(12, 'Rosario Garcia', 'Vice President'),
+(13, 'Victoria Reyes', 'Secretary'),
+(14, 'Consuelo Cruz', 'Treasurer'),
+(15, 'Marcelo Mercado', 'Auditor'),
+(16, 'Trinidad Lopez', 'Public Relations Officer'),
+(17, 'Romulo Rodriguez', 'First Year Representative'),
+(18, 'Ana Luna', 'Second Year Representative'),
+(19, 'Rodrigo Flores', 'Third Year Representative'),
+(20, 'Angelita Sarmiento', 'Fourth Year Representative');
 
 -- --------------------------------------------------------
 
@@ -101,11 +81,11 @@ CREATE TABLE `voters` (
 
 INSERT INTO `voters` (`Student_number`, `First_name`, `Last_name`, `Middle_name`, `Course`, `Year`, `Email`) VALUES
 (0, '', '', '', '', '', ''),
-(123456, 'PATRICK', 'PEREZ', 'AGMC', 'BSIT', '3F', 'pat@rick'),
-(123457, 'JAY', 'ROLDAN', 'HAROLD', 'BSIT', '3F', 'rold@roldan'),
-(123458, 'JAVE', 'MARTISANO', 'MAR', 'BSIT', '3F', 'jave@martisano'),
-(123459, 'LIEZEL', 'ASURTO', 'ASURTO', 'BSIT', '3F', 'liezel@azurto'),
-(123460, 'HAZELLE', 'CAROLINO', 'CAROLINO', 'BSIT', '3F', 'hazelle@carolino');
+(123456, 'PATRICK', 'PEREZ', 'AGMC', 'BS Information Technology', '3C', 'pat@rick'),
+(123457, 'JAY', 'ROLDAN', 'HAROLD', 'BS Secondary Education', '1A', 'rold@roldan'),
+(123458, 'JAVE', 'MARTISANO', 'MAR', 'BS Computer Engineering', '4B', 'jave@martisano'),
+(123459, 'LIEZEL', 'ASURTO', 'ASURTO', 'BS Entrepreneurship', '1D', 'liezel@azurto'),
+(123460, 'HAZELLE', 'CAROLINO', 'CAROLINO', 'BS Business Management', '2B', 'hazelle@carolino');
 
 --
 -- Índices para tablas volcadas
@@ -131,7 +111,7 @@ ALTER TABLE `voters`
 -- AUTO_INCREMENT de la tabla `candidates`
 --
 ALTER TABLE `candidates`
-  MODIFY `Candidate_number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `Candidate_number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
