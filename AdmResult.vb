@@ -7,6 +7,7 @@ Imports MySql.Data.MySqlClient
 Public Class AdmResult
     Dim connect As MySqlConnection
     Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
+    'Dim constring As String = "DATA SOURCE = db4free.net; USER id = patricc; password=votingsystem; database=voting_system; port=3306;"
     Dim cmd As MySqlCommand
     Dim itemcol(999) As String
     Dim da As MySqlDataAdapter

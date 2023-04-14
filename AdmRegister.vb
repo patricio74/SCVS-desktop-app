@@ -2,17 +2,21 @@
 'BSIT-3F
 'Group 5
 
-Imports Microsoft.VisualBasic.Devices
 Imports MySql.Data.MySqlClient
-Imports System.Runtime.Remoting.Contexts
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class AdmRegister
     Dim connect As MySqlConnection
-    Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
+    Dim constring As String = "server = localhost; userid = root; DATABASE = votingsystem_perez"
+    'Dim constring As String = "server=db4free.net ; userid=patricc; password=votingsystem; database=voting_system; port=3306;"
     Dim cmd As MySqlCommand
-    Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            connect = New MySqlConnection(constring)
+            MsgBox("Successfuly connected to database!")
+        Catch ex As Exception
+            MsgBox("Failed to connect to database!")
+        End Try
     End Sub
 
     'pang clear sa form
@@ -36,7 +40,7 @@ Public Class AdmRegister
                 Dim SQL As String =
                     "INSERT INTO voters (Student_number, First_name, Last_name, Middle_name, Course, Year, Email) 
                 values('" & stdnum.Text & "','" & firstname.Text & "','" & lastname.Text & "','" & middlename.Text & "','" & cboxCourse.Text & "','" & cboxYear.Text & "','" & email.Text & "');"
-                cmd = New MySqlCommand(SQL, connect)
+                Dim cmd = New MySqlCommand(SQL, connect)
                 Dim i As Integer = cmd.ExecuteNonQuery
 
                 If i <> 0 Or firstname.Text IsNot "" Then
@@ -72,7 +76,7 @@ Public Class AdmRegister
             'display error message
             MsgBox("Only numbers are allowed", vbCritical, "Error!")
             'clear textbox 
-            stdnum.ResetText()
+            stdnum.Clear()
         End If
     End Sub
 
