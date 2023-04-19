@@ -6,19 +6,19 @@ Imports MySql.Data.MySqlClient
 
 Public Class StdLogin
 
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Try
-            Dim conn As New MY_CONNECTION()
-            Dim adapter As New MySqlDataAdapter()
-            Dim table As New DataTable()
-            Dim command As New MySqlCommand("SELECT `email`, `student_number` FROM `voters` WHERE `email` = @usn AND `student_number` = @pass", conn.getConnection())
+            Dim conn As New MySqlConnection("server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
+
+            Dim command As New MySqlCommand("SELECT `email`, `student_number` FROM `voters` WHERE `email` = @usn AND `student_number` = @pass")
 
             command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = user.Text
             command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = pass.Text
+            Dim adapter As New MySqlDataAdapter()
+            Dim table As New DataTable()
+            adapter.Fill(table)
+
             If user.Text.Trim() = "" Or user.Text.Trim().ToLower() = "username" Then
                 MessageBox.Show("Username cannot be empty", "Blank username!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ElseIf pass.Text.Trim() = "" Or pass.Text.Trim().ToLower() = "password" Then
@@ -73,5 +73,8 @@ Public Class StdLogin
         CheckBox1.Checked = False
         Me.Hide()
         AdmLogin.Show()
+    End Sub
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

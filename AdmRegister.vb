@@ -6,8 +6,12 @@ Imports MySql.Data.MySqlClient
 
 Public Class AdmRegister
     Dim connect As MySqlConnection
-    Dim constring As String = "server = localhost; userid = root; DATABASE = votingsystem_perez"
-    'Dim constring As String = "server=db4free.net ; userid=patricc; password=votingsystem; database=voting_system; port=3306;"
+    'localhost
+    'Dim constring As String = "server = localhost; userid = root; DATABASE = votingsystem_perez"
+
+    'online db
+    Dim constring As String = "server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
+
     Dim cmd As MySqlCommand
 
     Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -71,13 +75,13 @@ Public Class AdmRegister
     Private Sub stdnum_KeyPress(sender As Object, e As KeyPressEventArgs) Handles stdnum.KeyPress
         'para number lang input
         If IsNumeric(stdnum.Text) Then
-            'do nothing 
+            'Do nothing 
         Else
-            'display error message
-            MsgBox("Only numbers are allowed", vbCritical, "Error!")
-            'clear textbox 
-            stdnum.Clear()
-        End If
+                'display error message
+                MsgBox("Only numbers are allowed", vbCritical, "Error!")
+                'clear textbox 
+                stdnum.Clear()
+    End If
     End Sub
 
 End Class

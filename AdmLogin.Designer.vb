@@ -37,6 +37,7 @@ Partial Class AdmLogin
         Me.user = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.eye, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -106,7 +107,7 @@ Partial Class AdmLogin
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(42, 148)
+        Me.Label2.Location = New System.Drawing.Point(42, 143)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(92, 18)
         Me.Label2.TabIndex = 35
@@ -117,7 +118,7 @@ Partial Class AdmLogin
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(42, 56)
+        Me.Label1.Location = New System.Drawing.Point(42, 61)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 18)
         Me.Label1.TabIndex = 34
@@ -129,7 +130,7 @@ Partial Class AdmLogin
         Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
         Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
-        Me.eye.Location = New System.Drawing.Point(352, 171)
+        Me.eye.Location = New System.Drawing.Point(352, 166)
         Me.eye.Name = "eye"
         Me.eye.Size = New System.Drawing.Size(43, 27)
         Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -155,7 +156,7 @@ Partial Class AdmLogin
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(45, 206)
+        Me.CheckBox1.Location = New System.Drawing.Point(45, 201)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 20)
         Me.CheckBox1.TabIndex = 3
@@ -169,7 +170,7 @@ Partial Class AdmLogin
         Me.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pass.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.pass.Location = New System.Drawing.Point(45, 169)
+        Me.pass.Location = New System.Drawing.Point(45, 164)
         Me.pass.Name = "pass"
         Me.pass.Size = New System.Drawing.Size(352, 31)
         Me.pass.TabIndex = 2
@@ -181,7 +182,7 @@ Partial Class AdmLogin
         Me.user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.user.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.user.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.user.Location = New System.Drawing.Point(45, 77)
+        Me.user.Location = New System.Drawing.Point(45, 82)
         Me.user.Name = "user"
         Me.user.Size = New System.Drawing.Size(352, 31)
         Me.user.TabIndex = 1
@@ -203,6 +204,7 @@ Partial Class AdmLogin
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.user)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
@@ -215,7 +217,18 @@ Partial Class AdmLogin
         Me.GroupBox1.Size = New System.Drawing.Size(443, 273)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Admin Login"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(19, 19)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(139, 18)
+        Me.Label6.TabIndex = 40
+        Me.Label6.Text = "Login as Admin"
         '
         'AdmLogin
         '
@@ -263,4 +276,5 @@ Partial Class AdmLogin
     Friend WithEvents user As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label6 As Label
 End Class
