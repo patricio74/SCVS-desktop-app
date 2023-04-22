@@ -64,6 +64,7 @@ Public Class StdVote
         Try
             connect = New MySqlConnection(constring)
             connect.Open()
+            Dim username As String = StdLogin.user.Text
             Dim SQL As String =
                 "INSERT INTO candidates (full_name, Position) 
                 values('" & presname & "','" & prespos & "');
@@ -85,13 +86,14 @@ Public Class StdVote
                 values('" & thirname & "','" & thirpos & "');
                 INSERT INTO candidates (full_name, Position) 
                 values('" & fourname & "','" & fourpos & "');
+                UPDATE voters SET votestatus='voted' WHERE email='" & username & "';
                 "
             cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery
 
             If i <> 0 Then
-                MsgBox("Vote successful!", vbInformation, "Admin")
-                StdMenu.Show()
+                MsgBox("Vote submitted successfuly!", vbInformation, "Admin")
+                StdLogin.Show()
                 Me.Hide()
                 Call Clearballot()
             Else

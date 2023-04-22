@@ -11,7 +11,7 @@ Public Class StdLogin
         Try
             Dim conn As New MySqlConnection("server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
 
-            Dim command As New MySqlCommand("SELECT `email`, `pass` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
+            Dim command As New MySqlCommand("SELECT `email`, `pass`, `votestatus` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
             command.Connection = conn 'set the connection property of the command object
 
             command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = user.Text
@@ -32,11 +32,15 @@ Public Class StdLogin
 
 
                 If table.Rows.Count > 0 Then
-                    StdMenu.Show()
-                    Me.Hide()
-                    user.Clear()
-                    password.Clear()
-                    CheckBox1.CheckState = False
+                    Dim votestatus As String = table.Rows(0)("votestatus").ToString()
+                    If votestatus = "voted" Then
+                        MessageBox.Show("You have already voted!", "Voting Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Else
+                        StdMenu.Show()
+                        Me.Hide()
+                        password.Clear()
+                        CheckBox1.CheckState = False
+                    End If
                 Else
                     MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
@@ -80,8 +84,5 @@ Public Class StdLogin
         CheckBox1.Checked = False
         Me.Hide()
         AdmLogin.Show()
-    End Sub
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
     End Sub
 End Class

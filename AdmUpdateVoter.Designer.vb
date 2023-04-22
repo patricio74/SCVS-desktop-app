@@ -57,7 +57,7 @@ Partial Class AdmUpdateVoter
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(12, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(70, 26)
@@ -98,7 +98,6 @@ Partial Class AdmUpdateVoter
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(349, 27)
         Me.email.TabIndex = 36
-        Me.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label12
         '
@@ -133,7 +132,6 @@ Partial Class AdmUpdateVoter
         Me.lastname.Name = "lastname"
         Me.lastname.Size = New System.Drawing.Size(349, 27)
         Me.lastname.TabIndex = 33
-        Me.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label10
         '
@@ -157,7 +155,6 @@ Partial Class AdmUpdateVoter
         Me.middlename.Name = "middlename"
         Me.middlename.Size = New System.Drawing.Size(349, 27)
         Me.middlename.TabIndex = 32
-        Me.middlename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
@@ -181,7 +178,6 @@ Partial Class AdmUpdateVoter
         Me.firstname.Name = "firstname"
         Me.firstname.Size = New System.Drawing.Size(349, 27)
         Me.firstname.TabIndex = 31
-        Me.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label2
         '
@@ -206,11 +202,10 @@ Partial Class AdmUpdateVoter
         Me.stdNum.ReadOnly = True
         Me.stdNum.Size = New System.Drawing.Size(349, 27)
         Me.stdNum.TabIndex = 30
-        Me.stdNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -228,7 +223,7 @@ Partial Class AdmUpdateVoter
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Button3.Location = New System.Drawing.Point(863, 683)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(185, 69)
@@ -293,7 +288,7 @@ Partial Class AdmUpdateVoter
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(347, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(526, 38)

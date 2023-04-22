@@ -94,7 +94,7 @@ Partial Class StdVote
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Button2.Location = New System.Drawing.Point(12, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(70, 26)
@@ -160,7 +160,7 @@ Partial Class StdVote
         Me.President.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.President.Cursor = System.Windows.Forms.Cursors.No
         Me.President.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.President.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.President.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.President.Location = New System.Drawing.Point(21, 114)
         Me.President.Name = "President"
         Me.President.ReadOnly = True
@@ -226,7 +226,7 @@ Partial Class StdVote
         Me.VicePres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.VicePres.Cursor = System.Windows.Forms.Cursors.No
         Me.VicePres.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.VicePres.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.VicePres.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.VicePres.Location = New System.Drawing.Point(21, 113)
         Me.VicePres.Name = "VicePres"
         Me.VicePres.ReadOnly = True
@@ -292,7 +292,7 @@ Partial Class StdVote
         Me.Secretary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Secretary.Cursor = System.Windows.Forms.Cursors.No
         Me.Secretary.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Secretary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Secretary.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Secretary.Location = New System.Drawing.Point(21, 113)
         Me.Secretary.Name = "Secretary"
         Me.Secretary.ReadOnly = True
@@ -358,7 +358,7 @@ Partial Class StdVote
         Me.Treasurer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Treasurer.Cursor = System.Windows.Forms.Cursors.No
         Me.Treasurer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Treasurer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Treasurer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Treasurer.Location = New System.Drawing.Point(21, 114)
         Me.Treasurer.Name = "Treasurer"
         Me.Treasurer.ReadOnly = True
@@ -424,7 +424,7 @@ Partial Class StdVote
         Me.Auditor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Auditor.Cursor = System.Windows.Forms.Cursors.No
         Me.Auditor.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Auditor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Auditor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Auditor.Location = New System.Drawing.Point(21, 113)
         Me.Auditor.Name = "Auditor"
         Me.Auditor.ReadOnly = True
@@ -490,7 +490,7 @@ Partial Class StdVote
         Me.PROfficer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PROfficer.Cursor = System.Windows.Forms.Cursors.No
         Me.PROfficer.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PROfficer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.PROfficer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.PROfficer.Location = New System.Drawing.Point(21, 113)
         Me.PROfficer.Name = "PROfficer"
         Me.PROfficer.ReadOnly = True
@@ -556,7 +556,7 @@ Partial Class StdVote
         Me.secondrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.secondrep.Cursor = System.Windows.Forms.Cursors.No
         Me.secondrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.secondrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.secondrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.secondrep.Location = New System.Drawing.Point(21, 113)
         Me.secondrep.Name = "secondrep"
         Me.secondrep.ReadOnly = True
@@ -622,7 +622,7 @@ Partial Class StdVote
         Me.thirdrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.thirdrep.Cursor = System.Windows.Forms.Cursors.No
         Me.thirdrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.thirdrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.thirdrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.thirdrep.Location = New System.Drawing.Point(21, 113)
         Me.thirdrep.Name = "thirdrep"
         Me.thirdrep.ReadOnly = True
@@ -632,7 +632,7 @@ Partial Class StdVote
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -666,7 +666,7 @@ Partial Class StdVote
         Me.fourrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.fourrep.Cursor = System.Windows.Forms.Cursors.No
         Me.fourrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.fourrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.fourrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.fourrep.Location = New System.Drawing.Point(23, 113)
         Me.fourrep.Name = "fourrep"
         Me.fourrep.ReadOnly = True
@@ -752,7 +752,7 @@ Partial Class StdVote
         Me.firstrep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstrep.Cursor = System.Windows.Forms.Cursors.No
         Me.firstrep.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.firstrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.firstrep.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.firstrep.Location = New System.Drawing.Point(21, 114)
         Me.firstrep.Name = "firstrep"
         Me.firstrep.ReadOnly = True
@@ -781,7 +781,7 @@ Partial Class StdVote
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(139, 36)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(887, 38)
