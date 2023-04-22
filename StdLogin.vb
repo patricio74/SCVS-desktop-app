@@ -12,11 +12,15 @@ Public Class StdLogin
             Dim conn As New MySqlConnection("server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
 
             Dim command As New MySqlCommand("SELECT `email`, `student_number` FROM `voters` WHERE `email` = @usn AND `student_number` = @pass")
+            command.Connection = conn 'set the connection property of the command object
 
             command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = user.Text
             command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = pass.Text
             Dim adapter As New MySqlDataAdapter()
             Dim table As New DataTable()
+            adapter.SelectCommand = command 'set the SelectCommand property of the adapter object
+
+            conn.Open() 'open the database connection
             adapter.Fill(table)
 
             If user.Text.Trim() = "" Or user.Text.Trim().ToLower() = "username" Then
@@ -25,8 +29,7 @@ Public Class StdLogin
 
                 MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Else
-                adapter.SelectCommand = command
-                adapter.Fill(table)
+
 
                 If table.Rows.Count > 0 Then
                     StdMenu.Show()
@@ -39,8 +42,12 @@ Public Class StdLogin
                 End If
             End If
 
+        Catch ex As MySqlException
+            MessageBox.Show("A MySQL exception occurred: " + ex.Message, "MySQL Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Catch ex As InvalidOperationException
+            MessageBox.Show("An invalid operation exception occurred: " + ex.Message, "Invalid Operation Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MessageBox.Show("An exception occurred: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
 

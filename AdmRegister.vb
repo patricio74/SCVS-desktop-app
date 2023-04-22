@@ -14,15 +14,6 @@ Public Class AdmRegister
 
     Dim cmd As MySqlCommand
 
-    Private Sub Register_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            connect = New MySqlConnection(constring)
-            MsgBox("Successfuly connected to database!")
-        Catch ex As Exception
-            MsgBox("Failed to connect to database!")
-        End Try
-    End Sub
-
     'pang clear sa form
     Public Sub Clearballot()
         stdnum.ResetText()

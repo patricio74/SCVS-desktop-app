@@ -25,8 +25,8 @@ Public Class AdmResult
             ListView1.Items.Clear()
             connect = New MySqlConnection(constring)
             connect.Open()
-            Dim sql As String = "SELECT COUNT(full_name) as Votes, full_name, position 
-                                    FROM candidates group by full_name 
+            Dim sql As String = "SELECT COUNT(full_name) as Votes, full_name, position
+                                    FROM candidates group by full_name, position
                                     ORDER BY position;"
             cmd = New MySqlCommand(sql, connect)
             da = New MySqlDataAdapter(cmd)
