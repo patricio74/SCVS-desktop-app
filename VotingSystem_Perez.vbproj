@@ -224,7 +224,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icons8-ballot-100 %281%29.ico" />
     <Content Include="scvs_logo.ico" />
     <None Include="icons8-info-48.png" />
   </ItemGroup>
