@@ -35,6 +35,7 @@ Public Class StdLogin
                     Dim votestatus As String = table.Rows(0)("votestatus").ToString()
                     If votestatus = "voted" Then
                         MessageBox.Show("You have already voted!", "Voting Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        password.Clear()
                     Else
                         StdMenu.Show()
                         Me.Hide()

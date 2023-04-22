@@ -63,7 +63,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icons8-ballot-100 %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>scvs_logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -225,6 +225,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8-ballot-100 %281%29.ico" />
+    <Content Include="scvs_logo.ico" />
     <None Include="icons8-info-48.png" />
   </ItemGroup>
   <ItemGroup>
