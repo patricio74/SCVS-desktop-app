@@ -25,7 +25,7 @@ Partial Class StdLogin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StdLogin))
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.user = New System.Windows.Forms.TextBox()
-        Me.pass = New System.Windows.Forms.TextBox()
+        Me.password = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.eye = New System.Windows.Forms.PictureBox()
@@ -69,18 +69,18 @@ Partial Class StdLogin
         Me.user.Size = New System.Drawing.Size(352, 31)
         Me.user.TabIndex = 1
         '
-        'pass
+        'password
         '
-        Me.pass.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pass.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.pass.Location = New System.Drawing.Point(45, 164)
-        Me.pass.MaxLength = 50
-        Me.pass.Name = "pass"
-        Me.pass.Size = New System.Drawing.Size(352, 31)
-        Me.pass.TabIndex = 2
-        Me.pass.UseSystemPasswordChar = True
+        Me.password.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.password.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.password.Location = New System.Drawing.Point(45, 164)
+        Me.password.MaxLength = 50
+        Me.password.Name = "password"
+        Me.password.Size = New System.Drawing.Size(352, 31)
+        Me.password.TabIndex = 2
+        Me.password.UseSystemPasswordChar = True
         '
         'CheckBox1
         '
@@ -215,7 +215,7 @@ Partial Class StdLogin
         Me.GroupBox1.Controls.Add(Me.user)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.pass)
+        Me.GroupBox1.Controls.Add(Me.password)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(43, 226)
         Me.GroupBox1.Name = "GroupBox1"
@@ -258,7 +258,7 @@ Partial Class StdLogin
         Me.MaximizeBox = False
         Me.Name = "StdLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ASCVS Login"
+        Me.Text = "SCVS Login"
         CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -268,7 +268,7 @@ Partial Class StdLogin
     End Sub
     Friend WithEvents btnLogin As Button
     Friend WithEvents user As TextBox
-    Friend WithEvents pass As TextBox
+    Friend WithEvents password As TextBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents btnAbout As Button
     Friend WithEvents eye As PictureBox

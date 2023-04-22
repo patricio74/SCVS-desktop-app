@@ -16,25 +16,25 @@ Public Class AdmRegister
 
     'pang clear sa form
     Public Sub Clearballot()
-        stdnum.ResetText()
         firstname.Clear()
         middlename.Clear()
         lastname.Clear()
         cboxCourse.SelectedIndex = -1
         cboxYear.SelectedIndex = -1
         email.Clear()
+        pass.Clear()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If firstname.Text = "" Or lastname.Text = "" Or stdnum.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Then
+        If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Then
             MessageBox.Show("fill up all fields to continue.", "Error!")
         Else
             Try
                 connect = New MySqlConnection(constring)
                 connect.Open()
                 Dim SQL As String =
-                    "INSERT INTO voters (Student_number, First_name, Last_name, Middle_name, Course, Year, Email) 
-                values('" & stdnum.Text & "','" & firstname.Text & "','" & lastname.Text & "','" & middlename.Text & "','" & cboxCourse.Text & "','" & cboxYear.Text & "','" & email.Text & "');"
+                    "INSERT INTO voters (First_name, Last_name, Middle_name, Course, Yr, Email, Pass) 
+                values('" & firstname.Text & "','" & lastname.Text & "','" & middlename.Text & "','" & cboxCourse.Text & "','" & cboxYear.Text & "','" & email.Text & "', '" & pass.Text & "');"
                 Dim cmd = New MySqlCommand(SQL, connect)
                 Dim i As Integer = cmd.ExecuteNonQuery
 
@@ -63,16 +63,16 @@ Public Class AdmRegister
         Me.Hide()
     End Sub
 
-    Private Sub stdnum_KeyPress(sender As Object, e As KeyPressEventArgs) Handles stdnum.KeyPress
+    Private Sub stdnum_KeyPress(sender As Object, e As KeyPressEventArgs)
         'para number lang input
-        If IsNumeric(stdnum.Text) Then
-            'Do nothing 
-        Else
-                'display error message
-                MsgBox("Only numbers are allowed", vbCritical, "Error!")
-                'clear textbox 
-                stdnum.Clear()
-    End If
+        '    If IsNumeric(stdnum.Text) Then
+        'Do nothing 
+        '   Else
+        'display error message
+        '           MsgBox("Only numbers are allowed", vbCritical, "Error!")
+        'clear textbox 
+        '   stdnum.Clear()
+        'End If
     End Sub
 
 End Class

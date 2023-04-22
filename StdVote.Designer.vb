@@ -814,7 +814,7 @@ Partial Class StdVote
         Me.MaximizeBox = False
         Me.Name = "StdVote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ASCVS Vote Form"
+        Me.Text = "SCVS Vote Form"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

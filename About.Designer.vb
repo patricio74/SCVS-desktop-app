@@ -251,7 +251,7 @@ Partial Class About
         Me.Name = "About"
         Me.Opacity = 0.97R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "About ASCVS"
+        Me.Text = "About SCVS"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

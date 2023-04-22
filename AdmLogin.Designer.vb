@@ -253,7 +253,7 @@ Partial Class AdmLogin
         Me.MaximizeBox = False
         Me.Name = "AdmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ASCVS Login"
+        Me.Text = "SCVS Login"
         CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
