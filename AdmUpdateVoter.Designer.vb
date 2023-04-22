@@ -238,7 +238,7 @@ Partial Class AdmUpdateVoter
         '
         'ColumnHeader1
         '
-        Me.ColumnHeader1.Text = "S#"
+        Me.ColumnHeader1.Text = "Student no."
         Me.ColumnHeader1.Width = 113
         '
         'ColumnHeader2

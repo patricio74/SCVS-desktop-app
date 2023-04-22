@@ -66,9 +66,9 @@ Partial Class StdResult
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(57, 79)
+        Me.ListView1.Location = New System.Drawing.Point(131, 79)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(788, 576)
+        Me.ListView1.Size = New System.Drawing.Size(643, 576)
         Me.ListView1.TabIndex = 46
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -76,19 +76,17 @@ Partial Class StdResult
         'ColumnHeader1
         '
         Me.ColumnHeader1.Text = "# of votes"
-        Me.ColumnHeader1.Width = 144
+        Me.ColumnHeader1.Width = 79
         '
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "Candidate name"
-        Me.ColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader2.Width = 328
+        Me.ColumnHeader2.Width = 301
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Position"
-        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.ColumnHeader3.Width = 312
+        Me.ColumnHeader3.Width = 259
         '
         'Button2
         '

@@ -55,9 +55,10 @@ Partial Class AdmResult
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(57, 79)
+        Me.ListView1.HoverSelection = True
+        Me.ListView1.Location = New System.Drawing.Point(131, 79)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(788, 576)
+        Me.ListView1.Size = New System.Drawing.Size(643, 576)
         Me.ListView1.TabIndex = 30
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -75,7 +76,6 @@ Partial Class AdmResult
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Position"
-        Me.ColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.ColumnHeader3.Width = 259
         '
         'Button1
