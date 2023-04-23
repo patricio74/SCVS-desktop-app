@@ -247,8 +247,7 @@ Public Class StdVote
 
     Private Sub RadioButton14_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton14.CheckedChanged
         If RadioButton14.Checked = True Then
-            Auditor.Text = "Paz Herrera"
-            audname = "Eggroll Tiagan"
+            audname = "Paz Herrera"
             audpos = "Auditor"
             Auditor.Text = audname
         Else
