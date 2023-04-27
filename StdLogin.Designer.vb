@@ -58,11 +58,11 @@ Partial Class StdLogin
         '
         'user
         '
-        Me.user.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.user.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.user.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.user.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.user.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.user.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.user.Location = New System.Drawing.Point(45, 82)
         Me.user.MaxLength = 50
         Me.user.Name = "user"
@@ -71,10 +71,10 @@ Partial Class StdLogin
         '
         'password
         '
-        Me.password.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.password.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.password.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.password.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.password.Location = New System.Drawing.Point(45, 164)
         Me.password.MaxLength = 50
         Me.password.Name = "password"
@@ -87,7 +87,7 @@ Partial Class StdLogin
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.CheckBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.CheckBox1.Location = New System.Drawing.Point(45, 201)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 20)
@@ -128,7 +128,7 @@ Partial Class StdLogin
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(42, 61)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(130, 18)
@@ -140,7 +140,7 @@ Partial Class StdLogin
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(42, 143)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(92, 18)
@@ -151,7 +151,7 @@ Partial Class StdLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label3.Location = New System.Drawing.Point(47, 715)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(166, 16)
@@ -200,7 +200,7 @@ Partial Class StdLogin
         Me.lblSwitchLogin.BackColor = System.Drawing.Color.Transparent
         Me.lblSwitchLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblSwitchLogin.Font = New System.Drawing.Font("Verdana", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSwitchLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.lblSwitchLogin.ForeColor = System.Drawing.Color.MediumBlue
         Me.lblSwitchLogin.Location = New System.Drawing.Point(154, 615)
         Me.lblSwitchLogin.Name = "lblSwitchLogin"
         Me.lblSwitchLogin.Size = New System.Drawing.Size(204, 16)
@@ -209,7 +209,7 @@ Partial Class StdLogin
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.eye)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -217,7 +217,7 @@ Partial Class StdLogin
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.password)
-        Me.GroupBox1.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(43, 226)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(443, 273)
@@ -229,7 +229,7 @@ Partial Class StdLogin
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(19, 19)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(154, 18)
@@ -241,7 +241,8 @@ Partial Class StdLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(524, 740)
         Me.Controls.Add(Me.lblSwitchLogin)
         Me.Controls.Add(Me.Label4)

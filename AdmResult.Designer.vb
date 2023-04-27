@@ -56,7 +56,7 @@ Partial Class AdmResult
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
         Me.ListView1.HoverSelection = True
-        Me.ListView1.Location = New System.Drawing.Point(131, 79)
+        Me.ListView1.Location = New System.Drawing.Point(131, 85)
         Me.ListView1.Name = "ListView1"
         Me.ListView1.Size = New System.Drawing.Size(643, 576)
         Me.ListView1.TabIndex = 30
@@ -85,9 +85,9 @@ Partial Class AdmResult
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(375, 681)
+        Me.Button1.Location = New System.Drawing.Point(375, 686)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(156, 53)
+        Me.Button1.Size = New System.Drawing.Size(156, 60)
         Me.Button1.TabIndex = 31
         Me.Button1.Text = "REFRESH"
         Me.Button1.UseVisualStyleBackColor = False
@@ -109,7 +109,7 @@ Partial Class AdmResult
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(902, 756)
+        Me.ClientSize = New System.Drawing.Size(902, 772)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListView1)

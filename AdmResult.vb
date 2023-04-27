@@ -50,7 +50,4 @@ Public Class AdmResult
         Call voteresult()
     End Sub
 
-    Private Sub Result_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

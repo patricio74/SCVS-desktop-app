@@ -63,7 +63,7 @@ Public Class AdmUpdateVoter
             connect = New MySqlConnection(constring)
             connect.Open()
             Dim SQL As String =
-                "UPDATE voters SET First_name ='" & firstname.Text & "', Last_name ='" & lastname.Text & "', Middle_name ='" & middlename.Text & "', Course ='" & cboxCourse.Text & "',Year ='" & cboxYear.Text & "', Email ='" & email.Text & "'   
+                "UPDATE voters SET First_name ='" & firstname.Text & "', Last_name ='" & lastname.Text & "', Middle_name ='" & middlename.Text & "', Course ='" & cboxCourse.Text & "',Yr ='" & cboxYear.Text & "', Email ='" & email.Text & "'   
                 WHERE Student_number ='" & stdNum.Text & "' "
             cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery

@@ -128,7 +128,7 @@ Partial Class AdmUpdateVoter
         Me.lastname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastname.ForeColor = System.Drawing.Color.Black
         Me.lastname.Location = New System.Drawing.Point(208, 698)
-        Me.lastname.MaxLength = 50
+        Me.lastname.MaxLength = 25
         Me.lastname.Name = "lastname"
         Me.lastname.Size = New System.Drawing.Size(349, 27)
         Me.lastname.TabIndex = 33
@@ -151,7 +151,7 @@ Partial Class AdmUpdateVoter
         Me.middlename.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlename.ForeColor = System.Drawing.Color.Black
         Me.middlename.Location = New System.Drawing.Point(208, 628)
-        Me.middlename.MaxLength = 50
+        Me.middlename.MaxLength = 25
         Me.middlename.Name = "middlename"
         Me.middlename.Size = New System.Drawing.Size(349, 27)
         Me.middlename.TabIndex = 32
@@ -174,7 +174,7 @@ Partial Class AdmUpdateVoter
         Me.firstname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstname.ForeColor = System.Drawing.Color.Black
         Me.firstname.Location = New System.Drawing.Point(208, 549)
-        Me.firstname.MaxLength = 50
+        Me.firstname.MaxLength = 25
         Me.firstname.Name = "firstname"
         Me.firstname.Size = New System.Drawing.Size(349, 27)
         Me.firstname.TabIndex = 31
@@ -197,7 +197,7 @@ Partial Class AdmUpdateVoter
         Me.stdNum.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stdNum.ForeColor = System.Drawing.Color.Black
         Me.stdNum.Location = New System.Drawing.Point(208, 475)
-        Me.stdNum.MaxLength = 20
+        Me.stdNum.MaxLength = 10
         Me.stdNum.Name = "stdNum"
         Me.stdNum.ReadOnly = True
         Me.stdNum.Size = New System.Drawing.Size(349, 27)

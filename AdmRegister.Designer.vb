@@ -136,7 +136,7 @@ Partial Class AdmRegister
         Me.lastname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastname.ForeColor = System.Drawing.Color.Black
         Me.lastname.Location = New System.Drawing.Point(109, 347)
-        Me.lastname.MaxLength = 50
+        Me.lastname.MaxLength = 25
         Me.lastname.Name = "lastname"
         Me.lastname.Size = New System.Drawing.Size(388, 27)
         Me.lastname.TabIndex = 32
@@ -161,7 +161,7 @@ Partial Class AdmRegister
         Me.middlename.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlename.ForeColor = System.Drawing.Color.Black
         Me.middlename.Location = New System.Drawing.Point(109, 269)
-        Me.middlename.MaxLength = 50
+        Me.middlename.MaxLength = 25
         Me.middlename.Name = "middlename"
         Me.middlename.Size = New System.Drawing.Size(388, 27)
         Me.middlename.TabIndex = 31
@@ -186,7 +186,7 @@ Partial Class AdmRegister
         Me.firstname.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstname.ForeColor = System.Drawing.Color.Black
         Me.firstname.Location = New System.Drawing.Point(109, 190)
-        Me.firstname.MaxLength = 50
+        Me.firstname.MaxLength = 25
         Me.firstname.Name = "firstname"
         Me.firstname.Size = New System.Drawing.Size(388, 27)
         Me.firstname.TabIndex = 30
@@ -211,7 +211,7 @@ Partial Class AdmRegister
         Me.cboxCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboxCourse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.cboxCourse.FormattingEnabled = True
-        Me.cboxCourse.Items.AddRange(New Object() {"BS Information Technology", "BS Computer Engineering", "BS Elementary Education", "BS Secondary Education", "BS Entrepreneurship", "BS Business Management"})
+        Me.cboxCourse.Items.AddRange(New Object() {"BS INFORMATION TECHNOLOGY", "BS COMPUTER ENGINEERING", "BS ELEMENTARY EDUCATION", "BS SECONDARY EDUCATION", "BS ENTREPRENEURSHIP", "BS BUSINESS MANAGEMENT"})
         Me.cboxCourse.Location = New System.Drawing.Point(109, 424)
         Me.cboxCourse.Name = "cboxCourse"
         Me.cboxCourse.Size = New System.Drawing.Size(280, 26)
@@ -249,7 +249,7 @@ Partial Class AdmRegister
         Me.pass.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.Black
         Me.pass.Location = New System.Drawing.Point(109, 575)
-        Me.pass.MaxLength = 50
+        Me.pass.MaxLength = 25
         Me.pass.Name = "pass"
         Me.pass.Size = New System.Drawing.Size(390, 27)
         Me.pass.TabIndex = 36

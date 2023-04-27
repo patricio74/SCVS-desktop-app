@@ -66,28 +66,28 @@ Public Class StdVote
             connect.Open()
             Dim username As String = StdLogin.user.Text
             Dim SQL As String =
-                "INSERT INTO candidates (full_name, Position) 
-                values('" & presname & "','" & prespos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & vicename & "','" & vicepos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & secname & "','" & secpos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & treaname & "','" & treapos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & audname & "','" & audpos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & proname & "','" & propos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & firsname & "','" & firspos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & seconame & "','" & secopos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & thirname & "','" & thirpos & "');
-                INSERT INTO candidates (full_name, Position) 
-                values('" & fourname & "','" & fourpos & "');
-                UPDATE voters SET votestatus='voted' WHERE email='" & username & "';
-                "
+            "INSERT INTO candidates (full_name, Position) 
+            values('" & presname & "','" & prespos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & vicename & "','" & vicepos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & secname & "','" & secpos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & treaname & "','" & treapos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & audname & "','" & audpos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & proname & "','" & propos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & firsname & "','" & firspos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & seconame & "','" & secopos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & thirname & "','" & thirpos & "');
+            INSERT INTO candidates (full_name, Position) 
+            values('" & fourname & "','" & fourpos & "');
+            UPDATE voters SET votestatus='voted' WHERE email='" & username & "';
+            "
             cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery
 
