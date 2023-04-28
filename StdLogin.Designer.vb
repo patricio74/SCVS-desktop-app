@@ -37,6 +37,7 @@ Partial Class StdLogin
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblSwitchLogin = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnUseRFID = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.eye, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -44,12 +45,12 @@ Partial Class StdLogin
         '
         'btnLogin
         '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(238, Byte), Integer), CType(CType(186, Byte), Integer), CType(CType(43, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(185, 534)
+        Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnLogin.Location = New System.Drawing.Point(149, 241)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(148, 60)
         Me.btnLogin.TabIndex = 4
@@ -210,19 +211,35 @@ Partial Class StdLogin
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.GroupBox1.Controls.Add(Me.btnUseRFID)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.eye)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.user)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.btnLogin)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.password)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(43, 226)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(443, 273)
+        Me.GroupBox1.Size = New System.Drawing.Size(443, 336)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'btnUseRFID
+        '
+        Me.btnUseRFID.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnUseRFID.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUseRFID.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnUseRFID.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUseRFID.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnUseRFID.Location = New System.Drawing.Point(302, 18)
+        Me.btnUseRFID.Name = "btnUseRFID"
+        Me.btnUseRFID.Size = New System.Drawing.Size(124, 34)
+        Me.btnUseRFID.TabIndex = 42
+        Me.btnUseRFID.Text = "Use RFID"
+        Me.btnUseRFID.UseVisualStyleBackColor = False
         '
         'Label6
         '
@@ -230,7 +247,7 @@ Partial Class StdLogin
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(19, 19)
+        Me.Label6.Location = New System.Drawing.Point(14, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(154, 18)
         Me.Label6.TabIndex = 41
@@ -250,7 +267,6 @@ Partial Class StdLogin
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnAbout)
-        Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -260,7 +276,7 @@ Partial Class StdLogin
         Me.MaximizeBox = False
         Me.Name = "StdLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SCVS Login"
+        Me.Text = "D"
         CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -283,4 +299,5 @@ Partial Class StdLogin
     Friend WithEvents lblSwitchLogin As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents btnUseRFID As Button
 End Class

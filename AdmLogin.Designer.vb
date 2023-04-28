@@ -194,7 +194,7 @@ Partial Class AdmLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(185, 534)
+        Me.btnLogin.Location = New System.Drawing.Point(149, 241)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(148, 60)
         Me.btnLogin.TabIndex = 4
@@ -210,11 +210,12 @@ Partial Class AdmLogin
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
         Me.GroupBox1.Controls.Add(Me.eye)
         Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.btnLogin)
         Me.GroupBox1.Controls.Add(Me.pass)
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.GroupBox1.Location = New System.Drawing.Point(43, 226)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(443, 273)
+        Me.GroupBox1.Size = New System.Drawing.Size(443, 336)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
@@ -224,7 +225,7 @@ Partial Class AdmLogin
         Me.Label6.BackColor = System.Drawing.Color.Transparent
         Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(19, 19)
+        Me.Label6.Location = New System.Drawing.Point(14, 14)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(139, 18)
         Me.Label6.TabIndex = 40
@@ -243,7 +244,6 @@ Partial Class AdmLogin
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnAbout)
-        Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
