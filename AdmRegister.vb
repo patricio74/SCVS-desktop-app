@@ -26,24 +26,44 @@ Public Class AdmRegister
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Then
+        If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Or txtRFID.Text = "" Then
             MessageBox.Show("fill up all fields to continue.", "Error!")
         Else
             Try
                 connect = New MySqlConnection(constring)
                 connect.Open()
-                Dim SQL As String =
-                    "INSERT INTO voters (First_name, Last_name, Middle_name, Course, Yr, Email, Pass) 
-                values('" & firstname.Text & "','" & lastname.Text & "','" & middlename.Text & "','" & cboxCourse.Text & "','" & cboxYear.Text & "','" & email.Text & "', '" & pass.Text & "');"
-                Dim cmd = New MySqlCommand(SQL, connect)
-                Dim i As Integer = cmd.ExecuteNonQuery
 
-                If i <> 0 Or firstname.Text IsNot "" Then
-                    MsgBox("Student registered successfully!", vbInformation, "Admin")
-                    'Call Clearballot()
-                    'shows if registration is successful
+                ' Check if the RFID already exists in the database
+                Dim checkRFIDQuery As String = "SELECT COUNT(*) FROM voters WHERE RFID = @rfid"
+                Dim checkRFIDCommand As New MySqlCommand(checkRFIDQuery, connect)
+                checkRFIDCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
+                Dim rfidCount As Integer = Convert.ToInt32(checkRFIDCommand.ExecuteScalar())
+
+                If rfidCount > 0 Then
+                    MsgBox("RFID already exists in the database. Please use a different RFID.", vbExclamation, "Error")
                 Else
-                    MsgBox("Error!", vbCritical, "Admin")
+                    ' Insert the registration details into the database
+                    Dim insertQuery As String = "INSERT INTO voters (First_name, Last_name, Middle_name, Course, Yr, Email, Pass, RFID) 
+                                             VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid)"
+                    Dim insertCommand As New MySqlCommand(insertQuery, connect)
+                    insertCommand.Parameters.AddWithValue("@firstName", firstname.Text)
+                    insertCommand.Parameters.AddWithValue("@lastName", lastname.Text)
+                    insertCommand.Parameters.AddWithValue("@middleName", middlename.Text)
+                    insertCommand.Parameters.AddWithValue("@course", cboxCourse.Text)
+                    insertCommand.Parameters.AddWithValue("@year", cboxYear.Text)
+                    insertCommand.Parameters.AddWithValue("@email", email.Text)
+                    insertCommand.Parameters.AddWithValue("@pass", pass.Text)
+                    insertCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
+
+                    Dim i As Integer = insertCommand.ExecuteNonQuery()
+
+                    If i <> 0 Then
+                        MsgBox("Student registered successfully!", vbInformation, "Admin")
+                        Call Clearballot()
+                        ' Show if registration is successful
+                    Else
+                        MsgBox("Error!", vbCritical, "Admin")
+                    End If
                 End If
                 Call Clearballot()
                 connect.Close()
