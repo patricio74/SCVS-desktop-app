@@ -46,9 +46,11 @@ Partial Class RFIDLogin
         '
         Me.txtRFID.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.txtRFID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtRFID.Enabled = False
         Me.txtRFID.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.txtRFID.Location = New System.Drawing.Point(49, 82)
+        Me.txtRFID.MaxLength = 50
         Me.txtRFID.Name = "txtRFID"
         Me.txtRFID.ReadOnly = True
         Me.txtRFID.Size = New System.Drawing.Size(400, 36)

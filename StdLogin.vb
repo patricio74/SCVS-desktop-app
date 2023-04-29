@@ -8,52 +8,58 @@ Public Class StdLogin
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
-        Try
-            Dim conn As New MySqlConnection("server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
+        If user.Text = "" Then
+            MessageBox.Show("Username cannot be empty", "Blank username!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        ElseIf password.Text = "" Then
+            MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            Try
+                Dim conn As New MySqlConnection("server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
 
-            Dim command As New MySqlCommand("SELECT `email`, `pass`, `votestatus` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
-            command.Connection = conn 'set the connection property of the command object
+                Dim command As New MySqlCommand("SELECT `email`, `pass`, `votestatus` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
+                command.Connection = conn 'set the connection property of the command object
 
-            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = user.Text
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password.Text
-            Dim adapter As New MySqlDataAdapter()
-            Dim table As New DataTable()
-            adapter.SelectCommand = command 'set the SelectCommand property of the adapter object
+                command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = user.Text
+                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = password.Text
+                Dim adapter As New MySqlDataAdapter()
+                Dim table As New DataTable()
+                adapter.SelectCommand = command 'set the SelectCommand property of the adapter object
 
-            conn.Open() 'open the database connection
-            adapter.Fill(table)
+                conn.Open() 'open the database connection
+                adapter.Fill(table)
 
-            If user.Text.Trim() = "" Or user.Text.Trim().ToLower() = "username" Then
-                MessageBox.Show("Username cannot be empty", "Blank username!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            ElseIf password.Text.Trim() = "" Or password.Text.Trim().ToLower() = "password" Then
+                If user.Text.Trim() = "" Or user.Text.Trim().ToLower() = "username" Then
+                    MessageBox.Show("Username cannot be empty", "Blank username!", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                ElseIf password.Text.Trim() = "" Or password.Text.Trim().ToLower() = "password" Then
 
-                MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Else
-
-
-                If table.Rows.Count > 0 Then
-                    Dim votestatus As String = table.Rows(0)("votestatus").ToString()
-                    If votestatus = "voted" Then
-                        MessageBox.Show("You have already voted!", "Voting Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                        password.Clear()
-                    Else
-                        StdMenu.Show()
-                        Me.Hide()
-                        password.Clear()
-                        CheckBox1.CheckState = False
-                    End If
+                    MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
-                    MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
-            End If
 
-        Catch ex As MySqlException
-            MessageBox.Show("A MySQL exception occurred: " + ex.Message, "MySQL Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Catch ex As InvalidOperationException
-            MessageBox.Show("An invalid operation exception occurred: " + ex.Message, "Invalid Operation Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Catch ex As Exception
-            MessageBox.Show("An exception occurred: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+
+                    If table.Rows.Count > 0 Then
+                        Dim votestatus As String = table.Rows(0)("votestatus").ToString()
+                        If votestatus = "voted" Then
+                            MessageBox.Show("You have already voted!", "Voting Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            password.Clear()
+                        Else
+                            StdMenu.Show()
+                            Me.Hide()
+                            password.Clear()
+                            CheckBox1.CheckState = False
+                        End If
+                    Else
+                        MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    End If
+                End If
+
+            Catch ex As MySqlException
+                MessageBox.Show("A MySQL exception occurred: " + ex.Message, "MySQL Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Catch ex As InvalidOperationException
+                MessageBox.Show("An invalid operation exception occurred: " + ex.Message, "Invalid Operation Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Catch ex As Exception
+                MessageBox.Show("An exception occurred: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
     End Sub
 
     'about
@@ -87,4 +93,8 @@ Public Class StdLogin
         AdmLogin.Show()
     End Sub
 
+    Private Sub btnUseRFID_Click(sender As Object, e As EventArgs) Handles btnUseRFID.Click
+        RFIDLogin.Show()
+        Me.Hide()
+    End Sub
 End Class

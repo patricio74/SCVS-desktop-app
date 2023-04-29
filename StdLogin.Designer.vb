@@ -276,7 +276,7 @@ Partial Class StdLogin
         Me.MaximizeBox = False
         Me.Name = "StdLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "D"
+        Me.Text = "SCVS Login"
         CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
