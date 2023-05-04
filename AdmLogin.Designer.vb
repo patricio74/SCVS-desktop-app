@@ -34,10 +34,10 @@ Partial Class AdmLogin
         Me.user = New System.Windows.Forms.TextBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnUseRFID = New System.Windows.Forms.Button()
-        Me.btnAbout = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.eye = New System.Windows.Forms.PictureBox()
+        Me.btnAbout = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.eye, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class AdmLogin
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(42, 143)
+        Me.Label2.Location = New System.Drawing.Point(42, 149)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(92, 18)
         Me.Label2.TabIndex = 35
@@ -106,7 +106,7 @@ Partial Class AdmLogin
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(42, 61)
+        Me.Label1.Location = New System.Drawing.Point(42, 67)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 18)
         Me.Label1.TabIndex = 34
@@ -117,7 +117,7 @@ Partial Class AdmLogin
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(45, 201)
+        Me.CheckBox1.Location = New System.Drawing.Point(45, 207)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 20)
         Me.CheckBox1.TabIndex = 3
@@ -131,7 +131,7 @@ Partial Class AdmLogin
         Me.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pass.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.pass.Location = New System.Drawing.Point(45, 164)
+        Me.pass.Location = New System.Drawing.Point(45, 170)
         Me.pass.Name = "pass"
         Me.pass.Size = New System.Drawing.Size(352, 31)
         Me.pass.TabIndex = 2
@@ -143,7 +143,7 @@ Partial Class AdmLogin
         Me.user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.user.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.user.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.user.Location = New System.Drawing.Point(45, 82)
+        Me.user.Location = New System.Drawing.Point(45, 88)
         Me.user.Name = "user"
         Me.user.Size = New System.Drawing.Size(352, 31)
         Me.user.TabIndex = 1
@@ -155,7 +155,7 @@ Partial Class AdmLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(149, 241)
+        Me.btnLogin.Location = New System.Drawing.Point(149, 243)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(148, 60)
         Me.btnLogin.TabIndex = 4
@@ -181,18 +181,6 @@ Partial Class AdmLogin
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(14, 14)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(139, 18)
-        Me.Label6.TabIndex = 40
-        Me.Label6.Text = "Login as Admin"
-        '
         'btnUseRFID
         '
         Me.btnUseRFID.BackColor = System.Drawing.Color.DarkCyan
@@ -207,6 +195,31 @@ Partial Class AdmLogin
         Me.btnUseRFID.Text = "Use RFID"
         Me.btnUseRFID.UseVisualStyleBackColor = False
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(14, 14)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(139, 18)
+        Me.Label6.TabIndex = 40
+        Me.Label6.Text = "Login as Admin"
+        '
+        'eye
+        '
+        Me.eye.BackColor = System.Drawing.Color.Transparent
+        Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
+        Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
+        Me.eye.Location = New System.Drawing.Point(352, 172)
+        Me.eye.Name = "eye"
+        Me.eye.Size = New System.Drawing.Size(43, 27)
+        Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.eye.TabIndex = 33
+        Me.eye.TabStop = False
+        '
         'btnAbout
         '
         Me.btnAbout.BackColor = System.Drawing.Color.Transparent
@@ -220,19 +233,6 @@ Partial Class AdmLogin
         Me.btnAbout.Size = New System.Drawing.Size(30, 32)
         Me.btnAbout.TabIndex = 6
         Me.btnAbout.UseVisualStyleBackColor = False
-        '
-        'eye
-        '
-        Me.eye.BackColor = System.Drawing.Color.Transparent
-        Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
-        Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
-        Me.eye.Location = New System.Drawing.Point(352, 166)
-        Me.eye.Name = "eye"
-        Me.eye.Size = New System.Drawing.Size(43, 27)
-        Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.eye.TabIndex = 33
-        Me.eye.TabStop = False
         '
         'AdmLogin
         '

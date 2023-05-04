@@ -49,7 +49,7 @@ Partial Class StdLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(149, 241)
+        Me.btnLogin.Location = New System.Drawing.Point(149, 243)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(148, 60)
         Me.btnLogin.TabIndex = 4
@@ -63,7 +63,7 @@ Partial Class StdLogin
         Me.user.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.user.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.user.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.user.Location = New System.Drawing.Point(45, 82)
+        Me.user.Location = New System.Drawing.Point(45, 90)
         Me.user.MaxLength = 50
         Me.user.Name = "user"
         Me.user.Size = New System.Drawing.Size(352, 31)
@@ -75,7 +75,7 @@ Partial Class StdLogin
         Me.password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.password.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.password.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.password.Location = New System.Drawing.Point(45, 164)
+        Me.password.Location = New System.Drawing.Point(45, 172)
         Me.password.MaxLength = 50
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(352, 31)
@@ -88,7 +88,7 @@ Partial Class StdLogin
         Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CheckBox1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.CheckBox1.Location = New System.Drawing.Point(45, 201)
+        Me.CheckBox1.Location = New System.Drawing.Point(45, 209)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(59, 20)
         Me.CheckBox1.TabIndex = 3
@@ -116,7 +116,7 @@ Partial Class StdLogin
         Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
         Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
-        Me.eye.Location = New System.Drawing.Point(352, 166)
+        Me.eye.Location = New System.Drawing.Point(352, 174)
         Me.eye.Name = "eye"
         Me.eye.Size = New System.Drawing.Size(43, 27)
         Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -129,7 +129,7 @@ Partial Class StdLogin
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label1.Location = New System.Drawing.Point(42, 61)
+        Me.Label1.Location = New System.Drawing.Point(42, 69)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(130, 18)
         Me.Label1.TabIndex = 20
@@ -141,7 +141,7 @@ Partial Class StdLogin
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(42, 143)
+        Me.Label2.Location = New System.Drawing.Point(42, 151)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(92, 18)
         Me.Label2.TabIndex = 21
