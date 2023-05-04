@@ -105,11 +105,17 @@
     <Compile Include="AdmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="RFIDLogin.Designer.vb">
-      <DependentUpon>RFIDLogin.vb</DependentUpon>
+    <Compile Include="admRFIDLogin.Designer.vb">
+      <DependentUpon>admRFIDLogin.vb</DependentUpon>
     </Compile>
-    <Compile Include="RFIDLogin.vb">
+    <Compile Include="admRFIDLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="stdRFIDLogin.Designer.vb">
+      <DependentUpon>stdRFIDLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stdRFIDLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StdVote.Designer.vb">
@@ -186,8 +192,11 @@
     <EmbeddedResource Include="AdmLogin.resx">
       <DependentUpon>AdmLogin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RFIDLogin.resx">
-      <DependentUpon>RFIDLogin.vb</DependentUpon>
+    <EmbeddedResource Include="admRFIDLogin.resx">
+      <DependentUpon>admRFIDLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stdRFIDLogin.resx">
+      <DependentUpon>stdRFIDLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StdVote.resx">
       <DependentUpon>StdVote.vb</DependentUpon>

@@ -54,4 +54,8 @@ Public Class AdmLogin
         StdLogin.Show()
     End Sub
 
+    Private Sub btnUseRFID_Click(sender As Object, e As EventArgs) Handles btnUseRFID.Click
+        admRFIDLogin.Show()
+        Me.Hide()
+    End Sub
 End Class

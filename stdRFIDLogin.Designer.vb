@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class RFIDLogin
+Partial Class stdRFIDLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,10 +22,10 @@ Partial Class RFIDLogin
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RFIDLogin))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(stdRFIDLogin))
         Me.btnRFIDLogin = New System.Windows.Forms.Button()
         Me.txtRFID = New System.Windows.Forms.TextBox()
-        Me.btnUseRFID = New System.Windows.Forms.Button()
+        Me.btnUsePass = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnRFIDLogin
@@ -46,7 +46,6 @@ Partial Class RFIDLogin
         '
         Me.txtRFID.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.txtRFID.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtRFID.Enabled = False
         Me.txtRFID.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.txtRFID.Location = New System.Drawing.Point(49, 82)
@@ -57,36 +56,36 @@ Partial Class RFIDLogin
         Me.txtRFID.TabIndex = 44
         Me.txtRFID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'btnUseRFID
+        'btnUsePass
         '
-        Me.btnUseRFID.BackColor = System.Drawing.Color.DarkCyan
-        Me.btnUseRFID.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUseRFID.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnUseRFID.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUseRFID.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnUseRFID.Location = New System.Drawing.Point(334, 12)
-        Me.btnUseRFID.Name = "btnUseRFID"
-        Me.btnUseRFID.Size = New System.Drawing.Size(147, 36)
-        Me.btnUseRFID.TabIndex = 45
-        Me.btnUseRFID.Text = "Use password"
-        Me.btnUseRFID.UseVisualStyleBackColor = False
+        Me.btnUsePass.BackColor = System.Drawing.Color.DarkCyan
+        Me.btnUsePass.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUsePass.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnUsePass.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUsePass.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnUsePass.Location = New System.Drawing.Point(334, 12)
+        Me.btnUsePass.Name = "btnUsePass"
+        Me.btnUsePass.Size = New System.Drawing.Size(147, 36)
+        Me.btnUsePass.TabIndex = 45
+        Me.btnUsePass.Text = "Use password"
+        Me.btnUsePass.UseVisualStyleBackColor = False
         '
-        'RFIDLogin
+        'stdRFIDLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(493, 225)
-        Me.Controls.Add(Me.btnUseRFID)
+        Me.Controls.Add(Me.btnUsePass)
         Me.Controls.Add(Me.txtRFID)
         Me.Controls.Add(Me.btnRFIDLogin)
         Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "RFIDLogin"
+        Me.Name = "stdRFIDLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "RFID Login"
+        Me.Text = "Student RFID Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -94,5 +93,5 @@ Partial Class RFIDLogin
 
     Friend WithEvents btnRFIDLogin As Button
     Friend WithEvents txtRFID As TextBox
-    Friend WithEvents btnUseRFID As Button
+    Friend WithEvents btnUsePass As Button
 End Class

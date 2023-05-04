@@ -10,7 +10,7 @@ Public Class AdmRegister
     'Dim constring As String = "server = localhost; userid = root; DATABASE = votingsystem_perez"
 
     'online db
-    Dim constring As String = "server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
+    Dim constring As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
 
     Dim cmd As MySqlCommand
 

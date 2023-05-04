@@ -21,4 +21,5 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_P
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.StdResult.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.StdVote.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.AdmUpdateVoter.resources
-C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.RFIDLogin.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.admRFIDLogin.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.stdRFIDLogin.resources

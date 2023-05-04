@@ -6,7 +6,7 @@ Imports MySql.Data.MySqlClient
 Public Class StdVote
     Dim connect As MySqlConnection
     'Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
-    Dim constring As String = "server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
+    Dim constring As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
 
     Dim cmd As MySqlCommand
 

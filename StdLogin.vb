@@ -14,7 +14,7 @@ Public Class StdLogin
             MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             Try
-                Dim conn As New MySqlConnection("server=db4free.net; userid=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
+                Dim conn As New MySqlConnection("server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
 
                 Dim command As New MySqlCommand("SELECT `email`, `pass`, `votestatus` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
                 command.Connection = conn 'set the connection property of the command object
@@ -94,7 +94,7 @@ Public Class StdLogin
     End Sub
 
     Private Sub btnUseRFID_Click(sender As Object, e As EventArgs) Handles btnUseRFID.Click
-        RFIDLogin.Show()
+        stdRFIDLogin.Show()
         Me.Hide()
     End Sub
 End Class
