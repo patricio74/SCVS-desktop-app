@@ -30,8 +30,7 @@ Public Class stdRFIDLogin
                             txtRFID.Clear()
                             MessageBox.Show("You have already voted.")
                         Else
-                            MessageBox.Show("Welcome to SCVS, " & username & "!")
-                            txtRFID.Clear()
+                            ' MessageBox.Show("Welcome to SCVS, " & username & "!")
                             StdMenu.Show()
                             Me.Hide()
                         End If

@@ -77,10 +77,7 @@ Public Class StdLogin
         End If
     End Sub
 
-    Private Sub eye_Click(sender As Object, e As EventArgs)
-        CheckBox1.Checked = Not CheckBox1.Checked
-    End Sub
-
+    'swtich to admin login form
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles lblSwitchLogin.Click
         user.Clear()
         password.Clear()
@@ -95,9 +92,5 @@ Public Class StdLogin
         CheckBox1.Checked = False
         stdRFIDLogin.Show()
         Me.Hide()
-    End Sub
-
-    Private Sub StdLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

@@ -21,9 +21,6 @@ Public Class StdVote
     Dim thirname, thirpos As String
     Dim fourname, fourpos As String
 
-    Private Sub Ballot_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 
     'pang clear sa form
     Public Sub Clearballot()
@@ -64,8 +61,22 @@ Public Class StdVote
         Try
             connect = New MySqlConnection(constring)
             connect.Open()
+
             Dim username As String = StdLogin.user.Text
-            Dim SQL As String =
+            Dim tag As String = stdRFIDLogin.txtRFID.Text
+
+            ' Check if the user or RFID tag has already voted
+            Dim checkQuery As String = "SELECT votestatus FROM voters WHERE email = '" & username & "' OR rfid = '" & tag & "'"
+            cmd = New MySqlCommand(checkQuery, connect)
+            Dim voteStatus As String = Convert.ToString(cmd.ExecuteScalar())
+
+            If voteStatus = "voted" Then
+                MsgBox("You have already voted!", vbInformation, "Admin")
+                Return
+            End If
+
+            ' Insert candidates
+            Dim insertQuery As String =
             "INSERT INTO candidates (full_name, Position) 
             values('" & presname & "','" & prespos & "');
             INSERT INTO candidates (full_name, Position) 
@@ -85,28 +96,48 @@ Public Class StdVote
             INSERT INTO candidates (full_name, Position) 
             values('" & thirname & "','" & thirpos & "');
             INSERT INTO candidates (full_name, Position) 
-            values('" & fourname & "','" & fourpos & "');
-            UPDATE voters SET votestatus='voted' WHERE email='" & username & "';
-            "
-            cmd = New MySqlCommand(SQL, connect)
-            Dim i As Integer = cmd.ExecuteNonQuery
+            values('" & fourname & "','" & fourpos & "');"
 
-            If i <> 0 Then
-                MsgBox("Vote submitted successfuly!", vbInformation, "Admin")
-                StdLogin.Show()
-                Me.Hide()
-                Call Clearballot()
-            Else
-                MsgBox("Vote failed!", vbCritical, "Admin")
-            End If
-            Call Clearballot()
+            ' Execute multiple SQL statements in a single transaction
+            Using transaction As MySqlTransaction = connect.BeginTransaction()
+                cmd = New MySqlCommand()
+                cmd.Connection = connect
+                cmd.Transaction = transaction
+
+                Try
+                    ' Execute INSERT statements
+                    cmd.CommandText = insertQuery
+                    cmd.ExecuteNonQuery()
+
+                    ' Update voter's vote status
+                    Dim updateQuery As String = "UPDATE voters SET votestatus='voted' WHERE email='" & username & "' OR rfid='" & tag & "';"
+                    cmd.CommandText = updateQuery
+                    cmd.ExecuteNonQuery()
+
+                    ' Commit the transaction if all statements succeed
+                    transaction.Commit()
+
+                    MsgBox("Vote submitted successfully!", vbInformation, "Admin")
+                    StdLogin.Show()
+                    stdRFIDLogin.txtRFID.Clear()
+                    Me.Hide()
+                    Call Clearballot()
+                Catch ex As Exception
+                    ' Rollback the transaction if any error occurs
+                    transaction.Rollback()
+                    MsgBox("Vote failed!", vbCritical, "Admin")
+                End Try
+            End Using
+
             connect.Close()
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+
         Call Clearballot()
     End Sub
+
 
     'return button
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

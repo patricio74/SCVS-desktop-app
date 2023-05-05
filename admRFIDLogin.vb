@@ -30,6 +30,7 @@ Public Class admRFIDLogin
                         'MessageBox.Show("You have already voted.")
                         'MessageBox.Show("Welcome to SCVS, " & username & "!")
                         AdmMenu.Show()
+                        txtRFID.Clear()
                         Me.Hide()
                     Else
                         MessageBox.Show("User RFID tag not found.")

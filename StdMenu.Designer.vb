@@ -31,6 +31,7 @@ Partial Class StdMenu
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label3
@@ -83,29 +84,29 @@ Partial Class StdMenu
         '
         'Button5
         '
-        Me.Button5.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button5.BackColor = System.Drawing.Color.Goldenrod
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(77, 421)
+        Me.Button5.Location = New System.Drawing.Point(77, 452)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(374, 87)
-        Me.Button5.TabIndex = 40
+        Me.Button5.Size = New System.Drawing.Size(374, 72)
+        Me.Button5.TabIndex = 41
         Me.Button5.Text = "About App"
         Me.Button5.UseVisualStyleBackColor = False
         '
         'Button4
         '
-        Me.Button4.BackColor = System.Drawing.Color.Goldenrod
+        Me.Button4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(77, 529)
+        Me.Button4.Location = New System.Drawing.Point(77, 530)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(374, 87)
-        Me.Button4.TabIndex = 41
+        Me.Button4.Size = New System.Drawing.Size(374, 72)
+        Me.Button4.TabIndex = 42
         Me.Button4.Text = "Logout"
         Me.Button4.UseVisualStyleBackColor = False
         '
@@ -116,9 +117,9 @@ Partial Class StdMenu
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(77, 313)
+        Me.Button2.Location = New System.Drawing.Point(77, 296)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(374, 87)
+        Me.Button2.Size = New System.Drawing.Size(374, 72)
         Me.Button2.TabIndex = 39
         Me.Button2.Text = "View Vote Result"
         Me.Button2.UseVisualStyleBackColor = False
@@ -130,19 +131,34 @@ Partial Class StdMenu
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(77, 206)
+        Me.Button1.Location = New System.Drawing.Point(77, 218)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(374, 87)
+        Me.Button1.Size = New System.Drawing.Size(374, 72)
         Me.Button1.TabIndex = 38
         Me.Button1.Text = "Add Vote"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Button6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button6.Font = New System.Drawing.Font("Verdana", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.Button6.Location = New System.Drawing.Point(77, 374)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(374, 72)
+        Me.Button6.TabIndex = 40
+        Me.Button6.Text = "Open Website"
+        Me.Button6.UseVisualStyleBackColor = False
         '
         'StdMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(529, 671)
+        Me.ClientSize = New System.Drawing.Size(529, 641)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label9)
@@ -173,4 +189,5 @@ Partial Class StdMenu
     Friend WithEvents Button4 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button6 As Button
 End Class

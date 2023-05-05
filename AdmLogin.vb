@@ -77,14 +77,11 @@ Public Class AdmLogin
         End If
     End Sub
 
-    Private Sub eye_Click(sender As Object, e As EventArgs) 
-        CheckBox1.Checked = Not CheckBox1.Checked
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
         About.Show()
     End Sub
 
+    'switch to student login form
     Private Sub lblSwitchLogin_Click(sender As Object, e As EventArgs) Handles lblSwitchLogin.Click
         user.Clear()
         pass.Clear()

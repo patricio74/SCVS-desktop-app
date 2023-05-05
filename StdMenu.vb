@@ -14,11 +14,14 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        StdLogin.user.Clear()
+        StdLogin.password.Clear()
+        stdRFIDLogin.txtRFID.Clear()
         StdLogin.Show()
         Me.Hide()
     End Sub
 
-    Private Sub StdMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Process.Start("https://scvs.000webhostapp.com/")
     End Sub
 End Class

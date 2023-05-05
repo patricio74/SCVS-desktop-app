@@ -17,6 +17,9 @@ Public Class AdmMenu
 
     'logout button
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        AdmLogin.user.Clear()
+        AdmLogin.pass.Clear()
+        admRFIDLogin.txtRFID.Clear()
         AdmLogin.Show()
         Me.Hide()
     End Sub
@@ -32,7 +35,7 @@ Public Class AdmMenu
         Me.Hide()
     End Sub
 
-    Private Sub AdmMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Process.Start("https://scvs.000webhostapp.com/")
     End Sub
 End Class
