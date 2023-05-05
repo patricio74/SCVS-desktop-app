@@ -36,10 +36,8 @@ Partial Class AdmLogin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnUseRFID = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.eye = New System.Windows.Forms.PictureBox()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.eye, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblSwitchLogin
@@ -123,7 +121,6 @@ Partial Class AdmLogin
         Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "Show"
         Me.CheckBox1.UseVisualStyleBackColor = False
-        Me.CheckBox1.Visible = False
         '
         'pass
         '
@@ -170,7 +167,6 @@ Partial Class AdmLogin
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.user)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.eye)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.btnLogin)
         Me.GroupBox1.Controls.Add(Me.pass)
@@ -206,19 +202,6 @@ Partial Class AdmLogin
         Me.Label6.Size = New System.Drawing.Size(139, 18)
         Me.Label6.TabIndex = 40
         Me.Label6.Text = "Login as Admin"
-        '
-        'eye
-        '
-        Me.eye.BackColor = System.Drawing.Color.Transparent
-        Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
-        Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
-        Me.eye.Location = New System.Drawing.Point(352, 172)
-        Me.eye.Name = "eye"
-        Me.eye.Size = New System.Drawing.Size(43, 27)
-        Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.eye.TabIndex = 33
-        Me.eye.TabStop = False
         '
         'btnAbout
         '
@@ -258,7 +241,6 @@ Partial Class AdmLogin
         Me.Text = "SCVS Login"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -270,7 +252,6 @@ Partial Class AdmLogin
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents eye As PictureBox
     Friend WithEvents btnAbout As Button
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents pass As TextBox

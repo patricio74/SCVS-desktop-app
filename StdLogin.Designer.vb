@@ -28,7 +28,6 @@ Partial Class StdLogin
         Me.password = New System.Windows.Forms.TextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.btnAbout = New System.Windows.Forms.Button()
-        Me.eye = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -38,7 +37,6 @@ Partial Class StdLogin
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnUseRFID = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        CType(Me.eye, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -85,7 +83,7 @@ Partial Class StdLogin
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CheckBox1.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.CheckBox1.Location = New System.Drawing.Point(45, 209)
@@ -94,7 +92,6 @@ Partial Class StdLogin
         Me.CheckBox1.TabIndex = 3
         Me.CheckBox1.Text = "Show"
         Me.CheckBox1.UseVisualStyleBackColor = False
-        Me.CheckBox1.Visible = False
         '
         'btnAbout
         '
@@ -109,19 +106,6 @@ Partial Class StdLogin
         Me.btnAbout.Size = New System.Drawing.Size(30, 32)
         Me.btnAbout.TabIndex = 6
         Me.btnAbout.UseVisualStyleBackColor = False
-        '
-        'eye
-        '
-        Me.eye.BackColor = System.Drawing.Color.Transparent
-        Me.eye.BackgroundImage = CType(resources.GetObject("eye.BackgroundImage"), System.Drawing.Image)
-        Me.eye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.eye.InitialImage = CType(resources.GetObject("eye.InitialImage"), System.Drawing.Image)
-        Me.eye.Location = New System.Drawing.Point(352, 174)
-        Me.eye.Name = "eye"
-        Me.eye.Size = New System.Drawing.Size(43, 27)
-        Me.eye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.eye.TabIndex = 19
-        Me.eye.TabStop = False
         '
         'Label1
         '
@@ -151,7 +135,7 @@ Partial Class StdLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.Label3.ForeColor = System.Drawing.Color.WhiteSmoke
         Me.Label3.Location = New System.Drawing.Point(45, 686)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(166, 16)
@@ -200,7 +184,6 @@ Partial Class StdLogin
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.btnUseRFID)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.eye)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.user)
         Me.GroupBox1.Controls.Add(Me.CheckBox1)
@@ -263,7 +246,6 @@ Partial Class StdLogin
         Me.Name = "StdLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SCVS Login"
-        CType(Me.eye, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
@@ -275,7 +257,6 @@ Partial Class StdLogin
     Friend WithEvents password As TextBox
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents btnAbout As Button
-    Friend WithEvents eye As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label

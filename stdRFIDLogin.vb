@@ -27,6 +27,7 @@ Public Class stdRFIDLogin
                         Dim voteStatus As String = reader("VoteStatus").ToString()
 
                         If voteStatus = "voted" Then
+                            txtRFID.Clear()
                             MessageBox.Show("You have already voted.")
                         Else
                             MessageBox.Show("Welcome to SCVS, " & username & "!")

@@ -72,16 +72,12 @@ Public Class AdmLogin
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.CheckState = CheckState.Checked Then
             pass.UseSystemPasswordChar = False
-            'naiyakXD
-            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\show.jpg")
         Else
             pass.UseSystemPasswordChar = True
-            'nakapikit
-            eye.Image = Image.FromFile("C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\hide.png")
         End If
     End Sub
 
-    Private Sub eye_Click(sender As Object, e As EventArgs) Handles eye.Click
+    Private Sub eye_Click(sender As Object, e As EventArgs) 
         CheckBox1.Checked = Not CheckBox1.Checked
     End Sub
 
@@ -100,6 +96,7 @@ Public Class AdmLogin
     Private Sub btnUseRFID_Click(sender As Object, e As EventArgs) Handles btnUseRFID.Click
         user.Clear()
         pass.Clear()
+        CheckBox1.Checked = False
         admRFIDLogin.Show()
         Me.Hide()
     End Sub
