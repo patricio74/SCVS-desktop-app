@@ -13,27 +13,46 @@ Public Class AdmUpdateVoter
     Dim itemcol(999) As String
     Dim da As MySqlDataAdapter
     Dim ds As DataSet
-    Public Sub Voterinfo()
+    Public Sub VoterInfo()
         Try
             ListView1.Items.Clear()
             connect = New MySqlConnection(constring)
             connect.Open()
-            Dim sql As String = "SELECT * from voters"
+            Dim sql As String = "SELECT * FROM voters"
             cmd = New MySqlCommand(sql, connect)
             da = New MySqlDataAdapter(cmd)
             ds = New DataSet
             da.Fill(ds, "Tables")
             For r = 0 To ds.Tables(0).Rows.Count - 1
-                For c = 0 To ds.Tables(0).Columns.Count - 1
-                    itemcol(c) = ds.Tables(0).Rows(r)(c).ToString
-                Next
-                Dim lvitm As New ListViewItem(itemcol)
+                Dim lvitm As New ListViewItem()
+                lvitm.Text = ds.Tables(0).Rows(r)("student_number").ToString()
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("first_name").ToString())
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("middle_name").ToString())
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("last_name").ToString())
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("course").ToString())
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("yr").ToString())
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("email").ToString())
+                lvitm.SubItems.Add(ds.Tables(0).Rows(r)("RFID").ToString())
                 ListView1.Items.Add(lvitm)
             Next
         Catch ex As Exception
             MsgBox(ex.Message)
+        Finally
+            connect.Close()
         End Try
-        connect.Close()
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+        If ListView1.SelectedItems.Count > 0 Then
+            stdNum.Text = ListView1.SelectedItems(0).SubItems(0).Text
+            firstname.Text = ListView1.SelectedItems(0).SubItems(1).Text
+            middlename.Text = ListView1.SelectedItems(0).SubItems(2).Text
+            lastname.Text = ListView1.SelectedItems(0).SubItems(3).Text
+            cboxCourse.Text = ListView1.SelectedItems(0).SubItems(4).Text
+            cboxYear.Text = ListView1.SelectedItems(0).SubItems(5).Text
+            email.Text = ListView1.SelectedItems(0).SubItems(6).Text
+            rfid.Text = ListView1.SelectedItems(0).SubItems(7).Text
+        End If
     End Sub
     Public Sub Clearinfo()
         stdNum.Clear()
@@ -43,6 +62,7 @@ Public Class AdmUpdateVoter
         cboxCourse.SelectedIndex = -1
         cboxYear.SelectedIndex = -1
         email.Clear()
+        rfid.Clear()
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -63,7 +83,7 @@ Public Class AdmUpdateVoter
             connect = New MySqlConnection(constring)
             connect.Open()
             Dim SQL As String =
-                "UPDATE voters SET First_name ='" & firstname.Text & "', Last_name ='" & lastname.Text & "', Middle_name ='" & middlename.Text & "', Course ='" & cboxCourse.Text & "',Yr ='" & cboxYear.Text & "', Email ='" & email.Text & "'   
+                "UPDATE voters SET First_name ='" & firstname.Text & "', Last_name ='" & lastname.Text & "', Middle_name ='" & middlename.Text & "', Course ='" & cboxCourse.Text & "',Yr ='" & cboxYear.Text & "', Email ='" & email.Text & "', RFID = '" & rfid.Text & "'   
                 WHERE Student_number ='" & stdNum.Text & "' "
             cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery
@@ -79,18 +99,6 @@ Public Class AdmUpdateVoter
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-    End Sub
-
-    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
-        If ListView1.SelectedItems.Count > 0 Then
-            stdNum.Text = ListView1.SelectedItems(0).SubItems(0).Text
-            firstname.Text = ListView1.SelectedItems(0).SubItems(1).Text
-            lastname.Text = ListView1.SelectedItems(0).SubItems(2).Text
-            middlename.Text = ListView1.SelectedItems(0).SubItems(3).Text
-            cboxCourse.Text = ListView1.SelectedItems(0).SubItems(4).Text
-            cboxYear.Text = ListView1.SelectedItems(0).SubItems(5).Text
-            email.Text = ListView1.SelectedItems(0).SubItems(6).Text
-        End If
     End Sub
 
     'delete button
@@ -113,9 +121,5 @@ Public Class AdmUpdateVoter
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-    End Sub
-
-    Private Sub course_TextChanged(sender As Object, e As EventArgs)
-
     End Sub
 End Class

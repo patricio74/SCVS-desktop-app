@@ -272,13 +272,11 @@ Partial Class AdmRegister
         '
         Me.txtRFID.BackColor = System.Drawing.Color.WhiteSmoke
         Me.txtRFID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtRFID.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.txtRFID.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRFID.ForeColor = System.Drawing.Color.Black
         Me.txtRFID.Location = New System.Drawing.Point(109, 580)
-        Me.txtRFID.MaxLength = 50
+        Me.txtRFID.MaxLength = 10
         Me.txtRFID.Name = "txtRFID"
-        Me.txtRFID.ReadOnly = True
         Me.txtRFID.Size = New System.Drawing.Size(390, 27)
         Me.txtRFID.TabIndex = 48
         Me.txtRFID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
