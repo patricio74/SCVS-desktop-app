@@ -51,8 +51,8 @@ Public Class AdmLogin
                     MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 ElseIf table.Rows.Count > 0 Then 'check if there are any rows returned from the query
                     AdmMenu.Show()
-                    Me.Hide()
                     pass.Clear()
+                    Me.Hide()
                     CheckBox1.CheckState = False
                 Else
                     MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -98,6 +98,8 @@ Public Class AdmLogin
     End Sub
 
     Private Sub btnUseRFID_Click(sender As Object, e As EventArgs) Handles btnUseRFID.Click
+        user.Clear()
+        pass.Clear()
         admRFIDLogin.Show()
         Me.Hide()
     End Sub

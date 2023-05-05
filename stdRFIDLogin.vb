@@ -1,53 +1,54 @@
 ﻿Imports System.Data.SqlClient
 Imports MySql.Data.MySqlClient
-
 Public Class stdRFIDLogin
-    Dim connectionString As String = ("server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
-    Private Sub RFIDLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    Private connectionString As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
+
+    Private Sub btnRFIDLogin_Click(sender As Object, e As EventArgs) Handles btnRFIDLogin.Click
+        Dim rfidTag As String = txtRFID.Text.Trim()
+
+        ' Check if the RFID tag is valid
+        If String.IsNullOrEmpty(rfidTag) Then
+            MessageBox.Show("Please scan your RFID tag.")
+            Return
+        End If
+
+        ' Check the database for the RFID tag and vote status
+        Dim query As String = "SELECT * FROM voters WHERE RFID = @RFIDTag"
+        Using connection As New MySqlConnection(connectionString)
+            Using command As New MySqlCommand(query, connection)
+                command.Parameters.AddWithValue("@RFIDTag", rfidTag)
+                Try
+                    connection.Open()
+                    Dim reader As MySqlDataReader = command.ExecuteReader()
+
+                    If reader.Read() Then
+                        Dim username As String = reader("email").ToString()
+                        Dim voteStatus As String = reader("VoteStatus").ToString()
+
+                        If voteStatus = "voted" Then
+                            MessageBox.Show("You have already voted.")
+                        Else
+                            MessageBox.Show("Welcome to SCVS, " & username & "!")
+                            txtRFID.Clear()
+                            StdMenu.Show()
+                            Me.Hide()
+                        End If
+                    Else
+                        MessageBox.Show("User RFID tag not found.")
+                    End If
+
+                    reader.Close()
+                Catch ex As Exception
+                    MessageBox.Show("Error: " & ex.Message)
+                End Try
+            End Using
+        End Using
     End Sub
 
-    Private Function CheckRFIDInDatabase(rfid As String) As Boolean
-        Dim result As Boolean = False
-        Try
-            Using connection As New SqlConnection(connectionString)
-                connection.Open()
-
-                Dim query As String = "SELECT COUNT(*) FROM voters WHERE RFID = @rfid"
-                Using command As New SqlCommand(query, connection)
-                    command.Parameters.AddWithValue("@rfid", rfid)
-
-                    Dim count As Integer = Convert.ToInt32(command.ExecuteScalar())
-                    If count > 0 Then
-                        result = True
-                    End If
-                End Using
-            End Using
-
-        Catch ex As MySqlException
-            MessageBox.Show("A MySQL exception occurred: " + ex.Message, "MySQL Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Catch ex As InvalidOperationException
-            MessageBox.Show("An invalid operation exception occurred: " + ex.Message, "Invalid Operation Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Catch ex As Exception
-            MessageBox.Show("An exception occurred: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-        Return result
-    End Function
-
     Private Sub btnUsePass_Click(sender As Object, e As EventArgs) Handles btnUsePass.Click
+        txtRFID.Clear()
         StdLogin.Show()
         Me.Hide()
     End Sub
-
-    Private Sub btnRFIDLogin_Click(sender As Object, e As EventArgs) Handles btnRFIDLogin.Click
-        Dim rfid As String = txtRFID.Text.Trim()
-
-        If CheckRFIDInDatabase(rfid) Then
-            StdMenu.Show()
-            Me.Hide()
-        Else
-            MessageBox.Show("User RFID not found in the database!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-    End Sub
-
 End Class

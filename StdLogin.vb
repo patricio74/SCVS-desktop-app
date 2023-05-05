@@ -43,9 +43,9 @@ Public Class StdLogin
                             password.Clear()
                         Else
                             StdMenu.Show()
-                            Me.Hide()
                             password.Clear()
                             CheckBox1.CheckState = False
+                            Me.Hide()
                         End If
                     Else
                         MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -94,7 +94,13 @@ Public Class StdLogin
     End Sub
 
     Private Sub btnUseRFID_Click(sender As Object, e As EventArgs) Handles btnUseRFID.Click
+        user.Clear()
+        password.Clear()
         stdRFIDLogin.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub StdLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

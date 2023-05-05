@@ -38,7 +38,7 @@ Partial Class stdRFIDLogin
         Me.btnRFIDLogin.Location = New System.Drawing.Point(170, 135)
         Me.btnRFIDLogin.Name = "btnRFIDLogin"
         Me.btnRFIDLogin.Size = New System.Drawing.Size(154, 57)
-        Me.btnRFIDLogin.TabIndex = 43
+        Me.btnRFIDLogin.TabIndex = 44
         Me.btnRFIDLogin.Text = "LOGIN"
         Me.btnRFIDLogin.UseVisualStyleBackColor = False
         '
@@ -51,9 +51,8 @@ Partial Class stdRFIDLogin
         Me.txtRFID.Location = New System.Drawing.Point(49, 82)
         Me.txtRFID.MaxLength = 50
         Me.txtRFID.Name = "txtRFID"
-        Me.txtRFID.ReadOnly = True
         Me.txtRFID.Size = New System.Drawing.Size(400, 36)
-        Me.txtRFID.TabIndex = 44
+        Me.txtRFID.TabIndex = 43
         Me.txtRFID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'btnUsePass
