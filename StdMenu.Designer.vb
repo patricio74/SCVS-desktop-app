@@ -157,7 +157,7 @@ Partial Class StdMenu
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(529, 641)
+        Me.ClientSize = New System.Drawing.Size(529, 655)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)

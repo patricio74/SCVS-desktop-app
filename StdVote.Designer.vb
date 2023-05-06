@@ -782,7 +782,7 @@ Partial Class StdVote
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(191, Byte), Integer), CType(CType(8, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(246, 12)
+        Me.Label1.Location = New System.Drawing.Point(246, 22)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(678, 38)
         Me.Label1.TabIndex = 44

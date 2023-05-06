@@ -51,4 +51,7 @@ Public Class StdResult
         Call voteresult()
     End Sub
 
+    Private Sub StdResult_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Call voteresult()
+    End Sub
 End Class

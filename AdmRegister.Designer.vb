@@ -98,7 +98,6 @@ Partial Class AdmRegister
         '
         Me.email.BackColor = System.Drawing.Color.WhiteSmoke
         Me.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.email.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.ForeColor = System.Drawing.Color.Black
         Me.email.Location = New System.Drawing.Point(107, 432)
@@ -247,7 +246,6 @@ Partial Class AdmRegister
         '
         Me.pass.BackColor = System.Drawing.Color.WhiteSmoke
         Me.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pass.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.pass.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.Black
         Me.pass.Location = New System.Drawing.Point(109, 506)

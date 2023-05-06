@@ -58,7 +58,6 @@ Partial Class StdLogin
         '
         Me.user.BackColor = System.Drawing.Color.WhiteSmoke
         Me.user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.user.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.user.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.user.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.user.Location = New System.Drawing.Point(45, 90)

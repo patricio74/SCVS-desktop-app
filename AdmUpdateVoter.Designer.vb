@@ -93,7 +93,6 @@ Partial Class AdmUpdateVoter
         'email
         '
         Me.email.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.email.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.ForeColor = System.Drawing.Color.Black
         Me.email.Location = New System.Drawing.Point(552, 587)
@@ -341,7 +340,6 @@ Partial Class AdmUpdateVoter
         'rfid
         '
         Me.rfid.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.rfid.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.rfid.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rfid.ForeColor = System.Drawing.Color.Black
         Me.rfid.Location = New System.Drawing.Point(552, 657)
