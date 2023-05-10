@@ -1,4 +1,6 @@
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\VotingSystem_Perez.exe.config
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\VotingSystem_Perez.exe.manifest
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\VotingSystem_Perez.application
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\VotingSystem_Perez.exe
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\VotingSystem_Perez.pdb
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\VotingSystem_Perez.xml
@@ -32,6 +34,9 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_P
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.About.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.AdmLogin.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.admRFIDLogin.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Login.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.RFID.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_Login.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.stdRFIDLogin.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.StdVote.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.AdmMenu.resources
@@ -44,6 +49,8 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_P
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.AdmUpdateVoter.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.GenerateResource.cache
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.CoreCompileInputs.cache
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.exe.manifest
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.application
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.CopyComplete
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.exe
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.xml
