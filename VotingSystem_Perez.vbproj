@@ -181,18 +181,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Login.Designer.vb">
-      <DependentUpon>Login.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Login.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RFID.Designer.vb">
-      <DependentUpon>RFID.vb</DependentUpon>
-    </Compile>
-    <Compile Include="RFID.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="SCVS_Login.Designer.vb">
       <DependentUpon>SCVS_Login.vb</DependentUpon>
     </Compile>
@@ -271,6 +259,12 @@
     <Compile Include="AdmUpdateVoter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Student.Designer.vb">
+      <DependentUpon>Student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Student.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="About.resx">
@@ -284,12 +278,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="admRFIDLogin.resx">
       <DependentUpon>admRFIDLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RFID.resx">
-      <DependentUpon>RFID.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SCVS_Login.resx">
       <DependentUpon>SCVS_Login.vb</DependentUpon>
@@ -327,9 +315,11 @@
     <EmbeddedResource Include="AdmUpdateVoter.resx">
       <DependentUpon>AdmUpdateVoter.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="hahaha.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

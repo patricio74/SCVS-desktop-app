@@ -53,4 +53,5 @@ Public Class AdmResult
     Private Sub AdmResult_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call voteresult()
     End Sub
+
 End Class
