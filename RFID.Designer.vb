@@ -35,53 +35,56 @@ Partial Class RFID
         '
         'GroupBox1
         '
-        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.radStudent)
         Me.GroupBox1.Controls.Add(Me.radAdmin)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.txtboxRFID)
         Me.GroupBox1.Controls.Add(Me.btnLogin)
-        Me.GroupBox1.Location = New System.Drawing.Point(252, 169)
+        Me.GroupBox1.Location = New System.Drawing.Point(127, 99)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(407, 298)
+        Me.GroupBox1.Size = New System.Drawing.Size(395, 271)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         '
         'radStudent
         '
         Me.radStudent.AutoSize = True
-        Me.radStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.radStudent.Location = New System.Drawing.Point(205, 45)
+        Me.radStudent.BackColor = System.Drawing.Color.Transparent
+        Me.radStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.radStudent.Location = New System.Drawing.Point(206, 44)
         Me.radStudent.Name = "radStudent"
-        Me.radStudent.Size = New System.Drawing.Size(84, 22)
+        Me.radStudent.Size = New System.Drawing.Size(78, 24)
         Me.radStudent.TabIndex = 3
         Me.radStudent.TabStop = True
         Me.radStudent.Text = "Student"
-        Me.radStudent.UseVisualStyleBackColor = True
+        Me.radStudent.UseVisualStyleBackColor = False
         '
         'radAdmin
         '
         Me.radAdmin.AutoSize = True
-        Me.radAdmin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.radAdmin.Location = New System.Drawing.Point(127, 45)
+        Me.radAdmin.BackColor = System.Drawing.Color.Transparent
+        Me.radAdmin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.radAdmin.Location = New System.Drawing.Point(131, 44)
         Me.radAdmin.Name = "radAdmin"
-        Me.radAdmin.Size = New System.Drawing.Size(72, 22)
+        Me.radAdmin.Size = New System.Drawing.Size(69, 24)
         Me.radAdmin.TabIndex = 2
         Me.radAdmin.TabStop = True
         Me.radAdmin.Text = "Admin"
-        Me.radAdmin.UseVisualStyleBackColor = True
+        Me.radAdmin.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(49, 51)
+        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(45, 49)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 13)
+        Me.Label1.Size = New System.Drawing.Size(80, 16)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "LOGIN AS:"
         '
@@ -89,24 +92,24 @@ Partial Class RFID
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(49, 103)
+        Me.Label3.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(45, 88)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.Size = New System.Drawing.Size(41, 16)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "RFID"
         '
         'txtboxRFID
         '
-        Me.txtboxRFID.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.txtboxRFID.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.txtboxRFID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtboxRFID.Font = New System.Drawing.Font("Verdana", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtboxRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.txtboxRFID.Location = New System.Drawing.Point(52, 119)
+        Me.txtboxRFID.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtboxRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.txtboxRFID.Location = New System.Drawing.Point(48, 107)
         Me.txtboxRFID.MaxLength = 10
         Me.txtboxRFID.Name = "txtboxRFID"
-        Me.txtboxRFID.Size = New System.Drawing.Size(300, 40)
+        Me.txtboxRFID.Size = New System.Drawing.Size(299, 37)
         Me.txtboxRFID.TabIndex = 0
         Me.txtboxRFID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -118,23 +121,23 @@ Partial Class RFID
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(171, 194)
+        Me.btnLogin.Location = New System.Drawing.Point(165, 173)
         Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(65, 65)
+        Me.btnLogin.Size = New System.Drawing.Size(70, 70)
         Me.btnLogin.TabIndex = 1
         Me.btnLogin.UseVisualStyleBackColor = True
         '
         'RFID
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Transparent
         Me.Controls.Add(Me.GroupBox1)
-        Me.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "RFID"
-        Me.Size = New System.Drawing.Size(911, 662)
+        Me.Size = New System.Drawing.Size(640, 491)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)

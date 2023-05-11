@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="330752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="368640">
       <assemblyIdentity name="VotingSystem_Perez" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>58UbVuxLEdH/fmUasWAmaAI71VK1syaoTeK2XcW7SRo=</dsig:DigestValue>
+        <dsig:DigestValue>7TkSzH4+D8jJ7V1GZHBvHdZDxhJcZYmiUKYQ6Kn96J4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

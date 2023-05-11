@@ -3,9 +3,14 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 Imports MySql.Data.MySqlClient
 
 Public Class RFID
+
     Private connectionString As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
     Private Sub RFID_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         radAdmin.Checked = True
+        txtboxRFID.Focus()
+    End Sub
+    Private Sub RFID_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+        txtboxRFID.Clear()
         txtboxRFID.Focus()
     End Sub
 
@@ -26,6 +31,7 @@ Public Class RFID
             ' Check if the RFID tag is valid
             If String.IsNullOrEmpty(rfidTag) Then
                 MessageBox.Show("Please scan your RFID tag.")
+                txtboxRFID.Focus()
                 Return
             End If
 
@@ -40,11 +46,13 @@ Public Class RFID
 
                         If reader.Read() Then
                             Dim username As String = reader("email").ToString()
-                            AdmMenu.Show()
+                            Admin.Show()
                             'txtboxRFID.Clear()
                             SCVS_Login.Hide()
                         Else
                             MessageBox.Show("User RFID tag not found.")
+                            txtboxRFID.Clear()
+                            txtboxRFID.Focus()
                         End If
 
                         reader.Close()
@@ -77,6 +85,7 @@ Public Class RFID
 
                             If voteStatus = "voted" Then
                                 txtboxRFID.Clear()
+                                txtboxRFID.Focus()
                                 MessageBox.Show("You have already voted.")
                             Else
                                 ' MessageBox.Show("Welcome to SCVS, " & username & "!")
@@ -85,6 +94,8 @@ Public Class RFID
                             End If
                         Else
                             MessageBox.Show("User RFID tag not found.")
+                            txtboxRFID.Clear()
+                            txtboxRFID.Focus()
                         End If
 
                         reader.Close()
@@ -95,4 +106,5 @@ Public Class RFID
             End Using
         End If
     End Sub
+
 End Class

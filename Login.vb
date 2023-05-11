@@ -1,9 +1,14 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports MySql.Data.MySqlClient
 
 Public Class Login
+
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         radAdmin.Checked = True
         txtboxUsername.Focus()
+    End Sub
+    Private Sub Login_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+        txtboxPassword.Clear()
     End Sub
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
@@ -34,10 +39,10 @@ Public Class Login
                     ElseIf txtboxPassword.Text.Trim() = "" Then
                         MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     ElseIf table.Rows.Count > 0 Then 'check if there are any rows returned from the query
-                        AdmMenu.Show()
                         txtboxPassword.Clear()
-                        SCVS_Login.Hide()
                         chkShow.CheckState = False
+                        Admin.Show()
+                        SCVS_Login.Hide()
                     Else
                         MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     End If
@@ -50,6 +55,7 @@ Public Class Login
                     MessageBox.Show("An exception occurred: " + ex.Message, "Exception", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End Try
             End If
+
             'student login
         ElseIf radStudent.Checked Then
             If txtboxUsername.Text = "" Then
@@ -86,9 +92,9 @@ Public Class Login
                                 MessageBox.Show("You have already voted!", "Voting Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                                 txtboxPassword.Clear()
                             Else
-                                StdMenu.Show()
                                 txtboxPassword.Clear()
                                 chkShow.CheckState = False
+                                StdMenu.Show()
                                 SCVS_Login.Hide()
                             End If
                         Else
@@ -116,14 +122,15 @@ Public Class Login
     End Sub
 
     Private Sub radAdmin_CheckedChanged(sender As Object, e As EventArgs) Handles radAdmin.CheckedChanged
-        txtboxUsername.Clear()
         txtboxPassword.Clear()
+        chkShow.Checked = False
         txtboxUsername.Focus()
     End Sub
 
     Private Sub radStudent_CheckedChanged(sender As Object, e As EventArgs) Handles radStudent.CheckedChanged
-        txtboxUsername.Clear()
         txtboxPassword.Clear()
+        chkShow.Checked = False
         txtboxUsername.Focus()
     End Sub
+
 End Class
