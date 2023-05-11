@@ -9,16 +9,14 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Windows
 
 Public Class SCVS_Login
-
-    'para sa panel tong code na to
-    'user controls reference
-    'Dim rfidLogin = New RFID
-    'Dim userLogin = New Login
-
     Private connectionString As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
+    Private Sub SCVS_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        radAdmin.Checked = True
+        userLogin()
+    End Sub
 
     'hides the textboxes pag RFID gagamitin
-    Private Sub userRFID()
+    Public Sub userRFID()
         txtboxUsername.Clear()
         txtboxPassword.Clear()
         txtboxRFID.Clear()
@@ -29,7 +27,7 @@ Public Class SCVS_Login
         grpRFIDLogin.Show()
         txtboxRFID.Focus()
     End Sub
-    Private Sub userLogin()
+    Public Sub userLogin()
         txtboxUsername.Clear()
         txtboxPassword.Clear()
         txtboxRFID.Clear()
@@ -40,15 +38,6 @@ Public Class SCVS_Login
         txtboxUsername.Focus()
     End Sub
 
-    Private Sub SCVS_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'loads the panel
-        'Panel2.Controls.Add(rfidLogin)
-        'Panel2.Controls.Add(userLogin)
-        'userLogin.BringToFront()
-        'rfidLogin.Enabled = False
-        radAdmin.Checked = True
-        userLogin()
-    End Sub
     Private Sub SCVS_Login_Resize(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Resize
         'para mahide yung controls sa taas ng window, magfullscreen
         If Me.WindowState = FormWindowState.Maximized Then
@@ -61,20 +50,10 @@ Public Class SCVS_Login
     End Sub
 
     Private Sub btnRFID_Click(sender As Object, e As EventArgs) Handles btnRFID.Click
-        'btnRFID.Visible = False
-        'btnPassword.Visible = True
-        'userLogin.Enabled = False
-        ' rfidLogin.Enabled = True
-        ' rfidLogin.BringToFront()
         userRFID()
     End Sub
 
     Private Sub btnPassword_Click(sender As Object, e As EventArgs) Handles btnPassword.Click
-        'btnPassword.Visible = False
-        'btnRFID.Visible = True
-        'userLogin.Enabled = True
-        'rfidLogin.Enabled = False
-        'userLogin.BringToFront()
         userLogin()
     End Sub
 
@@ -190,7 +169,7 @@ Public Class SCVS_Login
                                 Else
                                     txtboxPassword.Clear()
                                     chkShow.CheckState = False
-                                    StdMenu.Show()
+                                    Student.Show()
                                     Me.Hide()
                                 End If
                             Else
@@ -273,7 +252,7 @@ Public Class SCVS_Login
                                     MessageBox.Show("You have already voted.")
                                 Else
                                     ' MessageBox.Show("Welcome to SCVS, " & username & "!")
-                                    StdMenu.Show()
+                                    Student.Show()
                                     Me.Hide()
                                 End If
                             Else

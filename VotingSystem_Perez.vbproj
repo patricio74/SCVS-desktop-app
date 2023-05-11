@@ -156,28 +156,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.Designer.vb">
-      <DependentUpon>About.vb</DependentUpon>
-    </Compile>
-    <Compile Include="About.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Admin.Designer.vb">
       <DependentUpon>Admin.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdmLogin.Designer.vb">
-      <DependentUpon>AdmLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdmLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admRFIDLogin.Designer.vb">
-      <DependentUpon>admRFIDLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="admRFIDLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
@@ -185,31 +167,6 @@
       <DependentUpon>SCVS_Login.vb</DependentUpon>
     </Compile>
     <Compile Include="SCVS_Login.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="stdRFIDLogin.Designer.vb">
-      <DependentUpon>stdRFIDLogin.vb</DependentUpon>
-    </Compile>
-    <Compile Include="stdRFIDLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StdVote.Designer.vb">
-      <DependentUpon>StdVote.vb</DependentUpon>
-    </Compile>
-    <Compile Include="StdVote.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdmMenu.Designer.vb">
-      <DependentUpon>AdmMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdmMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StdLogin.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StdLogin.Designer.vb">
-      <DependentUpon>StdLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -229,36 +186,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="MY_CONNECTION.vb" />
-    <Compile Include="AdmRegister.Designer.vb">
-      <DependentUpon>AdmRegister.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdmRegister.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdmResult.Designer.vb">
-      <DependentUpon>AdmResult.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdmResult.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StdMenu.Designer.vb">
-      <DependentUpon>StdMenu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="StdMenu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StdResult.Designer.vb">
-      <DependentUpon>StdResult.vb</DependentUpon>
-    </Compile>
-    <Compile Include="StdResult.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdmUpdateVoter.Designer.vb">
-      <DependentUpon>AdmUpdateVoter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="AdmUpdateVoter.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Student.Designer.vb">
       <DependentUpon>Student.vb</DependentUpon>
     </Compile>
@@ -267,53 +194,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdmLogin.resx">
-      <DependentUpon>AdmLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="admRFIDLogin.resx">
-      <DependentUpon>admRFIDLogin.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SCVS_Login.resx">
       <DependentUpon>SCVS_Login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="stdRFIDLogin.resx">
-      <DependentUpon>stdRFIDLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StdVote.resx">
-      <DependentUpon>StdVote.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdmMenu.resx">
-      <DependentUpon>AdmMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StdLogin.resx">
-      <DependentUpon>StdLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdmRegister.resx">
-      <DependentUpon>AdmRegister.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdmResult.resx">
-      <DependentUpon>AdmResult.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StdMenu.resx">
-      <DependentUpon>StdMenu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StdResult.resx">
-      <DependentUpon>StdResult.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdmUpdateVoter.resx">
-      <DependentUpon>AdmUpdateVoter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.vb</DependentUpon>

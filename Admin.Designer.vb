@@ -92,6 +92,9 @@ Partial Class Admin
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.btnWebsite = New System.Windows.Forms.Button()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.grpMembers = New System.Windows.Forms.GroupBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
@@ -110,9 +113,6 @@ Partial Class Admin
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.btnWebsite = New System.Windows.Forms.Button()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.panelSidebar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -122,8 +122,8 @@ Partial Class Admin
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage4.SuspendLayout()
-        Me.grpMembers.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.grpMembers.SuspendLayout()
         Me.SuspendLayout()
         '
         'panelSidebar
@@ -513,7 +513,7 @@ Partial Class Admin
         Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Trebuchet MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.Goldenrod
         Me.btnCancel.Location = New System.Drawing.Point(1020, 722)
         Me.btnCancel.Name = "btnCancel"
@@ -541,7 +541,7 @@ Partial Class Admin
         Me.btnRegister.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegister.Font = New System.Drawing.Font("Trebuchet MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegister.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.btnRegister.Location = New System.Drawing.Point(796, 722)
         Me.btnRegister.Name = "btnRegister"
@@ -978,6 +978,49 @@ Partial Class Admin
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "   About SCVS   "
         '
+        'btnWebsite
+        '
+        Me.btnWebsite.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnWebsite.BackColor = System.Drawing.Color.Goldenrod
+        Me.btnWebsite.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnWebsite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnWebsite.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnWebsite.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnWebsite.Location = New System.Drawing.Point(677, 725)
+        Me.btnWebsite.Name = "btnWebsite"
+        Me.btnWebsite.Size = New System.Drawing.Size(276, 75)
+        Me.btnWebsite.TabIndex = 79
+        Me.btnWebsite.Text = "View website"
+        Me.btnWebsite.UseVisualStyleBackColor = False
+        '
+        'Label25
+        '
+        Me.Label25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Label25.Location = New System.Drawing.Point(325, 60)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(968, 61)
+        Me.Label25.TabIndex = 66
+        Me.Label25.Text = "Automated Student Council Voting System"
+        '
+        'Panel2
+        '
+        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.Controls.Add(Me.TabControl1)
+        Me.Panel2.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel2.Location = New System.Drawing.Point(262, 64)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1660, 1016)
+        Me.Panel2.TabIndex = 11
+        '
         'grpMembers
         '
         Me.grpMembers.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
@@ -1003,7 +1046,7 @@ Partial Class Admin
         Me.grpMembers.Location = New System.Drawing.Point(336, 211)
         Me.grpMembers.Name = "grpMembers"
         Me.grpMembers.Size = New System.Drawing.Size(957, 439)
-        Me.grpMembers.TabIndex = 80
+        Me.grpMembers.TabIndex = 81
         Me.grpMembers.TabStop = False
         '
         'Label24
@@ -1216,49 +1259,6 @@ Partial Class Admin
         Me.Label38.TabIndex = 24
         Me.Label38.Text = "ELECT 3"
         '
-        'btnWebsite
-        '
-        Me.btnWebsite.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnWebsite.BackColor = System.Drawing.Color.Goldenrod
-        Me.btnWebsite.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWebsite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnWebsite.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnWebsite.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnWebsite.Location = New System.Drawing.Point(653, 724)
-        Me.btnWebsite.Name = "btnWebsite"
-        Me.btnWebsite.Size = New System.Drawing.Size(276, 75)
-        Me.btnWebsite.TabIndex = 79
-        Me.btnWebsite.Text = "View website"
-        Me.btnWebsite.UseVisualStyleBackColor = False
-        '
-        'Label25
-        '
-        Me.Label25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label25.Location = New System.Drawing.Point(325, 60)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(968, 61)
-        Me.Label25.TabIndex = 66
-        Me.Label25.Text = "Automated Student Council Voting System"
-        '
-        'Panel2
-        '
-        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel2.BackColor = System.Drawing.Color.Transparent
-        Me.Panel2.Controls.Add(Me.TabControl1)
-        Me.Panel2.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel2.Location = New System.Drawing.Point(262, 64)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1660, 1016)
-        Me.Panel2.TabIndex = 11
-        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
@@ -1293,9 +1293,9 @@ Partial Class Admin
         Me.TabPage3.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.grpMembers.ResumeLayout(False)
         Me.grpMembers.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1373,6 +1373,10 @@ Partial Class Admin
     Friend WithEvents ColumnHeader11 As ColumnHeader
     Friend WithEvents btnRefresh As Button
     Friend WithEvents grpMembers As GroupBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Label40 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Label27 As Label
     Friend WithEvents Label28 As Label
@@ -1386,8 +1390,4 @@ Partial Class Admin
     Friend WithEvents Label36 As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Label40 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label41 As Label
 End Class

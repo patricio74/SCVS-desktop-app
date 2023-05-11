@@ -1,4 +1,8 @@
-﻿Imports System.Threading
+﻿'created by: Perez, J.P.
+'BSIT-3F
+'Group 5
+
+Imports System.Threading
 Imports MySql.Data.MySqlClient
 Imports Org.BouncyCastle.Asn1.X509
 
@@ -15,6 +19,9 @@ Public Class Admin
 
     End Sub
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        SCVS_Login.userRFID()
+        SCVS_Login.userLogin()
+        SCVS_Login.radAdmin.Checked = True
         SCVS_Login.Show()
         Me.Hide()
     End Sub
@@ -47,7 +54,7 @@ Public Class Admin
     Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
         Select Case TabControl1.SelectedIndex
             Case 0 'register student tab
-                clearRegFrom() 'call the function to clear the tab
+                clearRegFrom()
             Case 1 'update/delete info tab
                 clearUpdForm()
                 voterInfo()
@@ -252,7 +259,7 @@ Public Class Admin
 
     'refresh result tab
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
-        Call voteResult()
+        voteResult()
         Dim currentTime As DateTime = DateTime.Now
         lblResult.Text = "Vote result as of " & currentTime.ToString("h:mm tt")
     End Sub
