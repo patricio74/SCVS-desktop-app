@@ -185,7 +185,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="MY_CONNECTION.vb" />
+    <Compile Include="SCVS_SplashScreen.Designer.vb">
+      <DependentUpon>SCVS_SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCVS_SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Student.Designer.vb">
       <DependentUpon>Student.vb</DependentUpon>
     </Compile>
@@ -206,6 +211,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="SCVS_SplashScreen.resx">
+      <DependentUpon>SCVS_SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student.resx">
       <DependentUpon>Student.vb</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +233,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="icon92px.png" />
+    <None Include="icons8-right-100.png" />
     <Content Include="scvs_logo.ico" />
     <None Include="icons8-info-48.png" />
   </ItemGroup>

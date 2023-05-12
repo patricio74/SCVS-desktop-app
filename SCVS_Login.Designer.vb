@@ -25,7 +25,6 @@ Partial Class SCVS_Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SCVS_Login))
         Me.panelSidebar = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -40,17 +39,18 @@ Partial Class SCVS_Login
         Me.txtboxUsername = New System.Windows.Forms.TextBox()
         Me.radStudent = New System.Windows.Forms.RadioButton()
         Me.radAdmin = New System.Windows.Forms.RadioButton()
-        Me.btnLogin = New System.Windows.Forms.Button()
         Me.lblLogin = New System.Windows.Forms.Label()
         Me.grpUserLogin = New System.Windows.Forms.GroupBox()
         Me.grpRFIDLogin = New System.Windows.Forms.GroupBox()
         Me.txtboxRFID = New System.Windows.Forms.TextBox()
         Me.lblRFID = New System.Windows.Forms.Label()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panelSidebar.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.grpUserLogin.SuspendLayout()
         Me.grpRFIDLogin.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelSidebar
@@ -80,18 +80,6 @@ Partial Class SCVS_Login
         Me.Label6.Size = New System.Drawing.Size(183, 13)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Student Council Voting System"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Enabled = False
-        Me.PictureBox1.Location = New System.Drawing.Point(88, 99)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'Label5
         '
@@ -290,20 +278,6 @@ Partial Class SCVS_Login
         Me.radAdmin.Text = "Admin"
         Me.radAdmin.UseVisualStyleBackColor = False
         '
-        'btnLogin
-        '
-        Me.btnLogin.BackColor = System.Drawing.Color.Goldenrod
-        Me.btnLogin.BackgroundImage = CType(resources.GetObject("btnLogin.BackgroundImage"), System.Drawing.Image)
-        Me.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLogin.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(520, 382)
-        Me.btnLogin.Name = "btnLogin"
-        Me.btnLogin.Size = New System.Drawing.Size(80, 80)
-        Me.btnLogin.TabIndex = 4
-        Me.btnLogin.UseVisualStyleBackColor = True
-        '
         'lblLogin
         '
         Me.lblLogin.AutoSize = True
@@ -366,6 +340,32 @@ Partial Class SCVS_Login
         Me.lblRFID.TabIndex = 24
         Me.lblRFID.Text = "RFID"
         '
+        'btnLogin
+        '
+        Me.btnLogin.BackColor = System.Drawing.Color.Goldenrod
+        Me.btnLogin.BackgroundImage = Global.VotingSystem_Perez.My.Resources.Resources.icons8_right_100
+        Me.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLogin.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnLogin.Location = New System.Drawing.Point(520, 382)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(80, 80)
+        Me.btnLogin.TabIndex = 4
+        Me.btnLogin.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.VotingSystem_Perez.My.Resources.Resources.icon92px
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Enabled = False
+        Me.PictureBox1.Location = New System.Drawing.Point(88, 99)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'SCVS_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
@@ -391,13 +391,13 @@ Partial Class SCVS_Login
         Me.Text = "Welcome to SCVS!"
         Me.panelSidebar.ResumeLayout(False)
         Me.panelSidebar.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.grpUserLogin.ResumeLayout(False)
         Me.grpUserLogin.PerformLayout()
         Me.grpRFIDLogin.ResumeLayout(False)
         Me.grpRFIDLogin.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

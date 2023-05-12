@@ -43,3 +43,4 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_P
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.exe
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.xml
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.pdb
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_SplashScreen.resources
