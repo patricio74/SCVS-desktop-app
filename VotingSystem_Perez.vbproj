@@ -163,6 +163,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="scvsModule.vb" />
     <Compile Include="SCVS_Login.Designer.vb">
       <DependentUpon>SCVS_Login.vb</DependentUpon>
     </Compile>

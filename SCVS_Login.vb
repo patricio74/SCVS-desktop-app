@@ -9,7 +9,7 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Windows
 
 Public Class SCVS_Login
-    Private connectionString As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
+
     Private Sub SCVS_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         radAdmin.Checked = True
         userLogin()
@@ -36,17 +36,6 @@ Public Class SCVS_Login
         btnRFID.Show()
         grpUserLogin.Show()
         txtboxUsername.Focus()
-    End Sub
-
-    Private Sub SCVS_Login_Resize(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Resize
-        'para mahide yung controls sa taas ng window, magfullscreen
-        If Me.WindowState = FormWindowState.Maximized Then
-            Me.ControlBox = False
-            Me.FormBorderStyle = FormBorderStyle.None
-        Else
-            Me.ControlBox = True
-            Me.FormBorderStyle = FormBorderStyle.FixedSingle ' or any other border style you want
-        End If
     End Sub
 
     Private Sub btnRFID_Click(sender As Object, e As EventArgs) Handles btnRFID.Click
@@ -95,7 +84,7 @@ Public Class SCVS_Login
                     MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
                     Try
-                        Dim conn As New MySqlConnection("server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
+                        Dim conn As New MySqlConnection(getConString)
 
                         Dim command As New MySqlCommand("SELECT `Email`, `Pass` FROM `admin` WHERE `Email` = @usn AND `Pass` = @pass;")
                         command.Connection = conn 'set the connection property of the command object
@@ -116,10 +105,12 @@ Public Class SCVS_Login
                         ElseIf table.Rows.Count > 0 Then 'check if there are any rows returned from the query
                             txtboxPassword.Clear()
                             chkShow.CheckState = False
-                            Admin.Show()
+                            conn.Close()
                             Me.Hide()
+                            Admin.Show()
                         Else
                             MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            conn.Close()
                         End If
 
                     Catch ex As MySqlException
@@ -139,8 +130,7 @@ Public Class SCVS_Login
                     MessageBox.Show("Password cannot be empty", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 Else
                     Try
-                        Dim conn As New MySqlConnection("server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;")
-
+                        Dim conn As New MySqlConnection(getConString)
                         Dim command As New MySqlCommand("SELECT `email`, `pass`, `votestatus` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
                         command.Connection = conn 'set the connection property of the command object
 
@@ -159,8 +149,6 @@ Public Class SCVS_Login
 
                             MessageBox.Show("Password cannot field be empty.", "Blank password!", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         Else
-
-
                             If table.Rows.Count > 0 Then
                                 Dim votestatus As String = table.Rows(0)("votestatus").ToString()
                                 If votestatus = "voted" Then
@@ -199,7 +187,7 @@ Public Class SCVS_Login
 
                 ' Check the database for the RFID tag and vote status
                 Dim query As String = "SELECT * FROM admin WHERE RFID = @RFIDTag"
-                Using connection As New MySqlConnection(connectionString)
+                Using connection As New MySqlConnection(getConString)
                     Using command As New MySqlCommand(query, connection)
                         command.Parameters.AddWithValue("@RFIDTag", rfidTag)
                         Try
@@ -235,7 +223,7 @@ Public Class SCVS_Login
 
                 ' Check the database for the RFID tag and vote status
                 Dim query As String = "SELECT * FROM voters WHERE RFID = @RFIDTag"
-                Using connection As New MySqlConnection(connectionString)
+                Using connection As New MySqlConnection(getConString)
                     Using command As New MySqlCommand(query, connection)
                         command.Parameters.AddWithValue("@RFIDTag", rfidTag)
                         Try

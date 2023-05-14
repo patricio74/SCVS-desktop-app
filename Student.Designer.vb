@@ -88,13 +88,11 @@ Partial Class Student
         Me.RadioButton15 = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.btnRefresh = New System.Windows.Forms.Button()
-        Me.lblResult = New System.Windows.Forms.Label()
-        Me.ListView2 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.lblResultDate = New System.Windows.Forms.Label()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.lblResultTime = New System.Windows.Forms.Label()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.grpMembers = New System.Windows.Forms.GroupBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
@@ -116,6 +114,7 @@ Partial Class Student
         Me.btnWebsite = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelSidebar.SuspendLayout()
@@ -131,8 +130,8 @@ Partial Class Student
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.grpMembers.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -272,6 +271,7 @@ Partial Class Student
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
@@ -315,7 +315,7 @@ Partial Class Student
         Me.btnClear.Location = New System.Drawing.Point(1065, 696)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(192, 77)
-        Me.btnClear.TabIndex = 76
+        Me.btnClear.TabIndex = 34
         Me.btnClear.Text = "Cancel"
         Me.btnClear.UseVisualStyleBackColor = False
         '
@@ -331,7 +331,7 @@ Partial Class Student
         Me.GroupBox6.Location = New System.Drawing.Point(519, 656)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(240, 170)
-        Me.GroupBox6.TabIndex = 70
+        Me.GroupBox6.TabIndex = 74
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Public Relations Officer"
         '
@@ -343,7 +343,7 @@ Partial Class Student
         Me.RadioButton16.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton16.Name = "RadioButton16"
         Me.RadioButton16.Size = New System.Drawing.Size(162, 22)
-        Me.RadioButton16.TabIndex = 3
+        Me.RadioButton16.TabIndex = 30
         Me.RadioButton16.TabStop = True
         Me.RadioButton16.Text = "28. Trinidad Lopez"
         Me.RadioButton16.UseVisualStyleBackColor = True
@@ -370,7 +370,7 @@ Partial Class Student
         Me.RadioButton17.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton17.Name = "RadioButton17"
         Me.RadioButton17.Size = New System.Drawing.Size(175, 22)
-        Me.RadioButton17.TabIndex = 4
+        Me.RadioButton17.TabIndex = 31
         Me.RadioButton17.TabStop = True
         Me.RadioButton17.Text = "29. Marcelina Reyes"
         Me.RadioButton17.UseVisualStyleBackColor = True
@@ -383,7 +383,7 @@ Partial Class Student
         Me.RadioButton18.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton18.Name = "RadioButton18"
         Me.RadioButton18.Size = New System.Drawing.Size(191, 22)
-        Me.RadioButton18.TabIndex = 5
+        Me.RadioButton18.TabIndex = 32
         Me.RadioButton18.TabStop = True
         Me.RadioButton18.Text = "30. Ricardo de la Cruz"
         Me.RadioButton18.UseVisualStyleBackColor = True
@@ -400,7 +400,7 @@ Partial Class Student
         Me.GroupBox8.Location = New System.Drawing.Point(519, 421)
         Me.GroupBox8.Name = "GroupBox8"
         Me.GroupBox8.Size = New System.Drawing.Size(240, 168)
-        Me.GroupBox8.TabIndex = 72
+        Me.GroupBox8.TabIndex = 70
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "2nd Year Representative"
         '
@@ -426,7 +426,7 @@ Partial Class Student
         Me.RadioButton22.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton22.Name = "RadioButton22"
         Me.RadioButton22.Size = New System.Drawing.Size(124, 22)
-        Me.RadioButton22.TabIndex = 3
+        Me.RadioButton22.TabIndex = 18
         Me.RadioButton22.TabStop = True
         Me.RadioButton22.Text = "16. Ana Luna"
         Me.RadioButton22.UseVisualStyleBackColor = True
@@ -439,7 +439,7 @@ Partial Class Student
         Me.RadioButton23.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton23.Name = "RadioButton23"
         Me.RadioButton23.Size = New System.Drawing.Size(178, 22)
-        Me.RadioButton23.TabIndex = 4
+        Me.RadioButton23.TabIndex = 19
         Me.RadioButton23.TabStop = True
         Me.RadioButton23.Text = "17. Gregorio Santos"
         Me.RadioButton23.UseVisualStyleBackColor = True
@@ -452,7 +452,7 @@ Partial Class Student
         Me.RadioButton24.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton24.Name = "RadioButton24"
         Me.RadioButton24.Size = New System.Drawing.Size(156, 22)
-        Me.RadioButton24.TabIndex = 5
+        Me.RadioButton24.TabIndex = 20
         Me.RadioButton24.TabStop = True
         Me.RadioButton24.Text = "18. Aurora Reyes"
         Me.RadioButton24.UseVisualStyleBackColor = True
@@ -467,7 +467,7 @@ Partial Class Student
         Me.btnSubmit.Location = New System.Drawing.Point(841, 696)
         Me.btnSubmit.Name = "btnSubmit"
         Me.btnSubmit.Size = New System.Drawing.Size(192, 77)
-        Me.btnSubmit.TabIndex = 75
+        Me.btnSubmit.TabIndex = 33
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = False
         '
@@ -482,8 +482,8 @@ Partial Class Student
         Me.GroupBox10.ForeColor = System.Drawing.Color.Black
         Me.GroupBox10.Location = New System.Drawing.Point(1057, 421)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(250, 168)
-        Me.GroupBox10.TabIndex = 74
+        Me.GroupBox10.Size = New System.Drawing.Size(240, 170)
+        Me.GroupBox10.TabIndex = 72
         Me.GroupBox10.TabStop = False
         Me.GroupBox10.Text = "4th Year Representative"
         '
@@ -509,7 +509,7 @@ Partial Class Student
         Me.RadioButton28.Location = New System.Drawing.Point(16, 34)
         Me.RadioButton28.Name = "RadioButton28"
         Me.RadioButton28.Size = New System.Drawing.Size(167, 22)
-        Me.RadioButton28.TabIndex = 15
+        Me.RadioButton28.TabIndex = 24
         Me.RadioButton28.TabStop = True
         Me.RadioButton28.Text = "22. Gloria Sanchez"
         Me.RadioButton28.UseVisualStyleBackColor = True
@@ -522,7 +522,7 @@ Partial Class Student
         Me.RadioButton30.Location = New System.Drawing.Point(16, 86)
         Me.RadioButton30.Name = "RadioButton30"
         Me.RadioButton30.Size = New System.Drawing.Size(196, 22)
-        Me.RadioButton30.TabIndex = 14
+        Me.RadioButton30.TabIndex = 26
         Me.RadioButton30.TabStop = True
         Me.RadioButton30.Text = "24. Angelita Sarmiento"
         Me.RadioButton30.UseVisualStyleBackColor = True
@@ -535,7 +535,7 @@ Partial Class Student
         Me.RadioButton29.Location = New System.Drawing.Point(16, 60)
         Me.RadioButton29.Name = "RadioButton29"
         Me.RadioButton29.Size = New System.Drawing.Size(165, 22)
-        Me.RadioButton29.TabIndex = 16
+        Me.RadioButton29.TabIndex = 25
         Me.RadioButton29.TabStop = True
         Me.RadioButton29.Text = "23. Domingo Abad"
         Me.RadioButton29.UseVisualStyleBackColor = True
@@ -552,7 +552,7 @@ Partial Class Student
         Me.GroupBox11.Location = New System.Drawing.Point(787, 421)
         Me.GroupBox11.Name = "GroupBox11"
         Me.GroupBox11.Size = New System.Drawing.Size(240, 170)
-        Me.GroupBox11.TabIndex = 73
+        Me.GroupBox11.TabIndex = 71
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "3rd Year Representative"
         '
@@ -578,7 +578,7 @@ Partial Class Student
         Me.RadioButton25.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton25.Name = "RadioButton25"
         Me.RadioButton25.Size = New System.Drawing.Size(167, 22)
-        Me.RadioButton25.TabIndex = 7
+        Me.RadioButton25.TabIndex = 21
         Me.RadioButton25.TabStop = True
         Me.RadioButton25.Text = "19. Manuelito Cruz"
         Me.RadioButton25.UseVisualStyleBackColor = True
@@ -591,7 +591,7 @@ Partial Class Student
         Me.RadioButton26.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton26.Name = "RadioButton26"
         Me.RadioButton26.Size = New System.Drawing.Size(195, 22)
-        Me.RadioButton26.TabIndex = 8
+        Me.RadioButton26.TabIndex = 22
         Me.RadioButton26.TabStop = True
         Me.RadioButton26.Text = "20. Lourdes de la Cruz"
         Me.RadioButton26.UseVisualStyleBackColor = True
@@ -604,7 +604,7 @@ Partial Class Student
         Me.RadioButton27.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton27.Name = "RadioButton27"
         Me.RadioButton27.Size = New System.Drawing.Size(163, 22)
-        Me.RadioButton27.TabIndex = 6
+        Me.RadioButton27.TabIndex = 23
         Me.RadioButton27.TabStop = True
         Me.RadioButton27.Text = "21. Rodrigo Flores"
         Me.RadioButton27.UseVisualStyleBackColor = True
@@ -621,7 +621,7 @@ Partial Class Student
         Me.GroupBox7.Location = New System.Drawing.Point(251, 421)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(240, 169)
-        Me.GroupBox7.TabIndex = 71
+        Me.GroupBox7.TabIndex = 69
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "1st Year Representative"
         '
@@ -647,7 +647,7 @@ Partial Class Student
         Me.RadioButton19.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton19.Name = "RadioButton19"
         Me.RadioButton19.Size = New System.Drawing.Size(192, 22)
-        Me.RadioButton19.TabIndex = 3
+        Me.RadioButton19.TabIndex = 15
         Me.RadioButton19.TabStop = True
         Me.RadioButton19.Text = "13. Romulo Rodriguez"
         Me.RadioButton19.UseVisualStyleBackColor = True
@@ -660,7 +660,7 @@ Partial Class Student
         Me.RadioButton20.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton20.Name = "RadioButton20"
         Me.RadioButton20.Size = New System.Drawing.Size(207, 22)
-        Me.RadioButton20.TabIndex = 4
+        Me.RadioButton20.TabIndex = 16
         Me.RadioButton20.TabStop = True
         Me.RadioButton20.Text = "14. Esperanza Gonzales"
         Me.RadioButton20.UseVisualStyleBackColor = True
@@ -673,7 +673,7 @@ Partial Class Student
         Me.RadioButton21.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton21.Name = "RadioButton21"
         Me.RadioButton21.Size = New System.Drawing.Size(138, 22)
-        Me.RadioButton21.TabIndex = 5
+        Me.RadioButton21.TabIndex = 17
         Me.RadioButton21.TabStop = True
         Me.RadioButton21.Text = "15. Felipe Cruz"
         Me.RadioButton21.UseVisualStyleBackColor = True
@@ -705,7 +705,7 @@ Partial Class Student
         Me.President.Name = "President"
         Me.President.ReadOnly = True
         Me.President.Size = New System.Drawing.Size(201, 27)
-        Me.President.TabIndex = 10
+        Me.President.TabIndex = 200
         Me.President.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RadioButton3
@@ -774,7 +774,7 @@ Partial Class Student
         Me.VicePres.Name = "VicePres"
         Me.VicePres.ReadOnly = True
         Me.VicePres.Size = New System.Drawing.Size(201, 27)
-        Me.VicePres.TabIndex = 11
+        Me.VicePres.TabIndex = 201
         Me.VicePres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RadioButton4
@@ -785,7 +785,7 @@ Partial Class Student
         Me.RadioButton4.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(154, 22)
-        Me.RadioButton4.TabIndex = 3
+        Me.RadioButton4.TabIndex = 6
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "4. Rosario Garcia"
         Me.RadioButton4.UseVisualStyleBackColor = True
@@ -798,7 +798,7 @@ Partial Class Student
         Me.RadioButton5.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(149, 22)
-        Me.RadioButton5.TabIndex = 4
+        Me.RadioButton5.TabIndex = 7
         Me.RadioButton5.TabStop = True
         Me.RadioButton5.Text = "5. Ferdinand Lim"
         Me.RadioButton5.UseVisualStyleBackColor = True
@@ -811,7 +811,7 @@ Partial Class Student
         Me.RadioButton6.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton6.Name = "RadioButton6"
         Me.RadioButton6.Size = New System.Drawing.Size(143, 22)
-        Me.RadioButton6.TabIndex = 5
+        Me.RadioButton6.TabIndex = 8
         Me.RadioButton6.TabStop = True
         Me.RadioButton6.Text = "6. Ysabel Rivera"
         Me.RadioButton6.UseVisualStyleBackColor = True
@@ -843,7 +843,7 @@ Partial Class Student
         Me.Secretary.Name = "Secretary"
         Me.Secretary.ReadOnly = True
         Me.Secretary.Size = New System.Drawing.Size(201, 27)
-        Me.Secretary.TabIndex = 12
+        Me.Secretary.TabIndex = 202
         Me.Secretary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RadioButton7
@@ -854,7 +854,7 @@ Partial Class Student
         Me.RadioButton7.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton7.Name = "RadioButton7"
         Me.RadioButton7.Size = New System.Drawing.Size(135, 22)
-        Me.RadioButton7.TabIndex = 3
+        Me.RadioButton7.TabIndex = 9
         Me.RadioButton7.TabStop = True
         Me.RadioButton7.Text = "7. Benigno Tan"
         Me.RadioButton7.UseVisualStyleBackColor = True
@@ -867,7 +867,7 @@ Partial Class Student
         Me.RadioButton8.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton8.Name = "RadioButton8"
         Me.RadioButton8.Size = New System.Drawing.Size(151, 22)
-        Me.RadioButton8.TabIndex = 4
+        Me.RadioButton8.TabIndex = 10
         Me.RadioButton8.TabStop = True
         Me.RadioButton8.Text = "8. Victoria Reyes"
         Me.RadioButton8.UseVisualStyleBackColor = True
@@ -880,7 +880,7 @@ Partial Class Student
         Me.RadioButton9.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton9.Name = "RadioButton9"
         Me.RadioButton9.Size = New System.Drawing.Size(178, 22)
-        Me.RadioButton9.TabIndex = 5
+        Me.RadioButton9.TabIndex = 11
         Me.RadioButton9.TabStop = True
         Me.RadioButton9.Text = "9. Rafaela Villanueva"
         Me.RadioButton9.UseVisualStyleBackColor = True
@@ -896,7 +896,7 @@ Partial Class Student
         Me.GroupBox4.ForeColor = System.Drawing.Color.Black
         Me.GroupBox4.Location = New System.Drawing.Point(1057, 180)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(250, 169)
+        Me.GroupBox4.Size = New System.Drawing.Size(240, 170)
         Me.GroupBox4.TabIndex = 68
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Treasurer"
@@ -912,7 +912,7 @@ Partial Class Student
         Me.Treasurer.Name = "Treasurer"
         Me.Treasurer.ReadOnly = True
         Me.Treasurer.Size = New System.Drawing.Size(201, 27)
-        Me.Treasurer.TabIndex = 12
+        Me.Treasurer.TabIndex = 203
         Me.Treasurer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RadioButton10
@@ -923,7 +923,7 @@ Partial Class Student
         Me.RadioButton10.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton10.Name = "RadioButton10"
         Me.RadioButton10.Size = New System.Drawing.Size(178, 22)
-        Me.RadioButton10.TabIndex = 3
+        Me.RadioButton10.TabIndex = 12
         Me.RadioButton10.TabStop = True
         Me.RadioButton10.Text = "10. Josefa Alcantara"
         Me.RadioButton10.UseVisualStyleBackColor = True
@@ -936,7 +936,7 @@ Partial Class Student
         Me.RadioButton11.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton11.Name = "RadioButton11"
         Me.RadioButton11.Size = New System.Drawing.Size(156, 22)
-        Me.RadioButton11.TabIndex = 4
+        Me.RadioButton11.TabIndex = 13
         Me.RadioButton11.TabStop = True
         Me.RadioButton11.Text = "11. Emilio Ramos"
         Me.RadioButton11.UseVisualStyleBackColor = True
@@ -949,7 +949,7 @@ Partial Class Student
         Me.RadioButton12.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton12.Name = "RadioButton12"
         Me.RadioButton12.Size = New System.Drawing.Size(165, 22)
-        Me.RadioButton12.TabIndex = 5
+        Me.RadioButton12.TabIndex = 14
         Me.RadioButton12.TabStop = True
         Me.RadioButton12.Text = "12. Consuelo Cruz"
         Me.RadioButton12.UseVisualStyleBackColor = True
@@ -966,7 +966,7 @@ Partial Class Student
         Me.GroupBox5.Location = New System.Drawing.Point(251, 656)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(240, 168)
-        Me.GroupBox5.TabIndex = 69
+        Me.GroupBox5.TabIndex = 73
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Auditor"
         '
@@ -992,7 +992,7 @@ Partial Class Student
         Me.RadioButton13.Location = New System.Drawing.Point(21, 34)
         Me.RadioButton13.Name = "RadioButton13"
         Me.RadioButton13.Size = New System.Drawing.Size(183, 22)
-        Me.RadioButton13.TabIndex = 3
+        Me.RadioButton13.TabIndex = 27
         Me.RadioButton13.TabStop = True
         Me.RadioButton13.Text = "25. Marcelo Mercado"
         Me.RadioButton13.UseVisualStyleBackColor = True
@@ -1005,7 +1005,7 @@ Partial Class Student
         Me.RadioButton14.Location = New System.Drawing.Point(21, 60)
         Me.RadioButton14.Name = "RadioButton14"
         Me.RadioButton14.Size = New System.Drawing.Size(144, 22)
-        Me.RadioButton14.TabIndex = 4
+        Me.RadioButton14.TabIndex = 28
         Me.RadioButton14.TabStop = True
         Me.RadioButton14.Text = "26. Paz Herrera"
         Me.RadioButton14.UseVisualStyleBackColor = True
@@ -1018,15 +1018,13 @@ Partial Class Student
         Me.RadioButton15.Location = New System.Drawing.Point(21, 86)
         Me.RadioButton15.Name = "RadioButton15"
         Me.RadioButton15.Size = New System.Drawing.Size(168, 22)
-        Me.RadioButton15.TabIndex = 5
+        Me.RadioButton15.TabIndex = 29
         Me.RadioButton15.TabStop = True
         Me.RadioButton15.Text = "27. Ramonito Cruz"
         Me.RadioButton15.UseVisualStyleBackColor = True
         '
         'Label3
         '
-        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1039,16 +1037,41 @@ Partial Class Student
         '
         'TabPage2
         '
-        Me.TabPage2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TabPage2.Controls.Add(Me.btnRefresh)
-        Me.TabPage2.Controls.Add(Me.lblResult)
-        Me.TabPage2.Controls.Add(Me.ListView2)
-        Me.TabPage2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Size = New System.Drawing.Size(1652, 978)
-        Me.TabPage2.TabIndex = 2
-        Me.TabPage2.Text = "   View result   "
+        Me.TabPage2.TabIndex = 4
+        Me.TabPage2.Text = "   Candidates list   "
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'TabPage3
+        '
+        Me.TabPage3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabPage3.Controls.Add(Me.resultWebBrowser)
+        Me.TabPage3.Controls.Add(Me.lblResultDate)
+        Me.TabPage3.Controls.Add(Me.btnRefresh)
+        Me.TabPage3.Controls.Add(Me.lblResultTime)
+        Me.TabPage3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage3.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "   View result   "
+        '
+        'lblResultDate
+        '
+        Me.lblResultDate.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblResultDate.AutoSize = True
+        Me.lblResultDate.BackColor = System.Drawing.Color.Transparent
+        Me.lblResultDate.Font = New System.Drawing.Font("Trebuchet MS", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResultDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblResultDate.Location = New System.Drawing.Point(386, 105)
+        Me.lblResultDate.Name = "lblResultDate"
+        Me.lblResultDate.Size = New System.Drawing.Size(123, 29)
+        Me.lblResultDate.TabIndex = 82
+        Me.lblResultDate.Text = "MM/dd/yy"
+        Me.lblResultDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnRefresh
         '
@@ -1064,64 +1087,33 @@ Partial Class Student
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
         '
-        'lblResult
+        'lblResultTime
         '
-        Me.lblResult.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.lblResultTime.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblResult.AutoSize = True
-        Me.lblResult.BackColor = System.Drawing.Color.Transparent
-        Me.lblResult.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblResult.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblResult.Location = New System.Drawing.Point(496, 60)
-        Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(560, 61)
-        Me.lblResult.TabIndex = 66
-        Me.lblResult.Text = "Vote result as of --:-- hr"
+        Me.lblResultTime.AutoSize = True
+        Me.lblResultTime.BackColor = System.Drawing.Color.Transparent
+        Me.lblResultTime.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblResultTime.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblResultTime.Location = New System.Drawing.Point(380, 44)
+        Me.lblResultTime.Name = "lblResultTime"
+        Me.lblResultTime.Size = New System.Drawing.Size(641, 61)
+        Me.lblResultTime.TabIndex = 66
+        Me.lblResultTime.Text = "Election result as of --:-- hr"
+        Me.lblResultTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ListView2
+        'TabPage4
         '
-        Me.ListView2.BackColor = System.Drawing.Color.White
-        Me.ListView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11})
-        Me.ListView2.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView2.FullRowSelect = True
-        Me.ListView2.GridLines = True
-        Me.ListView2.HideSelection = False
-        Me.ListView2.HoverSelection = True
-        Me.ListView2.Location = New System.Drawing.Point(392, 158)
-        Me.ListView2.Name = "ListView2"
-        Me.ListView2.Size = New System.Drawing.Size(795, 642)
-        Me.ListView2.TabIndex = 80
-        Me.ListView2.UseCompatibleStateImageBehavior = False
-        Me.ListView2.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader9
-        '
-        Me.ColumnHeader9.Text = "# of votes"
-        Me.ColumnHeader9.Width = 114
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "Candidate name"
-        Me.ColumnHeader10.Width = 301
-        '
-        'ColumnHeader11
-        '
-        Me.ColumnHeader11.Text = "Position"
-        Me.ColumnHeader11.Width = 278
-        '
-        'TabPage3
-        '
-        Me.TabPage3.BackColor = System.Drawing.Color.White
-        Me.TabPage3.Controls.Add(Me.grpMembers)
-        Me.TabPage3.Controls.Add(Me.btnWebsite)
-        Me.TabPage3.Controls.Add(Me.Label25)
-        Me.TabPage3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabPage3.Location = New System.Drawing.Point(4, 34)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1652, 978)
-        Me.TabPage3.TabIndex = 3
-        Me.TabPage3.Text = "   About SCVS   "
+        Me.TabPage4.BackColor = System.Drawing.Color.White
+        Me.TabPage4.Controls.Add(Me.grpMembers)
+        Me.TabPage4.Controls.Add(Me.btnWebsite)
+        Me.TabPage4.Controls.Add(Me.Label25)
+        Me.TabPage4.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabPage4.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "   About SCVS   "
         '
         'grpMembers
         '
@@ -1378,8 +1370,6 @@ Partial Class Student
         '
         'Label25
         '
-        Me.Label25.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label25.AutoSize = True
         Me.Label25.BackColor = System.Drawing.Color.Transparent
         Me.Label25.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1404,15 +1394,26 @@ Partial Class Student
         Me.Panel2.Size = New System.Drawing.Size(1660, 1016)
         Me.Panel2.TabIndex = 103
         '
+        'resultWebBrowser
+        '
+        Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.resultWebBrowser.Location = New System.Drawing.Point(207, 168)
+        Me.resultWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.resultWebBrowser.Name = "resultWebBrowser"
+        Me.resultWebBrowser.Size = New System.Drawing.Size(1163, 630)
+        Me.resultWebBrowser.TabIndex = 85
+        Me.resultWebBrowser.Url = New System.Uri("", System.UriKind.Relative)
+        '
         'Student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1920, 1061)
+        Me.Controls.Add(Me.panelSidebar)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.panelSidebar)
         Me.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -1450,10 +1451,10 @@ Partial Class Student
         Me.GroupBox4.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
-        Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.TabPage4.ResumeLayout(False)
+        Me.TabPage4.PerformLayout()
         Me.grpMembers.ResumeLayout(False)
         Me.grpMembers.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -1524,14 +1525,10 @@ Partial Class Student
     Friend WithEvents RadioButton14 As RadioButton
     Friend WithEvents RadioButton15 As RadioButton
     Friend WithEvents Label3 As Label
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents btnRefresh As Button
-    Friend WithEvents lblResult As Label
-    Friend WithEvents ListView2 As ListView
-    Friend WithEvents ColumnHeader9 As ColumnHeader
-    Friend WithEvents ColumnHeader10 As ColumnHeader
-    Friend WithEvents ColumnHeader11 As ColumnHeader
     Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents btnRefresh As Button
+    Friend WithEvents lblResultTime As Label
+    Friend WithEvents TabPage4 As TabPage
     Friend WithEvents grpMembers As GroupBox
     Friend WithEvents Label24 As Label
     Friend WithEvents Label41 As Label
@@ -1553,4 +1550,7 @@ Partial Class Student
     Friend WithEvents btnWebsite As Button
     Friend WithEvents Label25 As Label
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents lblResultDate As Label
+    Friend WithEvents resultWebBrowser As WebBrowser
 End Class

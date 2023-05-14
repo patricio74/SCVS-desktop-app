@@ -5,10 +5,7 @@
 Imports MySql.Data.MySqlClient
 
 Public Class Student
-    Dim connect As MySqlConnection
-    'Dim constring As String = "DATA SOURCE = localhost; USER id = root; DATABASE = votingsystem_perez"
-    Dim constring As String = "server=db4free.net; user=patricc; password=votingsystem; database=voting_system; port=3306; old guids = true;"
-
+    Dim connect As New MySqlConnection(getConString)
     Dim cmd As MySqlCommand
 
     Dim presname, prespos As String
@@ -22,59 +19,21 @@ Public Class Student
     Dim thirname, thirpos As String
     Dim fourname, fourpos As String
 
-    'clear radbuttons, textboxes sa vote tab
-    Public Sub clearVote()
-        RadioButton1.Checked = False
-        RadioButton2.Checked = False
-        RadioButton3.Checked = False
-        RadioButton4.Checked = False
-        RadioButton5.Checked = False
-        RadioButton6.Checked = False
-        RadioButton7.Checked = False
-        RadioButton8.Checked = False
-        RadioButton9.Checked = False
-        RadioButton10.Checked = False
-        RadioButton11.Checked = False
-        RadioButton12.Checked = False
-        RadioButton13.Checked = False
-        RadioButton14.Checked = False
-        RadioButton15.Checked = False
-        RadioButton16.Checked = False
-        RadioButton17.Checked = False
-        RadioButton18.Checked = False
-        RadioButton19.Checked = False
-        RadioButton20.Checked = False
-        RadioButton21.Checked = False
-        RadioButton22.Checked = False
-        RadioButton23.Checked = False
-        RadioButton24.Checked = False
-        RadioButton25.Checked = False
-        RadioButton26.Checked = False
-        RadioButton27.Checked = False
-        RadioButton28.Checked = False
-        RadioButton29.Checked = False
-        RadioButton30.Checked = False
-    End Sub
-
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
-        SCVS_Login.userRFID()
-        SCVS_Login.userLogin()
-        SCVS_Login.radAdmin.Checked = True
-        SCVS_Login.Show()
-        Me.Hide()
+        stdLogout()
     End Sub
 
     'clear tab bago iview
     Private Sub TabControl1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl1.SelectedIndexChanged
         Select Case TabControl1.SelectedIndex
             Case 0 'vote tab
-                clearVote()
-            Case 1 'result tab
-                voteResult()
-                'para magsync current tiem sa label
-                Dim currentTime As DateTime = DateTime.Now
-                lblResult.Text = "Vote result as of " & currentTime.ToString("h:mm tt")
-            Case 2 'about SCVS tab
+                'insert na lang code para masync names ng candid sa mga text ng radbuttons
+            Case 1 'candidates tab
+                'insert code dito para marefresh list
+            Case 2 'result tab
+                'sync current tiem sa label
+                stdResultTab()
+            Case 3 'about SCVS tab
 
             Case Else ' all other tab pages
                 ' do nothing
@@ -84,7 +43,7 @@ Public Class Student
     'VOTE TAB
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         Try
-            connect = New MySqlConnection(constring)
+            connect = New MySqlConnection(getConString)
             connect.Open()
 
             Dim username As String = SCVS_Login.txtboxUsername.Text
@@ -126,10 +85,10 @@ Public Class Student
 
             ' Execute multiple SQL statements in a single transaction
             Using transaction As MySqlTransaction = connect.BeginTransaction()
-                cmd = New MySqlCommand()
-                cmd.Connection = connect
-                cmd.Transaction = transaction
-
+                cmd = New MySqlCommand() With {
+                .Connection = connect,
+                .Transaction = transaction
+                }
                 Try
                     ' Execute INSERT statements
                     cmd.CommandText = insertQuery
@@ -151,12 +110,13 @@ Public Class Student
                     MsgBox("Vote failed!", vbCritical, "Admin")
                 End Try
             End Using
-
             connect.Close()
-
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         clearVote()
     End Sub
 
@@ -460,51 +420,15 @@ Public Class Student
         End If
     End Sub
 
-    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
-        clearVote()
-    End Sub
 
     'RESULT TAB
-    'vote result listview
-    Public Sub voteResult()
-        Dim cmd As MySqlCommand
-        Dim itemcol(999) As String
-        Dim da As MySqlDataAdapter
-        Dim ds As DataSet
-        Try
-            ListView2.Items.Clear()
-            connect = New MySqlConnection(constring)
-            connect.Open()
-            Dim sql As String = "SELECT COUNT(full_name) as Votes, full_name, position
-                                    FROM candidates group by full_name, position
-                                    ORDER BY position;"
-            cmd = New MySqlCommand(sql, connect)
-            da = New MySqlDataAdapter(cmd)
-            ds = New DataSet
-            da.Fill(ds, "Tables")
-            For r = 0 To ds.Tables(0).Rows.Count - 1
-                For c = 0 To ds.Tables(0).Columns.Count - 1
-                    itemcol(c) = ds.Tables(0).Rows(r)(c).ToString
-                Next
-                Dim lvitm As New ListViewItem(itemcol)
-                ListView2.Items.Add(lvitm)
-            Next
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-        connect.Close()
-    End Sub
-
     'refresh result tab
     Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
-        voteResult()
-        Dim currentTime As DateTime = DateTime.Now
-        lblResult.Text = "Vote result as of " & currentTime.ToString("h:mm tt")
+        stdResultTab()
     End Sub
 
     'ABOUT TAB
     Private Sub btnWebsite_Click(sender As Object, e As EventArgs) Handles btnWebsite.Click
         Process.Start("https://scvs.000webhostapp.com/")
     End Sub
-
 End Class
