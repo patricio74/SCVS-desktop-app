@@ -21,8 +21,8 @@ Public Class Admin
             Case 0 'register student tab
 
             Case 1 'update/delete info tab
-                clearUpdForm()
                 voterInfo()
+                clearUpdForm()
             Case 2 'candidates tab
 
             Case 3 'result tab

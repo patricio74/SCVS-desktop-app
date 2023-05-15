@@ -271,12 +271,12 @@ Partial Class Admin
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1660, 1016)
+        Me.TabControl1.Size = New System.Drawing.Size(1654, 997)
         Me.TabControl1.TabIndex = 100
         '
         'TabPage1
         '
-        Me.TabPage1.BackColor = System.Drawing.Color.White
+        Me.TabPage1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage1.Controls.Add(Me.grpReg)
         Me.TabPage1.Controls.Add(Me.btnCancelReg)
         Me.TabPage1.Controls.Add(Me.Label3)
@@ -286,13 +286,16 @@ Partial Class Admin
         Me.TabPage1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.TabPage1.Location = New System.Drawing.Point(4, 34)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage1.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "   Register student   "
         '
         'grpReg
         '
-        Me.grpReg.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.grpReg.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpReg.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.grpReg.Controls.Add(Me.firstname)
         Me.grpReg.Controls.Add(Me.Label9)
         Me.grpReg.Controls.Add(Me.Label2)
@@ -311,7 +314,7 @@ Partial Class Admin
         Me.grpReg.Controls.Add(Me.Label15)
         Me.grpReg.Location = New System.Drawing.Point(289, 205)
         Me.grpReg.Name = "grpReg"
-        Me.grpReg.Size = New System.Drawing.Size(987, 467)
+        Me.grpReg.Size = New System.Drawing.Size(981, 438)
         Me.grpReg.TabIndex = 68
         Me.grpReg.TabStop = False
         '
@@ -514,12 +517,13 @@ Partial Class Admin
         '
         'btnCancelReg
         '
+        Me.btnCancelReg.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnCancelReg.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.btnCancelReg.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancelReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelReg.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelReg.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnCancelReg.Location = New System.Drawing.Point(1020, 722)
+        Me.btnCancelReg.Location = New System.Drawing.Point(1045, 684)
         Me.btnCancelReg.Name = "btnCancelReg"
         Me.btnCancelReg.Size = New System.Drawing.Size(197, 75)
         Me.btnCancelReg.TabIndex = 9
@@ -540,12 +544,13 @@ Partial Class Admin
         '
         'btnRegStudent
         '
+        Me.btnRegStudent.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnRegStudent.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRegStudent.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRegStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegStudent.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRegStudent.Location = New System.Drawing.Point(796, 722)
+        Me.btnRegStudent.Location = New System.Drawing.Point(821, 684)
         Me.btnRegStudent.Name = "btnRegStudent"
         Me.btnRegStudent.Size = New System.Drawing.Size(197, 75)
         Me.btnRegStudent.TabIndex = 8
@@ -554,7 +559,7 @@ Partial Class Admin
         '
         'TabPage2
         '
-        Me.TabPage2.BackColor = System.Drawing.Color.White
+        Me.TabPage2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage2.Controls.Add(Me.btnClrStudent)
         Me.TabPage2.Controls.Add(Me.Label16)
         Me.TabPage2.Controls.Add(Me.updRFID)
@@ -580,7 +585,7 @@ Partial Class Admin
         Me.TabPage2.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage2.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "   Update student   "
         '
@@ -675,7 +680,7 @@ Partial Class Admin
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(126, 160)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1382, 354)
+        Me.ListView1.Size = New System.Drawing.Size(1382, 367)
         Me.ListView1.TabIndex = 66
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -891,15 +896,15 @@ Partial Class Admin
         '
         'TabPage3
         '
+        Me.TabPage3.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage3.Controls.Add(Me.btnDelCandid)
         Me.TabPage3.Controls.Add(Me.btnUpdCandid)
         Me.TabPage3.Controls.Add(Me.btnAddCandid)
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage3.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage3.TabIndex = 4
         Me.TabPage3.Text = "   Candidates list   "
-        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'btnDelCandid
         '
@@ -953,7 +958,7 @@ Partial Class Admin
         Me.TabPage4.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage4.Location = New System.Drawing.Point(4, 34)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage4.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage4.TabIndex = 2
         Me.TabPage4.Text = "   View result   "
         '
@@ -964,7 +969,7 @@ Partial Class Admin
         Me.resultWebBrowser.Location = New System.Drawing.Point(207, 168)
         Me.resultWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.resultWebBrowser.Name = "resultWebBrowser"
-        Me.resultWebBrowser.Size = New System.Drawing.Size(1163, 630)
+        Me.resultWebBrowser.Size = New System.Drawing.Size(1157, 630)
         Me.resultWebBrowser.TabIndex = 84
         Me.resultWebBrowser.Url = New System.Uri("", System.UriKind.Relative)
         '
@@ -985,12 +990,13 @@ Partial Class Admin
         '
         'btnRefreshResult
         '
+        Me.btnRefreshResult.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.btnRefreshResult.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRefreshResult.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRefreshResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRefreshResult.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshResult.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRefreshResult.Location = New System.Drawing.Point(691, 820)
+        Me.btnRefreshResult.Location = New System.Drawing.Point(809, 820)
         Me.btnRefreshResult.Name = "btnRefreshResult"
         Me.btnRefreshResult.Size = New System.Drawing.Size(197, 75)
         Me.btnRefreshResult.TabIndex = 81
@@ -1013,14 +1019,14 @@ Partial Class Admin
         '
         'TabPage5
         '
-        Me.TabPage5.BackColor = System.Drawing.Color.White
+        Me.TabPage5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage5.Controls.Add(Me.grpMembers)
         Me.TabPage5.Controls.Add(Me.btnViewWebsite)
         Me.TabPage5.Controls.Add(Me.Label25)
         Me.TabPage5.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage5.Location = New System.Drawing.Point(4, 34)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage5.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage5.TabIndex = 3
         Me.TabPage5.Text = "   About SCVS   "
         '
@@ -1270,7 +1276,7 @@ Partial Class Admin
         Me.btnViewWebsite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnViewWebsite.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnViewWebsite.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnViewWebsite.Location = New System.Drawing.Point(677, 725)
+        Me.btnViewWebsite.Location = New System.Drawing.Point(674, 706)
         Me.btnViewWebsite.Name = "btnViewWebsite"
         Me.btnViewWebsite.Size = New System.Drawing.Size(276, 75)
         Me.btnViewWebsite.TabIndex = 79
@@ -1293,23 +1299,20 @@ Partial Class Admin
         '
         'Panel2
         '
-        Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.TabControl1)
         Me.Panel2.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel2.Location = New System.Drawing.Point(262, 64)
+        Me.Panel2.Location = New System.Drawing.Point(268, 64)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1660, 1016)
+        Me.Panel2.Size = New System.Drawing.Size(1654, 997)
         Me.Panel2.TabIndex = 11
         '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1920, 1061)
         Me.Controls.Add(Me.panelSidebar)
         Me.Controls.Add(Me.Panel1)
@@ -1319,7 +1322,7 @@ Partial Class Admin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MinimumSize = New System.Drawing.Size(942, 768)
+        Me.MinimumSize = New System.Drawing.Size(1918, 1030)
         Me.Name = "Admin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

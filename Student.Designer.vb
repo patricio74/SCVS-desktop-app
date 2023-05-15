@@ -89,6 +89,7 @@ Partial Class Student
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.lblResultDate = New System.Windows.Forms.Label()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.lblResultTime = New System.Windows.Forms.Label()
@@ -114,7 +115,6 @@ Partial Class Student
         Me.btnWebsite = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelSidebar.SuspendLayout()
@@ -277,7 +277,7 @@ Partial Class Student
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1660, 1016)
+        Me.TabControl1.Size = New System.Drawing.Size(1654, 997)
         Me.TabControl1.TabIndex = 100
         '
         'TabPage1
@@ -301,7 +301,7 @@ Partial Class Student
         Me.TabPage1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.TabPage1.Location = New System.Drawing.Point(4, 34)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage1.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "   Add vote   "
         '
@@ -1037,12 +1037,12 @@ Partial Class Student
         '
         'TabPage2
         '
+        Me.TabPage2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage2.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage2.TabIndex = 4
         Me.TabPage2.Text = "   Candidates list   "
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'TabPage3
         '
@@ -1054,9 +1054,20 @@ Partial Class Student
         Me.TabPage3.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage3.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "   View result   "
+        '
+        'resultWebBrowser
+        '
+        Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.resultWebBrowser.Location = New System.Drawing.Point(207, 168)
+        Me.resultWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.resultWebBrowser.Name = "resultWebBrowser"
+        Me.resultWebBrowser.Size = New System.Drawing.Size(1157, 630)
+        Me.resultWebBrowser.TabIndex = 85
+        Me.resultWebBrowser.Url = New System.Uri("", System.UriKind.Relative)
         '
         'lblResultDate
         '
@@ -1075,6 +1086,7 @@ Partial Class Student
         '
         'btnRefresh
         '
+        Me.btnRefresh.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.btnRefresh.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -1104,14 +1116,14 @@ Partial Class Student
         '
         'TabPage4
         '
-        Me.TabPage4.BackColor = System.Drawing.Color.White
+        Me.TabPage4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage4.Controls.Add(Me.grpMembers)
         Me.TabPage4.Controls.Add(Me.btnWebsite)
         Me.TabPage4.Controls.Add(Me.Label25)
         Me.TabPage4.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabPage4.Location = New System.Drawing.Point(4, 34)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1652, 978)
+        Me.TabPage4.Size = New System.Drawing.Size(1646, 959)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "   About SCVS   "
         '
@@ -1361,7 +1373,7 @@ Partial Class Student
         Me.btnWebsite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWebsite.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWebsite.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnWebsite.Location = New System.Drawing.Point(653, 724)
+        Me.btnWebsite.Location = New System.Drawing.Point(650, 705)
         Me.btnWebsite.Name = "btnWebsite"
         Me.btnWebsite.Size = New System.Drawing.Size(276, 75)
         Me.btnWebsite.TabIndex = 79
@@ -1391,25 +1403,14 @@ Partial Class Student
         Me.Panel2.Location = New System.Drawing.Point(262, 64)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1660, 1016)
+        Me.Panel2.Size = New System.Drawing.Size(1654, 997)
         Me.Panel2.TabIndex = 103
-        '
-        'resultWebBrowser
-        '
-        Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.resultWebBrowser.Location = New System.Drawing.Point(207, 168)
-        Me.resultWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.resultWebBrowser.Name = "resultWebBrowser"
-        Me.resultWebBrowser.Size = New System.Drawing.Size(1163, 630)
-        Me.resultWebBrowser.TabIndex = 85
-        Me.resultWebBrowser.Url = New System.Uri("", System.UriKind.Relative)
         '
         'Student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
         Me.ClientSize = New System.Drawing.Size(1920, 1061)
         Me.Controls.Add(Me.panelSidebar)
         Me.Controls.Add(Me.Panel1)
@@ -1419,7 +1420,7 @@ Partial Class Student
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.MinimumSize = New System.Drawing.Size(942, 768)
+        Me.MinimumSize = New System.Drawing.Size(1918, 1030)
         Me.Name = "Student"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
