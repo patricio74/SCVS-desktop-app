@@ -258,4 +258,8 @@ Public Class SCVS_Login
             End If
         End If
     End Sub
+
+    Private Sub lblForgotPass_Click(sender As Object, e As EventArgs) Handles lblForgotPass.Click
+        MessageBox.Show("Relax and try to remember your password!", "Forgot password?", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
 End Class

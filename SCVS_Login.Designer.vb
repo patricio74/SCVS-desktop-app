@@ -25,6 +25,7 @@ Partial Class SCVS_Login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SCVS_Login))
         Me.panelSidebar = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -41,16 +42,20 @@ Partial Class SCVS_Login
         Me.radAdmin = New System.Windows.Forms.RadioButton()
         Me.lblLogin = New System.Windows.Forms.Label()
         Me.grpUserLogin = New System.Windows.Forms.GroupBox()
+        Me.lblForgotPass = New System.Windows.Forms.Label()
+        Me.lblRegister = New System.Windows.Forms.Label()
+        Me.lblNoAcc = New System.Windows.Forms.Label()
         Me.grpRFIDLogin = New System.Windows.Forms.GroupBox()
         Me.txtboxRFID = New System.Windows.Forms.TextBox()
         Me.lblRFID = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblRFIDRegister = New System.Windows.Forms.Label()
+        Me.lblRFIDNoAcc = New System.Windows.Forms.Label()
         Me.panelSidebar.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.grpUserLogin.SuspendLayout()
         Me.grpRFIDLogin.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'panelSidebar
@@ -80,6 +85,18 @@ Partial Class SCVS_Login
         Me.Label6.Size = New System.Drawing.Size(183, 13)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Student Council Voting System"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = Global.VotingSystem_Perez.My.Resources.Resources.icon92px
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Enabled = False
+        Me.PictureBox1.Location = New System.Drawing.Point(88, 99)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(70, 70)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Label5
         '
@@ -188,7 +205,7 @@ Partial Class SCVS_Login
         Me.chkShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chkShow.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkShow.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.chkShow.Location = New System.Drawing.Point(45, 166)
+        Me.chkShow.Location = New System.Drawing.Point(44, 179)
         Me.chkShow.Name = "chkShow"
         Me.chkShow.Size = New System.Drawing.Size(58, 18)
         Me.chkShow.TabIndex = 3
@@ -203,7 +220,7 @@ Partial Class SCVS_Login
         Me.lblPass.BackColor = System.Drawing.Color.Transparent
         Me.lblPass.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblPass.Location = New System.Drawing.Point(42, 110)
+        Me.lblPass.Location = New System.Drawing.Point(41, 123)
         Me.lblPass.Name = "lblPass"
         Me.lblPass.Size = New System.Drawing.Size(88, 16)
         Me.lblPass.TabIndex = 30
@@ -217,7 +234,7 @@ Partial Class SCVS_Login
         Me.lblUser.BackColor = System.Drawing.Color.Transparent
         Me.lblUser.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblUser.Location = New System.Drawing.Point(42, 36)
+        Me.lblUser.Location = New System.Drawing.Point(41, 58)
         Me.lblUser.Name = "lblUser"
         Me.lblUser.Size = New System.Drawing.Size(85, 16)
         Me.lblUser.TabIndex = 29
@@ -231,7 +248,7 @@ Partial Class SCVS_Login
         Me.txtboxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtboxPassword.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtboxPassword.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.txtboxPassword.Location = New System.Drawing.Point(45, 129)
+        Me.txtboxPassword.Location = New System.Drawing.Point(44, 142)
         Me.txtboxPassword.MaxLength = 25
         Me.txtboxPassword.Name = "txtboxPassword"
         Me.txtboxPassword.Size = New System.Drawing.Size(297, 31)
@@ -246,7 +263,7 @@ Partial Class SCVS_Login
         Me.txtboxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtboxUsername.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtboxUsername.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.txtboxUsername.Location = New System.Drawing.Point(45, 55)
+        Me.txtboxUsername.Location = New System.Drawing.Point(44, 77)
         Me.txtboxUsername.MaxLength = 25
         Me.txtboxUsername.Name = "txtboxUsername"
         Me.txtboxUsername.Size = New System.Drawing.Size(297, 31)
@@ -293,6 +310,9 @@ Partial Class SCVS_Login
         'grpUserLogin
         '
         Me.grpUserLogin.BackColor = System.Drawing.Color.White
+        Me.grpUserLogin.Controls.Add(Me.lblForgotPass)
+        Me.grpUserLogin.Controls.Add(Me.lblRegister)
+        Me.grpUserLogin.Controls.Add(Me.lblNoAcc)
         Me.grpUserLogin.Controls.Add(Me.lblUser)
         Me.grpUserLogin.Controls.Add(Me.chkShow)
         Me.grpUserLogin.Controls.Add(Me.txtboxUsername)
@@ -300,13 +320,54 @@ Partial Class SCVS_Login
         Me.grpUserLogin.Controls.Add(Me.txtboxPassword)
         Me.grpUserLogin.Location = New System.Drawing.Point(368, 145)
         Me.grpUserLogin.Name = "grpUserLogin"
-        Me.grpUserLogin.Size = New System.Drawing.Size(384, 215)
+        Me.grpUserLogin.Size = New System.Drawing.Size(384, 242)
         Me.grpUserLogin.TabIndex = 0
         Me.grpUserLogin.TabStop = False
+        '
+        'lblForgotPass
+        '
+        Me.lblForgotPass.AutoSize = True
+        Me.lblForgotPass.BackColor = System.Drawing.Color.Transparent
+        Me.lblForgotPass.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblForgotPass.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblForgotPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblForgotPass.Location = New System.Drawing.Point(226, 200)
+        Me.lblForgotPass.Name = "lblForgotPass"
+        Me.lblForgotPass.Size = New System.Drawing.Size(115, 18)
+        Me.lblForgotPass.TabIndex = 33
+        Me.lblForgotPass.Text = "Forgot password?"
+        '
+        'lblRegister
+        '
+        Me.lblRegister.AutoSize = True
+        Me.lblRegister.BackColor = System.Drawing.Color.Transparent
+        Me.lblRegister.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblRegister.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblRegister.Location = New System.Drawing.Point(203, 26)
+        Me.lblRegister.Name = "lblRegister"
+        Me.lblRegister.Size = New System.Drawing.Size(58, 18)
+        Me.lblRegister.TabIndex = 32
+        Me.lblRegister.Text = "Register"
+        '
+        'lblNoAcc
+        '
+        Me.lblNoAcc.AutoSize = True
+        Me.lblNoAcc.BackColor = System.Drawing.Color.Transparent
+        Me.lblNoAcc.Cursor = System.Windows.Forms.Cursors.Default
+        Me.lblNoAcc.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNoAcc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblNoAcc.Location = New System.Drawing.Point(42, 26)
+        Me.lblNoAcc.Name = "lblNoAcc"
+        Me.lblNoAcc.Size = New System.Drawing.Size(163, 18)
+        Me.lblNoAcc.TabIndex = 31
+        Me.lblNoAcc.Text = "Don't have an account yet?"
         '
         'grpRFIDLogin
         '
         Me.grpRFIDLogin.BackColor = System.Drawing.Color.White
+        Me.grpRFIDLogin.Controls.Add(Me.lblRFIDRegister)
+        Me.grpRFIDLogin.Controls.Add(Me.lblRFIDNoAcc)
         Me.grpRFIDLogin.Controls.Add(Me.txtboxRFID)
         Me.grpRFIDLogin.Controls.Add(Me.lblRFID)
         Me.grpRFIDLogin.Location = New System.Drawing.Point(368, 145)
@@ -321,7 +382,7 @@ Partial Class SCVS_Login
         Me.txtboxRFID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtboxRFID.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtboxRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.txtboxRFID.Location = New System.Drawing.Point(45, 89)
+        Me.txtboxRFID.Location = New System.Drawing.Point(45, 77)
         Me.txtboxRFID.MaxLength = 10
         Me.txtboxRFID.Name = "txtboxRFID"
         Me.txtboxRFID.Size = New System.Drawing.Size(299, 37)
@@ -334,7 +395,7 @@ Partial Class SCVS_Login
         Me.lblRFID.BackColor = System.Drawing.Color.Transparent
         Me.lblRFID.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblRFID.Location = New System.Drawing.Point(42, 70)
+        Me.lblRFID.Location = New System.Drawing.Point(42, 58)
         Me.lblRFID.Name = "lblRFID"
         Me.lblRFID.Size = New System.Drawing.Size(41, 16)
         Me.lblRFID.TabIndex = 24
@@ -348,23 +409,39 @@ Partial Class SCVS_Login
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(520, 382)
+        Me.btnLogin.Location = New System.Drawing.Point(520, 408)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(80, 80)
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'lblRFIDRegister
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = Global.VotingSystem_Perez.My.Resources.Resources.icon92px
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Enabled = False
-        Me.PictureBox1.Location = New System.Drawing.Point(88, 99)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(70, 70)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.lblRFIDRegister.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.lblRFIDRegister.AutoSize = True
+        Me.lblRFIDRegister.BackColor = System.Drawing.Color.Transparent
+        Me.lblRFIDRegister.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblRFIDRegister.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRFIDRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblRFIDRegister.Location = New System.Drawing.Point(203, 146)
+        Me.lblRFIDRegister.Name = "lblRFIDRegister"
+        Me.lblRFIDRegister.Size = New System.Drawing.Size(58, 18)
+        Me.lblRFIDRegister.TabIndex = 35
+        Me.lblRFIDRegister.Text = "Register"
+        '
+        'lblRFIDNoAcc
+        '
+        Me.lblRFIDNoAcc.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.lblRFIDNoAcc.AutoSize = True
+        Me.lblRFIDNoAcc.BackColor = System.Drawing.Color.Transparent
+        Me.lblRFIDNoAcc.Cursor = System.Windows.Forms.Cursors.Default
+        Me.lblRFIDNoAcc.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblRFIDNoAcc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblRFIDNoAcc.Location = New System.Drawing.Point(42, 146)
+        Me.lblRFIDNoAcc.Name = "lblRFIDNoAcc"
+        Me.lblRFIDNoAcc.Size = New System.Drawing.Size(163, 18)
+        Me.lblRFIDNoAcc.TabIndex = 34
+        Me.lblRFIDNoAcc.Text = "Don't have an account yet?"
         '
         'SCVS_Login
         '
@@ -391,13 +468,13 @@ Partial Class SCVS_Login
         Me.Text = "Welcome to SCVS!"
         Me.panelSidebar.ResumeLayout(False)
         Me.panelSidebar.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.grpUserLogin.ResumeLayout(False)
         Me.grpUserLogin.PerformLayout()
         Me.grpRFIDLogin.ResumeLayout(False)
         Me.grpRFIDLogin.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -425,4 +502,9 @@ Partial Class SCVS_Login
     Friend WithEvents grpRFIDLogin As GroupBox
     Friend WithEvents txtboxRFID As TextBox
     Friend WithEvents lblRFID As Label
+    Friend WithEvents lblForgotPass As Label
+    Friend WithEvents lblRegister As Label
+    Friend WithEvents lblNoAcc As Label
+    Friend WithEvents lblRFIDRegister As Label
+    Friend WithEvents lblRFIDNoAcc As Label
 End Class
