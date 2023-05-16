@@ -456,8 +456,8 @@ Partial Class SCVS_Login
         Me.Controls.Add(Me.lblLogin)
         Me.Controls.Add(Me.panelSidebar)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.grpRFIDLogin)
         Me.Controls.Add(Me.grpUserLogin)
+        Me.Controls.Add(Me.grpRFIDLogin)
         Me.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle

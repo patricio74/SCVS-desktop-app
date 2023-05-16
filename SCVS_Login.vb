@@ -262,4 +262,12 @@ Public Class SCVS_Login
     Private Sub lblForgotPass_Click(sender As Object, e As EventArgs) Handles lblForgotPass.Click
         MessageBox.Show("Relax and try to remember your password!", "Forgot password?", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
+    Private Sub lblRFIDRegister_Click(sender As Object, e As EventArgs) Handles lblRFIDRegister.Click
+
+    End Sub
+
+    Private Sub lblRegister_Click(sender As Object, e As EventArgs) Handles lblRegister.Click
+
+    End Sub
 End Class
