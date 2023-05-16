@@ -34,6 +34,7 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_P
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Admin.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_Login.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Resources.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_SplashScreen.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Student.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.GenerateResource.cache
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.CoreCompileInputs.cache
@@ -43,4 +44,3 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_P
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.exe
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.xml
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.pdb
-C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_SplashScreen.resources
