@@ -85,9 +85,26 @@ Partial Class Admin
         Me.stdNum = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Label46 = New System.Windows.Forms.Label()
+        Me.btnAddCandid = New System.Windows.Forms.Button()
+        Me.cboxAddCandid = New System.Windows.Forms.ComboBox()
+        Me.txtAddCandid = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.txtCandidNum = New System.Windows.Forms.TextBox()
+        Me.lblCandidPos = New System.Windows.Forms.Label()
+        Me.lblCandidName = New System.Windows.Forms.Label()
+        Me.cboxCandidPos = New System.Windows.Forms.ComboBox()
+        Me.txtCandidName = New System.Windows.Forms.TextBox()
         Me.btnDelCandid = New System.Windows.Forms.Button()
         Me.btnUpdCandid = New System.Windows.Forms.Button()
-        Me.btnAddCandid = New System.Windows.Forms.Button()
+        Me.ListView2 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Label42 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.lblResultDate = New System.Windows.Forms.Label()
@@ -115,7 +132,6 @@ Partial Class Admin
         Me.btnViewWebsite = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label42 = New System.Windows.Forms.Label()
         Me.panelSidebar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -124,6 +140,8 @@ Partial Class Admin
         Me.grpReg.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.grpMembers.SuspendLayout()
@@ -142,7 +160,7 @@ Partial Class Admin
         Me.panelSidebar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.panelSidebar.Location = New System.Drawing.Point(0, 0)
         Me.panelSidebar.Name = "panelSidebar"
-        Me.panelSidebar.Size = New System.Drawing.Size(262, 1080)
+        Me.panelSidebar.Size = New System.Drawing.Size(262, 1061)
         Me.panelSidebar.TabIndex = 102
         '
         'Label6
@@ -213,7 +231,7 @@ Partial Class Admin
         Me.Label7.Cursor = System.Windows.Forms.Cursors.Default
         Me.Label7.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer), CType(CType(242, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(61, 1051)
+        Me.Label7.Location = New System.Drawing.Point(61, 1032)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(145, 13)
         Me.Label7.TabIndex = 10
@@ -295,7 +313,7 @@ Partial Class Admin
         '
         Me.grpReg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.grpReg.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.grpReg.BackColor = System.Drawing.Color.White
         Me.grpReg.Controls.Add(Me.firstname)
         Me.grpReg.Controls.Add(Me.Label9)
         Me.grpReg.Controls.Add(Me.Label2)
@@ -312,9 +330,9 @@ Partial Class Admin
         Me.grpReg.Controls.Add(Me.email)
         Me.grpReg.Controls.Add(Me.Label13)
         Me.grpReg.Controls.Add(Me.Label15)
-        Me.grpReg.Location = New System.Drawing.Point(182, 167)
+        Me.grpReg.Location = New System.Drawing.Point(266, 226)
         Me.grpReg.Name = "grpReg"
-        Me.grpReg.Size = New System.Drawing.Size(988, 433)
+        Me.grpReg.Size = New System.Drawing.Size(866, 433)
         Me.grpReg.TabIndex = 68
         Me.grpReg.TabStop = False
         '
@@ -324,12 +342,12 @@ Partial Class Admin
         Me.firstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.firstname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.firstname.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.firstname.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.firstname.Location = New System.Drawing.Point(118, 89)
+        Me.firstname.Location = New System.Drawing.Point(48, 90)
         Me.firstname.MaxLength = 25
         Me.firstname.Name = "firstname"
-        Me.firstname.Size = New System.Drawing.Size(343, 31)
+        Me.firstname.Size = New System.Drawing.Size(356, 37)
         Me.firstname.TabIndex = 0
         '
         'Label9
@@ -337,7 +355,7 @@ Partial Class Admin
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(115, 64)
+        Me.Label9.Location = New System.Drawing.Point(45, 65)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(96, 22)
         Me.Label9.TabIndex = 58
@@ -348,7 +366,7 @@ Partial Class Admin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(529, 230)
+        Me.Label2.Location = New System.Drawing.Point(459, 231)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 22)
         Me.Label2.TabIndex = 67
@@ -360,12 +378,12 @@ Partial Class Admin
         Me.middlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.middlename.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.middlename.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.middlename.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.middlename.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlename.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.middlename.Location = New System.Drawing.Point(118, 171)
+        Me.middlename.Location = New System.Drawing.Point(48, 172)
         Me.middlename.MaxLength = 25
         Me.middlename.Name = "middlename"
-        Me.middlename.Size = New System.Drawing.Size(343, 31)
+        Me.middlename.Size = New System.Drawing.Size(356, 37)
         Me.middlename.TabIndex = 1
         '
         'txtRFID
@@ -373,12 +391,12 @@ Partial Class Admin
         Me.txtRFID.BackColor = System.Drawing.Color.White
         Me.txtRFID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRFID.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtRFID.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRFID.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.txtRFID.Location = New System.Drawing.Point(532, 255)
+        Me.txtRFID.Location = New System.Drawing.Point(462, 256)
         Me.txtRFID.MaxLength = 10
         Me.txtRFID.Name = "txtRFID"
-        Me.txtRFID.Size = New System.Drawing.Size(343, 31)
+        Me.txtRFID.Size = New System.Drawing.Size(356, 37)
         Me.txtRFID.TabIndex = 6
         '
         'Label10
@@ -386,7 +404,7 @@ Partial Class Admin
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(115, 146)
+        Me.Label10.Location = New System.Drawing.Point(45, 147)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(110, 22)
         Me.Label10.TabIndex = 59
@@ -397,7 +415,7 @@ Partial Class Admin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(529, 146)
+        Me.Label1.Location = New System.Drawing.Point(459, 147)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 22)
         Me.Label1.TabIndex = 65
@@ -409,12 +427,12 @@ Partial Class Admin
         Me.lastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lastname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.lastname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.lastname.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lastname.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lastname.Location = New System.Drawing.Point(118, 255)
+        Me.lastname.Location = New System.Drawing.Point(48, 256)
         Me.lastname.MaxLength = 25
         Me.lastname.Name = "lastname"
-        Me.lastname.Size = New System.Drawing.Size(343, 31)
+        Me.lastname.Size = New System.Drawing.Size(356, 37)
         Me.lastname.TabIndex = 2
         '
         'pass
@@ -422,12 +440,12 @@ Partial Class Admin
         Me.pass.BackColor = System.Drawing.Color.White
         Me.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.pass.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pass.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.pass.Location = New System.Drawing.Point(532, 171)
+        Me.pass.Location = New System.Drawing.Point(462, 172)
         Me.pass.MaxLength = 25
         Me.pass.Name = "pass"
-        Me.pass.Size = New System.Drawing.Size(343, 31)
+        Me.pass.Size = New System.Drawing.Size(356, 37)
         Me.pass.TabIndex = 5
         '
         'Label11
@@ -435,7 +453,7 @@ Partial Class Admin
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(115, 230)
+        Me.Label11.Location = New System.Drawing.Point(45, 231)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(93, 22)
         Me.Label11.TabIndex = 60
@@ -446,13 +464,13 @@ Partial Class Admin
         Me.cboxYear.BackColor = System.Drawing.Color.White
         Me.cboxYear.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cboxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboxYear.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxYear.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboxYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.cboxYear.FormattingEnabled = True
         Me.cboxYear.Items.AddRange(New Object() {"1A", "1B", "1C", "1D", "1E", "1F", "2A", "2B", "2C", "2D", "2E", "2F", "3A", "3B", "3C", "3D", "3E", "3F", "4A", "4B", "4C", "4D"})
-        Me.cboxYear.Location = New System.Drawing.Point(532, 337)
+        Me.cboxYear.Location = New System.Drawing.Point(462, 338)
         Me.cboxYear.Name = "cboxYear"
-        Me.cboxYear.Size = New System.Drawing.Size(132, 31)
+        Me.cboxYear.Size = New System.Drawing.Size(132, 33)
         Me.cboxYear.TabIndex = 7
         '
         'Label12
@@ -460,7 +478,7 @@ Partial Class Admin
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(528, 312)
+        Me.Label12.Location = New System.Drawing.Point(458, 313)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(112, 22)
         Me.Label12.TabIndex = 61
@@ -471,13 +489,13 @@ Partial Class Admin
         Me.cboxCourse.BackColor = System.Drawing.Color.White
         Me.cboxCourse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cboxCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboxCourse.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxCourse.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cboxCourse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.cboxCourse.FormattingEnabled = True
         Me.cboxCourse.Items.AddRange(New Object() {"BS INFORMATION TECHNOLOGY", "BS COMPUTER ENGINEERING", "BS ELEMENTARY EDUCATION", "BS SECONDARY EDUCATION", "BS ENTREPRENEURSHIP", "BS BUSINESS MANAGEMENT"})
-        Me.cboxCourse.Location = New System.Drawing.Point(118, 337)
+        Me.cboxCourse.Location = New System.Drawing.Point(48, 338)
         Me.cboxCourse.Name = "cboxCourse"
-        Me.cboxCourse.Size = New System.Drawing.Size(343, 31)
+        Me.cboxCourse.Size = New System.Drawing.Size(356, 33)
         Me.cboxCourse.TabIndex = 3
         '
         'email
@@ -485,12 +503,12 @@ Partial Class Admin
         Me.email.BackColor = System.Drawing.Color.White
         Me.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.email.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.email.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.email.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.email.Location = New System.Drawing.Point(532, 89)
+        Me.email.Location = New System.Drawing.Point(462, 90)
         Me.email.MaxLength = 25
         Me.email.Name = "email"
-        Me.email.Size = New System.Drawing.Size(343, 31)
+        Me.email.Size = New System.Drawing.Size(356, 37)
         Me.email.TabIndex = 4
         '
         'Label13
@@ -498,7 +516,7 @@ Partial Class Admin
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label13.Location = New System.Drawing.Point(528, 64)
+        Me.Label13.Location = New System.Drawing.Point(458, 65)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(57, 22)
         Me.Label13.TabIndex = 62
@@ -509,7 +527,7 @@ Partial Class Admin
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(115, 312)
+        Me.Label15.Location = New System.Drawing.Point(45, 313)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(68, 22)
         Me.Label15.TabIndex = 63
@@ -523,9 +541,9 @@ Partial Class Admin
         Me.btnCancelReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancelReg.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelReg.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnCancelReg.Location = New System.Drawing.Point(935, 620)
+        Me.btnCancelReg.Location = New System.Drawing.Point(920, 704)
         Me.btnCancelReg.Name = "btnCancelReg"
-        Me.btnCancelReg.Size = New System.Drawing.Size(197, 75)
+        Me.btnCancelReg.Size = New System.Drawing.Size(184, 63)
         Me.btnCancelReg.TabIndex = 9
         Me.btnCancelReg.Text = "Cancel"
         Me.btnCancelReg.UseVisualStyleBackColor = True
@@ -536,7 +554,7 @@ Partial Class Admin
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(389, 75)
+        Me.Label3.Location = New System.Drawing.Point(418, 75)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(614, 61)
         Me.Label3.TabIndex = 64
@@ -550,16 +568,16 @@ Partial Class Admin
         Me.btnRegStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegStudent.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRegStudent.Location = New System.Drawing.Point(711, 620)
+        Me.btnRegStudent.Location = New System.Drawing.Point(716, 704)
         Me.btnRegStudent.Name = "btnRegStudent"
-        Me.btnRegStudent.Size = New System.Drawing.Size(197, 75)
+        Me.btnRegStudent.Size = New System.Drawing.Size(184, 63)
         Me.btnRegStudent.TabIndex = 8
         Me.btnRegStudent.Text = "Register"
         Me.btnRegStudent.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
-        Me.TabPage2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabPage2.BackColor = System.Drawing.Color.Transparent
         Me.TabPage2.Controls.Add(Me.btnClrStudent)
         Me.TabPage2.Controls.Add(Me.Label16)
         Me.TabPage2.Controls.Add(Me.updRFID)
@@ -596,9 +614,9 @@ Partial Class Admin
         Me.btnClrStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClrStudent.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClrStudent.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnClrStudent.Location = New System.Drawing.Point(1032, 716)
+        Me.btnClrStudent.Location = New System.Drawing.Point(1038, 773)
         Me.btnClrStudent.Name = "btnClrStudent"
-        Me.btnClrStudent.Size = New System.Drawing.Size(197, 75)
+        Me.btnClrStudent.Size = New System.Drawing.Size(179, 58)
         Me.btnClrStudent.TabIndex = 80
         Me.btnClrStudent.Text = "Cancel"
         Me.btnClrStudent.UseVisualStyleBackColor = True
@@ -606,9 +624,10 @@ Partial Class Admin
         'Label16
         '
         Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
         Me.Label16.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(648, 742)
+        Me.Label16.Location = New System.Drawing.Point(648, 783)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(49, 22)
         Me.Label16.TabIndex = 84
@@ -618,12 +637,12 @@ Partial Class Admin
         '
         Me.updRFID.BackColor = System.Drawing.Color.White
         Me.updRFID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.updRFID.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updRFID.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.updRFID.Location = New System.Drawing.Point(652, 767)
+        Me.updRFID.Location = New System.Drawing.Point(652, 808)
         Me.updRFID.MaxLength = 10
         Me.updRFID.Name = "updRFID"
-        Me.updRFID.Size = New System.Drawing.Size(332, 31)
+        Me.updRFID.Size = New System.Drawing.Size(356, 37)
         Me.updRFID.TabIndex = 77
         '
         'updYear
@@ -631,13 +650,13 @@ Partial Class Admin
         Me.updYear.BackColor = System.Drawing.Color.White
         Me.updYear.Cursor = System.Windows.Forms.Cursors.Hand
         Me.updYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.updYear.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updYear.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updYear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.updYear.FormattingEnabled = True
         Me.updYear.Items.AddRange(New Object() {"1A", "1B", "1C", "1D", "2A", "2B", "2C", "2D", "3A", "3B", "3C", "3D", "4A", "4B", "4C", "4D"})
-        Me.updYear.Location = New System.Drawing.Point(652, 626)
+        Me.updYear.Location = New System.Drawing.Point(652, 667)
         Me.updYear.Name = "updYear"
-        Me.updYear.Size = New System.Drawing.Size(334, 31)
+        Me.updYear.Size = New System.Drawing.Size(358, 37)
         Me.updYear.TabIndex = 74
         '
         'updCourse
@@ -645,13 +664,13 @@ Partial Class Admin
         Me.updCourse.BackColor = System.Drawing.Color.White
         Me.updCourse.Cursor = System.Windows.Forms.Cursors.Hand
         Me.updCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.updCourse.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updCourse.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updCourse.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.updCourse.FormattingEnabled = True
         Me.updCourse.Items.AddRange(New Object() {"BS Information Technology", "BS Computer Engineering", "BS Elementary Education", "BS Secondary Education", "BS Entrepreneurship", "BS Business Management"})
-        Me.updCourse.Location = New System.Drawing.Point(650, 554)
+        Me.updCourse.Location = New System.Drawing.Point(650, 595)
         Me.updCourse.Name = "updCourse"
-        Me.updCourse.Size = New System.Drawing.Size(334, 31)
+        Me.updCourse.Size = New System.Drawing.Size(358, 37)
         Me.updCourse.TabIndex = 73
         '
         'btnDelStudent
@@ -661,9 +680,9 @@ Partial Class Admin
         Me.btnDelStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelStudent.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelStudent.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnDelStudent.Location = New System.Drawing.Point(1032, 635)
+        Me.btnDelStudent.Location = New System.Drawing.Point(1038, 692)
         Me.btnDelStudent.Name = "btnDelStudent"
-        Me.btnDelStudent.Size = New System.Drawing.Size(197, 75)
+        Me.btnDelStudent.Size = New System.Drawing.Size(179, 58)
         Me.btnDelStudent.TabIndex = 79
         Me.btnDelStudent.Text = "Delete"
         Me.btnDelStudent.UseVisualStyleBackColor = True
@@ -680,7 +699,7 @@ Partial Class Admin
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(153, 154)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(1184, 345)
+        Me.ListView1.Size = New System.Drawing.Size(1184, 383)
         Me.ListView1.TabIndex = 66
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -732,9 +751,9 @@ Partial Class Admin
         Me.btnUpdStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdStudent.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnUpdStudent.Location = New System.Drawing.Point(1032, 554)
+        Me.btnUpdStudent.Location = New System.Drawing.Point(1038, 611)
         Me.btnUpdStudent.Name = "btnUpdStudent"
-        Me.btnUpdStudent.Size = New System.Drawing.Size(197, 75)
+        Me.btnUpdStudent.Size = New System.Drawing.Size(179, 58)
         Me.btnUpdStudent.TabIndex = 78
         Me.btnUpdStudent.Text = "Update"
         Me.btnUpdStudent.UseVisualStyleBackColor = True
@@ -742,9 +761,10 @@ Partial Class Admin
         'Label17
         '
         Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(648, 529)
+        Me.Label17.Location = New System.Drawing.Point(648, 570)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(68, 22)
         Me.Label17.TabIndex = 82
@@ -753,9 +773,10 @@ Partial Class Admin
         'Label18
         '
         Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
         Me.Label18.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(648, 672)
+        Me.Label18.Location = New System.Drawing.Point(648, 713)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(57, 22)
         Me.Label18.TabIndex = 81
@@ -765,20 +786,21 @@ Partial Class Admin
         '
         Me.updEmail.BackColor = System.Drawing.Color.White
         Me.updEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.updEmail.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updEmail.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.updEmail.Location = New System.Drawing.Point(652, 697)
+        Me.updEmail.Location = New System.Drawing.Point(652, 738)
         Me.updEmail.MaxLength = 25
         Me.updEmail.Name = "updEmail"
-        Me.updEmail.Size = New System.Drawing.Size(332, 31)
+        Me.updEmail.Size = New System.Drawing.Size(356, 37)
         Me.updEmail.TabIndex = 76
         '
         'Label19
         '
         Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.Transparent
         Me.Label19.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(648, 601)
+        Me.Label19.Location = New System.Drawing.Point(648, 642)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(112, 22)
         Me.Label19.TabIndex = 80
@@ -787,9 +809,10 @@ Partial Class Admin
         'Label20
         '
         Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.Transparent
         Me.Label20.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(266, 742)
+        Me.Label20.Location = New System.Drawing.Point(266, 783)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(93, 22)
         Me.Label20.TabIndex = 77
@@ -800,20 +823,21 @@ Partial Class Admin
         Me.updLastname.BackColor = System.Drawing.Color.White
         Me.updLastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.updLastname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.updLastname.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updLastname.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updLastname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.updLastname.Location = New System.Drawing.Point(267, 767)
+        Me.updLastname.Location = New System.Drawing.Point(267, 808)
         Me.updLastname.MaxLength = 25
         Me.updLastname.Name = "updLastname"
-        Me.updLastname.Size = New System.Drawing.Size(334, 31)
+        Me.updLastname.Size = New System.Drawing.Size(356, 37)
         Me.updLastname.TabIndex = 72
         '
         'Label21
         '
         Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
         Me.Label21.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label21.Location = New System.Drawing.Point(263, 672)
+        Me.Label21.Location = New System.Drawing.Point(263, 713)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(110, 22)
         Me.Label21.TabIndex = 75
@@ -824,20 +848,21 @@ Partial Class Admin
         Me.updMiddlename.BackColor = System.Drawing.Color.White
         Me.updMiddlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.updMiddlename.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.updMiddlename.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updMiddlename.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updMiddlename.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.updMiddlename.Location = New System.Drawing.Point(267, 697)
+        Me.updMiddlename.Location = New System.Drawing.Point(267, 738)
         Me.updMiddlename.MaxLength = 25
         Me.updMiddlename.Name = "updMiddlename"
-        Me.updMiddlename.Size = New System.Drawing.Size(334, 31)
+        Me.updMiddlename.Size = New System.Drawing.Size(356, 37)
         Me.updMiddlename.TabIndex = 70
         '
         'Label22
         '
         Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
         Me.Label22.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(263, 601)
+        Me.Label22.Location = New System.Drawing.Point(263, 642)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(96, 22)
         Me.Label22.TabIndex = 71
@@ -848,20 +873,21 @@ Partial Class Admin
         Me.updFirstname.BackColor = System.Drawing.Color.White
         Me.updFirstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.updFirstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.updFirstname.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.updFirstname.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updFirstname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.updFirstname.Location = New System.Drawing.Point(267, 626)
+        Me.updFirstname.Location = New System.Drawing.Point(267, 667)
         Me.updFirstname.MaxLength = 25
         Me.updFirstname.Name = "updFirstname"
-        Me.updFirstname.Size = New System.Drawing.Size(334, 31)
+        Me.updFirstname.Size = New System.Drawing.Size(356, 37)
         Me.updFirstname.TabIndex = 68
         '
         'Label23
         '
         Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.Color.Transparent
         Me.Label23.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label23.Location = New System.Drawing.Point(263, 529)
+        Me.Label23.Location = New System.Drawing.Point(263, 570)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(136, 22)
         Me.Label23.TabIndex = 69
@@ -873,13 +899,13 @@ Partial Class Admin
         Me.stdNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.stdNum.Cursor = System.Windows.Forms.Cursors.No
         Me.stdNum.Enabled = False
-        Me.stdNum.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stdNum.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.stdNum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.stdNum.Location = New System.Drawing.Point(267, 554)
+        Me.stdNum.Location = New System.Drawing.Point(267, 595)
         Me.stdNum.MaxLength = 10
         Me.stdNum.Name = "stdNum"
         Me.stdNum.ReadOnly = True
-        Me.stdNum.Size = New System.Drawing.Size(334, 31)
+        Me.stdNum.Size = New System.Drawing.Size(356, 37)
         Me.stdNum.TabIndex = 67
         '
         'Label14
@@ -897,57 +923,267 @@ Partial Class Admin
         'TabPage3
         '
         Me.TabPage3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabPage3.Controls.Add(Me.GroupBox2)
+        Me.TabPage3.Controls.Add(Me.GroupBox1)
+        Me.TabPage3.Controls.Add(Me.ListView2)
         Me.TabPage3.Controls.Add(Me.Label42)
-        Me.TabPage3.Controls.Add(Me.btnDelCandid)
-        Me.TabPage3.Controls.Add(Me.btnUpdCandid)
-        Me.TabPage3.Controls.Add(Me.btnAddCandid)
         Me.TabPage3.Location = New System.Drawing.Point(4, 34)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(1651, 978)
         Me.TabPage3.TabIndex = 4
         Me.TabPage3.Text = "   Candidates list   "
         '
-        'btnDelCandid
+        'GroupBox2
         '
-        Me.btnDelCandid.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnDelCandid.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDelCandid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDelCandid.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelCandid.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnDelCandid.Location = New System.Drawing.Point(1081, 708)
-        Me.btnDelCandid.Name = "btnDelCandid"
-        Me.btnDelCandid.Size = New System.Drawing.Size(197, 75)
-        Me.btnDelCandid.TabIndex = 83
-        Me.btnDelCandid.Text = "Delete"
-        Me.btnDelCandid.UseVisualStyleBackColor = True
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.GroupBox2.Controls.Add(Me.Label45)
+        Me.GroupBox2.Controls.Add(Me.Label46)
+        Me.GroupBox2.Controls.Add(Me.btnAddCandid)
+        Me.GroupBox2.Controls.Add(Me.cboxAddCandid)
+        Me.GroupBox2.Controls.Add(Me.txtAddCandid)
+        Me.GroupBox2.Location = New System.Drawing.Point(885, 524)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(449, 341)
+        Me.GroupBox2.TabIndex = 91
+        Me.GroupBox2.TabStop = False
         '
-        'btnUpdCandid
+        'Label45
         '
-        Me.btnUpdCandid.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnUpdCandid.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUpdCandid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdCandid.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdCandid.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnUpdCandid.Location = New System.Drawing.Point(878, 708)
-        Me.btnUpdCandid.Name = "btnUpdCandid"
-        Me.btnUpdCandid.Size = New System.Drawing.Size(197, 75)
-        Me.btnUpdCandid.TabIndex = 82
-        Me.btnUpdCandid.Text = "Update"
-        Me.btnUpdCandid.UseVisualStyleBackColor = True
+        Me.Label45.AutoSize = True
+        Me.Label45.BackColor = System.Drawing.Color.Transparent
+        Me.Label45.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.White
+        Me.Label45.Location = New System.Drawing.Point(38, 142)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(156, 22)
+        Me.Label45.TabIndex = 89
+        Me.Label45.Text = "Candidate Position:"
+        '
+        'Label46
+        '
+        Me.Label46.AutoSize = True
+        Me.Label46.BackColor = System.Drawing.Color.Transparent
+        Me.Label46.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label46.ForeColor = System.Drawing.Color.White
+        Me.Label46.Location = New System.Drawing.Point(38, 57)
+        Me.Label46.Name = "Label46"
+        Me.Label46.Size = New System.Drawing.Size(137, 22)
+        Me.Label46.TabIndex = 88
+        Me.Label46.Text = "Candidate name:"
         '
         'btnAddCandid
         '
         Me.btnAddCandid.BackColor = System.Drawing.Color.Goldenrod
         Me.btnAddCandid.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAddCandid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAddCandid.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddCandid.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddCandid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnAddCandid.Location = New System.Drawing.Point(675, 708)
+        Me.btnAddCandid.Location = New System.Drawing.Point(166, 229)
         Me.btnAddCandid.Name = "btnAddCandid"
-        Me.btnAddCandid.Size = New System.Drawing.Size(197, 75)
-        Me.btnAddCandid.TabIndex = 81
+        Me.btnAddCandid.Size = New System.Drawing.Size(131, 58)
+        Me.btnAddCandid.TabIndex = 92
         Me.btnAddCandid.Text = "Add"
         Me.btnAddCandid.UseVisualStyleBackColor = True
+        '
+        'cboxAddCandid
+        '
+        Me.cboxAddCandid.BackColor = System.Drawing.Color.White
+        Me.cboxAddCandid.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cboxAddCandid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxAddCandid.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxAddCandid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.cboxAddCandid.FormattingEnabled = True
+        Me.cboxAddCandid.Items.AddRange(New Object() {"President", "Vice President", "Secretary", "Treasurer", "Auditor", "Public Relations Officer", "First Year Representative", "Second Year Representative", "Third Year Representative", "Fourth Year Representative"})
+        Me.cboxAddCandid.Location = New System.Drawing.Point(42, 167)
+        Me.cboxAddCandid.Name = "cboxAddCandid"
+        Me.cboxAddCandid.Size = New System.Drawing.Size(369, 37)
+        Me.cboxAddCandid.TabIndex = 91
+        '
+        'txtAddCandid
+        '
+        Me.txtAddCandid.BackColor = System.Drawing.Color.White
+        Me.txtAddCandid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtAddCandid.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtAddCandid.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtAddCandid.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAddCandid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.txtAddCandid.Location = New System.Drawing.Point(42, 82)
+        Me.txtAddCandid.MaxLength = 50
+        Me.txtAddCandid.Name = "txtAddCandid"
+        Me.txtAddCandid.Size = New System.Drawing.Size(369, 37)
+        Me.txtAddCandid.TabIndex = 90
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.Label43)
+        Me.GroupBox1.Controls.Add(Me.txtCandidNum)
+        Me.GroupBox1.Controls.Add(Me.lblCandidPos)
+        Me.GroupBox1.Controls.Add(Me.lblCandidName)
+        Me.GroupBox1.Controls.Add(Me.cboxCandidPos)
+        Me.GroupBox1.Controls.Add(Me.txtCandidName)
+        Me.GroupBox1.Controls.Add(Me.btnDelCandid)
+        Me.GroupBox1.Controls.Add(Me.btnUpdCandid)
+        Me.GroupBox1.Location = New System.Drawing.Point(885, 160)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(449, 341)
+        Me.GroupBox1.TabIndex = 90
+        Me.GroupBox1.TabStop = False
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.BackColor = System.Drawing.Color.Transparent
+        Me.Label43.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Label43.Location = New System.Drawing.Point(223, 43)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(87, 22)
+        Me.Label43.TabIndex = 91
+        Me.Label43.Text = "Candid. #:"
+        '
+        'txtCandidNum
+        '
+        Me.txtCandidNum.BackColor = System.Drawing.Color.White
+        Me.txtCandidNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtCandidNum.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtCandidNum.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtCandidNum.Enabled = False
+        Me.txtCandidNum.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCandidNum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.txtCandidNum.Location = New System.Drawing.Point(316, 34)
+        Me.txtCandidNum.MaxLength = 10
+        Me.txtCandidNum.Name = "txtCandidNum"
+        Me.txtCandidNum.ReadOnly = True
+        Me.txtCandidNum.Size = New System.Drawing.Size(95, 37)
+        Me.txtCandidNum.TabIndex = 93
+        Me.txtCandidNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblCandidPos
+        '
+        Me.lblCandidPos.AutoSize = True
+        Me.lblCandidPos.BackColor = System.Drawing.Color.Transparent
+        Me.lblCandidPos.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCandidPos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblCandidPos.Location = New System.Drawing.Point(38, 160)
+        Me.lblCandidPos.Name = "lblCandidPos"
+        Me.lblCandidPos.Size = New System.Drawing.Size(156, 22)
+        Me.lblCandidPos.TabIndex = 89
+        Me.lblCandidPos.Text = "Candidate Position:"
+        '
+        'lblCandidName
+        '
+        Me.lblCandidName.AutoSize = True
+        Me.lblCandidName.BackColor = System.Drawing.Color.Transparent
+        Me.lblCandidName.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCandidName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.lblCandidName.Location = New System.Drawing.Point(38, 75)
+        Me.lblCandidName.Name = "lblCandidName"
+        Me.lblCandidName.Size = New System.Drawing.Size(137, 22)
+        Me.lblCandidName.TabIndex = 88
+        Me.lblCandidName.Text = "Candidate name:"
+        '
+        'cboxCandidPos
+        '
+        Me.cboxCandidPos.BackColor = System.Drawing.Color.White
+        Me.cboxCandidPos.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cboxCandidPos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboxCandidPos.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboxCandidPos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.cboxCandidPos.FormattingEnabled = True
+        Me.cboxCandidPos.Items.AddRange(New Object() {"President", "Vice President", "Secretary", "Treasurer", "Auditor", "Public Relations Officer", "First Year Representative", "Second Year Representative", "Third Year Representative", "Fourth Year Representative"})
+        Me.cboxCandidPos.Location = New System.Drawing.Point(42, 185)
+        Me.cboxCandidPos.Name = "cboxCandidPos"
+        Me.cboxCandidPos.Size = New System.Drawing.Size(369, 37)
+        Me.cboxCandidPos.TabIndex = 87
+        '
+        'txtCandidName
+        '
+        Me.txtCandidName.BackColor = System.Drawing.Color.White
+        Me.txtCandidName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtCandidName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtCandidName.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtCandidName.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCandidName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.txtCandidName.Location = New System.Drawing.Point(42, 100)
+        Me.txtCandidName.MaxLength = 50
+        Me.txtCandidName.Name = "txtCandidName"
+        Me.txtCandidName.Size = New System.Drawing.Size(369, 37)
+        Me.txtCandidName.TabIndex = 86
+        '
+        'btnDelCandid
+        '
+        Me.btnDelCandid.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnDelCandid.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnDelCandid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelCandid.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelCandid.ForeColor = System.Drawing.Color.Goldenrod
+        Me.btnDelCandid.Location = New System.Drawing.Point(280, 246)
+        Me.btnDelCandid.Name = "btnDelCandid"
+        Me.btnDelCandid.Size = New System.Drawing.Size(131, 58)
+        Me.btnDelCandid.TabIndex = 89
+        Me.btnDelCandid.Text = "Delete"
+        Me.btnDelCandid.UseVisualStyleBackColor = True
+        '
+        'btnUpdCandid
+        '
+        Me.btnUpdCandid.BackColor = System.Drawing.Color.Goldenrod
+        Me.btnUpdCandid.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnUpdCandid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdCandid.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdCandid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnUpdCandid.Location = New System.Drawing.Point(143, 246)
+        Me.btnUpdCandid.Name = "btnUpdCandid"
+        Me.btnUpdCandid.Size = New System.Drawing.Size(131, 58)
+        Me.btnUpdCandid.TabIndex = 88
+        Me.btnUpdCandid.Text = "Update"
+        Me.btnUpdCandid.UseVisualStyleBackColor = False
+        '
+        'ListView2
+        '
+        Me.ListView2.BackColor = System.Drawing.Color.White
+        Me.ListView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11})
+        Me.ListView2.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.ListView2.FullRowSelect = True
+        Me.ListView2.GridLines = True
+        Me.ListView2.HideSelection = False
+        Me.ListView2.Location = New System.Drawing.Point(193, 160)
+        Me.ListView2.Name = "ListView2"
+        Me.ListView2.Size = New System.Drawing.Size(661, 705)
+        Me.ListView2.TabIndex = 85
+        Me.ListView2.UseCompatibleStateImageBehavior = False
+        Me.ListView2.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "Candid. no."
+        Me.ColumnHeader9.Width = 113
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Candidate Name"
+        Me.ColumnHeader10.Width = 287
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "Candidate Position"
+        Me.ColumnHeader11.Width = 258
+        '
+        'Label42
+        '
+        Me.Label42.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.Transparent
+        Me.Label42.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Label42.Location = New System.Drawing.Point(562, 75)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(356, 61)
+        Me.Label42.TabIndex = 84
+        Me.Label42.Text = "Candidates list"
         '
         'TabPage4
         '
@@ -967,10 +1203,11 @@ Partial Class Admin
         '
         Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.resultWebBrowser.Location = New System.Drawing.Point(144, 187)
+        Me.resultWebBrowser.IsWebBrowserContextMenuEnabled = False
+        Me.resultWebBrowser.Location = New System.Drawing.Point(98, 187)
         Me.resultWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.resultWebBrowser.Name = "resultWebBrowser"
-        Me.resultWebBrowser.Size = New System.Drawing.Size(1258, 589)
+        Me.resultWebBrowser.Size = New System.Drawing.Size(1304, 644)
         Me.resultWebBrowser.TabIndex = 84
         Me.resultWebBrowser.Url = New System.Uri("", System.UriKind.Relative)
         '
@@ -997,9 +1234,9 @@ Partial Class Admin
         Me.btnRefreshResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRefreshResult.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshResult.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRefreshResult.Location = New System.Drawing.Point(673, 792)
+        Me.btnRefreshResult.Location = New System.Drawing.Point(662, 869)
         Me.btnRefreshResult.Name = "btnRefreshResult"
-        Me.btnRefreshResult.Size = New System.Drawing.Size(197, 75)
+        Me.btnRefreshResult.Size = New System.Drawing.Size(176, 59)
         Me.btnRefreshResult.TabIndex = 81
         Me.btnRefreshResult.Text = "Refresh"
         Me.btnRefreshResult.UseVisualStyleBackColor = True
@@ -1053,7 +1290,7 @@ Partial Class Admin
         Me.grpMembers.Controls.Add(Me.Label38)
         Me.grpMembers.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpMembers.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.grpMembers.Location = New System.Drawing.Point(216, 243)
+        Me.grpMembers.Location = New System.Drawing.Point(216, 260)
         Me.grpMembers.Name = "grpMembers"
         Me.grpMembers.Size = New System.Drawing.Size(957, 439)
         Me.grpMembers.TabIndex = 81
@@ -1277,11 +1514,11 @@ Partial Class Admin
         Me.btnViewWebsite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnViewWebsite.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnViewWebsite.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnViewWebsite.Location = New System.Drawing.Point(551, 719)
+        Me.btnViewWebsite.Location = New System.Drawing.Point(565, 755)
         Me.btnViewWebsite.Name = "btnViewWebsite"
-        Me.btnViewWebsite.Size = New System.Drawing.Size(276, 75)
+        Me.btnViewWebsite.Size = New System.Drawing.Size(255, 67)
         Me.btnViewWebsite.TabIndex = 79
-        Me.btnViewWebsite.Text = "View website"
+        Me.btnViewWebsite.Text = "Visit website"
         Me.btnViewWebsite.UseVisualStyleBackColor = False
         '
         'Label25
@@ -1312,26 +1549,12 @@ Partial Class Admin
         Me.Panel2.Size = New System.Drawing.Size(1659, 1016)
         Me.Panel2.TabIndex = 11
         '
-        'Label42
-        '
-        Me.Label42.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label42.AutoSize = True
-        Me.Label42.BackColor = System.Drawing.Color.Transparent
-        Me.Label42.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label42.Location = New System.Drawing.Point(511, 75)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(356, 61)
-        Me.Label42.TabIndex = 84
-        Me.Label42.Text = "Candidates list"
-        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.ClientSize = New System.Drawing.Size(1920, 1061)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelSidebar)
         Me.Controls.Add(Me.Panel2)
@@ -1357,6 +1580,10 @@ Partial Class Admin
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
@@ -1461,4 +1688,20 @@ Partial Class Admin
     Friend WithEvents lblResultDate As Label
     Friend WithEvents resultWebBrowser As WebBrowser
     Friend WithEvents Label42 As Label
+    Friend WithEvents ListView2 As ListView
+    Friend WithEvents ColumnHeader9 As ColumnHeader
+    Friend WithEvents ColumnHeader10 As ColumnHeader
+    Friend WithEvents cboxCandidPos As ComboBox
+    Friend WithEvents txtCandidName As TextBox
+    Friend WithEvents lblCandidPos As Label
+    Friend WithEvents lblCandidName As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label43 As Label
+    Friend WithEvents txtCandidNum As TextBox
+    Friend WithEvents ColumnHeader11 As ColumnHeader
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Label46 As Label
+    Friend WithEvents cboxAddCandid As ComboBox
+    Friend WithEvents txtAddCandid As TextBox
 End Class

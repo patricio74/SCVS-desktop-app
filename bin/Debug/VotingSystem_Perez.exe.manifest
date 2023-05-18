@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Protobuf.dll" size="410904">
-      <assemblyIdentity name="Google.Protobuf" version="3.21.9.0" publicKeyToken="A7D26565BAC4D604" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Protobuf.dll" size="443672">
+      <assemblyIdentity name="Google.Protobuf" version="3.23.1.0" publicKeyToken="A7D26565BAC4D604" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AHx9sjXVfts1U1o/BUc5wrQikiXZfeT76BTxCLedMDQ=</dsig:DigestValue>
+        <dsig:DigestValue>d3jl1npo+Y13ZvqqnsTNV2PuGFJpXP+OLOqGhGGkbBs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -139,14 +139,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.Pipelines.dll" size="72592">
-      <assemblyIdentity name="System.IO.Pipelines" version="5.0.0.2" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.IO.Pipelines.dll" size="85120">
+      <assemblyIdentity name="System.IO.Pipelines" version="7.0.0.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>kdZASqIUqkuiHgZhgKiMvpVl5SMWSRERy38jn8SYL4I=</dsig:DigestValue>
+        <dsig:DigestValue>07gYpPeoT7Dr2GB9wi+TMzZ8XQ4C2eeAB4NJkWnermE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="171520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="183296">
       <assemblyIdentity name="VotingSystem_Perez" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8tOvEyxa1mJ6daSGoIPjIa91kwj4LDfDLSIaQa+fgQQ=</dsig:DigestValue>
+        <dsig:DigestValue>+8BXFUQceDhgyEuPyDBJ/4PiO2TxgcAOHIIG0fatTgs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -219,13 +219,13 @@
       <dsig:DigestValue>DDKa7qHX0ybzDKJ3I65kaxuuMQNsQCfyjMPYdpAaOv0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VotingSystem_Perez.exe.config" size="1037">
+  <file name="VotingSystem_Perez.exe.config" size="1521">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jTefeo1+md++untlDJGwfUuLOI3O9eB1H+tqML4wSNE=</dsig:DigestValue>
+      <dsig:DigestValue>JuAy7aNP6k2WvmzzXMDTjD1wwKiLj6Vg4sm+82N7UDw=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

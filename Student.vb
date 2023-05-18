@@ -19,6 +19,9 @@ Public Class Student
     Dim thirname, thirpos As String
     Dim fourname, fourpos As String
 
+    Private Sub Student_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+    End Sub
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         stdLogout()
     End Sub
@@ -29,7 +32,7 @@ Public Class Student
             Case 0 'vote tab
                 'insert na lang code para masync names ng candid sa mga text ng radbuttons
             Case 1 'candidates tab
-                'insert code dito para marefresh list
+                stdCandidInfo()
             Case 2 'result tab
                 'sync current tiem sa label
                 stdResultTab()
@@ -123,7 +126,7 @@ Public Class Student
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         If RadioButton1.Checked = True Then
             presname = RadioButton1.Text
-            prespos = "President"
+            prespos = "PRESIDENT"
             President.Text = presname
         Else
             President.Clear()
@@ -133,7 +136,7 @@ Public Class Student
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         If RadioButton2.Checked = True Then
             presname = RadioButton2.Text
-            prespos = "President"
+            prespos = "PRESIDENT"
             President.Text = presname
         Else
             President.Clear()
@@ -143,7 +146,7 @@ Public Class Student
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         If RadioButton3.Checked = True Then
             presname = RadioButton3.Text
-            prespos = "President"
+            prespos = "PRESIDENT"
             President.Text = presname
         Else
             President.Clear()
@@ -153,7 +156,7 @@ Public Class Student
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
         If RadioButton4.Checked = True Then
             vicename = RadioButton4.Text
-            vicepos = "Vice President"
+            vicepos = "VICE PRESIDENT"
             VicePres.Text = vicename
         Else
             VicePres.Clear()
@@ -163,7 +166,7 @@ Public Class Student
     Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
         If RadioButton5.Checked = True Then
             vicename = RadioButton5.Text
-            vicepos = "Vice President"
+            vicepos = "VICE PRESIDENT"
             VicePres.Text = vicename
         Else
             VicePres.Clear()
@@ -173,7 +176,7 @@ Public Class Student
     Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
         If RadioButton6.Checked = True Then
             vicename = RadioButton6.Text
-            vicepos = "Vice President"
+            vicepos = "VICE PRESIDENT"
             VicePres.Text = vicename
         Else
             VicePres.Clear()
@@ -183,7 +186,7 @@ Public Class Student
     Private Sub RadioButton7_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton7.CheckedChanged
         If RadioButton7.Checked = True Then
             secname = RadioButton7.Text
-            secpos = "Secretary"
+            secpos = "SECRETARY"
             Secretary.Text = secname
         Else
             Secretary.Clear()
@@ -193,7 +196,7 @@ Public Class Student
     Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
         If RadioButton8.Checked = True Then
             secname = RadioButton8.Text
-            secpos = "Secretary"
+            secpos = "SECRETARY"
             Secretary.Text = secname
         Else
             Secretary.Clear()
@@ -203,7 +206,7 @@ Public Class Student
     Private Sub RadioButton9_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton9.CheckedChanged
         If RadioButton9.Checked = True Then
             secname = RadioButton9.Text
-            secpos = "Secretary"
+            secpos = "SECRETARY"
             Secretary.Text = secname
         Else
             Secretary.Clear()
@@ -213,7 +216,7 @@ Public Class Student
     Private Sub RadioButton10_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton10.CheckedChanged
         If RadioButton10.Checked = True Then
             treaname = RadioButton10.Text
-            treapos = "Treasurer"
+            treapos = "TREASURER"
             Treasurer.Text = treaname
         Else
             Treasurer.Clear()
@@ -223,7 +226,7 @@ Public Class Student
     Private Sub RadioButton11_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton11.CheckedChanged
         If RadioButton11.Checked = True Then
             treaname = RadioButton11.Text
-            treapos = "Treasurer"
+            treapos = "TREASURER"
             Treasurer.Text = treaname
         Else
             Treasurer.Clear()
@@ -233,7 +236,7 @@ Public Class Student
     Private Sub RadioButton12_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton12.CheckedChanged
         If RadioButton12.Checked = True Then
             treaname = RadioButton12.Text
-            treapos = "Treasurer"
+            treapos = "TREASURER"
             Treasurer.Text = treaname
         Else
             Treasurer.Clear()
@@ -243,7 +246,7 @@ Public Class Student
     Private Sub RadioButton13_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton13.CheckedChanged
         If RadioButton13.Checked = True Then
             audname = RadioButton13.Text
-            audpos = "Auditor"
+            audpos = "AUDITOR"
             Auditor.Text = audname
         Else
             Auditor.Clear()
@@ -253,7 +256,7 @@ Public Class Student
     Private Sub RadioButton14_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton14.CheckedChanged
         If RadioButton14.Checked = True Then
             audname = RadioButton14.Text
-            audpos = "Auditor"
+            audpos = "AUDITOR"
             Auditor.Text = audname
         Else
             Auditor.Clear()
@@ -263,7 +266,7 @@ Public Class Student
     Private Sub RadioButton15_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton15.CheckedChanged
         If RadioButton15.Checked = True Then
             audname = RadioButton15.Text
-            audpos = "Auditor"
+            audpos = "AUDITOR"
             Auditor.Text = audname
         Else
             Auditor.Clear()
@@ -273,7 +276,7 @@ Public Class Student
     Private Sub RadioButton16_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton16.CheckedChanged
         If RadioButton16.Checked = True Then
             proname = RadioButton16.Text
-            propos = "Public Relations Officer"
+            propos = "PUBLIC RELATIONS OFFICER"
             PROfficer.Text = proname
         Else
             PROfficer.Clear()
@@ -283,7 +286,7 @@ Public Class Student
     Private Sub RadioButton17_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton17.CheckedChanged
         If RadioButton17.Checked = True Then
             proname = RadioButton17.Text
-            propos = "Public Relations Officer"
+            propos = "PUBLIC RELATIONS OFFICER"
             PROfficer.Text = proname
         Else
             PROfficer.Clear()
@@ -293,7 +296,7 @@ Public Class Student
     Private Sub RadioButton18_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton18.CheckedChanged
         If RadioButton18.Checked = True Then
             proname = RadioButton18.Text
-            propos = "Public Relations Officer"
+            propos = "PUBLIC RELATIONS OFFICER"
             PROfficer.Text = proname
         Else
             PROfficer.Clear()
@@ -303,7 +306,7 @@ Public Class Student
     Private Sub RadioButton19_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton19.CheckedChanged
         If RadioButton19.Checked = True Then
             firsname = RadioButton19.Text
-            firspos = "First Year Representative"
+            firspos = "FIRST YEAR REPRESENTATIVE"
             firstrep.Text = firsname
         Else
             firstrep.Clear()
@@ -313,7 +316,7 @@ Public Class Student
     Private Sub RadioButton20_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton20.CheckedChanged
         If RadioButton20.Checked = True Then
             firsname = RadioButton20.Text
-            firspos = "First Year Representative"
+            firspos = "FIRST YEAR REPRESENTATIVE"
             firstrep.Text = firsname
         Else
             firstrep.Clear()
@@ -323,7 +326,7 @@ Public Class Student
     Private Sub RadioButton21_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton21.CheckedChanged
         If RadioButton21.Checked = True Then
             firsname = RadioButton21.Text
-            firspos = "First Year Representative"
+            firspos = "FIRST YEAR REPRESENTATIVE"
             firstrep.Text = firsname
         Else
             firstrep.Clear()
@@ -333,7 +336,7 @@ Public Class Student
     Private Sub RadioButton22_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton22.CheckedChanged
         If RadioButton22.Checked = True Then
             seconame = RadioButton22.Text
-            secopos = "Second Year Representative"
+            secopos = "SECOND YEAR REPRESENTATIVE"
             secondrep.Text = seconame
         Else
             secondrep.Clear()
@@ -343,7 +346,7 @@ Public Class Student
     Private Sub RadioButton23_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton23.CheckedChanged
         If RadioButton23.Checked = True Then
             seconame = RadioButton23.Text
-            secopos = "Second Year Representative"
+            secopos = "SECOND YEAR REPRESENTATIVE"
             secondrep.Text = seconame
         Else
             secondrep.Clear()
@@ -353,7 +356,7 @@ Public Class Student
     Private Sub RadioButton24_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton24.CheckedChanged
         If RadioButton24.Checked = True Then
             seconame = RadioButton24.Text
-            secopos = "Second Year Representative"
+            secopos = "SECOND YEAR REPRESENTATIVE"
             secondrep.Text = seconame
         Else
             secondrep.Clear()
@@ -363,7 +366,7 @@ Public Class Student
     Private Sub RadioButton25_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton25.CheckedChanged
         If RadioButton25.Checked = True Then
             thirname = RadioButton25.Text
-            thirpos = "Third Year Representative"
+            thirpos = "THIRD YEAR REPRESENTATIVE"
             thirdrep.Text = thirname
         Else
             thirdrep.Clear()
@@ -373,7 +376,7 @@ Public Class Student
     Private Sub RadioButton26_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton26.CheckedChanged
         If RadioButton26.Checked = True Then
             thirname = RadioButton26.Text
-            thirpos = "Third Year Representative"
+            thirpos = "THIRD YEAR REPRESENTATIVE"
             thirdrep.Text = thirname
         Else
             thirdrep.Clear()
@@ -383,7 +386,7 @@ Public Class Student
     Private Sub RadioButton27_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton27.CheckedChanged
         If RadioButton27.Checked = True Then
             thirname = RadioButton27.Text
-            thirpos = "Third Year Representative"
+            thirpos = "THIRD YEAR REPRESENTATIVE"
             thirdrep.Text = thirname
         Else
             thirdrep.Clear()
@@ -393,7 +396,7 @@ Public Class Student
     Private Sub RadioButton28_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton28.CheckedChanged
         If RadioButton28.Checked = True Then
             fourname = RadioButton28.Text
-            fourpos = "Fourth Year Representative"
+            fourpos = "FOURTH YEAR REPRESENTATIVE"
             fourrep.Text = fourname
         Else
             fourrep.Clear()
@@ -403,7 +406,7 @@ Public Class Student
     Private Sub RadioButton29_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton29.CheckedChanged
         If RadioButton29.Checked = True Then
             fourname = RadioButton29.Text
-            fourpos = "Fourth Year Representative"
+            fourpos = "FOURTH YEAR REPRESENTATIVE"
             fourrep.Text = fourname
         Else
             fourrep.Clear()
@@ -413,7 +416,7 @@ Public Class Student
     Private Sub RadioButton30_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton30.CheckedChanged
         If RadioButton30.Checked = True Then
             fourname = RadioButton30.Text
-            fourpos = "Fourth Year Representative"
+            fourpos = "FOURTH YEAR REPRESENTATIVE"
             fourrep.Text = fourname
         Else
             fourrep.Clear()

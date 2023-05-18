@@ -320,7 +320,7 @@ Partial Class SCVS_Login
         Me.grpUserLogin.Controls.Add(Me.txtboxPassword)
         Me.grpUserLogin.Location = New System.Drawing.Point(368, 145)
         Me.grpUserLogin.Name = "grpUserLogin"
-        Me.grpUserLogin.Size = New System.Drawing.Size(384, 242)
+        Me.grpUserLogin.Size = New System.Drawing.Size(384, 244)
         Me.grpUserLogin.TabIndex = 0
         Me.grpUserLogin.TabStop = False
         '
@@ -331,7 +331,7 @@ Partial Class SCVS_Login
         Me.lblForgotPass.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblForgotPass.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblForgotPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblForgotPass.Location = New System.Drawing.Point(226, 200)
+        Me.lblForgotPass.Location = New System.Drawing.Point(226, 179)
         Me.lblForgotPass.Name = "lblForgotPass"
         Me.lblForgotPass.Size = New System.Drawing.Size(115, 18)
         Me.lblForgotPass.TabIndex = 33
@@ -437,7 +437,7 @@ Partial Class SCVS_Login
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnLogin.Location = New System.Drawing.Point(520, 397)
+        Me.btnLogin.Location = New System.Drawing.Point(520, 400)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(80, 80)
         Me.btnLogin.TabIndex = 4

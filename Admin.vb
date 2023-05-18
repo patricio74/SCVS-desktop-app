@@ -21,19 +21,21 @@ Public Class Admin
             Case 0 'register student tab
 
             Case 1 'update/delete info tab
-                voterInfo()
                 clearUpdForm()
+                voterInfo()
             Case 2 'candidates tab
-
+                clrCandidForm()
+                admCandidInfo()
             Case 3 'result tab
                 'reset browser, sync current time sa label
                 admResultTab()
             Case 4 'about SCVS tab
 
             Case Else ' all other tab pages
-                ' do nothing
+                'do nothing
         End Select
     End Sub
+
 
     'REGISTER TAB
     Private Sub btnRegStudent_Click(sender As Object, e As EventArgs) Handles btnRegStudent.Click
@@ -87,6 +89,7 @@ Public Class Admin
         clearRegFrom()
     End Sub
 
+
     'UPDATE TAB
     Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
         If ListView1.SelectedItems.Count > 0 Then
@@ -114,7 +117,7 @@ Public Class Admin
             If i <> 0 Then
                 MsgBox("Voter info updated!", vbInformation, "Admin")
             Else
-                MsgBox("Voter info update failed!", vbCritical, "Admin")
+                MsgBox("Failed to update voter info!", vbCritical, "Admin")
             End If
             clearUpdForm()
             voterInfo()
@@ -153,29 +156,107 @@ Public Class Admin
         Next
     End Sub
 
-    'CANDIDATES TAB
-    Private Sub btnAddCandid_Click(sender As Object, e As EventArgs) Handles btnAddCandid.Click
 
+    'CANDIDATES TAB
+    Private Sub ListView2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView2.SelectedIndexChanged
+        If ListView2.SelectedItems.Count > 0 Then
+            txtCandidNum.Text = ListView2.SelectedItems(0).SubItems(0).Text
+            txtCandidName.Text = ListView2.SelectedItems(0).SubItems(1).Text
+            cboxCandidPos.Text = ListView2.SelectedItems(0).SubItems(2).Text
+        End If
+    End Sub
+    Private Sub btnAddCandid_Click(sender As Object, e As EventArgs) Handles btnAddCandid.Click
+        If txtAddCandid.Text = "" Or cboxAddCandid.SelectedIndex = -1 Then
+            MessageBox.Show("fill up candidate name, position to continue.", "Error!")
+        Else
+            Try
+                connect.Open()
+                ' Insert the registration details into the database
+                Dim insertQuery As String = "INSERT INTO candidate (candid_name, candid_position) 
+                                             VALUES (@fullname, @position)"
+                Dim insertCommand As New MySqlCommand(insertQuery, connect)
+                insertCommand.Parameters.AddWithValue("@fullname", txtAddCandid.Text)
+                insertCommand.Parameters.AddWithValue("@position", cboxAddCandid.Text)
+
+                Dim i As Integer = insertCommand.ExecuteNonQuery()
+
+                If i <> 0 Then
+                    MsgBox("Candidate successfully added!", vbInformation, "Admin")
+                    clrAddCandidTxt()
+                    admCandidInfo()
+                Else
+                    MsgBox("Error!", vbCritical, "Admin")
+                End If
+                connect.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
     End Sub
 
     Private Sub btnUpdCandid_Click(sender As Object, e As EventArgs) Handles btnUpdCandid.Click
+        If txtCandidName.Text = "" Or cboxCandidPos.SelectedIndex = -1 Then
+            MessageBox.Show("fill up candidate name, position to continue.", "Error!")
+        Else
+            Try
+                connect.Open()
+                Dim SQL As String =
+                    "UPDATE candidate SET candid_name ='" & txtCandidName.Text & "', candid_position ='" & cboxCandidPos.Text & "'   
+                WHERE candid_id ='" & txtCandidNum.Text & "' "
+                Dim cmd = New MySqlCommand(SQL, connect)
+                Dim i As Integer = cmd.ExecuteNonQuery
 
+                If i <> 0 Then
+                    MsgBox("Candidate info updated!", vbInformation, "Admin")
+                Else
+                    MsgBox("Failed to update candidate info!", vbCritical, "Admin")
+                End If
+                clrCandidTxt()
+                admCandidInfo()
+                connect.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
     End Sub
 
     Private Sub btnDelCandid_Click(sender As Object, e As EventArgs) Handles btnDelCandid.Click
+        Try
+            connect.Open()
+            Dim SQL As String = "DELETE FROM candidate WHERE candid_id = '" & txtCandidNum.Text & "' "
+            Dim cmd = New MySqlCommand(SQL, connect)
+            Dim i As Integer = cmd.ExecuteNonQuery
 
+            If i <> 0 Then
+                MsgBox("Candidate info deleted!", vbInformation, "Admin")
+            Else
+                MsgBox("Candidate info deletion failed!", vbCritical, "Admin")
+            End If
+            clrCandidTxt()
+            admCandidInfo()
+            connect.Close()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Private Sub txtAddCandid_Click(sender As Object, e As EventArgs) Handles txtAddCandid.Click
+        clrCandidTxt()
+    End Sub
+    Private Sub txtCandidName_Click(sender As Object, e As EventArgs) Handles txtCandidName.Click
+        clrAddCandidTxt()
     End Sub
 
+
     'RESULT TAB
-
-
     'refresh result tab
     Private Sub btnRefreshResult_Click(sender As Object, e As EventArgs) Handles btnRefreshResult.Click
         admResultTab()
     End Sub
 
+
     'ABOUT TAB
     Private Sub btnWebsite_Click(sender As Object, e As EventArgs) Handles btnViewWebsite.Click
         Process.Start("https://scvs.000webhostapp.com/")
     End Sub
+
 End Class

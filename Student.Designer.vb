@@ -88,6 +88,7 @@ Partial Class Student
         Me.RadioButton15 = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Label42 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.lblResultDate = New System.Windows.Forms.Label()
@@ -115,7 +116,10 @@ Partial Class Student
         Me.btnWebsite = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label42 = New System.Windows.Forms.Label()
+        Me.ListView2 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelSidebar.SuspendLayout()
@@ -314,9 +318,9 @@ Partial Class Student
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnClear.Location = New System.Drawing.Point(1047, 673)
+        Me.btnClear.Location = New System.Drawing.Point(1047, 712)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(192, 77)
+        Me.btnClear.Size = New System.Drawing.Size(183, 65)
         Me.btnClear.TabIndex = 34
         Me.btnClear.Text = "Cancel"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -330,9 +334,9 @@ Partial Class Student
         Me.GroupBox6.Controls.Add(Me.RadioButton18)
         Me.GroupBox6.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox6.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox6.Location = New System.Drawing.Point(493, 620)
+        Me.GroupBox6.Location = New System.Drawing.Point(493, 659)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(240, 170)
+        Me.GroupBox6.Size = New System.Drawing.Size(256, 170)
         Me.GroupBox6.TabIndex = 74
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Public Relations Officer"
@@ -360,7 +364,7 @@ Partial Class Student
         Me.PROfficer.Location = New System.Drawing.Point(21, 120)
         Me.PROfficer.Name = "PROfficer"
         Me.PROfficer.ReadOnly = True
-        Me.PROfficer.Size = New System.Drawing.Size(201, 27)
+        Me.PROfficer.Size = New System.Drawing.Size(216, 27)
         Me.PROfficer.TabIndex = 14
         Me.PROfficer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -399,9 +403,9 @@ Partial Class Student
         Me.GroupBox8.Controls.Add(Me.RadioButton24)
         Me.GroupBox8.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox8.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox8.Location = New System.Drawing.Point(493, 429)
+        Me.GroupBox8.Location = New System.Drawing.Point(493, 445)
         Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(240, 168)
+        Me.GroupBox8.Size = New System.Drawing.Size(256, 168)
         Me.GroupBox8.TabIndex = 70
         Me.GroupBox8.TabStop = False
         Me.GroupBox8.Text = "2nd Year Representative"
@@ -416,7 +420,7 @@ Partial Class Student
         Me.secondrep.Location = New System.Drawing.Point(21, 120)
         Me.secondrep.Name = "secondrep"
         Me.secondrep.ReadOnly = True
-        Me.secondrep.Size = New System.Drawing.Size(201, 27)
+        Me.secondrep.Size = New System.Drawing.Size(216, 27)
         Me.secondrep.TabIndex = 16
         Me.secondrep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -466,9 +470,9 @@ Partial Class Student
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnSubmit.Location = New System.Drawing.Point(833, 673)
+        Me.btnSubmit.Location = New System.Drawing.Point(833, 712)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(192, 77)
+        Me.btnSubmit.Size = New System.Drawing.Size(183, 65)
         Me.btnSubmit.TabIndex = 33
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = False
@@ -482,9 +486,9 @@ Partial Class Student
         Me.GroupBox10.Controls.Add(Me.RadioButton29)
         Me.GroupBox10.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox10.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox10.Location = New System.Drawing.Point(1031, 429)
+        Me.GroupBox10.Location = New System.Drawing.Point(1031, 445)
         Me.GroupBox10.Name = "GroupBox10"
-        Me.GroupBox10.Size = New System.Drawing.Size(240, 170)
+        Me.GroupBox10.Size = New System.Drawing.Size(256, 170)
         Me.GroupBox10.TabIndex = 72
         Me.GroupBox10.TabStop = False
         Me.GroupBox10.Text = "4th Year Representative"
@@ -499,7 +503,7 @@ Partial Class Student
         Me.fourrep.Location = New System.Drawing.Point(23, 120)
         Me.fourrep.Name = "fourrep"
         Me.fourrep.ReadOnly = True
-        Me.fourrep.Size = New System.Drawing.Size(201, 27)
+        Me.fourrep.Size = New System.Drawing.Size(216, 27)
         Me.fourrep.TabIndex = 17
         Me.fourrep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -551,9 +555,9 @@ Partial Class Student
         Me.GroupBox11.Controls.Add(Me.RadioButton27)
         Me.GroupBox11.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox11.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox11.Location = New System.Drawing.Point(761, 429)
+        Me.GroupBox11.Location = New System.Drawing.Point(761, 445)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Size = New System.Drawing.Size(240, 170)
+        Me.GroupBox11.Size = New System.Drawing.Size(256, 170)
         Me.GroupBox11.TabIndex = 71
         Me.GroupBox11.TabStop = False
         Me.GroupBox11.Text = "3rd Year Representative"
@@ -568,7 +572,7 @@ Partial Class Student
         Me.thirdrep.Location = New System.Drawing.Point(21, 120)
         Me.thirdrep.Name = "thirdrep"
         Me.thirdrep.ReadOnly = True
-        Me.thirdrep.Size = New System.Drawing.Size(201, 27)
+        Me.thirdrep.Size = New System.Drawing.Size(216, 27)
         Me.thirdrep.TabIndex = 13
         Me.thirdrep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -620,9 +624,9 @@ Partial Class Student
         Me.GroupBox7.Controls.Add(Me.RadioButton21)
         Me.GroupBox7.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox7.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox7.Location = New System.Drawing.Point(225, 429)
+        Me.GroupBox7.Location = New System.Drawing.Point(225, 445)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(240, 169)
+        Me.GroupBox7.Size = New System.Drawing.Size(256, 169)
         Me.GroupBox7.TabIndex = 69
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "1st Year Representative"
@@ -637,7 +641,7 @@ Partial Class Student
         Me.firstrep.Location = New System.Drawing.Point(21, 121)
         Me.firstrep.Name = "firstrep"
         Me.firstrep.ReadOnly = True
-        Me.firstrep.Size = New System.Drawing.Size(201, 27)
+        Me.firstrep.Size = New System.Drawing.Size(216, 27)
         Me.firstrep.TabIndex = 15
         Me.firstrep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -691,7 +695,7 @@ Partial Class Student
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(225, 237)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(240, 169)
+        Me.GroupBox1.Size = New System.Drawing.Size(256, 169)
         Me.GroupBox1.TabIndex = 65
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "President"
@@ -706,7 +710,7 @@ Partial Class Student
         Me.President.Location = New System.Drawing.Point(21, 121)
         Me.President.Name = "President"
         Me.President.ReadOnly = True
-        Me.President.Size = New System.Drawing.Size(201, 27)
+        Me.President.Size = New System.Drawing.Size(216, 27)
         Me.President.TabIndex = 200
         Me.President.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -760,7 +764,7 @@ Partial Class Student
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.GroupBox2.Location = New System.Drawing.Point(493, 237)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(240, 168)
+        Me.GroupBox2.Size = New System.Drawing.Size(256, 168)
         Me.GroupBox2.TabIndex = 66
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Vice President"
@@ -775,7 +779,7 @@ Partial Class Student
         Me.VicePres.Location = New System.Drawing.Point(21, 120)
         Me.VicePres.Name = "VicePres"
         Me.VicePres.ReadOnly = True
-        Me.VicePres.Size = New System.Drawing.Size(201, 27)
+        Me.VicePres.Size = New System.Drawing.Size(216, 27)
         Me.VicePres.TabIndex = 201
         Me.VicePres.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -829,7 +833,7 @@ Partial Class Student
         Me.GroupBox3.ForeColor = System.Drawing.Color.Black
         Me.GroupBox3.Location = New System.Drawing.Point(761, 235)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(240, 170)
+        Me.GroupBox3.Size = New System.Drawing.Size(256, 170)
         Me.GroupBox3.TabIndex = 67
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Secretary"
@@ -844,7 +848,7 @@ Partial Class Student
         Me.Secretary.Location = New System.Drawing.Point(21, 120)
         Me.Secretary.Name = "Secretary"
         Me.Secretary.ReadOnly = True
-        Me.Secretary.Size = New System.Drawing.Size(201, 27)
+        Me.Secretary.Size = New System.Drawing.Size(216, 27)
         Me.Secretary.TabIndex = 202
         Me.Secretary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -898,7 +902,7 @@ Partial Class Student
         Me.GroupBox4.ForeColor = System.Drawing.Color.Black
         Me.GroupBox4.Location = New System.Drawing.Point(1031, 237)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(240, 170)
+        Me.GroupBox4.Size = New System.Drawing.Size(256, 170)
         Me.GroupBox4.TabIndex = 68
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Treasurer"
@@ -913,7 +917,7 @@ Partial Class Student
         Me.Treasurer.Location = New System.Drawing.Point(21, 121)
         Me.Treasurer.Name = "Treasurer"
         Me.Treasurer.ReadOnly = True
-        Me.Treasurer.Size = New System.Drawing.Size(201, 27)
+        Me.Treasurer.Size = New System.Drawing.Size(216, 27)
         Me.Treasurer.TabIndex = 203
         Me.Treasurer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -965,9 +969,9 @@ Partial Class Student
         Me.GroupBox5.Controls.Add(Me.RadioButton15)
         Me.GroupBox5.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox5.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox5.Location = New System.Drawing.Point(225, 620)
+        Me.GroupBox5.Location = New System.Drawing.Point(225, 659)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(240, 168)
+        Me.GroupBox5.Size = New System.Drawing.Size(256, 168)
         Me.GroupBox5.TabIndex = 73
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Auditor"
@@ -982,7 +986,7 @@ Partial Class Student
         Me.Auditor.Location = New System.Drawing.Point(21, 120)
         Me.Auditor.Name = "Auditor"
         Me.Auditor.ReadOnly = True
-        Me.Auditor.Size = New System.Drawing.Size(201, 27)
+        Me.Auditor.Size = New System.Drawing.Size(216, 27)
         Me.Auditor.TabIndex = 13
         Me.Auditor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -1040,12 +1044,27 @@ Partial Class Student
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabPage2.Controls.Add(Me.ListView2)
         Me.TabPage2.Controls.Add(Me.Label42)
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Size = New System.Drawing.Size(1651, 978)
         Me.TabPage2.TabIndex = 4
         Me.TabPage2.Text = "   Candidates list   "
+        '
+        'Label42
+        '
+        Me.Label42.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.Transparent
+        Me.Label42.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.Label42.Location = New System.Drawing.Point(511, 75)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(356, 61)
+        Me.Label42.TabIndex = 85
+        Me.Label42.Text = "Candidates list"
         '
         'TabPage3
         '
@@ -1065,10 +1084,11 @@ Partial Class Student
         '
         Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.resultWebBrowser.Location = New System.Drawing.Point(144, 187)
+        Me.resultWebBrowser.IsWebBrowserContextMenuEnabled = False
+        Me.resultWebBrowser.Location = New System.Drawing.Point(98, 187)
         Me.resultWebBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.resultWebBrowser.Name = "resultWebBrowser"
-        Me.resultWebBrowser.Size = New System.Drawing.Size(1258, 589)
+        Me.resultWebBrowser.Size = New System.Drawing.Size(1304, 644)
         Me.resultWebBrowser.TabIndex = 85
         Me.resultWebBrowser.Url = New System.Uri("", System.UriKind.Relative)
         '
@@ -1095,9 +1115,9 @@ Partial Class Student
         Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRefresh.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRefresh.Location = New System.Drawing.Point(673, 792)
+        Me.btnRefresh.Location = New System.Drawing.Point(662, 869)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(197, 75)
+        Me.btnRefresh.Size = New System.Drawing.Size(176, 59)
         Me.btnRefresh.TabIndex = 81
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
@@ -1152,7 +1172,7 @@ Partial Class Student
         Me.grpMembers.Controls.Add(Me.Label38)
         Me.grpMembers.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.grpMembers.ForeColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.grpMembers.Location = New System.Drawing.Point(216, 243)
+        Me.grpMembers.Location = New System.Drawing.Point(216, 260)
         Me.grpMembers.Name = "grpMembers"
         Me.grpMembers.Size = New System.Drawing.Size(957, 439)
         Me.grpMembers.TabIndex = 80
@@ -1376,11 +1396,11 @@ Partial Class Student
         Me.btnWebsite.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWebsite.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnWebsite.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnWebsite.Location = New System.Drawing.Point(551, 719)
+        Me.btnWebsite.Location = New System.Drawing.Point(565, 755)
         Me.btnWebsite.Name = "btnWebsite"
-        Me.btnWebsite.Size = New System.Drawing.Size(276, 75)
+        Me.btnWebsite.Size = New System.Drawing.Size(255, 67)
         Me.btnWebsite.TabIndex = 79
-        Me.btnWebsite.Text = "View website"
+        Me.btnWebsite.Text = "Visit website"
         Me.btnWebsite.UseVisualStyleBackColor = False
         '
         'Label25
@@ -1409,19 +1429,37 @@ Partial Class Student
         Me.Panel2.Size = New System.Drawing.Size(1659, 1016)
         Me.Panel2.TabIndex = 103
         '
-        'Label42
+        'ListView2
         '
-        Me.Label42.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label42.AutoSize = True
-        Me.Label42.BackColor = System.Drawing.Color.Transparent
-        Me.Label42.Font = New System.Drawing.Font("Trebuchet MS", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.Label42.Location = New System.Drawing.Point(511, 75)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(356, 61)
-        Me.Label42.TabIndex = 85
-        Me.Label42.Text = "Candidates list"
+        Me.ListView2.BackColor = System.Drawing.Color.White
+        Me.ListView2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.ListView2.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader10, Me.ColumnHeader11})
+        Me.ListView2.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.ListView2.FullRowSelect = True
+        Me.ListView2.GridLines = True
+        Me.ListView2.HideSelection = False
+        Me.ListView2.Location = New System.Drawing.Point(364, 160)
+        Me.ListView2.Name = "ListView2"
+        Me.ListView2.Size = New System.Drawing.Size(661, 705)
+        Me.ListView2.TabIndex = 86
+        Me.ListView2.UseCompatibleStateImageBehavior = False
+        Me.ListView2.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "Candid. no."
+        Me.ColumnHeader9.Width = 113
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Candidate Name"
+        Me.ColumnHeader10.Width = 287
+        '
+        'ColumnHeader11
+        '
+        Me.ColumnHeader11.Text = "Candidate Position"
+        Me.ColumnHeader11.Width = 258
         '
         'Student
         '
@@ -1573,4 +1611,8 @@ Partial Class Student
     Friend WithEvents lblResultDate As Label
     Friend WithEvents resultWebBrowser As WebBrowser
     Friend WithEvents Label42 As Label
+    Friend WithEvents ListView2 As ListView
+    Friend WithEvents ColumnHeader9 As ColumnHeader
+    Friend WithEvents ColumnHeader10 As ColumnHeader
+    Friend WithEvents ColumnHeader11 As ColumnHeader
 End Class

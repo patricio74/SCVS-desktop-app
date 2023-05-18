@@ -47,6 +47,7 @@ Module scvsModule
         Dim currentTime As DateTime = DateTime.Now
         Admin.lblResultTime.Text = "Election result as of " & currentTime.ToString("h:mm tt")
         Admin.lblResultDate.Text = currentTime.ToString("MM/dd/yy")
+        Admin.resultWebBrowser.Refresh()
         Admin.resultWebBrowser.Navigate("https://scvs-result.000webhostapp.com/")
     End Sub
 
@@ -107,7 +108,74 @@ Module scvsModule
         End Try
     End Sub
 
+    'clear candidates tab
+    Public Sub clrCandidForm()
+        clrCandidTxt()
+        clrAddCandidTxt()
+    End Sub
+    Public Sub clrCandidTxt()
+        Admin.txtCandidNum.Clear()
+        Admin.txtCandidName.Clear()
+        Admin.cboxCandidPos.SelectedIndex = -1
+    End Sub
+    Public Sub clrAddCandidTxt()
+        Admin.txtAddCandid.Clear()
+        Admin.cboxAddCandid.SelectedIndex = -1
+    End Sub
 
+    'candidates tab listview
+    Public Sub admCandidInfo()
+        Dim cmmd As MySqlCommand
+        Dim da As MySqlDataAdapter
+        Dim ds As DataSet
+        Try
+            Admin.ListView2.Items.Clear()
+            Dim connectionString As String = getConString()
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+                Dim sql As String = "SELECT * FROM candidate"
+                cmmd = New MySqlCommand(sql, connection)
+                da = New MySqlDataAdapter(cmmd)
+                ds = New DataSet
+                da.Fill(ds, "Tables")
+                For r = 0 To ds.Tables(0).Rows.Count - 1
+                    Dim lvitm As New ListViewItem()
+                    lvitm.Text = ds.Tables(0).Rows(r)("candid_id").ToString()
+                    lvitm.SubItems.Add(ds.Tables(0).Rows(r)("candid_name").ToString())
+                    lvitm.SubItems.Add(ds.Tables(0).Rows(r)("candid_position").ToString())
+                    Admin.ListView2.Items.Add(lvitm)
+                Next
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+    Public Sub stdCandidInfo()
+        Dim cmmd As MySqlCommand
+        Dim da As MySqlDataAdapter
+        Dim ds As DataSet
+        Try
+            Admin.ListView2.Items.Clear()
+            Dim connectionString As String = getConString()
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+                Dim sql As String = "SELECT * FROM candidate"
+                cmmd = New MySqlCommand(sql, connection)
+                da = New MySqlDataAdapter(cmmd)
+                ds = New DataSet
+                da.Fill(ds, "Tables")
+                For r = 0 To ds.Tables(0).Rows.Count - 1
+                    Dim lvitm As New ListViewItem()
+                    lvitm.Text = ds.Tables(0).Rows(r)("candid_id").ToString()
+                    lvitm.SubItems.Add(ds.Tables(0).Rows(r)("candid_name").ToString())
+                    lvitm.SubItems.Add(ds.Tables(0).Rows(r)("candid_position").ToString())
+                    Student.ListView2.Items.Add(lvitm)
+                Next
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 
 
     'STUDENT FORM FUNCTIONS
@@ -125,6 +193,7 @@ Module scvsModule
         Dim currentTime As DateTime = DateTime.Now
         Student.lblResultTime.Text = "Election result as of " & currentTime.ToString("h:mm tt")
         Student.lblResultDate.Text = currentTime.ToString("MM/dd/yy")
+        Student.resultWebBrowser.Refresh()
         Student.resultWebBrowser.Navigate("https://scvs-result.000webhostapp.com/")
     End Sub
 
