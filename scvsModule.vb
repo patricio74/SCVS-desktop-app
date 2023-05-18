@@ -47,7 +47,7 @@ Module scvsModule
         Dim currentTime As DateTime = DateTime.Now
         Admin.lblResultTime.Text = "Election result as of " & currentTime.ToString("h:mm tt")
         Admin.lblResultDate.Text = currentTime.ToString("MM/dd/yy")
-        Admin.resultWebBrowser.Navigate("https://websiteniperez.netlify.app/")
+        Admin.resultWebBrowser.Navigate("https://scvs-result.000webhostapp.com/")
     End Sub
 
     'pang clear sa register tab
@@ -125,7 +125,7 @@ Module scvsModule
         Dim currentTime As DateTime = DateTime.Now
         Student.lblResultTime.Text = "Election result as of " & currentTime.ToString("h:mm tt")
         Student.lblResultDate.Text = currentTime.ToString("MM/dd/yy")
-        Student.resultWebBrowser.Navigate("https://websiteniperez.netlify.app/")
+        Student.resultWebBrowser.Navigate("https://scvs-result.000webhostapp.com/")
     End Sub
 
     'clear radbuttons, textboxes sa vote tab
