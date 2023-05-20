@@ -110,7 +110,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lvD4pFCBQAZDquYPbebTdcy4JvAqYxFXKIjve2UyZxc=</dsig:DigestValue>
+        <dsig:DigestValue>g6uPoe8lw3Rgs5TO6bwk5W3yT49lm7j0SSQMdfKXXvQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="163840">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="164864">
       <assemblyIdentity name="VotingSystem_Perez" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XdZRL1X+jczkHjYoN2CMBNREC8RZlBDK5S9ohHy+95c=</dsig:DigestValue>
+        <dsig:DigestValue>c31GX4ECxsznf8TC7t9l6HOixcZ+F5B7fSB23Cy+j70=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -219,13 +219,13 @@
       <dsig:DigestValue>DDKa7qHX0ybzDKJ3I65kaxuuMQNsQCfyjMPYdpAaOv0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VotingSystem_Perez.exe.config" size="1507">
+  <file name="VotingSystem_Perez.exe.config" size="1521">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>18YE4TtZz40tw3Dad+RrYQR7NWRUR6+znsJh0X02N3Q=</dsig:DigestValue>
+      <dsig:DigestValue>3dOwlciMIlagaiEy12K1NhGfs1Z0XwkBOxhyv7E1K3I=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
