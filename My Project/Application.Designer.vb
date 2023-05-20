@@ -32,12 +32,12 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.VotingSystem_Perez.SCVS_Login
+            Me.MainForm = Global.VotingSystem_Perez.scvsAdmin
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateSplashScreen()
-            Me.SplashScreen = Global.VotingSystem_Perez.SCVS_SplashScreen
+            Me.SplashScreen = Global.VotingSystem_Perez.scvsSplashScreen
         End Sub
     End Class
 End Namespace

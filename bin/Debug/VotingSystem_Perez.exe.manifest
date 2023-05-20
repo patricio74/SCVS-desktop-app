@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="183296">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VotingSystem_Perez.exe" size="163840">
       <assemblyIdentity name="VotingSystem_Perez" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+8BXFUQceDhgyEuPyDBJ/4PiO2TxgcAOHIIG0fatTgs=</dsig:DigestValue>
+        <dsig:DigestValue>XdZRL1X+jczkHjYoN2CMBNREC8RZlBDK5S9ohHy+95c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -219,13 +219,13 @@
       <dsig:DigestValue>DDKa7qHX0ybzDKJ3I65kaxuuMQNsQCfyjMPYdpAaOv0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VotingSystem_Perez.exe.config" size="1521">
+  <file name="VotingSystem_Perez.exe.config" size="1507">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>JuAy7aNP6k2WvmzzXMDTjD1wwKiLj6Vg4sm+82N7UDw=</dsig:DigestValue>
+      <dsig:DigestValue>18YE4TtZz40tw3Dad+RrYQR7NWRUR6+znsJh0X02N3Q=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

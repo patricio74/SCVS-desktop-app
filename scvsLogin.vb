@@ -8,11 +8,12 @@ Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Windows
 
-Public Class SCVS_Login
+Public Class scvsLogin
 
     Private Sub SCVS_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         radAdmin.Checked = True
         userLogin()
+        connectToServer()
     End Sub
 
     'hides the textboxes pag RFID gagamitin
@@ -86,16 +87,16 @@ Public Class SCVS_Login
                     Try
                         Dim conn As New MySqlConnection(getConString)
 
-                        Dim command As New MySqlCommand("SELECT `Email`, `Pass` FROM `admin` WHERE `Email` = @usn AND `Pass` = @pass;")
-                        command.Connection = conn 'set the connection property of the command object
+                        Dim command As New MySqlCommand("SELECT `email`, `Pword` FROM `admin` WHERE `email` = @usn AND `pword` = @pass;")
+                        command.Connection = conn
 
                         command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = txtboxUsername.Text
                         command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = txtboxPassword.Text
                         Dim adapter As New MySqlDataAdapter()
                         Dim table As New DataTable()
-                        adapter.SelectCommand = command 'set the SelectCommand property of the adapter object
+                        adapter.SelectCommand = command
 
-                        conn.Open() 'open the database connection
+                        conn.Open()
                         adapter.Fill(table)
 
                         If txtboxUsername.Text.Trim() = "" Then
@@ -107,7 +108,7 @@ Public Class SCVS_Login
                             chkShow.CheckState = False
                             conn.Close()
                             Me.Hide()
-                            Admin.Show()
+                            scvsAdmin.Show()
                         Else
                             MessageBox.Show("Invalid username/password!", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             conn.Close()
@@ -131,16 +132,16 @@ Public Class SCVS_Login
                 Else
                     Try
                         Dim conn As New MySqlConnection(getConString)
-                        Dim command As New MySqlCommand("SELECT `email`, `pass`, `votestatus` FROM `voters` WHERE `email` = @usn AND `pass` = @pass")
-                        command.Connection = conn 'set the connection property of the command object
+                        Dim command As New MySqlCommand("SELECT `email`, `pword`, `votestatus` FROM `student` WHERE `email` = @usn AND `pword` = @pass")
+                        command.Connection = conn
 
                         command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = txtboxUsername.Text
                         command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = txtboxPassword.Text
                         Dim adapter As New MySqlDataAdapter()
                         Dim table As New DataTable()
-                        adapter.SelectCommand = command 'set the SelectCommand property of the adapter object
+                        adapter.SelectCommand = command
 
-                        conn.Open() 'open the database connection
+                        conn.Open()
                         adapter.Fill(table)
 
                         If txtboxUsername.Text.Trim() = "" Then
@@ -157,7 +158,7 @@ Public Class SCVS_Login
                                 Else
                                     txtboxPassword.Clear()
                                     chkShow.CheckState = False
-                                    Student.Show()
+                                    scvsStudent.Show()
                                     Me.Hide()
                                 End If
                             Else
@@ -185,8 +186,8 @@ Public Class SCVS_Login
                     Return
                 End If
 
-                ' Check the database for the RFID tag and vote status
-                Dim query As String = "SELECT * FROM admin WHERE RFID = @RFIDTag"
+                'Check the database for the RFID tag and vote status
+                Dim query As String = "SELECT * FROM admin WHERE rfid = @RFIDTag"
                 Using connection As New MySqlConnection(getConString)
                     Using command As New MySqlCommand(query, connection)
                         command.Parameters.AddWithValue("@RFIDTag", rfidTag)
@@ -196,8 +197,7 @@ Public Class SCVS_Login
 
                             If reader.Read() Then
                                 Dim username As String = reader("email").ToString()
-                                Admin.Show()
-                                'txtboxRFID.Clear()
+                                scvsAdmin.Show()
                                 Me.Hide()
                             Else
                                 MessageBox.Show("User RFID tag not found.")
@@ -214,15 +214,15 @@ Public Class SCVS_Login
 
                 'student RFID login
             ElseIf radStudent.Checked = True Then
-                ' Check if the RFID tag is valid
+                'Check if the RFID tag is valid
                 If String.IsNullOrEmpty(rfidTag) Then
                     MessageBox.Show("Please scan your RFID tag.")
                     txtboxRFID.Focus()
                     Return
                 End If
 
-                ' Check the database for the RFID tag and vote status
-                Dim query As String = "SELECT * FROM voters WHERE RFID = @RFIDTag"
+                'Check the database for the RFID tag and vote status
+                Dim query As String = "SELECT * FROM student WHERE rfid = @RFIDTag"
                 Using connection As New MySqlConnection(getConString)
                     Using command As New MySqlCommand(query, connection)
                         command.Parameters.AddWithValue("@RFIDTag", rfidTag)
@@ -239,8 +239,8 @@ Public Class SCVS_Login
                                     txtboxRFID.Focus()
                                     MessageBox.Show("You have already voted.")
                                 Else
-                                    ' MessageBox.Show("Welcome to SCVS, " & username & "!")
-                                    Student.Show()
+                                    'MessageBox.Show("Welcome to SCVS, " & username & "!")
+                                    scvsStudent.Show()
                                     Me.Hide()
                                 End If
                             Else
@@ -263,11 +263,7 @@ Public Class SCVS_Login
         MessageBox.Show("Relax and try to remember your password!", "Forgot password?", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 
-    Private Sub lblRFIDRegister_Click(sender As Object, e As EventArgs) Handles lblRFIDRegister.Click
-
-    End Sub
-
     Private Sub lblRegister_Click(sender As Object, e As EventArgs) Handles lblRegister.Click
-
+        'gawan mo bagong form pang register
     End Sub
 End Class

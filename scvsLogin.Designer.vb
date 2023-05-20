@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class SCVS_Login
+Partial Class scvsLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class SCVS_Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SCVS_Login))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(scvsLogin))
         Me.panelSidebar = New System.Windows.Forms.Panel()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -46,10 +46,8 @@ Partial Class SCVS_Login
         Me.lblRegister = New System.Windows.Forms.Label()
         Me.lblNoAcc = New System.Windows.Forms.Label()
         Me.grpRFIDLogin = New System.Windows.Forms.GroupBox()
-        Me.lblRFIDRegister = New System.Windows.Forms.Label()
         Me.txtboxRFID = New System.Windows.Forms.TextBox()
         Me.lblRFID = New System.Windows.Forms.Label()
-        Me.lblRFIDNoAcc = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.panelSidebar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -366,29 +364,13 @@ Partial Class SCVS_Login
         'grpRFIDLogin
         '
         Me.grpRFIDLogin.BackColor = System.Drawing.Color.White
-        Me.grpRFIDLogin.Controls.Add(Me.lblRFIDRegister)
         Me.grpRFIDLogin.Controls.Add(Me.txtboxRFID)
         Me.grpRFIDLogin.Controls.Add(Me.lblRFID)
-        Me.grpRFIDLogin.Controls.Add(Me.lblRFIDNoAcc)
-        Me.grpRFIDLogin.Location = New System.Drawing.Point(368, 145)
+        Me.grpRFIDLogin.Location = New System.Drawing.Point(368, 166)
         Me.grpRFIDLogin.Name = "grpRFIDLogin"
-        Me.grpRFIDLogin.Size = New System.Drawing.Size(384, 215)
+        Me.grpRFIDLogin.Size = New System.Drawing.Size(384, 194)
         Me.grpRFIDLogin.TabIndex = 26
         Me.grpRFIDLogin.TabStop = False
-        '
-        'lblRFIDRegister
-        '
-        Me.lblRFIDRegister.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.lblRFIDRegister.AutoSize = True
-        Me.lblRFIDRegister.BackColor = System.Drawing.Color.Transparent
-        Me.lblRFIDRegister.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblRFIDRegister.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRFIDRegister.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblRFIDRegister.Location = New System.Drawing.Point(203, 148)
-        Me.lblRFIDRegister.Name = "lblRFIDRegister"
-        Me.lblRFIDRegister.Size = New System.Drawing.Size(58, 18)
-        Me.lblRFIDRegister.TabIndex = 35
-        Me.lblRFIDRegister.Text = "Register"
         '
         'txtboxRFID
         '
@@ -414,20 +396,6 @@ Partial Class SCVS_Login
         Me.lblRFID.Size = New System.Drawing.Size(41, 16)
         Me.lblRFID.TabIndex = 24
         Me.lblRFID.Text = "RFID"
-        '
-        'lblRFIDNoAcc
-        '
-        Me.lblRFIDNoAcc.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.lblRFIDNoAcc.AutoSize = True
-        Me.lblRFIDNoAcc.BackColor = System.Drawing.Color.Transparent
-        Me.lblRFIDNoAcc.Cursor = System.Windows.Forms.Cursors.Default
-        Me.lblRFIDNoAcc.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblRFIDNoAcc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblRFIDNoAcc.Location = New System.Drawing.Point(42, 148)
-        Me.lblRFIDNoAcc.Name = "lblRFIDNoAcc"
-        Me.lblRFIDNoAcc.Size = New System.Drawing.Size(163, 18)
-        Me.lblRFIDNoAcc.TabIndex = 34
-        Me.lblRFIDNoAcc.Text = "Don't have an account yet?"
         '
         'btnLogin
         '
@@ -505,6 +473,4 @@ Partial Class SCVS_Login
     Friend WithEvents lblForgotPass As Label
     Friend WithEvents lblRegister As Label
     Friend WithEvents lblNoAcc As Label
-    Friend WithEvents lblRFIDRegister As Label
-    Friend WithEvents lblRFIDNoAcc As Label
 End Class

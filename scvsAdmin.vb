@@ -6,7 +6,7 @@ Imports System.Threading
 Imports MySql.Data.MySqlClient
 Imports Org.BouncyCastle.Asn1.X509
 
-Public Class Admin
+Public Class scvsAdmin
     Dim connect As New MySqlConnection(getConString)
     Private Sub Admin_Load(sender As Object, e As EventArgs) Handles Me.Load
 
@@ -39,13 +39,13 @@ Public Class Admin
 
     'REGISTER TAB
     Private Sub btnRegStudent_Click(sender As Object, e As EventArgs) Handles btnRegStudent.Click
-        If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Or txtRFID.Text = "" Then
+        If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Or txtRFID.Text = "" Or txtContactNum.Text = "" Then
             MessageBox.Show("fill up all fields to continue.", "Error!")
         Else
             Try
                 connect.Open()
-                ' Check if the RFID already exists in the database
-                Dim checkRFIDQuery As String = "SELECT COUNT(*) FROM voters WHERE RFID = @rfid"
+                'Check if the RFID already exists in the database
+                Dim checkRFIDQuery As String = "SELECT COUNT(*) FROM student WHERE RFID = @rfid"
                 Dim checkRFIDCommand As New MySqlCommand(checkRFIDQuery, connect)
                 checkRFIDCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
                 Dim rfidCount As Integer = Convert.ToInt32(checkRFIDCommand.ExecuteScalar())
@@ -55,8 +55,8 @@ Public Class Admin
                     txtRFID.Focus()
                 Else
                     ' Insert the registration details into the database
-                    Dim insertQuery As String = "INSERT INTO voters (First_name, Last_name, Middle_name, Course, Yr, Email, Pass, RFID) 
-                                             VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid)"
+                    Dim insertQuery As String = "INSERT INTO student (firstname, lastname, middlename, course, yrsec, email, pword, rfid, phone_number) 
+                                             VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid, @number)"
                     Dim insertCommand As New MySqlCommand(insertQuery, connect)
                     insertCommand.Parameters.AddWithValue("@firstName", firstname.Text)
                     insertCommand.Parameters.AddWithValue("@lastName", lastname.Text)
@@ -66,13 +66,13 @@ Public Class Admin
                     insertCommand.Parameters.AddWithValue("@email", email.Text)
                     insertCommand.Parameters.AddWithValue("@pass", pass.Text)
                     insertCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
+                    insertCommand.Parameters.AddWithValue("@number", txtContactNum.Text)
 
                     Dim i As Integer = insertCommand.ExecuteNonQuery()
 
                     If i <> 0 Then
                         MsgBox("Student registered successfully!", vbInformation, "Admin")
                         clearRegFrom()
-                        ' Show if registration is successful
                     Else
                         MsgBox("Error!", vbCritical, "Admin")
                     End If
@@ -109,8 +109,8 @@ Public Class Admin
         Try
             connect.Open()
             Dim SQL As String =
-                "UPDATE voters SET First_name ='" & updFirstname.Text & "', Last_name ='" & updLastname.Text & "', Middle_name ='" & updMiddlename.Text & "', Course ='" & updCourse.Text & "',Yr ='" & updYear.Text & "', Email ='" & updEmail.Text & "', RFID = '" & updRFID.Text & "'   
-                WHERE Student_number ='" & stdNum.Text & "' "
+                "UPDATE student SET firstname ='" & updFirstname.Text & "', lastname ='" & updLastname.Text & "', middlename ='" & updMiddlename.Text & "', course ='" & updCourse.Text & "', yrsec ='" & updYear.Text & "', email ='" & updEmail.Text & "', rfid = '" & updRFID.Text & "'   
+                WHERE user_id ='" & stdNum.Text & "' "
             Dim cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery
 
@@ -131,7 +131,7 @@ Public Class Admin
     Private Sub btnDelStudent_Click(sender As Object, e As EventArgs) Handles btnDelStudent.Click
         Try
             connect.Open()
-            Dim SQL As String = "DELETE FROM voters WHERE Student_number = '" & stdNum.Text & "' "
+            Dim SQL As String = "DELETE FROM student WHERE user_id = '" & stdNum.Text & "' "
             Dim cmd = New MySqlCommand(SQL, connect)
             Dim i As Integer = cmd.ExecuteNonQuery
 
@@ -167,55 +167,68 @@ Public Class Admin
     End Sub
     Private Sub btnAddCandid_Click(sender As Object, e As EventArgs) Handles btnAddCandid.Click
         If txtAddCandid.Text = "" Or cboxAddCandid.SelectedIndex = -1 Then
-            MessageBox.Show("fill up candidate name, position to continue.", "Error!")
+            MessageBox.Show("Fill up candidate name and position to continue.", "Error!")
         Else
             Try
                 connect.Open()
-                ' Insert the registration details into the database
-                Dim insertQuery As String = "INSERT INTO candidate (candid_name, candid_position) 
-                                             VALUES (@fullname, @position)"
-                Dim insertCommand As New MySqlCommand(insertQuery, connect)
-                insertCommand.Parameters.AddWithValue("@fullname", txtAddCandid.Text)
-                insertCommand.Parameters.AddWithValue("@position", cboxAddCandid.Text)
+                Dim checkDuplicateSQL As String = "SELECT COUNT(*) FROM candidate WHERE candid_name = @fullname AND candid_position = @position"
+                Dim checkDuplicateCmd As New MySqlCommand(checkDuplicateSQL, connect)
+                checkDuplicateCmd.Parameters.AddWithValue("@fullname", txtAddCandid.Text)
+                checkDuplicateCmd.Parameters.AddWithValue("@position", cboxAddCandid.Text)
+                Dim duplicateCount As Integer = CInt(checkDuplicateCmd.ExecuteScalar())
 
-                Dim i As Integer = insertCommand.ExecuteNonQuery()
-
-                If i <> 0 Then
-                    MsgBox("Candidate successfully added!", vbInformation, "Admin")
+                If duplicateCount > 0 Then
+                    MsgBox("Candidate with the same name and position already exists.", vbInformation, "Admin")
                     clrAddCandidTxt()
-                    admCandidInfo()
                 Else
-                    MsgBox("Error!", vbCritical, "Admin")
+                    Dim insertSQL As String = "INSERT INTO candidate (candid_name, candid_position) VALUES (@fullname, @position)"
+                    Dim insertCmd As New MySqlCommand(insertSQL, connect)
+                    insertCmd.Parameters.AddWithValue("@fullname", txtAddCandid.Text)
+                    insertCmd.Parameters.AddWithValue("@position", cboxAddCandid.Text)
+                    Dim i As Integer = insertCmd.ExecuteNonQuery()
+
+                    If i <> 0 Then
+                        MsgBox("Candidate added!", vbInformation, "Admin")
+                        clrAddCandidTxt()
+                        admCandidInfo()
+                    Else
+                        MsgBox("Failed to add candidate!", vbCritical, "Admin")
+                    End If
                 End If
-                connect.Close()
             Catch ex As Exception
                 MsgBox(ex.Message)
+            Finally
+                connect.Close()
             End Try
         End If
     End Sub
 
+
     Private Sub btnUpdCandid_Click(sender As Object, e As EventArgs) Handles btnUpdCandid.Click
         If txtCandidName.Text = "" Or cboxCandidPos.SelectedIndex = -1 Then
-            MessageBox.Show("fill up candidate name, position to continue.", "Error!")
+            MessageBox.Show("Fill up candidate name and position to continue.", "Error!")
+            txtCandidName.Focus()
         Else
             Try
                 connect.Open()
-                Dim SQL As String =
-                    "UPDATE candidate SET candid_name ='" & txtCandidName.Text & "', candid_position ='" & cboxCandidPos.Text & "'   
-                WHERE candid_id ='" & txtCandidNum.Text & "' "
+                Dim SQL As String = "UPDATE candidate SET candid_name = @name, candid_position = @position WHERE candid_id = @id"
                 Dim cmd = New MySqlCommand(SQL, connect)
-                Dim i As Integer = cmd.ExecuteNonQuery
+                cmd.Parameters.AddWithValue("@name", txtCandidName.Text)
+                cmd.Parameters.AddWithValue("@position", cboxCandidPos.Text)
+                cmd.Parameters.AddWithValue("@id", txtCandidNum.Text)
+                Dim i As Integer = cmd.ExecuteNonQuery()
 
                 If i <> 0 Then
                     MsgBox("Candidate info updated!", vbInformation, "Admin")
+                    clrCandidTxt()
+                    admCandidInfo()
                 Else
                     MsgBox("Failed to update candidate info!", vbCritical, "Admin")
                 End If
-                clrCandidTxt()
-                admCandidInfo()
-                connect.Close()
             Catch ex As Exception
                 MsgBox(ex.Message)
+            Finally
+                connect.Close()
             End Try
         End If
     End Sub
@@ -223,22 +236,26 @@ Public Class Admin
     Private Sub btnDelCandid_Click(sender As Object, e As EventArgs) Handles btnDelCandid.Click
         Try
             connect.Open()
-            Dim SQL As String = "DELETE FROM candidate WHERE candid_id = '" & txtCandidNum.Text & "' "
+            Dim SQL As String = "DELETE FROM candidate WHERE candid_name = @id"
             Dim cmd = New MySqlCommand(SQL, connect)
-            Dim i As Integer = cmd.ExecuteNonQuery
+            cmd.Parameters.AddWithValue("@id", txtCandidName.Text)
+            Dim i As Integer = cmd.ExecuteNonQuery()
 
             If i <> 0 Then
-                MsgBox("Candidate info deleted!", vbInformation, "Admin")
+                MsgBox("Candidate deleted!", vbInformation, "Admin")
+                clrCandidTxt()
+                admCandidInfo()
             Else
-                MsgBox("Candidate info deletion failed!", vbCritical, "Admin")
+                MsgBox("Candidate deletion failed! No candidate selected.", vbCritical, "Admin")
+                clrCandidTxt()
             End If
-            clrCandidTxt()
-            admCandidInfo()
-            connect.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
+        Finally
+            connect.Close()
         End Try
     End Sub
+
     Private Sub txtAddCandid_Click(sender As Object, e As EventArgs) Handles txtAddCandid.Click
         clrCandidTxt()
     End Sub
@@ -252,11 +269,14 @@ Public Class Admin
     Private Sub btnRefreshResult_Click(sender As Object, e As EventArgs) Handles btnRefreshResult.Click
         admResultTab()
     End Sub
+    Private Sub lblOpenLink_Click(sender As Object, e As EventArgs) Handles lblOpenLink.Click
+        Dim link As String = "https://scvs-result.000webhostapp.com/"
+        Process.Start(link)
+    End Sub
 
 
     'ABOUT TAB
     Private Sub btnWebsite_Click(sender As Object, e As EventArgs) Handles btnViewWebsite.Click
         Process.Start("https://scvs.000webhostapp.com/")
     End Sub
-
 End Class

@@ -31,11 +31,11 @@ C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\System.Runtime
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.AssemblyReference.cache
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.SuggestedBindingRedirects.cache
-C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Admin.resources
-C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_Login.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.scvsAdmin.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.scvsLogin.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Resources.resources
-C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.SCVS_SplashScreen.resources
-C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.Student.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.scvsSplashScreen.resources
+C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.scvsStudent.resources
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.GenerateResource.cache
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.vbproj.CoreCompileInputs.cache
 C:\Users\jpper\OneDrive\Documents\VB\VotingSystem_Perez\obj\Debug\VotingSystem_Perez.exe.manifest

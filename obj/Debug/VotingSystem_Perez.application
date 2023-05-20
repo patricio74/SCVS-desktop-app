@@ -4,7 +4,7 @@
   <description asmv2:publisher="VotingSystem_Perez" asmv2:product="VotingSystem_Perez" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
     <dependentAssembly dependencyType="install" codebase="VotingSystem_Perez.exe.manifest" size="13985">
@@ -14,7 +14,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GF8lLXWBTBb5NkSga+CkDFJEynRqtr8NTCsxezV/tXc=</dsig:DigestValue>
+        <dsig:DigestValue>AEhkfXU6DxPyLbsQgSQrG7lm1UXPeRJqidC72dBVB64=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
