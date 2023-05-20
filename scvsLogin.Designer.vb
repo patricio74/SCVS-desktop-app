@@ -251,7 +251,6 @@ Partial Class scvsLogin
         Me.txtboxPassword.Name = "txtboxPassword"
         Me.txtboxPassword.Size = New System.Drawing.Size(297, 31)
         Me.txtboxPassword.TabIndex = 2
-        Me.txtboxPassword.UseSystemPasswordChar = True
         '
         'txtboxUsername
         '
@@ -384,6 +383,7 @@ Partial Class scvsLogin
         Me.txtboxRFID.Size = New System.Drawing.Size(299, 37)
         Me.txtboxRFID.TabIndex = 20
         Me.txtboxRFID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.txtboxRFID.UseSystemPasswordChar = True
         '
         'lblRFID
         '
@@ -411,7 +411,7 @@ Partial Class scvsLogin
         Me.btnLogin.TabIndex = 4
         Me.btnLogin.UseVisualStyleBackColor = True
         '
-        'SCVS_Login
+        'scvsLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -431,7 +431,7 @@ Partial Class scvsLogin
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.Name = "SCVS_Login"
+        Me.Name = "scvsLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Welcome to SCVS!"
         Me.panelSidebar.ResumeLayout(False)
