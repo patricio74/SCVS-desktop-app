@@ -64,6 +64,7 @@ Partial Class scvsStudent
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label42 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.lblOpenLink = New System.Windows.Forms.Label()
         Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.lblResultDate = New System.Windows.Forms.Label()
         Me.btnRefresh = New System.Windows.Forms.Button()
@@ -90,7 +91,6 @@ Partial Class scvsStudent
         Me.btnWebsite = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblOpenLink = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelSidebar.SuspendLayout()
@@ -367,13 +367,13 @@ Partial Class scvsStudent
         Me.listPresident.BackColor = System.Drawing.Color.White
         Me.listPresident.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listPresident.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listPresident.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listPresident.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listPresident.ForeColor = System.Drawing.Color.Black
         Me.listPresident.FormattingEnabled = True
-        Me.listPresident.ItemHeight = 22
+        Me.listPresident.ItemHeight = 23
         Me.listPresident.Location = New System.Drawing.Point(237, 187)
         Me.listPresident.Name = "listPresident"
-        Me.listPresident.Size = New System.Drawing.Size(273, 112)
+        Me.listPresident.Size = New System.Drawing.Size(273, 117)
         Me.listPresident.TabIndex = 75
         '
         'Label15
@@ -391,13 +391,13 @@ Partial Class scvsStudent
         Me.listVicePres.BackColor = System.Drawing.Color.White
         Me.listVicePres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listVicePres.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listVicePres.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listVicePres.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listVicePres.ForeColor = System.Drawing.Color.Black
         Me.listVicePres.FormattingEnabled = True
-        Me.listVicePres.ItemHeight = 22
+        Me.listVicePres.ItemHeight = 23
         Me.listVicePres.Location = New System.Drawing.Point(575, 187)
         Me.listVicePres.Name = "listVicePres"
-        Me.listVicePres.Size = New System.Drawing.Size(273, 112)
+        Me.listVicePres.Size = New System.Drawing.Size(273, 117)
         Me.listVicePres.TabIndex = 76
         '
         'Label16
@@ -415,13 +415,13 @@ Partial Class scvsStudent
         Me.listSecretary.BackColor = System.Drawing.Color.White
         Me.listSecretary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listSecretary.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listSecretary.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listSecretary.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listSecretary.ForeColor = System.Drawing.Color.Black
         Me.listSecretary.FormattingEnabled = True
-        Me.listSecretary.ItemHeight = 22
+        Me.listSecretary.ItemHeight = 23
         Me.listSecretary.Location = New System.Drawing.Point(915, 187)
         Me.listSecretary.Name = "listSecretary"
-        Me.listSecretary.Size = New System.Drawing.Size(273, 112)
+        Me.listSecretary.Size = New System.Drawing.Size(273, 117)
         Me.listSecretary.TabIndex = 77
         '
         'listFourth
@@ -429,13 +429,13 @@ Partial Class scvsStudent
         Me.listFourth.BackColor = System.Drawing.Color.White
         Me.listFourth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listFourth.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listFourth.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listFourth.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listFourth.ForeColor = System.Drawing.Color.Black
         Me.listFourth.FormattingEnabled = True
-        Me.listFourth.ItemHeight = 22
+        Me.listFourth.ItemHeight = 23
         Me.listFourth.Location = New System.Drawing.Point(238, 724)
         Me.listFourth.Name = "listFourth"
-        Me.listFourth.Size = New System.Drawing.Size(273, 112)
+        Me.listFourth.Size = New System.Drawing.Size(273, 117)
         Me.listFourth.TabIndex = 84
         '
         'listTres
@@ -443,13 +443,13 @@ Partial Class scvsStudent
         Me.listTres.BackColor = System.Drawing.Color.White
         Me.listTres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listTres.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listTres.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listTres.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listTres.ForeColor = System.Drawing.Color.Black
         Me.listTres.FormattingEnabled = True
-        Me.listTres.ItemHeight = 22
+        Me.listTres.ItemHeight = 23
         Me.listTres.Location = New System.Drawing.Point(238, 364)
         Me.listTres.Name = "listTres"
-        Me.listTres.Size = New System.Drawing.Size(273, 112)
+        Me.listTres.Size = New System.Drawing.Size(273, 117)
         Me.listTres.TabIndex = 78
         '
         'listThird
@@ -457,13 +457,13 @@ Partial Class scvsStudent
         Me.listThird.BackColor = System.Drawing.Color.White
         Me.listThird.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listThird.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listThird.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listThird.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listThird.ForeColor = System.Drawing.Color.Black
         Me.listThird.FormattingEnabled = True
-        Me.listThird.ItemHeight = 22
+        Me.listThird.ItemHeight = 23
         Me.listThird.Location = New System.Drawing.Point(915, 548)
         Me.listThird.Name = "listThird"
-        Me.listThird.Size = New System.Drawing.Size(273, 112)
+        Me.listThird.Size = New System.Drawing.Size(273, 117)
         Me.listThird.TabIndex = 83
         '
         'listAud
@@ -471,13 +471,13 @@ Partial Class scvsStudent
         Me.listAud.BackColor = System.Drawing.Color.White
         Me.listAud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listAud.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listAud.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listAud.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listAud.ForeColor = System.Drawing.Color.Black
         Me.listAud.FormattingEnabled = True
-        Me.listAud.ItemHeight = 22
+        Me.listAud.ItemHeight = 23
         Me.listAud.Location = New System.Drawing.Point(575, 364)
         Me.listAud.Name = "listAud"
-        Me.listAud.Size = New System.Drawing.Size(273, 112)
+        Me.listAud.Size = New System.Drawing.Size(273, 117)
         Me.listAud.TabIndex = 79
         '
         'listSecond
@@ -485,13 +485,13 @@ Partial Class scvsStudent
         Me.listSecond.BackColor = System.Drawing.Color.White
         Me.listSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listSecond.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listSecond.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listSecond.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listSecond.ForeColor = System.Drawing.Color.Black
         Me.listSecond.FormattingEnabled = True
-        Me.listSecond.ItemHeight = 22
+        Me.listSecond.ItemHeight = 23
         Me.listSecond.Location = New System.Drawing.Point(575, 548)
         Me.listSecond.Name = "listSecond"
-        Me.listSecond.Size = New System.Drawing.Size(273, 112)
+        Me.listSecond.Size = New System.Drawing.Size(273, 117)
         Me.listSecond.TabIndex = 82
         '
         'listPRO
@@ -499,13 +499,13 @@ Partial Class scvsStudent
         Me.listPRO.BackColor = System.Drawing.Color.White
         Me.listPRO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listPRO.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listPRO.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listPRO.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listPRO.ForeColor = System.Drawing.Color.Black
         Me.listPRO.FormattingEnabled = True
-        Me.listPRO.ItemHeight = 22
+        Me.listPRO.ItemHeight = 23
         Me.listPRO.Location = New System.Drawing.Point(915, 364)
         Me.listPRO.Name = "listPRO"
-        Me.listPRO.Size = New System.Drawing.Size(273, 112)
+        Me.listPRO.Size = New System.Drawing.Size(273, 117)
         Me.listPRO.TabIndex = 80
         '
         'listFirst
@@ -513,13 +513,13 @@ Partial Class scvsStudent
         Me.listFirst.BackColor = System.Drawing.Color.White
         Me.listFirst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.listFirst.Cursor = System.Windows.Forms.Cursors.Default
-        Me.listFirst.Font = New System.Drawing.Font("Trebuchet MS", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.listFirst.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listFirst.ForeColor = System.Drawing.Color.Black
         Me.listFirst.FormattingEnabled = True
-        Me.listFirst.ItemHeight = 22
+        Me.listFirst.ItemHeight = 23
         Me.listFirst.Location = New System.Drawing.Point(238, 548)
         Me.listFirst.Name = "listFirst"
-        Me.listFirst.Size = New System.Drawing.Size(273, 112)
+        Me.listFirst.Size = New System.Drawing.Size(273, 117)
         Me.listFirst.TabIndex = 81
         '
         'btnClear
@@ -635,6 +635,21 @@ Partial Class scvsStudent
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "   View result   "
         '
+        'lblOpenLink
+        '
+        Me.lblOpenLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.lblOpenLink.AutoSize = True
+        Me.lblOpenLink.BackColor = System.Drawing.Color.Transparent
+        Me.lblOpenLink.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblOpenLink.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOpenLink.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.lblOpenLink.Location = New System.Drawing.Point(596, 908)
+        Me.lblOpenLink.Name = "lblOpenLink"
+        Me.lblOpenLink.Size = New System.Drawing.Size(296, 24)
+        Me.lblOpenLink.TabIndex = 86
+        Me.lblOpenLink.Text = "open website in external browser"
+        Me.lblOpenLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'resultWebBrowser
         '
         Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -668,11 +683,11 @@ Partial Class scvsStudent
         Me.btnRefresh.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRefresh.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefresh.Font = New System.Drawing.Font("Trebuchet MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRefresh.Location = New System.Drawing.Point(661, 846)
+        Me.btnRefresh.Location = New System.Drawing.Point(668, 846)
         Me.btnRefresh.Name = "btnRefresh"
-        Me.btnRefresh.Size = New System.Drawing.Size(176, 59)
+        Me.btnRefresh.Size = New System.Drawing.Size(163, 54)
         Me.btnRefresh.TabIndex = 81
         Me.btnRefresh.Text = "Refresh"
         Me.btnRefresh.UseVisualStyleBackColor = True
@@ -980,21 +995,6 @@ Partial Class scvsStudent
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1658, 997)
         Me.Panel2.TabIndex = 103
-        '
-        'lblOpenLink
-        '
-        Me.lblOpenLink.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblOpenLink.AutoSize = True
-        Me.lblOpenLink.BackColor = System.Drawing.Color.Transparent
-        Me.lblOpenLink.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOpenLink.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.lblOpenLink.Location = New System.Drawing.Point(596, 908)
-        Me.lblOpenLink.Name = "lblOpenLink"
-        Me.lblOpenLink.Size = New System.Drawing.Size(296, 24)
-        Me.lblOpenLink.TabIndex = 86
-        Me.lblOpenLink.Text = "open website in external browser"
-        Me.lblOpenLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'scvsStudent
         '

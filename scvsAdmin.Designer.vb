@@ -108,6 +108,7 @@ Partial Class scvsAdmin
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Label42 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.lblOpenLink = New System.Windows.Forms.Label()
         Me.resultWebBrowser = New System.Windows.Forms.WebBrowser()
         Me.lblResultDate = New System.Windows.Forms.Label()
         Me.btnRefreshResult = New System.Windows.Forms.Button()
@@ -134,7 +135,6 @@ Partial Class scvsAdmin
         Me.btnViewWebsite = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.lblOpenLink = New System.Windows.Forms.Label()
         Me.panelSidebar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -1235,6 +1235,21 @@ Partial Class scvsAdmin
         Me.TabPage4.TabIndex = 2
         Me.TabPage4.Text = "   View result   "
         '
+        'lblOpenLink
+        '
+        Me.lblOpenLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.lblOpenLink.AutoSize = True
+        Me.lblOpenLink.BackColor = System.Drawing.Color.Transparent
+        Me.lblOpenLink.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblOpenLink.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblOpenLink.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.lblOpenLink.Location = New System.Drawing.Point(596, 908)
+        Me.lblOpenLink.Name = "lblOpenLink"
+        Me.lblOpenLink.Size = New System.Drawing.Size(296, 24)
+        Me.lblOpenLink.TabIndex = 85
+        Me.lblOpenLink.Text = "open website in external browser"
+        Me.lblOpenLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'resultWebBrowser
         '
         Me.resultWebBrowser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -1268,11 +1283,11 @@ Partial Class scvsAdmin
         Me.btnRefreshResult.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRefreshResult.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRefreshResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRefreshResult.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefreshResult.Font = New System.Drawing.Font("Trebuchet MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefreshResult.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRefreshResult.Location = New System.Drawing.Point(661, 846)
+        Me.btnRefreshResult.Location = New System.Drawing.Point(668, 846)
         Me.btnRefreshResult.Name = "btnRefreshResult"
-        Me.btnRefreshResult.Size = New System.Drawing.Size(176, 59)
+        Me.btnRefreshResult.Size = New System.Drawing.Size(163, 54)
         Me.btnRefreshResult.TabIndex = 81
         Me.btnRefreshResult.Text = "Refresh"
         Me.btnRefreshResult.UseVisualStyleBackColor = True
@@ -1584,21 +1599,6 @@ Partial Class scvsAdmin
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1658, 997)
         Me.Panel2.TabIndex = 11
-        '
-        'lblOpenLink
-        '
-        Me.lblOpenLink.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblOpenLink.AutoSize = True
-        Me.lblOpenLink.BackColor = System.Drawing.Color.Transparent
-        Me.lblOpenLink.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOpenLink.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.lblOpenLink.Location = New System.Drawing.Point(596, 908)
-        Me.lblOpenLink.Name = "lblOpenLink"
-        Me.lblOpenLink.Size = New System.Drawing.Size(296, 24)
-        Me.lblOpenLink.TabIndex = 85
-        Me.lblOpenLink.Text = "open website in external browser"
-        Me.lblOpenLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'scvsAdmin
         '
