@@ -11,7 +11,7 @@ Module moduleAdmin
         scvsLogin.radAdmin.Checked = True
         scvsLogin.Show()
         scvsAdmin.TabControl1.SelectedIndex = 0
-        clearRegFrom()
+        clearRegForm()
         clearUpdForm()
         scvsAdmin.Hide()
     End Sub
@@ -25,7 +25,7 @@ Module moduleAdmin
         scvsAdmin.resultWebBrowser.Navigate("https://scvs-result.000webhostapp.com/")
     End Sub
 
-    Public Sub clearRegFrom()
+    Public Sub clearRegForm()
         scvsAdmin.firstname.Clear()
         scvsAdmin.middlename.Clear()
         scvsAdmin.lastname.Clear()
@@ -34,7 +34,7 @@ Module moduleAdmin
         scvsAdmin.email.Clear()
         scvsAdmin.pass.Clear()
         scvsAdmin.txtRFID.Clear()
-        scvsAdmin.txtContactNum.Clear()
+        scvsAdmin.txtContactNum.Text = ""
     End Sub
 
     Public Sub clearUpdForm()

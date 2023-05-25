@@ -35,9 +35,9 @@ Partial Class scvsAdmin
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.grpReg = New System.Windows.Forms.GroupBox()
+        Me.txtContactNum = New System.Windows.Forms.MaskedTextBox()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.btnCancelReg = New System.Windows.Forms.Button()
-        Me.txtContactNum = New System.Windows.Forms.TextBox()
         Me.firstname = New System.Windows.Forms.TextBox()
         Me.btnRegStudent = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -315,11 +315,11 @@ Partial Class scvsAdmin
         Me.grpReg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpReg.BackColor = System.Drawing.Color.White
+        Me.grpReg.Controls.Add(Me.btnRegStudent)
+        Me.grpReg.Controls.Add(Me.txtContactNum)
         Me.grpReg.Controls.Add(Me.Label44)
         Me.grpReg.Controls.Add(Me.btnCancelReg)
-        Me.grpReg.Controls.Add(Me.txtContactNum)
         Me.grpReg.Controls.Add(Me.firstname)
-        Me.grpReg.Controls.Add(Me.btnRegStudent)
         Me.grpReg.Controls.Add(Me.Label9)
         Me.grpReg.Controls.Add(Me.Label2)
         Me.grpReg.Controls.Add(Me.middlename)
@@ -341,6 +341,16 @@ Partial Class scvsAdmin
         Me.grpReg.TabIndex = 68
         Me.grpReg.TabStop = False
         '
+        'txtContactNum
+        '
+        Me.txtContactNum.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.txtContactNum.Location = New System.Drawing.Point(473, 352)
+        Me.txtContactNum.Mask = "+63-000-000-0000"
+        Me.txtContactNum.Name = "txtContactNum"
+        Me.txtContactNum.Size = New System.Drawing.Size(355, 33)
+        Me.txtContactNum.TabIndex = 8
+        '
         'Label44
         '
         Me.Label44.AutoSize = True
@@ -355,30 +365,18 @@ Partial Class scvsAdmin
         'btnCancelReg
         '
         Me.btnCancelReg.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnCancelReg.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnCancelReg.BackColor = System.Drawing.Color.Transparent
         Me.btnCancelReg.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelReg.FlatAppearance.BorderSize = 0
         Me.btnCancelReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelReg.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancelReg.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnCancelReg.Location = New System.Drawing.Point(643, 439)
+        Me.btnCancelReg.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelReg.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnCancelReg.Location = New System.Drawing.Point(394, 492)
         Me.btnCancelReg.Name = "btnCancelReg"
-        Me.btnCancelReg.Size = New System.Drawing.Size(184, 63)
-        Me.btnCancelReg.TabIndex = 9
-        Me.btnCancelReg.Text = "Cancel"
-        Me.btnCancelReg.UseVisualStyleBackColor = True
-        '
-        'txtContactNum
-        '
-        Me.txtContactNum.BackColor = System.Drawing.Color.White
-        Me.txtContactNum.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtContactNum.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtContactNum.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.txtContactNum.Location = New System.Drawing.Point(471, 352)
-        Me.txtContactNum.MaxLength = 13
-        Me.txtContactNum.Name = "txtContactNum"
-        Me.txtContactNum.Size = New System.Drawing.Size(356, 37)
-        Me.txtContactNum.TabIndex = 8
+        Me.btnCancelReg.Size = New System.Drawing.Size(106, 43)
+        Me.btnCancelReg.TabIndex = 10
+        Me.btnCancelReg.Text = "cancel"
+        Me.btnCancelReg.UseVisualStyleBackColor = False
         '
         'firstname
         '
@@ -386,12 +384,12 @@ Partial Class scvsAdmin
         Me.firstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.firstname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.firstname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.firstname.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.firstname.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.firstname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.firstname.Location = New System.Drawing.Point(58, 96)
         Me.firstname.MaxLength = 25
         Me.firstname.Name = "firstname"
-        Me.firstname.Size = New System.Drawing.Size(356, 37)
+        Me.firstname.Size = New System.Drawing.Size(356, 33)
         Me.firstname.TabIndex = 0
         '
         'btnRegStudent
@@ -402,10 +400,10 @@ Partial Class scvsAdmin
         Me.btnRegStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRegStudent.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRegStudent.Location = New System.Drawing.Point(439, 439)
+        Me.btnRegStudent.Location = New System.Drawing.Point(350, 420)
         Me.btnRegStudent.Name = "btnRegStudent"
-        Me.btnRegStudent.Size = New System.Drawing.Size(184, 63)
-        Me.btnRegStudent.TabIndex = 8
+        Me.btnRegStudent.Size = New System.Drawing.Size(192, 69)
+        Me.btnRegStudent.TabIndex = 9
         Me.btnRegStudent.Text = "Register"
         Me.btnRegStudent.UseVisualStyleBackColor = True
         '
@@ -437,12 +435,12 @@ Partial Class scvsAdmin
         Me.middlename.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.middlename.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.middlename.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.middlename.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.middlename.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.middlename.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.middlename.Location = New System.Drawing.Point(58, 178)
         Me.middlename.MaxLength = 25
         Me.middlename.Name = "middlename"
-        Me.middlename.Size = New System.Drawing.Size(356, 37)
+        Me.middlename.Size = New System.Drawing.Size(356, 33)
         Me.middlename.TabIndex = 1
         '
         'txtRFID
@@ -450,12 +448,12 @@ Partial Class scvsAdmin
         Me.txtRFID.BackColor = System.Drawing.Color.White
         Me.txtRFID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtRFID.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtRFID.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRFID.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRFID.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.txtRFID.Location = New System.Drawing.Point(472, 262)
         Me.txtRFID.MaxLength = 10
         Me.txtRFID.Name = "txtRFID"
-        Me.txtRFID.Size = New System.Drawing.Size(356, 37)
+        Me.txtRFID.Size = New System.Drawing.Size(356, 33)
         Me.txtRFID.TabIndex = 7
         '
         'Label10
@@ -486,12 +484,12 @@ Partial Class scvsAdmin
         Me.lastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lastname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.lastname.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.lastname.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lastname.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lastname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.lastname.Location = New System.Drawing.Point(58, 262)
         Me.lastname.MaxLength = 25
         Me.lastname.Name = "lastname"
-        Me.lastname.Size = New System.Drawing.Size(356, 37)
+        Me.lastname.Size = New System.Drawing.Size(356, 33)
         Me.lastname.TabIndex = 2
         '
         'pass
@@ -499,12 +497,12 @@ Partial Class scvsAdmin
         Me.pass.BackColor = System.Drawing.Color.White
         Me.pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pass.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.pass.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pass.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.pass.Location = New System.Drawing.Point(472, 178)
         Me.pass.MaxLength = 25
         Me.pass.Name = "pass"
-        Me.pass.Size = New System.Drawing.Size(356, 37)
+        Me.pass.Size = New System.Drawing.Size(356, 33)
         Me.pass.TabIndex = 6
         '
         'Label11
@@ -561,13 +559,14 @@ Partial Class scvsAdmin
         '
         Me.email.BackColor = System.Drawing.Color.White
         Me.email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.email.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
         Me.email.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.email.Font = New System.Drawing.Font("Verdana", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.email.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
         Me.email.Location = New System.Drawing.Point(472, 96)
         Me.email.MaxLength = 25
         Me.email.Name = "email"
-        Me.email.Size = New System.Drawing.Size(356, 37)
+        Me.email.Size = New System.Drawing.Size(356, 33)
         Me.email.TabIndex = 5
         '
         'Label13
@@ -607,14 +606,14 @@ Partial Class scvsAdmin
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.Transparent
+        Me.TabPage2.Controls.Add(Me.btnDelStudent)
+        Me.TabPage2.Controls.Add(Me.btnUpdStudent)
         Me.TabPage2.Controls.Add(Me.btnClrStudent)
         Me.TabPage2.Controls.Add(Me.Label16)
         Me.TabPage2.Controls.Add(Me.updRFID)
         Me.TabPage2.Controls.Add(Me.updYear)
         Me.TabPage2.Controls.Add(Me.updCourse)
-        Me.TabPage2.Controls.Add(Me.btnDelStudent)
         Me.TabPage2.Controls.Add(Me.ListView1)
-        Me.TabPage2.Controls.Add(Me.btnUpdStudent)
         Me.TabPage2.Controls.Add(Me.Label17)
         Me.TabPage2.Controls.Add(Me.Label18)
         Me.TabPage2.Controls.Add(Me.updEmail)
@@ -638,17 +637,19 @@ Partial Class scvsAdmin
         '
         'btnClrStudent
         '
-        Me.btnClrStudent.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnClrStudent.BackColor = System.Drawing.Color.Transparent
         Me.btnClrStudent.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClrStudent.FlatAppearance.BorderSize = 0
         Me.btnClrStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClrStudent.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClrStudent.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnClrStudent.Location = New System.Drawing.Point(1010, 799)
+        Me.btnClrStudent.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClrStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnClrStudent.Location = New System.Drawing.Point(842, 877)
         Me.btnClrStudent.Name = "btnClrStudent"
-        Me.btnClrStudent.Size = New System.Drawing.Size(130, 55)
+        Me.btnClrStudent.Size = New System.Drawing.Size(177, 43)
         Me.btnClrStudent.TabIndex = 80
-        Me.btnClrStudent.Text = "Cancel"
-        Me.btnClrStudent.UseVisualStyleBackColor = True
+        Me.btnClrStudent.Text = "clear textboxes"
+        Me.btnClrStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnClrStudent.UseVisualStyleBackColor = False
         '
         'Label16
         '
@@ -704,17 +705,17 @@ Partial Class scvsAdmin
         '
         'btnDelStudent
         '
-        Me.btnDelStudent.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnDelStudent.BackColor = System.Drawing.Color.Transparent
         Me.btnDelStudent.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDelStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelStudent.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelStudent.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnDelStudent.Location = New System.Drawing.Point(874, 799)
+        Me.btnDelStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnDelStudent.Location = New System.Drawing.Point(958, 798)
         Me.btnDelStudent.Name = "btnDelStudent"
-        Me.btnDelStudent.Size = New System.Drawing.Size(130, 55)
+        Me.btnDelStudent.Size = New System.Drawing.Size(139, 65)
         Me.btnDelStudent.TabIndex = 79
-        Me.btnDelStudent.Text = "Delete"
-        Me.btnDelStudent.UseVisualStyleBackColor = True
+        Me.btnDelStudent.Text = "DELETE"
+        Me.btnDelStudent.UseVisualStyleBackColor = False
         '
         'ListView1
         '
@@ -778,13 +779,13 @@ Partial Class scvsAdmin
         Me.btnUpdStudent.BackColor = System.Drawing.Color.Goldenrod
         Me.btnUpdStudent.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnUpdStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUpdStudent.Font = New System.Drawing.Font("Trebuchet MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdStudent.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnUpdStudent.Location = New System.Drawing.Point(738, 799)
+        Me.btnUpdStudent.Location = New System.Drawing.Point(793, 798)
         Me.btnUpdStudent.Name = "btnUpdStudent"
-        Me.btnUpdStudent.Size = New System.Drawing.Size(130, 55)
+        Me.btnUpdStudent.Size = New System.Drawing.Size(139, 65)
         Me.btnUpdStudent.TabIndex = 78
-        Me.btnUpdStudent.Text = "Update"
+        Me.btnUpdStudent.Text = "UPDATE"
         Me.btnUpdStudent.UseVisualStyleBackColor = True
         '
         'Label17
@@ -1014,7 +1015,7 @@ Partial Class scvsAdmin
         Me.btnAddCandid.Name = "btnAddCandid"
         Me.btnAddCandid.Size = New System.Drawing.Size(130, 55)
         Me.btnAddCandid.TabIndex = 92
-        Me.btnAddCandid.Text = "Add"
+        Me.btnAddCandid.Text = "ADD"
         Me.btnAddCandid.UseVisualStyleBackColor = True
         '
         'cboxAddCandid
@@ -1147,17 +1148,17 @@ Partial Class scvsAdmin
         '
         'btnDelCandid
         '
-        Me.btnDelCandid.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnDelCandid.BackColor = System.Drawing.Color.Transparent
         Me.btnDelCandid.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnDelCandid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelCandid.Font = New System.Drawing.Font("Trebuchet MS", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelCandid.ForeColor = System.Drawing.Color.Goldenrod
+        Me.btnDelCandid.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.btnDelCandid.Location = New System.Drawing.Point(280, 250)
         Me.btnDelCandid.Name = "btnDelCandid"
         Me.btnDelCandid.Size = New System.Drawing.Size(130, 55)
         Me.btnDelCandid.TabIndex = 89
-        Me.btnDelCandid.Text = "Delete"
-        Me.btnDelCandid.UseVisualStyleBackColor = True
+        Me.btnDelCandid.Text = "DELETE"
+        Me.btnDelCandid.UseVisualStyleBackColor = False
         '
         'btnUpdCandid
         '
@@ -1170,7 +1171,7 @@ Partial Class scvsAdmin
         Me.btnUpdCandid.Name = "btnUpdCandid"
         Me.btnUpdCandid.Size = New System.Drawing.Size(130, 55)
         Me.btnUpdCandid.TabIndex = 88
-        Me.btnUpdCandid.Text = "Update"
+        Me.btnUpdCandid.Text = "UPDATE"
         Me.btnUpdCandid.UseVisualStyleBackColor = False
         '
         'ListView2
@@ -1756,6 +1757,6 @@ Partial Class scvsAdmin
     Friend WithEvents cboxAddCandid As ComboBox
     Friend WithEvents txtAddCandid As TextBox
     Friend WithEvents Label44 As Label
-    Friend WithEvents txtContactNum As TextBox
     Friend WithEvents lblOpenLink As Label
+    Friend WithEvents txtContactNum As MaskedTextBox
 End Class

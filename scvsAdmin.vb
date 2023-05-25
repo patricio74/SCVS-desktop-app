@@ -39,8 +39,13 @@ Public Class scvsAdmin
 
     'REGISTER TAB
     Private Sub btnRegStudent_Click(sender As Object, e As EventArgs) Handles btnRegStudent.Click
+        Dim phoneNumber As String = txtContactNum.Text.Replace("-", "")
         If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Or txtRFID.Text = "" Or txtContactNum.Text = "" Then
             MessageBox.Show("fill up all fields to continue.", "Error!")
+        ElseIf phoneNumber.Length <> 13 Then
+            MessageBox.Show("Please enter your valid 11 digit phone number!", "Invalid number", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtContactNum.Focus()
+            txtContactNum.SelectAll()
         Else
             Try
                 connect.Open()
@@ -56,7 +61,7 @@ Public Class scvsAdmin
                 Else
                     ' Insert the registration details into the database
                     Dim insertQuery As String = "INSERT INTO student (firstname, lastname, middlename, course, yrsec, email, pword, rfid, phone_number) 
-                                             VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid, @number)"
+                                            VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid, @number)"
                     Dim insertCommand As New MySqlCommand(insertQuery, connect)
                     insertCommand.Parameters.AddWithValue("@firstName", firstname.Text)
                     insertCommand.Parameters.AddWithValue("@lastName", lastname.Text)
@@ -66,13 +71,13 @@ Public Class scvsAdmin
                     insertCommand.Parameters.AddWithValue("@email", email.Text)
                     insertCommand.Parameters.AddWithValue("@pass", pass.Text)
                     insertCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
-                    insertCommand.Parameters.AddWithValue("@number", txtContactNum.Text)
+                    insertCommand.Parameters.AddWithValue("@number", phoneNumber)
 
                     Dim i As Integer = insertCommand.ExecuteNonQuery()
 
                     If i <> 0 Then
                         MsgBox("Student registered successfully!", vbInformation, "Admin")
-                        clearRegFrom()
+                        clearRegForm()
                     Else
                         MsgBox("Error!", vbCritical, "Admin")
                     End If
@@ -86,7 +91,7 @@ Public Class scvsAdmin
 
     'cancel button sa reg tab
     Private Sub btnCancelReg_Click(sender As Object, e As EventArgs) Handles btnCancelReg.Click
-        clearRegFrom()
+        clearRegForm()
     End Sub
 
 
@@ -279,4 +284,5 @@ Public Class scvsAdmin
     Private Sub btnWebsite_Click(sender As Object, e As EventArgs) Handles btnViewWebsite.Click
         Process.Start("https://scvs.000webhostapp.com/")
     End Sub
+
 End Class

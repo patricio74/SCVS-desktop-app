@@ -7,10 +7,12 @@ Imports Microsoft.VisualBasic.ApplicationServices
 Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Windows
+Imports System.Runtime.Remoting.Contexts
 
 Public Class scvsLogin
 
     Private Sub SCVS_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        showLogin()
         radAdmin.Checked = True
         userLogin()
         connectToServer()
@@ -38,7 +40,37 @@ Public Class scvsLogin
         grpUserLogin.Show()
         txtboxUsername.Focus()
     End Sub
-
+    Private Sub showReg()
+        grpReg.Show()
+        grpUserLogin.Hide()
+        panelRegister.Show()
+        panelLogin.Hide()
+        lblLogin.Hide()
+        radAdmin.Hide()
+        radStudent.Hide()
+        btnLogin.Hide()
+    End Sub
+    Private Sub showLogin()
+        grpUserLogin.Show()
+        grpReg.Hide()
+        panelRegister.Hide()
+        panelLogin.Show()
+        lblLogin.Show()
+        radAdmin.Show()
+        radStudent.Show()
+        btnLogin.Show()
+    End Sub
+    Public Sub clearForm()
+        firstname.Clear()
+        middlename.Clear()
+        lastname.Clear()
+        cboxCourse.SelectedIndex = -1
+        cboxYear.SelectedIndex = -1
+        email.Clear()
+        pass.Clear()
+        txtRFID.Clear()
+        txtContactNum.Text = ""
+    End Sub
     Private Sub btnRFID_Click(sender As Object, e As EventArgs) Handles btnRFID.Click
         userRFID()
     End Sub
@@ -264,6 +296,62 @@ Public Class scvsLogin
     End Sub
 
     Private Sub lblRegister_Click(sender As Object, e As EventArgs) Handles lblRegister.Click
-        'gawan mo bagong form pang register
+        showReg()
+    End Sub
+
+    Private Sub lblLog_Click(sender As Object, e As EventArgs) Handles lblLog.Click
+        showLogin()
+    End Sub
+
+    Private Sub btnRegStudent_Click(sender As Object, e As EventArgs) Handles btnRegStudent.Click
+        Dim phoneNumber As String = txtContactNum.Text.Replace("-", "")
+        If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Or txtRFID.Text = "" Or txtContactNum.Text = "" Then
+            MessageBox.Show("fill up all fields to continue.", "Error!")
+        ElseIf phoneNumber.Length <> 13 Then
+            MessageBox.Show("Please enter your valid 11 digit phone number!", "Invalid number", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            txtContactNum.Focus()
+            txtContactNum.SelectAll()
+        Else
+            Try
+                Dim connect As New MySqlConnection(getConString)
+                connect.Open()
+                'Check if the RFID already exists in the database
+                Dim checkRFIDQuery As String = "SELECT COUNT(*) FROM student WHERE RFID = @rfid"
+                Dim checkRFIDCommand As New MySqlCommand(checkRFIDQuery, connect)
+                checkRFIDCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
+                Dim rfidCount As Integer = Convert.ToInt32(checkRFIDCommand.ExecuteScalar())
+
+                If rfidCount > 0 Then
+                    MsgBox("RFID already exists in the database. Please use different RFID.", vbExclamation, "Error!")
+                    txtRFID.Focus()
+                Else
+                    ' Insert the registration details into the database
+                    Dim insertQuery As String = "INSERT INTO student (firstname, lastname, middlename, course, yrsec, email, pword, rfid, phone_number) 
+                                            VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid, @number)"
+                    Dim insertCommand As New MySqlCommand(insertQuery, connect)
+                    insertCommand.Parameters.AddWithValue("@firstName", firstname.Text)
+                    insertCommand.Parameters.AddWithValue("@lastName", lastname.Text)
+                    insertCommand.Parameters.AddWithValue("@middleName", middlename.Text)
+                    insertCommand.Parameters.AddWithValue("@course", cboxCourse.Text)
+                    insertCommand.Parameters.AddWithValue("@year", cboxYear.Text)
+                    insertCommand.Parameters.AddWithValue("@email", email.Text)
+                    insertCommand.Parameters.AddWithValue("@pass", pass.Text)
+                    insertCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
+                    insertCommand.Parameters.AddWithValue("@number", phoneNumber)
+
+                    Dim i As Integer = insertCommand.ExecuteNonQuery()
+
+                    If i <> 0 Then
+                        MsgBox("Student registered successfully!", vbInformation, "Admin")
+                        clearForm()
+                    Else
+                        MsgBox("Error!", vbCritical, "Admin")
+                    End If
+                End If
+                connect.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
     End Sub
 End Class

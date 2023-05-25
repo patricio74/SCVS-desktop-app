@@ -39,6 +39,7 @@ Public Class scvsStudent
     End Sub
 
     Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        clrVotingForm()
         stdLogout()
     End Sub
 

@@ -524,16 +524,17 @@ Partial Class scvsStudent
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnClear.BackColor = System.Drawing.Color.Transparent
         Me.btnClear.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClear.FlatAppearance.BorderSize = 0
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClear.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.ForeColor = System.Drawing.Color.Goldenrod
-        Me.btnClear.Location = New System.Drawing.Point(944, 724)
+        Me.btnClear.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnClear.Location = New System.Drawing.Point(782, 795)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(183, 65)
+        Me.btnClear.Size = New System.Drawing.Size(172, 41)
         Me.btnClear.TabIndex = 86
-        Me.btnClear.Text = "Cancel"
+        Me.btnClear.Text = "clear selection"
         Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnSubmit
@@ -543,9 +544,9 @@ Partial Class scvsStudent
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSubmit.Font = New System.Drawing.Font("Trebuchet MS", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSubmit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnSubmit.Location = New System.Drawing.Point(730, 724)
+        Me.btnSubmit.Location = New System.Drawing.Point(768, 724)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(183, 65)
+        Me.btnSubmit.Size = New System.Drawing.Size(201, 65)
         Me.btnSubmit.TabIndex = 85
         Me.btnSubmit.Text = "Submit"
         Me.btnSubmit.UseVisualStyleBackColor = False
