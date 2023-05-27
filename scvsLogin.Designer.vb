@@ -42,14 +42,15 @@ Partial Class scvsLogin
         Me.radAdmin = New System.Windows.Forms.RadioButton()
         Me.lblLogin = New System.Windows.Forms.Label()
         Me.grpUserLogin = New System.Windows.Forms.GroupBox()
-        Me.lblForgotPass = New System.Windows.Forms.Label()
         Me.lblRegister = New System.Windows.Forms.Label()
+        Me.lblForgotPass = New System.Windows.Forms.Label()
         Me.lblNoAcc = New System.Windows.Forms.Label()
         Me.grpRFIDLogin = New System.Windows.Forms.GroupBox()
         Me.txtboxRFID = New System.Windows.Forms.TextBox()
         Me.lblRFID = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.grpReg = New System.Windows.Forms.GroupBox()
+        Me.txtContactNum = New System.Windows.Forms.MaskedTextBox()
         Me.lblLog = New System.Windows.Forms.Label()
         Me.lblHaveAcc = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
@@ -72,7 +73,6 @@ Partial Class scvsLogin
         Me.Label15 = New System.Windows.Forms.Label()
         Me.panelRegister = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtContactNum = New System.Windows.Forms.MaskedTextBox()
         Me.panelSidebar.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panelLogin.SuspendLayout()
@@ -229,7 +229,7 @@ Partial Class scvsLogin
         Me.chkShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chkShow.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkShow.ForeColor = System.Drawing.Color.White
-        Me.chkShow.Location = New System.Drawing.Point(44, 159)
+        Me.chkShow.Location = New System.Drawing.Point(46, 161)
         Me.chkShow.Name = "chkShow"
         Me.chkShow.Size = New System.Drawing.Size(58, 18)
         Me.chkShow.TabIndex = 3
@@ -350,19 +350,6 @@ Partial Class scvsLogin
         Me.grpUserLogin.TabIndex = 0
         Me.grpUserLogin.TabStop = False
         '
-        'lblForgotPass
-        '
-        Me.lblForgotPass.AutoSize = True
-        Me.lblForgotPass.BackColor = System.Drawing.Color.Transparent
-        Me.lblForgotPass.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblForgotPass.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblForgotPass.ForeColor = System.Drawing.Color.White
-        Me.lblForgotPass.Location = New System.Drawing.Point(226, 159)
-        Me.lblForgotPass.Name = "lblForgotPass"
-        Me.lblForgotPass.Size = New System.Drawing.Size(115, 18)
-        Me.lblForgotPass.TabIndex = 33
-        Me.lblForgotPass.Text = "Forgot password?"
-        '
         'lblRegister
         '
         Me.lblRegister.AutoSize = True
@@ -370,11 +357,24 @@ Partial Class scvsLogin
         Me.lblRegister.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblRegister.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRegister.ForeColor = System.Drawing.Color.White
-        Me.lblRegister.Location = New System.Drawing.Point(204, 207)
+        Me.lblRegister.Location = New System.Drawing.Point(204, 205)
         Me.lblRegister.Name = "lblRegister"
         Me.lblRegister.Size = New System.Drawing.Size(58, 18)
         Me.lblRegister.TabIndex = 32
         Me.lblRegister.Text = "Register"
+        '
+        'lblForgotPass
+        '
+        Me.lblForgotPass.AutoSize = True
+        Me.lblForgotPass.BackColor = System.Drawing.Color.Transparent
+        Me.lblForgotPass.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblForgotPass.Font = New System.Drawing.Font("Trebuchet MS", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblForgotPass.ForeColor = System.Drawing.Color.White
+        Me.lblForgotPass.Location = New System.Drawing.Point(239, 160)
+        Me.lblForgotPass.Name = "lblForgotPass"
+        Me.lblForgotPass.Size = New System.Drawing.Size(105, 18)
+        Me.lblForgotPass.TabIndex = 33
+        Me.lblForgotPass.Text = "Forgot password?"
         '
         'lblNoAcc
         '
@@ -383,7 +383,7 @@ Partial Class scvsLogin
         Me.lblNoAcc.Cursor = System.Windows.Forms.Cursors.Default
         Me.lblNoAcc.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNoAcc.ForeColor = System.Drawing.Color.White
-        Me.lblNoAcc.Location = New System.Drawing.Point(42, 207)
+        Me.lblNoAcc.Location = New System.Drawing.Point(42, 205)
         Me.lblNoAcc.Name = "lblNoAcc"
         Me.lblNoAcc.Size = New System.Drawing.Size(163, 18)
         Me.lblNoAcc.TabIndex = 31
@@ -471,6 +471,16 @@ Partial Class scvsLogin
         Me.grpReg.Size = New System.Drawing.Size(711, 517)
         Me.grpReg.TabIndex = 69
         Me.grpReg.TabStop = False
+        '
+        'txtContactNum
+        '
+        Me.txtContactNum.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContactNum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
+        Me.txtContactNum.Location = New System.Drawing.Point(373, 297)
+        Me.txtContactNum.Mask = "+63-000-000-0000"
+        Me.txtContactNum.Name = "txtContactNum"
+        Me.txtContactNum.Size = New System.Drawing.Size(291, 31)
+        Me.txtContactNum.TabIndex = 8
         '
         'lblLog
         '
@@ -748,16 +758,6 @@ Partial Class scvsLogin
         Me.Label3.Size = New System.Drawing.Size(206, 29)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Register to SCVS."
-        '
-        'txtContactNum
-        '
-        Me.txtContactNum.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNum.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.txtContactNum.Location = New System.Drawing.Point(373, 297)
-        Me.txtContactNum.Mask = "+63-000-000-0000"
-        Me.txtContactNum.Name = "txtContactNum"
-        Me.txtContactNum.Size = New System.Drawing.Size(291, 31)
-        Me.txtContactNum.TabIndex = 8
         '
         'scvsLogin
         '

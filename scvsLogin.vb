@@ -211,14 +211,12 @@ Public Class scvsLogin
             Dim rfidTag As String = txtboxRFID.Text.Trim()
             'admin RFID login
             If radAdmin.Checked = True Then
-                ' Check if the RFID tag is valid
                 If String.IsNullOrEmpty(rfidTag) Then
                     MessageBox.Show("Please scan your RFID tag.")
                     txtboxRFID.Focus()
                     Return
                 End If
 
-                'Check the database for the RFID tag and vote status
                 Dim query As String = "SELECT * FROM admin WHERE rfid = @RFIDTag"
                 Using connection As New MySqlConnection(getConString)
                     Using command As New MySqlCommand(query, connection)
@@ -246,14 +244,12 @@ Public Class scvsLogin
 
                 'student RFID login
             ElseIf radStudent.Checked = True Then
-                'Check if the RFID tag is valid
                 If String.IsNullOrEmpty(rfidTag) Then
                     MessageBox.Show("Please scan your RFID tag.")
                     txtboxRFID.Focus()
                     Return
                 End If
 
-                'Check the database for the RFID tag and vote status
                 Dim query As String = "SELECT * FROM student WHERE rfid = @RFIDTag"
                 Using connection As New MySqlConnection(getConString)
                     Using command As New MySqlCommand(query, connection)
@@ -325,7 +321,6 @@ Public Class scvsLogin
                     MsgBox("RFID already exists in the database. Please use different RFID.", vbExclamation, "Error!")
                     txtRFID.Focus()
                 Else
-                    ' Insert the registration details into the database
                     Dim insertQuery As String = "INSERT INTO student (firstname, lastname, middlename, course, yrsec, email, pword, rfid, phone_number) 
                                             VALUES (@firstName, @lastName, @middleName, @course, @year, @email, @pass, @rfid, @number)"
                     Dim insertCommand As New MySqlCommand(insertQuery, connect)

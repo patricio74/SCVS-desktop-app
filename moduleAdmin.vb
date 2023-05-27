@@ -16,7 +16,6 @@ Module moduleAdmin
         scvsAdmin.Hide()
     End Sub
 
-    'update label of admin result tab
     Public Sub admResultTab()
         Dim currentTime As DateTime = DateTime.Now
         scvsAdmin.lblResultTime.Text = "Election result as of " & currentTime.ToString("h:mm tt")

@@ -19,20 +19,15 @@ Public Class scvsStudent
             connection.Open()
             Dim listBox As ListBox = DirectCast(sender, ListBox)
 
-            'Get the selected candidate's name
             If listBox.SelectedItem IsNot Nothing Then
                 Dim selectedCandidate As String = listBox.SelectedItem.ToString()
-
-                'Query the database for the candid_id based on the selected candidate's name
                 Dim query As String = "SELECT candid_id FROM candidate WHERE candid_name = @candid_name"
                 Dim command As New MySqlCommand(query, connection)
                 command.Parameters.AddWithValue("@candid_name", selectedCandidate)
                 Dim candidId As Integer = CInt(command.ExecuteScalar())
 
-                'Store the candid_id in the Dictionary for later use
                 candidIdDictionary(listBox) = candidId
             Else
-                'handle the case when no item is selected
             End If
             connection.Close()
         End Using
@@ -65,7 +60,6 @@ Public Class scvsStudent
             Dim username As String = scvsLogin.txtboxUsername.Text
             Dim tag As String = scvsLogin.txtboxRFID.Text
 
-            'check if the user or RFID tag has already voted
             Dim chkStatusQuery As String = "SELECT votestatus FROM student WHERE email = @username OR rfid = @tag"
 
             Using connect As New MySqlConnection(getConString)
@@ -77,7 +71,6 @@ Public Class scvsStudent
 
                 Dim voteStatus As String = Convert.ToString(cmd.ExecuteScalar())
 
-                'get student_id
                 Dim getIdQuery As String = "SELECT user_id FROM student WHERE email = @username OR rfid = @tag"
                 cmd = New MySqlCommand(getIdQuery, connect)
                 cmd.Parameters.AddWithValue("@username", username)
@@ -104,7 +97,6 @@ Public Class scvsStudent
                         cmd.ExecuteNonQuery()
                     Next
 
-                    'Update student votestatus to 'voted' to prevent duplicate voting
                     Dim updateQuery As String = "UPDATE student SET votestatus = 'voted' WHERE user_id = @user_id"
                     cmd = New MySqlCommand(updateQuery, connect)
                     cmd.Parameters.AddWithValue("@user_id", uid)

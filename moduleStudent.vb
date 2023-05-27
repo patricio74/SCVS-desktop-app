@@ -40,7 +40,6 @@ Module moduleStudent
         End Try
     End Sub
 
-    'updates the label of student result tab
     Public Sub stdResultTab()
         Dim currentTime As DateTime = DateTime.Now
         scvsStudent.lblResultTime.Text = "Election result as of " & currentTime.ToString("h:mm tt")
