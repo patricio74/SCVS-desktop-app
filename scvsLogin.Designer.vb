@@ -50,6 +50,7 @@ Partial Class scvsLogin
         Me.lblRFID = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.grpReg = New System.Windows.Forms.GroupBox()
+        Me.btnClearRegForm = New System.Windows.Forms.Button()
         Me.txtContactNum = New System.Windows.Forms.MaskedTextBox()
         Me.lblLog = New System.Windows.Forms.Label()
         Me.lblHaveAcc = New System.Windows.Forms.Label()
@@ -445,6 +446,7 @@ Partial Class scvsLogin
         Me.grpReg.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grpReg.BackColor = System.Drawing.Color.Transparent
+        Me.grpReg.Controls.Add(Me.btnClearRegForm)
         Me.grpReg.Controls.Add(Me.txtContactNum)
         Me.grpReg.Controls.Add(Me.lblLog)
         Me.grpReg.Controls.Add(Me.lblHaveAcc)
@@ -472,6 +474,21 @@ Partial Class scvsLogin
         Me.grpReg.TabIndex = 69
         Me.grpReg.TabStop = False
         '
+        'btnClearRegForm
+        '
+        Me.btnClearRegForm.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnClearRegForm.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.btnClearRegForm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnClearRegForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClearRegForm.Font = New System.Drawing.Font("Trebuchet MS", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClearRegForm.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.btnClearRegForm.Location = New System.Drawing.Point(477, 373)
+        Me.btnClearRegForm.Name = "btnClearRegForm"
+        Me.btnClearRegForm.Size = New System.Drawing.Size(118, 54)
+        Me.btnClearRegForm.TabIndex = 71
+        Me.btnClearRegForm.Text = "CLEAR"
+        Me.btnClearRegForm.UseVisualStyleBackColor = False
+        '
         'txtContactNum
         '
         Me.txtContactNum.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -489,7 +506,7 @@ Partial Class scvsLogin
         Me.lblLog.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblLog.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblLog.Location = New System.Drawing.Point(441, 441)
+        Me.lblLog.Location = New System.Drawing.Point(503, 438)
         Me.lblLog.Name = "lblLog"
         Me.lblLog.Size = New System.Drawing.Size(46, 20)
         Me.lblLog.TabIndex = 10
@@ -502,7 +519,7 @@ Partial Class scvsLogin
         Me.lblHaveAcc.Cursor = System.Windows.Forms.Cursors.Default
         Me.lblHaveAcc.Font = New System.Drawing.Font("Trebuchet MS", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHaveAcc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(33, Byte), Integer))
-        Me.lblHaveAcc.Location = New System.Drawing.Point(264, 441)
+        Me.lblHaveAcc.Location = New System.Drawing.Point(326, 438)
         Me.lblHaveAcc.Name = "lblHaveAcc"
         Me.lblHaveAcc.Size = New System.Drawing.Size(178, 20)
         Me.lblHaveAcc.TabIndex = 70
@@ -539,13 +556,13 @@ Partial Class scvsLogin
         Me.btnRegStudent.BackColor = System.Drawing.Color.Goldenrod
         Me.btnRegStudent.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRegStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRegStudent.Font = New System.Drawing.Font("Trebuchet MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegStudent.Font = New System.Drawing.Font("Trebuchet MS", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRegStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(46, Byte), Integer))
-        Me.btnRegStudent.Location = New System.Drawing.Point(301, 373)
+        Me.btnRegStudent.Location = New System.Drawing.Point(291, 373)
         Me.btnRegStudent.Name = "btnRegStudent"
-        Me.btnRegStudent.Size = New System.Drawing.Size(158, 54)
+        Me.btnRegStudent.Size = New System.Drawing.Size(180, 54)
         Me.btnRegStudent.TabIndex = 9
-        Me.btnRegStudent.Text = "Register"
+        Me.btnRegStudent.Text = "REGISTER"
         Me.btnRegStudent.UseVisualStyleBackColor = True
         '
         'Label9
@@ -851,4 +868,5 @@ Partial Class scvsLogin
     Friend WithEvents panelRegister As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents txtContactNum As MaskedTextBox
+    Friend WithEvents btnClearRegForm As Button
 End Class

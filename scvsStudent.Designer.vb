@@ -366,7 +366,7 @@ Partial Class scvsStudent
         '
         Me.listPresident.BackColor = System.Drawing.Color.White
         Me.listPresident.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listPresident.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listPresident.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listPresident.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listPresident.ForeColor = System.Drawing.Color.Black
         Me.listPresident.FormattingEnabled = True
@@ -390,7 +390,7 @@ Partial Class scvsStudent
         '
         Me.listVicePres.BackColor = System.Drawing.Color.White
         Me.listVicePres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listVicePres.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listVicePres.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listVicePres.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listVicePres.ForeColor = System.Drawing.Color.Black
         Me.listVicePres.FormattingEnabled = True
@@ -414,7 +414,7 @@ Partial Class scvsStudent
         '
         Me.listSecretary.BackColor = System.Drawing.Color.White
         Me.listSecretary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listSecretary.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listSecretary.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listSecretary.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listSecretary.ForeColor = System.Drawing.Color.Black
         Me.listSecretary.FormattingEnabled = True
@@ -428,7 +428,7 @@ Partial Class scvsStudent
         '
         Me.listFourth.BackColor = System.Drawing.Color.White
         Me.listFourth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listFourth.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listFourth.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listFourth.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listFourth.ForeColor = System.Drawing.Color.Black
         Me.listFourth.FormattingEnabled = True
@@ -442,7 +442,7 @@ Partial Class scvsStudent
         '
         Me.listTres.BackColor = System.Drawing.Color.White
         Me.listTres.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listTres.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listTres.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listTres.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listTres.ForeColor = System.Drawing.Color.Black
         Me.listTres.FormattingEnabled = True
@@ -456,7 +456,7 @@ Partial Class scvsStudent
         '
         Me.listThird.BackColor = System.Drawing.Color.White
         Me.listThird.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listThird.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listThird.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listThird.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listThird.ForeColor = System.Drawing.Color.Black
         Me.listThird.FormattingEnabled = True
@@ -470,7 +470,7 @@ Partial Class scvsStudent
         '
         Me.listAud.BackColor = System.Drawing.Color.White
         Me.listAud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listAud.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listAud.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listAud.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listAud.ForeColor = System.Drawing.Color.Black
         Me.listAud.FormattingEnabled = True
@@ -484,7 +484,7 @@ Partial Class scvsStudent
         '
         Me.listSecond.BackColor = System.Drawing.Color.White
         Me.listSecond.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listSecond.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listSecond.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listSecond.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listSecond.ForeColor = System.Drawing.Color.Black
         Me.listSecond.FormattingEnabled = True
@@ -498,7 +498,7 @@ Partial Class scvsStudent
         '
         Me.listPRO.BackColor = System.Drawing.Color.White
         Me.listPRO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listPRO.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listPRO.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listPRO.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listPRO.ForeColor = System.Drawing.Color.Black
         Me.listPRO.FormattingEnabled = True
@@ -512,7 +512,7 @@ Partial Class scvsStudent
         '
         Me.listFirst.BackColor = System.Drawing.Color.White
         Me.listFirst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.listFirst.Cursor = System.Windows.Forms.Cursors.Default
+        Me.listFirst.Cursor = System.Windows.Forms.Cursors.Hand
         Me.listFirst.Font = New System.Drawing.Font("Verdana", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listFirst.ForeColor = System.Drawing.Color.Black
         Me.listFirst.FormattingEnabled = True

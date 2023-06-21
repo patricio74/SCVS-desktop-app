@@ -8,6 +8,7 @@ Imports MySql.Data.MySqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports System.Windows
 Imports System.Runtime.Remoting.Contexts
+Imports System.IO.Ports
 
 Public Class scvsLogin
 
@@ -60,7 +61,7 @@ Public Class scvsLogin
         radStudent.Show()
         btnLogin.Show()
     End Sub
-    Public Sub clearForm()
+    Public Sub clearRegForm()
         firstname.Clear()
         middlename.Clear()
         lastname.Clear()
@@ -292,33 +293,35 @@ Public Class scvsLogin
     End Sub
 
     Private Sub lblRegister_Click(sender As Object, e As EventArgs) Handles lblRegister.Click
+        txtboxPassword.Clear()
         showReg()
     End Sub
 
     Private Sub lblLog_Click(sender As Object, e As EventArgs) Handles lblLog.Click
+        clearRegForm()
         showLogin()
     End Sub
 
     Private Sub btnRegStudent_Click(sender As Object, e As EventArgs) Handles btnRegStudent.Click
         Dim phoneNumber As String = txtContactNum.Text.Replace("-", "")
         If firstname.Text = "" Or lastname.Text = "" Or middlename.Text = "" Or cboxCourse.Text = "" Or cboxYear.Text = "" Or email.Text = "" Or pass.Text = "" Or txtRFID.Text = "" Or txtContactNum.Text = "" Then
-            MessageBox.Show("fill up all fields to continue.", "Error!")
+            MessageBox.Show("Fill up all fields to continue.", "Error!")
         ElseIf phoneNumber.Length <> 13 Then
-            MessageBox.Show("Please enter your valid 11 digit phone number!", "Invalid number", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Please enter your valid 11-digit phone number!", "Invalid number", MessageBoxButtons.OK, MessageBoxIcon.Error)
             txtContactNum.Focus()
             txtContactNum.SelectAll()
         Else
             Try
                 Dim connect As New MySqlConnection(getConString)
                 connect.Open()
-                'Check if the RFID already exists in the database
+                ' Check if the RFID already exists in the database
                 Dim checkRFIDQuery As String = "SELECT COUNT(*) FROM student WHERE RFID = @rfid"
                 Dim checkRFIDCommand As New MySqlCommand(checkRFIDQuery, connect)
                 checkRFIDCommand.Parameters.AddWithValue("@rfid", txtRFID.Text)
                 Dim rfidCount As Integer = Convert.ToInt32(checkRFIDCommand.ExecuteScalar())
 
                 If rfidCount > 0 Then
-                    MsgBox("RFID already exists in the database. Please use different RFID.", vbExclamation, "Error!")
+                    MsgBox("RFID already exists in the database. Please use a different RFID.", vbExclamation, "Error!")
                     txtRFID.Focus()
                 Else
                     Dim insertQuery As String = "INSERT INTO student (firstname, lastname, middlename, course, yrsec, email, pword, rfid, phone_number) 
@@ -337,8 +340,10 @@ Public Class scvsLogin
                     Dim i As Integer = insertCommand.ExecuteNonQuery()
 
                     If i <> 0 Then
+                        'Send SMS if registration is successful
+                        SendSMS(phoneNumber, "YOU HAVE SUCCESSFULLY REGISTERED TO SCVS!" & vbCrLf & "You may now vote using our desktop app or via SCVS website." & vbCrLf & "" & vbCrLf & "For more information, you may visit: https://scvs.000webhostapp.com/")
                         MsgBox("Student registered successfully!", vbInformation, "Admin")
-                        clearForm()
+                        'clearRegForm()
                     Else
                         MsgBox("Error!", vbCritical, "Admin")
                     End If
@@ -348,5 +353,36 @@ Public Class scvsLogin
                 MsgBox(ex.Message)
             End Try
         End If
+    End Sub
+
+    Private Sub SendSMS(phoneNumber As String, message As String)
+        Try
+            Using port As New SerialPort("COM5", 115200)
+                port.Open()
+
+                port.WriteLine("AT+CMGF=1")
+                System.Threading.Thread.Sleep(3000)
+                port.WriteLine("AT+CMGS=""" + phoneNumber + """")
+                System.Threading.Thread.Sleep(3000)
+                port.WriteLine(message + Chr(26))
+                System.Threading.Thread.Sleep(3000)
+
+                Dim response As String = port.ReadExisting()
+
+                If response.Contains("+CMGS") AndAlso response.Contains("OK") Then
+                    'MsgBox("Gumana GSM lodz!")
+                Else
+                    MsgBox("Error GSM mo lodz!")
+                End If
+
+                port.Close()
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnClearRegForm_Click(sender As Object, e As EventArgs) Handles btnClearRegForm.Click
+        clearRegForm()
     End Sub
 End Class
