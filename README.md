@@ -16,7 +16,7 @@ members:
 
 ### .NET Framework:
 
-* Minimum version required: .NET Framework 4.7 or later.
+* Minimum version required: .NET Framework 4.8 or later.
 * The application relies on the .NET Framework to function properly. Ensure that the required version is installed on the system.
 
 ### CPU Architecture:
